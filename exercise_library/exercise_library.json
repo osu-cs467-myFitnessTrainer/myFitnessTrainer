@@ -51,30 +51,6 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "kettlebell_concentration_curl",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/kettlebells/male/biceps/kettlebell-concentration-curl",
-            "female": "https://musclewiki.com/kettlebells/female/biceps/kettlebell-concentration-curl"
-          },
-          "equipment": "kettlebells",
-          "difficulty": "intermediate",
-          "muscle_group": "upper body"
-        },
-        {
-          "name": "kettlebell_preacher_curl",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/kettlebells/male/biceps/kettlebell-preacher-curl",
-            "female": "https://musclewiki.com/kettlebells/female/biceps/kettlebell-preacher-curl"
-          },
-          "equipment": "kettlebells",
-          "difficulty": "intermediate",
-          "muscle_group": "upper body"
-        },
-        {
           "name": "kettlebell_single_arm_curl",
           "description": "",
           "category": "strength",
@@ -87,18 +63,6 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "cable_twisting_curl",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/cables/male/biceps/cable-twisting-curl",
-            "female": "https://musclewiki.com/cables/female/biceps/cable-twisting-curl"
-          },
-          "equipment": "cables",
-          "difficulty": "advanced",
-          "muscle_group": "upper body"
-        },
-        {
           "name": "cable_bayesian_curl",
           "description": "",
           "category": "strength",
@@ -108,18 +72,6 @@
           },
           "equipment": "cables",
           "difficulty": "beginner",
-          "muscle_group": "upper body"
-        },
-        {
-          "name": "cable_reverse_curl",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/cables/male/biceps/cable-reverse-curl",
-            "female": "https://musclewiki.com/cables/female/biceps/cable-reverse-curl"
-          },
-          "equipment": "cables",
-          "difficulty": "intermediate",
           "muscle_group": "upper body"
         },
         {
@@ -147,54 +99,6 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "band_bayesian_hammer_curl",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/band/male/biceps/band-bayesian-hammer-curl",
-            "female": "https://musclewiki.com/band/female/biceps/band-bayesian-hammer-curl"
-          },
-          "equipment": "band",
-          "difficulty": "intermediate",
-          "muscle_group": "upper body"
-        },
-        {
-          "name": "band_bayesian_reverse_curl",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/band/male/biceps/band-bayesian-reverse-curl",
-            "female": "https://musclewiki.com/band/female/biceps/band-bayesian-reverse-curl"
-          },
-          "equipment": "band",
-          "difficulty": "intermediate",
-          "muscle_group": "upper body"
-        },
-        {
-          "name": "dumbbell_reverse_curl",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-reverse-curl",
-            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-reverse-curl"
-          },
-          "equipment": "dumbbells",
-          "difficulty": "intermediate",
-          "muscle_group": "upper body"
-        },
-        {
-          "name": "barbell_reverse_curl",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/barbell/male/biceps/barbell-reverse-curl",
-            "female": "https://musclewiki.com/barbell/female/biceps/barbell-reverse-curl"
-          },
-          "equipment": "barbell",
-          "difficulty": "advanced",
-          "muscle_group": "upper body"
-        },
-        {
           "name": "dumbbell_incline_hammer_curl",
           "description": "",
           "category": "strength",
@@ -216,18 +120,6 @@
           },
           "equipment": "dumbbells",
           "difficulty": "beginner",
-          "muscle_group": "upper body"
-        },
-        {
-          "name": "dumbbell_incline_zottman_curl",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-incline-zottman-curl",
-            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-incline-zottman-curl"
-          },
-          "equipment": "dumbbells",
-          "difficulty": "intermediate",
           "muscle_group": "upper body"
         },
         {
@@ -291,42 +183,6 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "plate_curl_to_overhead_press",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/plate/male/biceps/plate-curl-to-overhead-press",
-            "female": "https://musclewiki.com/plate/female/biceps/plate-curl-to-overhead-press"
-          },
-          "equipment": "plate",
-          "difficulty": "intermediate",
-          "muscle_group": "upper body"
-        },
-        {
-          "name": "plate_curl_to_overhead_press_to_tricep_extension",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/plate/male/biceps/plate-curl-to-overhead-press-to-tricep-extension",
-            "female": "https://musclewiki.com/plate/female/biceps/plate-curl-to-overhead-press-to-tricep-extension"
-          },
-          "equipment": "plate",
-          "difficulty": "advanced",
-          "muscle_group": "upper body"
-        },
-        {
-          "name": "plate_squat_hold_curl",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/plate/male/biceps/plate-squat-hold-curl",
-            "female": "https://musclewiki.com/plate/female/biceps/plate-squat-hold-curl"
-          },
-          "equipment": "plate",
-          "difficulty": "intermediate",
-          "muscle_group": "upper body"
-        },
-        {
           "name": "band_high_curl",
           "description": "",
           "category": "strength",
@@ -351,6 +207,272 @@
           "muscle_group": "upper body"
         },
         {
+          "name": "band_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/band/male/biceps/band-curl",
+            "female": "https://musclewiki.com/band/female/biceps/band-curl"
+          },
+          "equipment": "band",
+          "difficulty": "beginner",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_concentration_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-concentration-curl",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-concentration-curl"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "beginner",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "trx_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/trx/male/biceps/trx-curl",
+            "female": "https://musclewiki.com/trx/female/biceps/trx-curl"
+          },
+          "equipment": "trx",
+          "difficulty": "beginner",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "trx_hammer_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/trx/male/biceps/trx-hammer-curl",
+            "female": "https://musclewiki.com/trx/female/biceps/trx-hammer-curl"
+          },
+          "equipment": "trx",
+          "difficulty": "beginner",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "band_kneeling_single_arm_pulldown",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/band/male/biceps/band-kneeling-single-arm-pulldown",
+            "female": "https://musclewiki.com/band/female/biceps/band-kneeling-single-arm-pulldown"
+          },
+          "equipment": "band",
+          "difficulty": "beginner",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_pronated_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-pronated-row",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-pronated-row"
+          },
+          "equipment": "barbell",
+          "difficulty": "beginner",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_kneeling_single_arm_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-kneeling-single-arm-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-kneeling-single-arm-row"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "beginner",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_laying_incline_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-laying-incline-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-laying-incline-row"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "beginner",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_single_arm_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-single-arm-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-single-arm-row"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "beginner",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_single_arm_row_knee",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-single-arm-row-knee",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-single-arm-row-knee"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "beginner",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_supinated_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-supinated-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-supinated-row"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "beginner",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "trx_rotating_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/trx/male/biceps/trx-rotating-row",
+            "female": "https://musclewiki.com/trx/female/biceps/trx-rotating-row"
+          },
+          "equipment": "trx",
+          "difficulty": "beginner",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_incline_bench_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-incline-bench-press",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-incline-bench-press"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "beginner",
+          "muscle_group": "upper body"
+        }
+      ],
+      "intermediate": [
+        {
+          "name": "kettlebell_concentration_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/biceps/kettlebell-concentration-curl",
+            "female": "https://musclewiki.com/kettlebells/female/biceps/kettlebell-concentration-curl"
+          },
+          "equipment": "kettlebells",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "kettlebell_preacher_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/biceps/kettlebell-preacher-curl",
+            "female": "https://musclewiki.com/kettlebells/female/biceps/kettlebell-preacher-curl"
+          },
+          "equipment": "kettlebells",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "cable_reverse_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/cables/male/biceps/cable-reverse-curl",
+            "female": "https://musclewiki.com/cables/female/biceps/cable-reverse-curl"
+          },
+          "equipment": "cables",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "band_bayesian_hammer_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/band/male/biceps/band-bayesian-hammer-curl",
+            "female": "https://musclewiki.com/band/female/biceps/band-bayesian-hammer-curl"
+          },
+          "equipment": "band",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "band_bayesian_reverse_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/band/male/biceps/band-bayesian-reverse-curl",
+            "female": "https://musclewiki.com/band/female/biceps/band-bayesian-reverse-curl"
+          },
+          "equipment": "band",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_reverse_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-reverse-curl",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-reverse-curl"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_incline_zottman_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-incline-zottman-curl",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-incline-zottman-curl"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "plate_curl_to_overhead_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/biceps/plate-curl-to-overhead-press",
+            "female": "https://musclewiki.com/plate/female/biceps/plate-curl-to-overhead-press"
+          },
+          "equipment": "plate",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "plate_squat_hold_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/biceps/plate-squat-hold-curl",
+            "female": "https://musclewiki.com/plate/female/biceps/plate-squat-hold-curl"
+          },
+          "equipment": "plate",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
           "name": "band_high_reverse_curl",
           "description": "",
           "category": "strength",
@@ -361,10 +483,610 @@
           "equipment": "band",
           "difficulty": "intermediate",
           "muscle_group": "upper body"
+        },
+        {
+          "name": "band_reverse_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/band/male/biceps/band-reverse-curl",
+            "female": "https://musclewiki.com/band/female/biceps/band-reverse-curl"
+          },
+          "equipment": "band",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "trx_reverse_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/trx/male/biceps/trx-reverse-curl",
+            "female": "https://musclewiki.com/trx/female/biceps/trx-reverse-curl"
+          },
+          "equipment": "trx",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_landmine_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-landmine-row",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-landmine-row"
+          },
+          "equipment": "barbell",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "chin_ups",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/biceps/chin-ups",
+            "female": "https://musclewiki.com/bodyweight/female/biceps/chin-ups"
+          },
+          "equipment": "bodyweight",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_meadows_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-meadows-row",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-meadows-row"
+          },
+          "equipment": "barbell",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_pendlay_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-pendlay-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-pendlay-row"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "plate_pinch_grip_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/biceps/plate-pinch-grip-row",
+            "female": "https://musclewiki.com/plate/female/biceps/plate-pinch-grip-row"
+          },
+          "equipment": "plate",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "lawnmower_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/lawnmower-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/lawnmower-row"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_knee_lawnmower_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-knee-lawnmower-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-knee-lawnmower-row"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_bench_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/chest/barbell-bench-press",
+            "female": "https://musclewiki.com/barbell/female/chest/barbell-bench-press"
+          },
+          "equipment": "barbell",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dips",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/chest/dips",
+            "female": "https://musclewiki.com/bodyweight/female/chest/dips"
+          },
+          "equipment": "bodyweight",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_incline_bench_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/chest/barbell-incline-bench-press",
+            "female": "https://musclewiki.com/barbell/female/chest/barbell-incline-bench-press"
+          },
+          "equipment": "barbell",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "kettlebell_walkover_pushup",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/chest/kettlebell-walkover-pushup",
+            "female": "https://musclewiki.com/kettlebells/female/chest/kettlebell-walkover-pushup"
+          },
+          "equipment": "kettlebells",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_hooklying_bench_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/chest/barbell-hooklying-bench-press",
+            "female": "https://musclewiki.com/barbell/female/chest/barbell-hooklying-bench-press"
+          },
+          "equipment": "barbell",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_spoto_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/chest/barbell-spoto-press",
+            "female": "https://musclewiki.com/barbell/female/chest/barbell-spoto-press"
+          },
+          "equipment": "barbell",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_decline_alternating_single_arm_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-decline-alternating-single-arm-press",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-decline-alternating-single-arm-press"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_decline_single_arm_bench_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-decline-single-arm-bench-press",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-decline-single-arm-bench-press"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_decline_squeeze_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-decline-squeeze-press",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-decline-squeeze-press"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_single_arm_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-single-arm-press",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-single-arm-press"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "burpee",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/chest/burpee",
+            "female": "https://musclewiki.com/bodyweight/female/chest/burpee"
+          },
+          "equipment": "bodyweight",
+          "difficulty": "intermediate",
+          "muscle_group": "upper body"
         }
       ],
-      "intermediate": [],
-      "advanced": []
+      "advanced": [
+        {
+          "name": "cable_twisting_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/cables/male/biceps/cable-twisting-curl",
+            "female": "https://musclewiki.com/cables/female/biceps/cable-twisting-curl"
+          },
+          "equipment": "cables",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_reverse_curl",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-reverse-curl",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-reverse-curl"
+          },
+          "equipment": "barbell",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "plate_curl_to_overhead_press_to_tricep_extension",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/biceps/plate-curl-to-overhead-press-to-tricep-extension",
+            "female": "https://musclewiki.com/plate/female/biceps/plate-curl-to-overhead-press-to-tricep-extension"
+          },
+          "equipment": "plate",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_long_landmine_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-long-landmine-row",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-long-landmine-row"
+          },
+          "equipment": "barbell",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_pronated_pendlay_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-pronated-pendlay-row",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-pronated-pendlay-row"
+          },
+          "equipment": "barbell",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_supinated_pendlay_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-supinated-pendlay-row",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-supinated-pendlay-row"
+          },
+          "equipment": "barbell",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_supinated_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-supinated-row",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-supinated-row"
+          },
+          "equipment": "barbell",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_alternating_pendlay_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-alternating-pendlay-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-alternating-pendlay-row"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_floor_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/chest/barbell-floor-press",
+            "female": "https://musclewiki.com/barbell/female/chest/barbell-floor-press"
+          },
+          "equipment": "barbell",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_larsen_bench_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/chest/barbell-larsen-bench-press",
+            "female": "https://musclewiki.com/barbell/female/chest/barbell-larsen-bench-press"
+          },
+          "equipment": "barbell",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_decline_guillotine_bench_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-decline-guillotine-bench-press",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-decline-guillotine-bench-press"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_guillotine_bench_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "/dumbbells/male/chest/dumbbell-guillotine-bench-press",
+            "female": ""
+          },
+          "equipment": "dumbbells",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_guillotine_incline_bench_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "/dumbbells/male/chest/dumbbell-guillotine-incline-bench-press",
+            "female": ""
+          },
+          "equipment": "dumbbells",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_internally_rotated_chest_fly",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-internally-rotated-chest-fly",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-internally-rotated-chest-fly"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_internally_rotated_incline_chest_fly",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-internally-rotated-incline-chest-fly",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-internally-rotated-incline-chest-fly"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "plate_deficit_pushup",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/chest/plate-deficit-pushup",
+            "female": "https://musclewiki.com/plate/female/chest/plate-deficit-pushup"
+          },
+          "equipment": "plate",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "plate_overhead_shrug",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/traps/plate-overhead-shrug",
+            "female": "https://musclewiki.com/plate/female/traps/plate-overhead-shrug"
+          },
+          "equipment": "plate",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "cable_upright_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/cables/male/traps/cable-upright-row",
+            "female": "https://musclewiki.com/cables/female/traps/cable-upright-row"
+          },
+          "equipment": "cables",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "band_horizontal_shrug",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/band/male/traps/band-horizontal-shrug",
+            "female": "https://musclewiki.com/band/female/traps/band-horizontal-shrug"
+          },
+          "equipment": "band",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_upright_row",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/traps/barbell-upright-row",
+            "female": "https://musclewiki.com/barbell/female/traps/barbell-upright-row"
+          },
+          "equipment": "barbell",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_z_press",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/traps/barbell-z-press",
+            "female": "https://musclewiki.com/barbell/female/traps/barbell-z-press"
+          },
+          "equipment": "barbell",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dips_narrow_elbows",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/triceps/dips-narrow-elbows",
+            "female": "https://musclewiki.com/bodyweight/female/triceps/dips-narrow-elbows"
+          },
+          "equipment": "bodyweight",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "kettlebell_skull_crusher",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/triceps/kettlebell-skull-crusher",
+            "female": "https://musclewiki.com/kettlebells/female/triceps/kettlebell-skull-crusher"
+          },
+          "equipment": "kettlebells",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "kettlebell_decline_skull_crusher",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/triceps/kettlebell-decline-skull-crusher",
+            "female": "https://musclewiki.com/kettlebells/female/triceps/kettlebell-decline-skull-crusher"
+          },
+          "equipment": "kettlebells",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "cable_cross_pushdown",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/cables/male/triceps/cable-cross-pushdown",
+            "female": "https://musclewiki.com/cables/female/triceps/cable-cross-pushdown"
+          },
+          "equipment": "cables",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "band_overhead_tricep_extension",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/band/male/triceps/band-overhead-tricep-extension",
+            "female": "https://musclewiki.com/band/female/triceps/band-overhead-tricep-extension"
+          },
+          "equipment": "band",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "band_skullcrusher",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/band/male/triceps/band-skullcrusher",
+            "female": "https://musclewiki.com/band/female/triceps/band-skullcrusher"
+          },
+          "equipment": "band",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "barbell_overhead_tricep_extension",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/triceps/barbell-overhead-tricep-extension",
+            "female": "https://musclewiki.com/barbell/female/triceps/barbell-overhead-tricep-extension"
+          },
+          "equipment": "barbell",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "dumbbell_rolling_tricep_extension",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/triceps/dumbbell-rolling-tricep-extension",
+            "female": "https://musclewiki.com/dumbbells/female/triceps/dumbbell-rolling-tricep-extension"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        },
+        {
+          "name": "plate_curl_to_overhead_press_to_tricep_extension",
+          "description": "",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/biceps/plate-curl-to-overhead-press-to-tricep-extension",
+            "female": "https://musclewiki.com/plate/female/biceps/plate-curl-to-overhead-press-to-tricep-extension"
+          },
+          "equipment": "plate",
+          "difficulty": "advanced",
+          "muscle_group": "upper body"
+        }
+      ]
     },
     "lower body": {
       "beginner": [
