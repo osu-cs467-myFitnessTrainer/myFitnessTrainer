@@ -4,7 +4,7 @@
       "beginner": [
         {
           "name": "barbell_curl",
-          "description": "",
+          "description": "Barbell curls are a weightlifting exercise that primarily target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/biceps/barbell-curl",
@@ -16,7 +16,7 @@
         },
         {
           "name": "dumbbell_curl",
-          "description": "",
+          "description": "dumbell curls are a weightlifting exercise that primarily target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-curl",
@@ -28,7 +28,7 @@
         },
         {
           "name": "dumbbell_hammer_curl",
-          "description": "",
+          "description": "Dumbbell hammer curls are a weightlifting exercise that target the biceps and brachioradialis muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-hammer-curl",
@@ -40,7 +40,7 @@
         },
         {
           "name": "kettlebell_goblet_curl",
-          "description": "",
+          "description": "Kettlebell goblet curls are a variation of the traditional biceps curl that involves using a kettlebell.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/kettlebells/male/biceps/kettlebell-goblet-curl",
@@ -52,7 +52,7 @@
         },
         {
           "name": "kettlebell_single_arm_curl",
-          "description": "",
+          "description": "Kettlebell single-arm curls are a variation of the traditional biceps curl that involve using a kettlebell with one hand.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/kettlebells/male/biceps/kettlebell-single-arm-curl",
@@ -64,7 +64,7 @@
         },
         {
           "name": "cable_bayesian_curl",
-          "description": "",
+          "description": "Cable curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/cables/male/biceps/cable-bayesian-curl",
@@ -76,7 +76,7 @@
         },
         {
           "name": "cable_hammer_curl",
-          "description": "",
+          "description": "Cable hammer curls are a weightlifting exercise that target the biceps and brachioradialis muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/cables/male/biceps/cable-hammer-curl",
@@ -88,7 +88,7 @@
         },
         {
           "name": "band_bayesian_curl",
-          "description": "",
+          "description": "Band curls are a resistance training exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/band/male/biceps/band-bayesian-curl",
@@ -112,7 +112,7 @@
         },
         {
           "name": "dumbbell_incline_reverse_curl",
-          "description": "",
+          "description": "Dumbbell incline hammer curls are a weightlifting exercise that target the biceps and brachioradialis muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-incline-reverse-curl",
@@ -124,7 +124,7 @@
         },
         {
           "name": "dumbbell_single_arm_preacher_curl",
-          "description": "",
+          "description": "Dumbbell single-arm preacher curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-single-arm-preacher-curl",
@@ -136,7 +136,7 @@
         },
         {
           "name": "dumbbell_single_arm_spider_curl",
-          "description": "",
+          "description": "Dumbbell single-arm spider curls are a weightlifting exercise that target the biceps muscles in the upper arms. ",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-single-arm-spider-curl",
@@ -148,7 +148,7 @@
         },
         {
           "name": "dumbbell_spider_curl",
-          "description": "",
+          "description": "Dumbbell spider curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-spider-curl",
@@ -160,7 +160,7 @@
         },
         {
           "name": "dumbbell_twisting_curl",
-          "description": "",
+          "description": "Dumbbell twisting curls are a weightlifting exercise that target the biceps muscles in the upper arms. ",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-twisting-curl",
@@ -172,7 +172,7 @@
         },
         {
           "name": "plate_bicep_curl",
-          "description": "",
+          "description": "Plate bicep curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/biceps/plate-bicep-curl",
@@ -184,7 +184,7 @@
         },
         {
           "name": "band_high_curl",
-          "description": "",
+          "description": "Band high curls are a resistance training exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/band/male/biceps/band-high-curl",
@@ -196,7 +196,7 @@
         },
         {
           "name": "band_high_hammer_curl",
-          "description": "",
+          "description": "Band high hammer curls are a resistance training exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/band/male/biceps/band-high-hammer-curl",
@@ -208,7 +208,7 @@
         },
         {
           "name": "band_curl",
-          "description": "",
+          "description": "Band curls are a resistance training exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/band/male/biceps/band-curl",
@@ -220,7 +220,7 @@
         },
         {
           "name": "dumbbell_concentration_curl",
-          "description": "",
+          "description": "Dumbbell concentration curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-concentration-curl",
@@ -232,7 +232,7 @@
         },
         {
           "name": "trx_curl",
-          "description": "",
+          "description": "TRX curls are a bodyweight exercise that target the biceps muscles in the upper arms. ",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/trx/male/biceps/trx-curl",
@@ -244,7 +244,7 @@
         },
         {
           "name": "trx_hammer_curl",
-          "description": "",
+          "description": "TRX hammer curls are a bodyweight exercise that target the biceps muscles in the upper arms. ",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/trx/male/biceps/trx-hammer-curl",
@@ -256,7 +256,7 @@
         },
         {
           "name": "band_kneeling_single_arm_pulldown",
-          "description": "",
+          "description": "Band kneeling single-arm pulldowns are a resistance training exercise that target the biceps and back muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/band/male/biceps/band-kneeling-single-arm-pulldown",
@@ -268,7 +268,7 @@
         },
         {
           "name": "barbell_pronated_row",
-          "description": "",
+          "description": "Barbell pronated rows, also known as barbell rows, are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and lower back muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/biceps/barbell-pronated-row",
@@ -280,7 +280,7 @@
         },
         {
           "name": "dumbbell_kneeling_single_arm_row",
-          "description": "",
+          "description": "Dumbbell kneeling single-arm rows are a weightlifting exercise that target the back muscles, particularly the lats and rhomboids.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-kneeling-single-arm-row",
@@ -292,7 +292,7 @@
         },
         {
           "name": "dumbbell_laying_incline_row",
-          "description": "",
+          "description": "Dumbbell lying incline rows are a weightlifting exercise that target the back muscles, particularly the upper and middle back muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-laying-incline-row",
@@ -304,7 +304,7 @@
         },
         {
           "name": "dumbbell_single_arm_row",
-          "description": "",
+          "description": "Dumbbell single-arm rows, also known as dumbbell rows, are a weightlifting exercise that target the back muscles, particularly the lats and rhomboids.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-single-arm-row",
@@ -316,7 +316,7 @@
         },
         {
           "name": "dumbbell_single_arm_row_knee",
-          "description": "",
+          "description": "Dumbbell single-arm rows with knee support, also known as kneeling single-arm rows, are a weightlifting exercise that target the back muscles, particularly the lats and rhomboids, while providing additional support to the lower back.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-single-arm-row-knee",
@@ -328,7 +328,7 @@
         },
         {
           "name": "dumbbell_supinated_row",
-          "description": "",
+          "description": "Dumbbell supinated rows, also known as dumbbell reverse grip rows, are a weightlifting exercise that target the back muscles, particularly the upper back muscles and biceps.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-supinated-row",
@@ -340,7 +340,7 @@
         },
         {
           "name": "trx_rotating_row",
-          "description": "",
+          "description": "TRX rotating rows are a bodyweight exercise that target the back muscles, particularly the upper and middle back muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/trx/male/biceps/trx-rotating-row",
@@ -352,7 +352,7 @@
         },
         {
           "name": "dumbbell_incline_bench_press",
-          "description": "",
+          "description": "Dumbbell incline bench press is a weightlifting exercise that targets the upper chest muscles, anterior deltoids, and triceps.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-incline-bench-press",
@@ -366,7 +366,7 @@
       "intermediate": [
         {
           "name": "kettlebell_concentration_curl",
-          "description": "",
+          "description": "Kettlebell concentration curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/kettlebells/male/biceps/kettlebell-concentration-curl",
@@ -378,7 +378,7 @@
         },
         {
           "name": "kettlebell_preacher_curl",
-          "description": "",
+          "description": "Kettlebell preacher curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/kettlebells/male/biceps/kettlebell-preacher-curl",
@@ -390,7 +390,7 @@
         },
         {
           "name": "cable_reverse_curl",
-          "description": "",
+          "description": "Cable reverse curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/cables/male/biceps/cable-reverse-curl",
@@ -402,7 +402,7 @@
         },
         {
           "name": "band_bayesian_hammer_curl",
-          "description": "",
+          "description": "Band hammer curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/band/male/biceps/band-bayesian-hammer-curl",
@@ -414,7 +414,7 @@
         },
         {
           "name": "band_bayesian_reverse_curl",
-          "description": "",
+          "description": "Band reverse curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/band/male/biceps/band-bayesian-reverse-curl",
@@ -426,7 +426,7 @@
         },
         {
           "name": "dumbbell_reverse_curl",
-          "description": "",
+          "description": "Dumbbell reverse curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-reverse-curl",
@@ -438,7 +438,7 @@
         },
         {
           "name": "dumbbell_incline_zottman_curl",
-          "description": "",
+          "description": "Dumbbell incline Zottman curls are a weightlifting exercise that target the biceps and forearms muscles. ",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-incline-zottman-curl",
@@ -450,7 +450,7 @@
         },
         {
           "name": "plate_curl_to_overhead_press",
-          "description": "",
+          "description": "Plate curl to overhead press is a compound weightlifting exercise that targets multiple muscle groups, including the biceps, shoulders, and triceps.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/biceps/plate-curl-to-overhead-press",
@@ -462,7 +462,7 @@
         },
         {
           "name": "plate_squat_hold_curl",
-          "description": "",
+          "description": "Plate squat hold curl is a compound weightlifting exercise that targets the lower body, biceps, and core muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/biceps/plate-squat-hold-curl",
@@ -474,7 +474,7 @@
         },
         {
           "name": "band_high_reverse_curl",
-          "description": "",
+          "description": "Band high reverse curls are a resistance band exercise that target the forearm muscles, particularly the brachioradialis.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/band/male/biceps/band-high-reverse-curl",
@@ -486,7 +486,7 @@
         },
         {
           "name": "band_reverse_curl",
-          "description": "",
+          "description": "Band reverse curls are a resistance band exercise that target the forearm muscles, particularly the brachioradialis.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/band/male/biceps/band-reverse-curl",
@@ -498,7 +498,7 @@
         },
         {
           "name": "trx_reverse_curl",
-          "description": "",
+          "description": "TRX reverse curls are a resistance band exercise that target the forearm muscles, particularly the brachioradialis. ",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/trx/male/biceps/trx-reverse-curl",
@@ -510,7 +510,7 @@
         },
         {
           "name": "barbell_landmine_row",
-          "description": "",
+          "description": "Barbell landmine rows are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and rear delts.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/biceps/barbell-landmine-row",
@@ -522,7 +522,7 @@
         },
         {
           "name": "chin_ups",
-          "description": "",
+          "description": "Chin-ups are a bodyweight exercise that target the upper back muscles, particularly the lats and biceps.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/biceps/chin-ups",
@@ -534,7 +534,7 @@
         },
         {
           "name": "barbell_meadows_row",
-          "description": "",
+          "description": "Barbell Meadows rows are a weightlifting exercise that target the upper back muscles, particularly the lats, rhomboids, and rear delts.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/biceps/barbell-meadows-row",
@@ -546,7 +546,7 @@
         },
         {
           "name": "dumbbell_pendlay_row",
-          "description": "",
+          "description": "Dumbbell Pendlay rows are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and rear delts.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-pendlay-row",
@@ -558,7 +558,7 @@
         },
         {
           "name": "plate_pinch_grip_row",
-          "description": "",
+          "description": "Plate pinch grip rows are a weightlifting exercise that target the back muscles, particularly the lats and rhomboids, as well as the forearm muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/biceps/plate-pinch-grip-row",
@@ -570,7 +570,7 @@
         },
         {
           "name": "lawnmower_row",
-          "description": "",
+          "description": "Lawnmower rows are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and rear delts.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/lawnmower-row",
@@ -582,7 +582,7 @@
         },
         {
           "name": "dumbbell_knee_lawnmower_row",
-          "description": "",
+          "description": "Dumbbell knee lawnmower rows are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and rear delts.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-knee-lawnmower-row",
@@ -594,7 +594,7 @@
         },
         {
           "name": "barbell_bench_press",
-          "description": "",
+          "description": "Barbell bench press is a weightlifting exercise that targets the chest, triceps, and shoulders.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/chest/barbell-bench-press",
@@ -606,7 +606,7 @@
         },
         {
           "name": "dips",
-          "description": "",
+          "description": "Dips are a bodyweight exercise that target the chest, triceps, and shoulders.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/chest/dips",
@@ -618,7 +618,7 @@
         },
         {
           "name": "barbell_incline_bench_press",
-          "description": "",
+          "description": "Barbell incline bench press is a weightlifting exercise that targets the upper portion of the chest, as well as the shoulders and triceps.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/chest/barbell-incline-bench-press",
@@ -630,7 +630,7 @@
         },
         {
           "name": "kettlebell_walkover_pushup",
-          "description": "",
+          "description": "Kettlebell walkover pushups are a challenging variation of the traditional pushup exercise that target the chest, triceps, and shoulders, as well as the core muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/kettlebells/male/chest/kettlebell-walkover-pushup",
@@ -642,7 +642,7 @@
         },
         {
           "name": "barbell_hooklying_bench_press",
-          "description": "",
+          "description": "The barbell hook-lying bench press is a variation of the bench press that targets the chest, triceps, and shoulders, and also engages the core and glute muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/chest/barbell-hooklying-bench-press",
@@ -654,7 +654,7 @@
         },
         {
           "name": "barbell_spoto_press",
-          "description": "",
+          "description": "The barbell spoto press is a variation of the bench press that targets the chest, triceps, and shoulders, and helps improve overall bench press form and technique.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/chest/barbell-spoto-press",
@@ -666,7 +666,7 @@
         },
         {
           "name": "dumbbell_decline_alternating_single_arm_press",
-          "description": "",
+          "description": "Dumbbell decline alternating single-arm press is a weightlifting exercise that targets the chest, shoulders, and triceps.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-decline-alternating-single-arm-press",
@@ -678,7 +678,7 @@
         },
         {
           "name": "dumbbell_decline_single_arm_bench_press",
-          "description": "",
+          "description": "The dumbbell decline single-arm bench press is a weightlifting exercise that primarily targets the chest muscles, with additional engagement of the shoulders and triceps.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-decline-single-arm-bench-press",
@@ -690,7 +690,7 @@
         },
         {
           "name": "dumbbell_decline_squeeze_press",
-          "description": "",
+          "description": "The dumbbell decline squeeze press is a variation of the dumbbell bench press that targets the chest muscles, with additional engagement of the triceps and shoulders.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-decline-squeeze-press",
@@ -702,7 +702,7 @@
         },
         {
           "name": "dumbbell_single_arm_press",
-          "description": "",
+          "description": "The dumbbell single-arm press is a weightlifting exercise that primarily targets the shoulder muscles, with additional engagement of the triceps and upper back muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-single-arm-press",
@@ -714,7 +714,7 @@
         },
         {
           "name": "burpee",
-          "description": "",
+          "description": "A burpee is a full-body exercise that combines multiple movements such as a squat, push-up, and jump.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/chest/burpee",
@@ -728,7 +728,7 @@
       "advanced": [
         {
           "name": "cable_twisting_curl",
-          "description": "",
+          "description": "The cable twisting curl is a biceps exercise that also engages the forearms and core muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/cables/male/biceps/cable-twisting-curl",
@@ -740,7 +740,7 @@
         },
         {
           "name": "barbell_reverse_curl",
-          "description": "",
+          "description": "The barbell reverse curl is a variation of the traditional barbell curl that primarily targets the forearm muscles, with additional engagement of the biceps.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/biceps/barbell-reverse-curl",
@@ -752,7 +752,7 @@
         },
         {
           "name": "plate_curl_to_overhead_press_to_tricep_extension",
-          "description": "",
+          "description": "The plate curl to overhead press to tricep extension is a compound exercise that targets the biceps, shoulders, and triceps.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/biceps/plate-curl-to-overhead-press-to-tricep-extension",
@@ -764,7 +764,7 @@
         },
         {
           "name": "barbell_long_landmine_row",
-          "description": "",
+          "description": "The barbell long landmine row is an upper back exercise that targets the lats, rhomboids, and rear deltoids.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/biceps/barbell-long-landmine-row",
@@ -776,7 +776,7 @@
         },
         {
           "name": "barbell_pronated_pendlay_row",
-          "description": "",
+          "description": "The barbell pronated Pendlay row is a compound exercise that primarily targets the upper back muscles, including the lats, rhomboids, and rear deltoids.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/biceps/barbell-pronated-pendlay-row",
@@ -788,7 +788,7 @@
         },
         {
           "name": "barbell_supinated_pendlay_row",
-          "description": "",
+          "description": "The barbell supinated Pendlay row is a compound exercise that primarily targets the upper back muscles, including the lats, rhomboids, and rear deltoids.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/biceps/barbell-supinated-pendlay-row",
@@ -800,7 +800,7 @@
         },
         {
           "name": "barbell_supinated_row",
-          "description": "",
+          "description": "The barbell supinated row is a compound exercise that primarily targets the upper back muscles, including the lats, rhomboids, and rear deltoids.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/biceps/barbell-supinated-row",
@@ -812,7 +812,7 @@
         },
         {
           "name": "dumbbell_alternating_pendlay_row",
-          "description": "",
+          "description": "The dumbbell alternating Pendlay row is a compound exercise that primarily targets the upper back muscles, including the lats, rhomboids, and rear deltoids.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-alternating-pendlay-row",
@@ -824,7 +824,7 @@
         },
         {
           "name": "barbell_floor_press",
-          "description": "",
+          "description": "The barbell floor press is a variation of the traditional bench press that is performed lying on the floor. It primarily targets the chest, triceps, and shoulders.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/chest/barbell-floor-press",
@@ -836,7 +836,7 @@
         },
         {
           "name": "barbell_larsen_bench_press",
-          "description": "",
+          "description": "The barbell Larsen press is a variation of the traditional bench press that targets the upper portion of the chest muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/chest/barbell-larsen-bench-press",
@@ -848,7 +848,7 @@
         },
         {
           "name": "dumbbell_decline_guillotine_bench_press",
-          "description": "",
+          "description": "The dumbbell decline guillotine bench press is a variation of the traditional bench press that targets the upper portion of the chest muscles",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-decline-guillotine-bench-press",
@@ -860,7 +860,7 @@
         },
         {
           "name": "dumbbell_guillotine_bench_press",
-          "description": "",
+          "description": "The dumbbell guillotine bench press is a variation of the traditional bench press that targets the upper portion of the chest muscles",
           "category": "strength",
           "video": {
             "male": "/dumbbells/male/chest/dumbbell-guillotine-bench-press",
@@ -872,7 +872,7 @@
         },
         {
           "name": "dumbbell_guillotine_incline_bench_press",
-          "description": "",
+          "description": "The dumbbell guillotine incline bench press is a variation of the traditional bench press that targets the upper portion of the chest muscles",
           "category": "strength",
           "video": {
             "male": "/dumbbells/male/chest/dumbbell-guillotine-incline-bench-press",
@@ -884,7 +884,7 @@
         },
         {
           "name": "dumbbell_internally_rotated_chest_fly",
-          "description": "",
+          "description": "The dumbbell internally rotated chest fly targets the pectoral muscles, primarily the lower and middle portions.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-internally-rotated-chest-fly",
@@ -896,7 +896,7 @@
         },
         {
           "name": "dumbbell_internally_rotated_incline_chest_fly",
-          "description": "",
+          "description": "The dumbbell internally rotated incline chest fly targets the pectoral muscles, primarily the lower and middle portions.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-internally-rotated-incline-chest-fly",
@@ -908,7 +908,7 @@
         },
         {
           "name": "plate_deficit_pushup",
-          "description": "",
+          "description": "A plate deficit pushup is a variation of the standard pushup exercise that involves elevating the hands on weight plates, making the exercise more challenging by increasing the range of motion and the activation of the chest and triceps muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/chest/plate-deficit-pushup",
@@ -920,7 +920,7 @@
         },
         {
           "name": "plate_overhead_shrug",
-          "description": "",
+          "description": "The plate overhead shrug is a shoulder exercise that primarily targets the upper trapezius muscle, along with other muscles of the shoulders and upper back.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/traps/plate-overhead-shrug",
@@ -932,7 +932,7 @@
         },
         {
           "name": "cable_upright_row",
-          "description": "",
+          "description": "Cable upright row is an exercise that targets the shoulders, specifically the upper trapezius muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/cables/male/traps/cable-upright-row",
@@ -944,7 +944,7 @@
         },
         {
           "name": "band_horizontal_shrug",
-          "description": "",
+          "description": "A band horizontal shrug is an exercise that targets the muscles in the upper back, primarily the trapezius and rhomboid muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/band/male/traps/band-horizontal-shrug",
@@ -956,7 +956,7 @@
         },
         {
           "name": "barbell_upright_row",
-          "description": "",
+          "description": "Barbell upright rows are a weightlifting exercise that targets the shoulders, upper back, and traps.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/traps/barbell-upright-row",
@@ -968,7 +968,7 @@
         },
         {
           "name": "barbell_z_press",
-          "description": "",
+          "description": "The barbell Z-press is an exercise that targets the shoulders and upper back.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/traps/barbell-z-press",
@@ -980,7 +980,7 @@
         },
         {
           "name": "dips_narrow_elbows",
-          "description": "",
+          "description": "Narrow elbow dips are similar to regular dips, except that the elbows are kept close to the body during the movement.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/triceps/dips-narrow-elbows",
@@ -992,7 +992,7 @@
         },
         {
           "name": "kettlebell_skull_crusher",
-          "description": "",
+          "description": "The kettlebell skull crusher is a triceps exercise that involves lying on a bench or the floor while holding a kettlebell with both hands.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/kettlebells/male/triceps/kettlebell-skull-crusher",
@@ -1004,7 +1004,7 @@
         },
         {
           "name": "kettlebell_decline_skull_crusher",
-          "description": "",
+          "description": "The kettlebell decline skull crusher is a triceps exercise that involves lying on a bench or the floor while holding a kettlebell with both hands",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/kettlebells/male/triceps/kettlebell-decline-skull-crusher",
@@ -1016,7 +1016,7 @@
         },
         {
           "name": "cable_cross_pushdown",
-          "description": "",
+          "description": "Cable cross pushdown is an exercise that primarily targets the triceps muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/cables/male/triceps/cable-cross-pushdown",
@@ -1028,7 +1028,7 @@
         },
         {
           "name": "band_overhead_tricep_extension",
-          "description": "",
+          "description": "Band overhead tricep extension is a resistance band exercise that targets the triceps muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/band/male/triceps/band-overhead-tricep-extension",
@@ -1040,7 +1040,7 @@
         },
         {
           "name": "band_skullcrusher",
-          "description": "",
+          "description": "A band skullcrusher is an exercise that targets the triceps using a resistance band.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/band/male/triceps/band-skullcrusher",
@@ -1052,7 +1052,7 @@
         },
         {
           "name": "barbell_overhead_tricep_extension",
-          "description": "",
+          "description": "Barbell overhead tricep extension, also known as barbell skull crushers or lying triceps extensions, is a weightlifting exercise that targets the triceps muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/triceps/barbell-overhead-tricep-extension",
@@ -1064,7 +1064,7 @@
         },
         {
           "name": "dumbbell_rolling_tricep_extension",
-          "description": "",
+          "description": "Dumbbell rolling tricep extension is an exercise that targets the triceps muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/triceps/dumbbell-rolling-tricep-extension",
@@ -1076,7 +1076,7 @@
         },
         {
           "name": "plate_curl_to_overhead_press_to_tricep_extension",
-          "description": "",
+          "description": "The plate curl to overhead press to tricep extension is an exercise that targets the upper portion of the chest muscles and the triceps muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/biceps/plate-curl-to-overhead-press-to-tricep-extension",
@@ -2180,56 +2180,8 @@
   "flexibility": {
     "beginner": [
       {
-        "name": "biceps_stretch_variation_five",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/stretches/male/biceps/biceps-stretch-variation-five",
-          "female": "https://musclewiki.com/stretches/female/biceps/biceps-stretch-variation-five"
-        },
-        "equipment": "stretches",
-        "difficulty": "beginner",
-        "muscle_group": "upper body"
-      },
-      {
-        "name": "biceps_stretch_variation_four",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/stretches/male/biceps/biceps-stretch-variation-four",
-          "female": "https://musclewiki.com/stretches/female/biceps/biceps-stretch-variation-four"
-        },
-        "equipment": "stretches",
-        "difficulty": "beginner",
-        "muscle_group": "upper body"
-      },
-      {
-        "name": "biceps_stretch_variation_three",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/stretches/male/biceps/biceps-stretch-variation-three",
-          "female": "https://musclewiki.com/stretches/female/biceps/biceps-stretch-variation-three"
-        },
-        "equipment": "stretches",
-        "difficulty": "beginner",
-        "muscle_group": "upper body"
-      },
-      {
-        "name": "biceps_stretch_variation_two",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/stretches/male/biceps/biceps-stretch-variation-two",
-          "female": "https://musclewiki.com/stretches/female/biceps/biceps-stretch-variation-two"
-        },
-        "equipment": "stretches",
-        "difficulty": "beginner",
-        "muscle_group": "upper body"
-      },
-      {
-        "name": "biceps_stretch_variation_one",
-        "description": "",
+        "name": "biceps_stretch",
+        "description": "The bicep stretch is a great way to improve flexibility, range of motion, arm strength, and reduce your risk of injury. Performing this stretch targets the biceps brachii (biceps)",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/stretches/male/biceps/biceps-stretch-variation-one",
@@ -2241,7 +2193,7 @@
       },
       {
         "name": "corpe_pose",
-        "description": "",
+        "description": "the Corpe Pose (Savasana) is a relaxation pose commonly practiced in yoga.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/biceps/corpe-pose",
@@ -2253,7 +2205,7 @@
       },
       {
         "name": "downward_dog",
-        "description": "",
+        "description": "Downward Dog, or Adho Mukha Svanasana in Sanskrit, is a yoga pose that strengthens and stretches the entire body.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/biceps/downward-dog",
@@ -2264,116 +2216,8 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "downward_dog_with_fingers_facing_feet",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/yoga/male/biceps/downward-dog-with-fingers-facing-feet",
-          "female": "https://musclewiki.com/yoga/female/biceps/downward-dog-with-fingers-facing-feet"
-        },
-        "equipment": "yoga",
-        "difficulty": "beginner",
-        "muscle_group": "upper body"
-      },
-      {
-        "name": "scorpion_twist_pose",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/yoga/male/biceps/scorpion-twist-pose",
-          "female": "https://musclewiki.com/yoga/female/biceps/scorpion-twist-pose"
-        },
-        "equipment": "yoga",
-        "difficulty": "beginner",
-        "muscle_group": "upper body"
-      },
-      {
-        "name": "seated_arm_stretch",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/yoga/male/biceps/seated-arm-stretch",
-          "female": "https://musclewiki.com/yoga/female/biceps/seated-arm-stretch"
-        },
-        "equipment": "yoga",
-        "difficulty": "beginner",
-        "muscle_group": "upper body"
-      },
-      {
-        "name": "chest_stretch_variation_four",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/stretches/male/chest/chest-stretch-variation-four",
-          "female": "https://musclewiki.com/stretches/female/chest/chest-stretch-variation-four"
-        },
-        "equipment": "stretches",
-        "difficulty": "beginner",
-        "muscle_group": "upper body"
-      },
-      {
-        "name": "chest_stretch_variation_three",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/stretches/male/chest/chest-stretch-variation-three",
-          "female": "https://musclewiki.com/stretches/female/chest/chest-stretch-variation-three"
-        },
-        "equipment": "stretches",
-        "difficulty": "beginner",
-        "muscle_group": "upper body"
-      },
-      {
-        "name": "chest_stretch_variation_two",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/stretches/male/chest/chest-stretch-variation-two",
-          "female": "https://musclewiki.com/stretches/female/chest/chest-stretch-variation-two"
-        },
-        "equipment": "stretches",
-        "difficulty": "beginner",
-        "muscle_group": "upper body"
-      },
-      {
-        "name": "chest_stretch_variation_one",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/stretches/male/chest/chest-stretch-variation-one",
-          "female": "https://musclewiki.com/stretches/female/chest/chest-stretch-variation-one"
-        },
-        "equipment": "stretches",
-        "difficulty": "beginner",
-        "muscle_group": "upper body"
-      },
-      {
-        "name": "yogi_arm_clock",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/yoga/male/chest/yogi-arm-clock",
-          "female": "https://musclewiki.com/yoga/female/chest/yogi-arm-clock"
-        },
-        "equipment": "yoga",
-        "difficulty": "beginner",
-        "muscle_group": "upper body"
-      },
-      {
-        "name": "mountain",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/yoga/male/chest/mountain",
-          "female": "https://musclewiki.com/yoga/female/chest/mountain"
-        },
-        "equipment": "yoga",
-        "difficulty": "beginner",
-        "muscle_group": "upper body"
-      },
-      {
         "name": "tree_pose",
-        "description": "",
+        "description": "Tree Pose, or Vriksasana in Sanskrit, is a yoga pose that helps to improve balance and stability. ",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/chest/tree-pose",
@@ -2385,7 +2229,7 @@
       },
       {
         "name": "warrior_one",
-        "description": "",
+        "description": "Warrior One Pose, or Virabhadrasana I in Sanskrit, is a yoga pose that strengthens and stretches the entire body, particularly the legs, hips, and core muscles.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/chest/warrior-one",
@@ -2397,7 +2241,7 @@
       },
       {
         "name": "warrior_two",
-        "description": "",
+        "description": "Warrior Two Pose, or Virabhadrasana II in Sanskrit, is a yoga pose that strengthens and stretches the legs, hips, and core muscles.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/chest/warrior-two",
@@ -2409,7 +2253,7 @@
       },
       {
         "name": "supported_matsyasana_pose",
-        "description": "",
+        "description": "Supported Matsyasana Pose, also known as Supported Fish Pose, is a restorative yoga pose that opens up the chest and the front of the neck, and helps to relieve tension in the upper back and shoulders.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/chest/supported-matsyasana-pose",
@@ -2420,44 +2264,8 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "quads_stretch_variation_four",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/stretches/male/quads/quads-stretch-variation-four",
-          "female": "https://musclewiki.com/stretches/female/quads/quads-stretch-variation-four"
-        },
-        "equipment": "stretches",
-        "difficulty": "beginner",
-        "muscle_group": "lower body"
-      },
-      {
-        "name": "quads_stretch_variation_three",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/stretches/male/quads/quads-stretch-variation-three",
-          "female": "https://musclewiki.com/stretches/female/quads/quads-stretch-variation-three"
-        },
-        "equipment": "stretches",
-        "difficulty": "beginner",
-        "muscle_group": "lower body"
-      },
-      {
-        "name": "quads_stretch_variation_two",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/stretches/male/quads/quads-stretch-variation-two",
-          "female": "https://musclewiki.com/stretches/female/quads/quads-stretch-variation-two"
-        },
-        "equipment": "stretches",
-        "difficulty": "beginner",
-        "muscle_group": "lower body"
-      },
-      {
-        "name": "quads_stretch_variation_one",
-        "description": "",
+        "name": "quads_stretch",
+        "description": "The quadriceps are four muscles located in the anterior, or front, part of your thigh. This muscle group acts to extend the leg and strengthen the knee. This stretch can help if you have tight quads.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/stretches/male/quads/quads-stretch-variation-one",
@@ -2469,7 +2277,7 @@
       },
       {
         "name": "crescent_moon_pose",
-        "description": "",
+        "description": "Crescent Moon Pose, or Anjaneyasana in Sanskrit, is a yoga pose that stretches the hips, thighs, and groin, and improves balance and stability.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/quads/crescent-moon-pose",
@@ -2481,7 +2289,7 @@
       },
       {
         "name": "crescent_moon_pose_quad_stretch_with_block",
-        "description": "",
+        "description": "Crescent Moon Pose, or Anjaneyasana in Sanskrit, is a yoga pose that stretches the hips, thighs, and groin, and improves balance and stability.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/quads/crescent-moon-pose-quad-stretch-with-block",
@@ -2493,7 +2301,7 @@
       },
       {
         "name": "runners_lunge",
-        "description": "",
+        "description": "Runner's Lunge Pose, or Anjaneyasana in Sanskrit, is a yoga pose that stretches the hips, thighs, and groin, and improves flexibility and balance.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/quads/runners-lunge",
@@ -2505,7 +2313,7 @@
       },
       {
         "name": "chair_pose",
-        "description": "",
+        "description": "Chair Pose, or Utkatasana in Sanskrit, is a yoga pose that strengthens the legs and core muscles, and improves balance and stability.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/quads/chair-pose",
@@ -2515,25 +2323,14 @@
         "difficulty": "beginner",
         "muscle_group": "lower body"
       },
+
       {
-        "name": "traps_stretch_variation_three",
-        "description": "",
+        "name": "traps_stretch",
+        "description": "The trapezios muscle is part of your shoulder girdle. It's responsible for moving and rotating your shoulder blade, stabilizing your arm, and extending your neck.",
         "category": "flexibility",
         "video": {
-          "male": "https://musclewiki.com/stretches/male/traps/traps-stretch-variation-three",
-          "female": "https://musclewiki.com/stretches/female/traps/traps-stretch-variation-three"
-        },
-        "equipment": "stretches",
-        "difficulty": "beginner",
-        "muscle_group": "upper body"
-      },
-      {
-        "name": "traps_stretch_variation_two",
-        "description": "",
-        "category": "flexibility",
-        "video": {
-          "male": "https://musclewiki.com/stretches/male/traps/traps-stretch-variation-two",
-          "female": "https://musclewiki.com/stretches/female/traps/traps-stretch-variation-two"
+          "male": "https://musclewiki.com/stretches/male/traps/traps-stretch-variation-one",
+          "female": "https://musclewiki.com/stretches/female/traps/traps-stretch-variation-one"
         },
         "equipment": "stretches",
         "difficulty": "beginner",
@@ -2543,7 +2340,7 @@
     "intermediate": [
       {
         "name": "bow_pose",
-        "description": "",
+        "description": "Bow Pose, or Dhanurasana in Sanskrit, is a yoga pose that strengthens the back muscles, stretches the front of the body, and improves posture.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/chest/bow-pose",
@@ -2555,7 +2352,7 @@
       },
       {
         "name": "crescent_moon_pose_quad_stretch",
-        "description": "",
+        "description": "A combinination of the Crescent Moon Pose and Quad Stretch to create a sequence that targets both the hips and the quadriceps.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/quads/crescent-moon-pose-quad-stretch",
@@ -2567,7 +2364,7 @@
       },
       {
         "name": "lord_of_the_dance",
-        "description": "",
+        "description": "Lord of the Dance Pose, or Natarajasana in Sanskrit, is a yoga pose that improves balance and concentration, stretches the thighs and hips, and strengthens the legs and ankles.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/quads/lord-of-the-dance",
@@ -2579,7 +2376,7 @@
       },
       {
         "name": "monkey_pose_with_blocks",
-        "description": "",
+        "description": "Monkey Pose, or Hanumanasana in Sanskrit, is an advanced yoga pose that requires flexibility in the hamstrings, hips, and groin.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/quads/monkey-pose-with-blocks",
@@ -2591,7 +2388,7 @@
       },
       {
         "name": "thread_the_needle_hip_over_knees",
-        "description": "",
+        "description": "Thread the Needle Pose with Hip Over Knees, also known as Eye of the Needle Pose, is a yoga pose that stretches the hips, glutes, and lower back.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/traps/thread-the-needle-hip-over-knees",
@@ -2603,7 +2400,7 @@
       },
       {
         "name": "gate_pose_rounding_spine_looking_up",
-        "description": "",
+        "description": "Gate Pose with Rounding Spine and Looking Up is not a standard variation of the Gate Pose, also known as Parighasana in Sanskrit.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/lats/gate-pose-rounding-spine-looking-up",
@@ -2615,7 +2412,7 @@
       },
       {
         "name": "warrior_three",
-        "description": "",
+        "description": "Warrior Three Pose, or Virabhadrasana III in Sanskrit, is a yoga pose that strengthens the legs, hips, and core muscles, improves balance and stability, and stretches the hamstrings and calves.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/hamstrings/warrior-three",
@@ -2627,7 +2424,7 @@
       },
       {
         "name": "restful_cow_face_pose_legs",
-        "description": "",
+        "description": "Restful Cow Face Pose with Legs, also known as Supta Gomukhasana in Sanskrit, is a restorative yoga pose that stretches the hips, thighs, and groin.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/glutes/restful-cow-face-pose-legs",
@@ -2639,7 +2436,7 @@
       },
       {
         "name": "cobra_pose",
-        "description": "",
+        "description": "Cobra Pose, or Bhujangasana in Sanskrit, is a yoga pose that strengthens the muscles of the back, arms, and shoulders, and improves spinal flexibility.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/abdominals/cobra-pose",
@@ -2651,7 +2448,7 @@
       },
       {
         "name": "revolved_side_angle_pose_with_prayer_hands",
-        "description": "",
+        "description": "Revolved Side Angle Pose with Prayer Hands, also known as Parivrtta Parsvakonasana in Sanskrit, is a yoga pose that strengthens the legs, hips, and core muscles, improves spinal flexibility, and stretches the chest and shoulders.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/traps_middle/revolved-side-angle-pose-with-prayer-hands",
@@ -2663,7 +2460,7 @@
       },
       {
         "name": "gate_pose_variation_arm_extended_on_side",
-        "description": "",
+        "description": "Gate Pose with Variation Arm Extended on Side, also known as Parighasana in Sanskrit, is a yoga pose that stretches the sides of the body, hips, and legs.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/obliques/gate-pose-variation-arm-extended-on-side",
@@ -2675,7 +2472,7 @@
       },
       {
         "name": "wild_thing_pose",
-        "description": "",
+        "description": "Wild Thing Pose, or Camatkarasana in Sanskrit, is a yoga pose that strengthens the arms, shoulders, chest, and back, improves spinal flexibility, and opens up the hips and chest.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/obliques/wild-thing-pose",
@@ -2689,7 +2486,7 @@
     "advanced": [
       {
         "name": "crow_pose",
-        "description": "",
+        "description": "Crow Pose, or Bakasana in Sanskrit, is an arm balance yoga pose that strengthens the arms, wrists, and core muscles, and improves balance and concentration.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/biceps/crow-pose",
@@ -2701,7 +2498,7 @@
       },
       {
         "name": "monkey_pose",
-        "description": "",
+        "description": "Monkey Pose is not a traditional yoga pose, but there is a pose called Hanumanasana or Monkey Pose, which is also known as the Monkey God Pose or the Split Pose.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/quads/monkey-pose",
@@ -2713,7 +2510,7 @@
       },
       {
         "name": "headstand",
-        "description": "",
+        "description": "Headstand Pose, or Sirsasana in Sanskrit, is an advanced yoga pose that strengthens the arms, shoulders, and core muscles, improves blood flow to the brain, and boosts energy and focus.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/shoulders/headstand",
@@ -2725,7 +2522,7 @@
       },
       {
         "name": "revolved_head_to_knee",
-        "description": "",
+        "description": "Revolved Head-to-Knee Pose, or Parivrtta Janu Sirsasana in Sanskrit, is a yoga pose that stretches the hamstrings, hips, and spine, and improves digestion.",
         "category": "flexibility",
         "video": {
           "male": "https://musclewiki.com/yoga/male/obliques/revolved-head-to-knee",
@@ -2741,7 +2538,7 @@
     "beginner": [
       {
         "name": "jumping jacks",
-        "description": "",
+        "description": "Jumping Jacks is an exercise that involves jumping while simultaneously spreading the legs and raising the arms above the head. It is a full-body workout that improves cardiovascular endurance and works the muscles in the legs, arms, and core.",
         "category": "cardio",
         "video": {},
         "equipment": "none",
@@ -2749,7 +2546,7 @@
       },
       {
         "name": "walk on treadmill",
-        "description": "",
+        "description": "A treadmill is a fitness machine that allows you to walk, jog, or run indoors while simulating the motion of walking or running outdoors. The machine typically has a conveyor belt that moves at varying speeds and inclines, allowing users to control the intensity and duration of their workouts. ",
         "category": "cardio",
         "video": {},
         "equipment": "treadmill",
@@ -2757,7 +2554,7 @@
       },
       {
         "name": "elliptical",
-        "description": "",
+        "description": "An elliptical machine, also known as a cross trainer, is a piece of fitness equipment that simulates the motion of running, walking, or stair climbing while putting less stress on the joints. It typically consists of two pedals that move in an elliptical pattern, and can be adjusted to simulate different levels of resistance and intensity.",
         "category": "cardio",
         "video": {},
         "equipment": "elliptical",
@@ -2765,7 +2562,7 @@
       },
       {
         "name": "stationary_bike",
-        "description": "",
+        "description": "A stationary bike, also known as an exercise bike, is a piece of fitness equipment that simulates the motion of riding a bicycle while staying in place. It typically consists of a seat, pedals, and handlebars, and can be adjusted to simulate different levels of resistance and intensity. Stationary bikes are popular in gyms and fitness centers, and can also be used at home for cardiovascular exercise and lower body conditioning.",
         "category": "cardio",
         "video": {},
         "equipment": "stationary_bike",
@@ -2775,7 +2572,7 @@
     "intermediate": [
       {
         "name": "burpees",
-        "description": "",
+        "description": "Burpees are a high-intensity exercise that involves a combination of strength and cardio movements. They are popular in fitness classes and workouts because they can be performed almost anywhere and require no equipment.",
         "category": "cardio",
         "video": {},
         "equipment": "none",
@@ -2783,7 +2580,7 @@
       },
       {
         "name": "jog on treadmill",
-        "description": "",
+        "description": "A treadmill is a fitness machine that allows you to walk, jog, or run indoors while simulating the motion of walking or running outdoors. The machine typically has a conveyor belt that moves at varying speeds and inclines, allowing users to control the intensity and duration of their workouts.",
         "category": "cardio",
         "video": {},
         "equipment": "treadmill",
@@ -2791,7 +2588,7 @@
       },
       {
         "name": "stair_climber",
-        "description": "",
+        "description": "A stair climber, also known as a stair stepper or step machine, is a fitness machine that simulates climbing stairs. It typically consists of a set of pedals or steps that move up and down, creating a repetitive motion similar to climbing stairs. Stair climbers provide a low-impact cardiovascular workout that targets the muscles in the lower body, including the quadriceps, hamstrings, calves, and glutes.",
         "category": "cardio",
         "video": {},
         "equipment": "stair_climber",
@@ -2801,7 +2598,7 @@
     "advanced": [
       {
         "name": "High intensity interval training on treadmill",
-        "description": "",
+        "description": "A treadmill is a fitness machine that allows you to walk, jog, or run indoors while simulating the motion of walking or running outdoors. The machine typically has a conveyor belt that moves at varying speeds and inclines, allowing users to control the intensity and duration of their workouts.",
         "category": "cardio",
         "video": {},
         "equipment": "treadmill",
