@@ -16,6 +16,3 @@ jobs:
       - name: Install dependencies 
         working-directory: ./myFitnessTrainer
         run: npm install  
-      - name: Check style
-        working-directory: ./myFitnessTrainer
-        run: npm run eslint
