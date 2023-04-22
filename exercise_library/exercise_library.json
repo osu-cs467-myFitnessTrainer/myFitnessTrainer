@@ -3,7 +3,7 @@
     "upper body": {
       "beginner": [
         {
-          "name": "barbell_curl",
+          "name": "barbell curl",
           "description": "Barbell curls are a weightlifting exercise that primarily target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -15,7 +15,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_curl",
+          "name": "dumbbell curl",
           "description": "dumbell curls are a weightlifting exercise that primarily target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -27,7 +27,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_hammer_curl",
+          "name": "dumbbell hammer curl",
           "description": "Dumbbell hammer curls are a weightlifting exercise that target the biceps and brachioradialis muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -39,7 +39,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "kettlebell_goblet_curl",
+          "name": "kettlebell goblet curl",
           "description": "Kettlebell goblet curls are a variation of the traditional biceps curl that involves using a kettlebell.",
           "category": "strength",
           "video": {
@@ -51,7 +51,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "kettlebell_single_arm_curl",
+          "name": "kettlebell single arm curl",
           "description": "Kettlebell single-arm curls are a variation of the traditional biceps curl that involve using a kettlebell with one hand.",
           "category": "strength",
           "video": {
@@ -63,7 +63,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "cable_bayesian_curl",
+          "name": "cable bayesian curl",
           "description": "Cable curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -75,7 +75,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "cable_hammer_curl",
+          "name": "cable hammer curl",
           "description": "Cable hammer curls are a weightlifting exercise that target the biceps and brachioradialis muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -87,7 +87,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "band_bayesian_curl",
+          "name": "band bayesian curl",
           "description": "Band curls are a resistance training exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -99,7 +99,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_incline_hammer_curl",
+          "name": "dumbbell incline hammer curl",
           "description": "Dumbbell incline hammer curl is a variation of the traditional hammer curl exercise that targets the biceps and forearms.",
           "category": "strength",
           "video": {
@@ -111,7 +111,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_incline_reverse_curl",
+          "name": "dumbbell incline reverse curl",
           "description": "Dumbbell incline hammer curls are a weightlifting exercise that target the biceps and brachioradialis muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -123,7 +123,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_single_arm_preacher_curl",
+          "name": "dumbbell single arm preacher curl",
           "description": "Dumbbell single-arm preacher curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -135,7 +135,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_single_arm_spider_curl",
+          "name": "dumbbell single arm spider curl",
           "description": "Dumbbell single-arm spider curls are a weightlifting exercise that target the biceps muscles in the upper arms. ",
           "category": "strength",
           "video": {
@@ -147,7 +147,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_spider_curl",
+          "name": "dumbbell spider curl",
           "description": "Dumbbell spider curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -159,7 +159,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_twisting_curl",
+          "name": "dumbbell twisting curl",
           "description": "Dumbbell twisting curls are a weightlifting exercise that target the biceps muscles in the upper arms. ",
           "category": "strength",
           "video": {
@@ -171,7 +171,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "plate_bicep_curl",
+          "name": "plate bicep curl",
           "description": "Plate bicep curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -183,7 +183,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "band_high_curl",
+          "name": "band high curl",
           "description": "Band high curls are a resistance training exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -195,7 +195,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "band_high_hammer_curl",
+          "name": "band high hammer curl",
           "description": "Band high hammer curls are a resistance training exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -207,7 +207,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "band_curl",
+          "name": "band curl",
           "description": "Band curls are a resistance training exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -219,7 +219,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_concentration_curl",
+          "name": "dumbbell concentration curl",
           "description": "Dumbbell concentration curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -231,7 +231,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "trx_curl",
+          "name": "trx curl",
           "description": "TRX curls are a bodyweight exercise that target the biceps muscles in the upper arms. ",
           "category": "strength",
           "video": {
@@ -243,7 +243,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "trx_hammer_curl",
+          "name": "trx hammer curl",
           "description": "TRX hammer curls are a bodyweight exercise that target the biceps muscles in the upper arms. ",
           "category": "strength",
           "video": {
@@ -255,7 +255,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "band_kneeling_single_arm_pulldown",
+          "name": "band kneeling single arm pulldown",
           "description": "Band kneeling single-arm pulldowns are a resistance training exercise that target the biceps and back muscles.",
           "category": "strength",
           "video": {
@@ -267,7 +267,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_pronated_row",
+          "name": "barbell pronated row",
           "description": "Barbell pronated rows, also known as barbell rows, are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and lower back muscles.",
           "category": "strength",
           "video": {
@@ -279,7 +279,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_kneeling_single_arm_row",
+          "name": "dumbbell kneeling single arm row",
           "description": "Dumbbell kneeling single-arm rows are a weightlifting exercise that target the back muscles, particularly the lats and rhomboids.",
           "category": "strength",
           "video": {
@@ -291,7 +291,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_laying_incline_row",
+          "name": "dumbbell laying incline row",
           "description": "Dumbbell lying incline rows are a weightlifting exercise that target the back muscles, particularly the upper and middle back muscles.",
           "category": "strength",
           "video": {
@@ -303,7 +303,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_single_arm_row",
+          "name": "dumbbell single arm row",
           "description": "Dumbbell single-arm rows, also known as dumbbell rows, are a weightlifting exercise that target the back muscles, particularly the lats and rhomboids.",
           "category": "strength",
           "video": {
@@ -315,7 +315,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_single_arm_row_knee",
+          "name": "dumbbell single arm row knee",
           "description": "Dumbbell single-arm rows with knee support, also known as kneeling single-arm rows, are a weightlifting exercise that target the back muscles, particularly the lats and rhomboids, while providing additional support to the lower back.",
           "category": "strength",
           "video": {
@@ -327,7 +327,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_supinated_row",
+          "name": "dumbbell supinated row",
           "description": "Dumbbell supinated rows, also known as dumbbell reverse grip rows, are a weightlifting exercise that target the back muscles, particularly the upper back muscles and biceps.",
           "category": "strength",
           "video": {
@@ -339,7 +339,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "trx_rotating_row",
+          "name": "trx rotating row",
           "description": "TRX rotating rows are a bodyweight exercise that target the back muscles, particularly the upper and middle back muscles.",
           "category": "strength",
           "video": {
@@ -351,7 +351,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_incline_bench_press",
+          "name": "dumbbell incline bench press",
           "description": "Dumbbell incline bench press is a weightlifting exercise that targets the upper chest muscles, anterior deltoids, and triceps.",
           "category": "strength",
           "video": {
@@ -365,7 +365,7 @@
       ],
       "intermediate": [
         {
-          "name": "kettlebell_concentration_curl",
+          "name": "kettlebell concentration curl",
           "description": "Kettlebell concentration curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -377,7 +377,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "kettlebell_preacher_curl",
+          "name": "kettlebell preacher curl",
           "description": "Kettlebell preacher curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -389,7 +389,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "cable_reverse_curl",
+          "name": "cable reverse curl",
           "description": "Cable reverse curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -401,7 +401,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "band_bayesian_hammer_curl",
+          "name": "band bayesian hammer curl",
           "description": "Band hammer curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -413,7 +413,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "band_bayesian_reverse_curl",
+          "name": "band bayesian reverse curl",
           "description": "Band reverse curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -425,7 +425,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_reverse_curl",
+          "name": "dumbbell reverse curl",
           "description": "Dumbbell reverse curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
           "category": "strength",
           "video": {
@@ -437,7 +437,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_incline_zottman_curl",
+          "name": "dumbbell incline zottman curl",
           "description": "Dumbbell incline Zottman curls are a weightlifting exercise that target the biceps and forearms muscles. ",
           "category": "strength",
           "video": {
@@ -449,7 +449,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "plate_curl_to_overhead_press",
+          "name": "plate curl to overhead press",
           "description": "Plate curl to overhead press is a compound weightlifting exercise that targets multiple muscle groups, including the biceps, shoulders, and triceps.",
           "category": "strength",
           "video": {
@@ -461,7 +461,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "plate_squat_hold_curl",
+          "name": "plate squat hold curl",
           "description": "Plate squat hold curl is a compound weightlifting exercise that targets the lower body, biceps, and core muscles.",
           "category": "strength",
           "video": {
@@ -473,7 +473,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "band_high_reverse_curl",
+          "name": "band high reverse curl",
           "description": "Band high reverse curls are a resistance band exercise that target the forearm muscles, particularly the brachioradialis.",
           "category": "strength",
           "video": {
@@ -485,7 +485,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "band_reverse_curl",
+          "name": "band reverse curl",
           "description": "Band reverse curls are a resistance band exercise that target the forearm muscles, particularly the brachioradialis.",
           "category": "strength",
           "video": {
@@ -497,7 +497,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "trx_reverse_curl",
+          "name": "trx reverse curl",
           "description": "TRX reverse curls are a resistance band exercise that target the forearm muscles, particularly the brachioradialis. ",
           "category": "strength",
           "video": {
@@ -509,7 +509,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_landmine_row",
+          "name": "barbell landmine row",
           "description": "Barbell landmine rows are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and rear delts.",
           "category": "strength",
           "video": {
@@ -521,7 +521,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "chin_ups",
+          "name": "chin ups",
           "description": "Chin-ups are a bodyweight exercise that target the upper back muscles, particularly the lats and biceps.",
           "category": "strength",
           "video": {
@@ -533,7 +533,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_meadows_row",
+          "name": "barbell meadows row",
           "description": "Barbell Meadows rows are a weightlifting exercise that target the upper back muscles, particularly the lats, rhomboids, and rear delts.",
           "category": "strength",
           "video": {
@@ -545,7 +545,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_pendlay_row",
+          "name": "dumbbell pendlay row",
           "description": "Dumbbell Pendlay rows are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and rear delts.",
           "category": "strength",
           "video": {
@@ -557,7 +557,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "plate_pinch_grip_row",
+          "name": "plate pinch grip row",
           "description": "Plate pinch grip rows are a weightlifting exercise that target the back muscles, particularly the lats and rhomboids, as well as the forearm muscles.",
           "category": "strength",
           "video": {
@@ -569,7 +569,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "lawnmower_row",
+          "name": "lawnmower row",
           "description": "Lawnmower rows are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and rear delts.",
           "category": "strength",
           "video": {
@@ -581,7 +581,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_knee_lawnmower_row",
+          "name": "dumbbell knee lawnmower row",
           "description": "Dumbbell knee lawnmower rows are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and rear delts.",
           "category": "strength",
           "video": {
@@ -593,7 +593,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_bench_press",
+          "name": "barbell bench press",
           "description": "Barbell bench press is a weightlifting exercise that targets the chest, triceps, and shoulders.",
           "category": "strength",
           "video": {
@@ -617,7 +617,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_incline_bench_press",
+          "name": "barbell incline bench press",
           "description": "Barbell incline bench press is a weightlifting exercise that targets the upper portion of the chest, as well as the shoulders and triceps.",
           "category": "strength",
           "video": {
@@ -629,7 +629,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "kettlebell_walkover_pushup",
+          "name": "kettlebell walkover pushup",
           "description": "Kettlebell walkover pushups are a challenging variation of the traditional pushup exercise that target the chest, triceps, and shoulders, as well as the core muscles.",
           "category": "strength",
           "video": {
@@ -641,7 +641,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_hooklying_bench_press",
+          "name": "barbell hooklying bench press",
           "description": "The barbell hook-lying bench press is a variation of the bench press that targets the chest, triceps, and shoulders, and also engages the core and glute muscles.",
           "category": "strength",
           "video": {
@@ -653,7 +653,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_spoto_press",
+          "name": "barbell spoto press",
           "description": "The barbell spoto press is a variation of the bench press that targets the chest, triceps, and shoulders, and helps improve overall bench press form and technique.",
           "category": "strength",
           "video": {
@@ -665,7 +665,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_decline_alternating_single_arm_press",
+          "name": "dumbbell decline alternating single arm press",
           "description": "Dumbbell decline alternating single-arm press is a weightlifting exercise that targets the chest, shoulders, and triceps.",
           "category": "strength",
           "video": {
@@ -677,7 +677,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_decline_single_arm_bench_press",
+          "name": "dumbbell decline single arm bench press",
           "description": "The dumbbell decline single-arm bench press is a weightlifting exercise that primarily targets the chest muscles, with additional engagement of the shoulders and triceps.",
           "category": "strength",
           "video": {
@@ -689,7 +689,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_decline_squeeze_press",
+          "name": "dumbbell decline squeeze press",
           "description": "The dumbbell decline squeeze press is a variation of the dumbbell bench press that targets the chest muscles, with additional engagement of the triceps and shoulders.",
           "category": "strength",
           "video": {
@@ -701,7 +701,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_single_arm_press",
+          "name": "dumbbell single arm press",
           "description": "The dumbbell single-arm press is a weightlifting exercise that primarily targets the shoulder muscles, with additional engagement of the triceps and upper back muscles.",
           "category": "strength",
           "video": {
@@ -727,7 +727,7 @@
       ],
       "advanced": [
         {
-          "name": "cable_twisting_curl",
+          "name": "cable twisting curl",
           "description": "The cable twisting curl is a biceps exercise that also engages the forearms and core muscles.",
           "category": "strength",
           "video": {
@@ -739,7 +739,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_reverse_curl",
+          "name": "barbell reverse curl",
           "description": "The barbell reverse curl is a variation of the traditional barbell curl that primarily targets the forearm muscles, with additional engagement of the biceps.",
           "category": "strength",
           "video": {
@@ -751,7 +751,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "plate_curl_to_overhead_press_to_tricep_extension",
+          "name": "plate curl to overhead press to tricep extension",
           "description": "The plate curl to overhead press to tricep extension is a compound exercise that targets the biceps, shoulders, and triceps.",
           "category": "strength",
           "video": {
@@ -763,7 +763,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_long_landmine_row",
+          "name": "barbell long landmine row",
           "description": "The barbell long landmine row is an upper back exercise that targets the lats, rhomboids, and rear deltoids.",
           "category": "strength",
           "video": {
@@ -775,7 +775,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_pronated_pendlay_row",
+          "name": "barbell pronated pendlay row",
           "description": "The barbell pronated Pendlay row is a compound exercise that primarily targets the upper back muscles, including the lats, rhomboids, and rear deltoids.",
           "category": "strength",
           "video": {
@@ -787,7 +787,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_supinated_pendlay_row",
+          "name": "barbell supinated pendlay row",
           "description": "The barbell supinated Pendlay row is a compound exercise that primarily targets the upper back muscles, including the lats, rhomboids, and rear deltoids.",
           "category": "strength",
           "video": {
@@ -799,7 +799,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_supinated_row",
+          "name": "barbell supinated row",
           "description": "The barbell supinated row is a compound exercise that primarily targets the upper back muscles, including the lats, rhomboids, and rear deltoids.",
           "category": "strength",
           "video": {
@@ -811,7 +811,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_alternating_pendlay_row",
+          "name": "dumbbell alternating pendlay row",
           "description": "The dumbbell alternating Pendlay row is a compound exercise that primarily targets the upper back muscles, including the lats, rhomboids, and rear deltoids.",
           "category": "strength",
           "video": {
@@ -823,7 +823,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_floor_press",
+          "name": "barbell floor press",
           "description": "The barbell floor press is a variation of the traditional bench press that is performed lying on the floor. It primarily targets the chest, triceps, and shoulders.",
           "category": "strength",
           "video": {
@@ -835,7 +835,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_larsen_bench_press",
+          "name": "barbell larsen bench press",
           "description": "The barbell Larsen press is a variation of the traditional bench press that targets the upper portion of the chest muscles.",
           "category": "strength",
           "video": {
@@ -847,7 +847,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_decline_guillotine_bench_press",
+          "name": "dumbbell decline guillotine bench press",
           "description": "The dumbbell decline guillotine bench press is a variation of the traditional bench press that targets the upper portion of the chest muscles",
           "category": "strength",
           "video": {
@@ -859,7 +859,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_guillotine_bench_press",
+          "name": "dumbbell guillotine bench press",
           "description": "The dumbbell guillotine bench press is a variation of the traditional bench press that targets the upper portion of the chest muscles",
           "category": "strength",
           "video": {
@@ -871,7 +871,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_guillotine_incline_bench_press",
+          "name": "dumbbell guillotine incline bench press",
           "description": "The dumbbell guillotine incline bench press is a variation of the traditional bench press that targets the upper portion of the chest muscles",
           "category": "strength",
           "video": {
@@ -883,7 +883,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_internally_rotated_chest_fly",
+          "name": "dumbbell internally rotated chest fly",
           "description": "The dumbbell internally rotated chest fly targets the pectoral muscles, primarily the lower and middle portions.",
           "category": "strength",
           "video": {
@@ -895,7 +895,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_internally_rotated_incline_chest_fly",
+          "name": "dumbbell internally rotated incline chest fly",
           "description": "The dumbbell internally rotated incline chest fly targets the pectoral muscles, primarily the lower and middle portions.",
           "category": "strength",
           "video": {
@@ -907,7 +907,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "plate_deficit_pushup",
+          "name": "plate deficit pushup",
           "description": "A plate deficit pushup is a variation of the standard pushup exercise that involves elevating the hands on weight plates, making the exercise more challenging by increasing the range of motion and the activation of the chest and triceps muscles.",
           "category": "strength",
           "video": {
@@ -919,7 +919,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "plate_overhead_shrug",
+          "name": "plate overhead shrug",
           "description": "The plate overhead shrug is a shoulder exercise that primarily targets the upper trapezius muscle, along with other muscles of the shoulders and upper back.",
           "category": "strength",
           "video": {
@@ -931,7 +931,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "cable_upright_row",
+          "name": "cable upright row",
           "description": "Cable upright row is an exercise that targets the shoulders, specifically the upper trapezius muscles.",
           "category": "strength",
           "video": {
@@ -943,7 +943,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "band_horizontal_shrug",
+          "name": "band horizontal shrug",
           "description": "A band horizontal shrug is an exercise that targets the muscles in the upper back, primarily the trapezius and rhomboid muscles.",
           "category": "strength",
           "video": {
@@ -955,7 +955,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_upright_row",
+          "name": "barbell upright row",
           "description": "Barbell upright rows are a weightlifting exercise that targets the shoulders, upper back, and traps.",
           "category": "strength",
           "video": {
@@ -967,7 +967,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_z_press",
+          "name": "barbell z press",
           "description": "The barbell Z-press is an exercise that targets the shoulders and upper back.",
           "category": "strength",
           "video": {
@@ -979,7 +979,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dips_narrow_elbows",
+          "name": "dips narrow elbows",
           "description": "Narrow elbow dips are similar to regular dips, except that the elbows are kept close to the body during the movement.",
           "category": "strength",
           "video": {
@@ -991,7 +991,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "kettlebell_skull_crusher",
+          "name": "kettlebell skull crusher",
           "description": "The kettlebell skull crusher is a triceps exercise that involves lying on a bench or the floor while holding a kettlebell with both hands.",
           "category": "strength",
           "video": {
@@ -1003,7 +1003,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "kettlebell_decline_skull_crusher",
+          "name": "kettlebell decline skull crusher",
           "description": "The kettlebell decline skull crusher is a triceps exercise that involves lying on a bench or the floor while holding a kettlebell with both hands",
           "category": "strength",
           "video": {
@@ -1015,7 +1015,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "cable_cross_pushdown",
+          "name": "cable cross pushdown",
           "description": "Cable cross pushdown is an exercise that primarily targets the triceps muscles.",
           "category": "strength",
           "video": {
@@ -1027,7 +1027,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "band_overhead_tricep_extension",
+          "name": "band overhead tricep extension",
           "description": "Band overhead tricep extension is a resistance band exercise that targets the triceps muscles.",
           "category": "strength",
           "video": {
@@ -1039,7 +1039,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "band_skullcrusher",
+          "name": "band skullcrusher",
           "description": "A band skullcrusher is an exercise that targets the triceps using a resistance band.",
           "category": "strength",
           "video": {
@@ -1051,7 +1051,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "barbell_overhead_tricep_extension",
+          "name": "barbell overhead tricep extension",
           "description": "Barbell overhead tricep extension, also known as barbell skull crushers or lying triceps extensions, is a weightlifting exercise that targets the triceps muscles.",
           "category": "strength",
           "video": {
@@ -1063,7 +1063,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "dumbbell_rolling_tricep_extension",
+          "name": "dumbbell rolling tricep extension",
           "description": "Dumbbell rolling tricep extension is an exercise that targets the triceps muscles.",
           "category": "strength",
           "video": {
@@ -1075,7 +1075,7 @@
           "muscle_group": "upper body"
         },
         {
-          "name": "plate_curl_to_overhead_press_to_tricep_extension",
+          "name": "plate curl to overhead press to tricep extension",
           "description": "The plate curl to overhead press to tricep extension is an exercise that targets the upper portion of the chest muscles and the triceps muscles.",
           "category": "strength",
           "video": {
@@ -1091,7 +1091,7 @@
     "lower body": {
       "beginner": [
         {
-          "name": "dumbbell_goblet_squat",
+          "name": "dumbbell goblet squat",
           "description": "Dumbbell goblet squat is a compound exercise that targets the lower body, primarily the quadriceps, hamstrings, and glutes.",
           "category": "strength",
           "video": {
@@ -1103,7 +1103,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "bulgarian_split_squat",
+          "name": "bulgarian split squat",
           "description": "Bulgarian split squat is a unilateral exercise that primarily targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1115,7 +1115,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "kettlebell_step_up",
+          "name": "kettlebell step up",
           "description": "The kettlebell step-up is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1127,7 +1127,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "kettlebell_goblet_squat",
+          "name": "kettlebell goblet squat",
           "description": "The kettlebell goblet squat is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1139,7 +1139,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "kettlebell_heels_up_goblet_squat",
+          "name": "kettlebell heels up goblet squat",
           "description": "The kettlebell heels up goblet squat is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1151,7 +1151,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "kettlebell_reverse_lunge",
+          "name": "kettlebell reverse lunge",
           "description": "The kettlebell reverse lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1163,7 +1163,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "kettlebell_forward_lunge",
+          "name": "kettlebell forward lunge",
           "description": "The kettlebell forward lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1175,7 +1175,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "kettlebell_lateral_lunge",
+          "name": "kettlebell lateral lunge",
           "description": "The kettlebell lateral lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1187,7 +1187,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "side_lunges",
+          "name": "side lunges",
           "description": "The kettlebell side lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1199,7 +1199,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "forward_lunges",
+          "name": "forward lunges",
           "description": "The forward lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings. ",
           "category": "strength",
           "video": {
@@ -1211,7 +1211,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "jump_squats",
+          "name": "jump squats",
           "description": "Jump squats are a plyometric exercise that primarily targets the quadriceps, glutes, and calves.",
           "category": "strength",
           "video": {
@@ -1223,7 +1223,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "bodyweight_squat",
+          "name": "bodyweight squat",
           "description": "Bodyweight squats are a plyometric exercise that primarily targets the quadriceps, glutes, and calves.",
           "category": "strength",
           "video": {
@@ -1235,7 +1235,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "cable_goblet_squat",
+          "name": "cable goblet squat",
           "description": "Cable goblet squats are a plyometric exercise that primarily targets the quadriceps, glutes, and calves.",
           "category": "strength",
           "video": {
@@ -1247,7 +1247,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "band_squat",
+          "name": "band squat",
           "description": "The band squat is a resistance exercise that targets the lower body, primarily the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1259,7 +1259,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_high_bar_squat",
+          "name": "barbell high bar squat",
           "description": "The barbell high bar squat is a resistance exercise that targets the lower body, primarily the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1271,7 +1271,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_step_up",
+          "name": "barbell step up",
           "description": "The barbell step-up is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1283,7 +1283,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "assisted_bulgarian_split_squat",
+          "name": "assisted bulgarian split squat",
           "description": "The assisted Bulgarian split squat is a variation of the Bulgarian split squat exercise that uses a support to help maintain balance.",
           "category": "strength",
           "video": {
@@ -1295,7 +1295,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "forward_lunge",
+          "name": "forward lunge",
           "description": "The forward lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings performed with ones own body weight.",
           "category": "strength",
           "video": {
@@ -1307,7 +1307,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "bodyweight_reverse_lunge",
+          "name": "bodyweight reverse lunge",
           "description": "The bodywieght reverse lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings performed with ones own body weight.",
           "category": "strength",
           "video": {
@@ -1319,7 +1319,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "split_squat",
+          "name": "split squat",
           "description": "The split squat is a unilateral lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1331,7 +1331,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_goblet_reverse_lunge",
+          "name": "dumbbell goblet reverse lunge",
           "description": "The dumbbell goblet reverse lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1343,7 +1343,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_reverse_lunge",
+          "name": "dumbbell reverse lunge",
           "description": "The dumbbell reverse lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1355,7 +1355,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_split_squat",
+          "name": "dumbbell split squat",
           "description": "The dumbbell split squat is a unilateral lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1367,7 +1367,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_goblet_pulse_squat",
+          "name": "dumbbell goblet pulse squat",
           "description": "The dumbbell goblet pulse squat is a unilateral lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -1379,7 +1379,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_heels_up_goblet_squat",
+          "name": "dumbbell heels up goblet squat",
           "description": "The dumbbell heels-up goblet squat is a lower body exercise that targets the quadriceps, glutes, and hamstrings, with added emphasis on the lower leg muscles.",
           "category": "strength",
           "video": {
@@ -1391,7 +1391,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_leg_extension",
+          "name": "dumbbell leg extension",
           "description": "The dumbbell leg extension is a beginner-level strength exercise that targets the quadriceps muscles of the lower body. This exercise involves extending the knees against resistance provided by a dumbbell held at the feet.",
           "category": "strength",
           "video": {
@@ -1403,7 +1403,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_sumo_squat",
+          "name": "dumbbell sumo squat",
           "description": "The dumbbell sumo squat is a lower body strength exercise that targets the quads, glutes, hamstrings, and calves.",
           "category": "strength",
           "video": {
@@ -1415,7 +1415,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "plate_lateral_lunge",
+          "name": "plate lateral lunge",
           "description": "The plate lateral lunge is a lower body strength exercise that targets the quads, glutes, hamstrings, and inner thighs.",
           "category": "strength",
           "video": {
@@ -1427,7 +1427,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "plate_forward_lunge",
+          "name": "plate forward lunge",
           "description": "The plate forward lunge is a lower body strength exercise that targets the quads, glutes, hamstrings, and inner thighs. ",
           "category": "strength",
           "video": {
@@ -1439,7 +1439,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "plate_reverse_lunge",
+          "name": "plate reverse lunge",
           "description": "The plate reverse lunge is a lower body strength exercise that targets the quads, glutes, hamstrings, and inner thighs. ",
           "category": "strength",
           "video": {
@@ -1453,7 +1453,7 @@
       ],
       "intermediate": [
         {
-          "name": "machine_leg_press",
+          "name": "machine leg press",
           "description": "The machine leg press is a strength exercise that targets the quads, glutes, hamstrings, and calves.",
           "category": "strength",
           "video": {
@@ -1465,7 +1465,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "machine_leg_extension",
+          "name": "machine leg extension",
           "description": "The machine leg extension is a strength exercise that targets the quads.",
           "category": "strength",
           "video": {
@@ -1477,7 +1477,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_curtsy_lunge",
+          "name": "barbell curtsy lunge",
           "description": "The barbell curtsy lunge is a strength exercise that targets the quads, glutes, and hamstrings. It is performed by stepping one leg behind the other in a curtsy-like motion while holding a barbell on the back of the shoulders, and then returning to a standing position. It is commonly used in gym workouts for lower body strength training.",
           "category": "strength",
           "video": {
@@ -1489,7 +1489,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_coan_deadlift",
+          "name": "barbell coan deadlift",
           "description": "The barbell Coan deadlift is a strength exercise that targets the lower back, glutes, and hamstrings. It is performed by lifting a barbell off the ground while maintaining a flat back and then returning it to the ground. It is named after powerlifter Ed Coan, who popularized the exercise as a means of improving his deadlift. It is commonly used in gym workouts for lower body strength training.",
           "category": "strength",
           "video": {
@@ -1501,7 +1501,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_pause_squat",
+          "name": "barbell pause squat",
           "description": "The barbell pause squat is a strength exercise that targets the quads, glutes, and hamstrings. It is performed by squatting down with a barbell on the back of the shoulders and pausing at the bottom of the movement for a specified amount of time before returning to a standing position. This exercise is commonly used to improve squat form and increase lower body strength.",
           "category": "strength",
           "video": {
@@ -1513,7 +1513,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_reverse_lunge",
+          "name": "barbell reverse lunge",
           "description": "The barbell reverse lunge is a strength exercise that targets the quads, glutes, and hamstrings. It is performed by stepping back with one leg and lowering the body until the knee of the back leg almost touches the ground while holding a barbell on the back of the shoulders. It is commonly used in gym workouts for lower body strength training.",
           "category": "strength",
           "video": {
@@ -1525,7 +1525,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_side_step_up",
+          "name": "barbell side step up",
           "description": "A compound exercise that targets the lower body muscles, including the quads, hamstrings, and glutes. It involves stepping up onto a bench or box with one foot while holding a barbell on the back of the shoulders.",
           "category": "strength",
           "video": {
@@ -1537,7 +1537,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_split_squat",
+          "name": "barbell split squat",
           "description": "A strength exercise that targets the quads, glutes, and hamstrings. It involves lunging forward with one leg while holding a barbell on the back of the shoulders.",
           "category": "strength",
           "video": {
@@ -1549,7 +1549,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_step_up_balance",
+          "name": "barbell step up balance",
           "description": "A strength exercise that targets the lower body muscles, including the quads, hamstrings, and glutes. It involves stepping up onto a bench or box with one foot while holding a barbell on the back of the shoulders and maintaining balance.",
           "category": "strength",
           "video": {
@@ -1561,7 +1561,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_tap_pause_squat",
+          "name": "barbell tap pause squat",
           "description": "A compound exercise that targets the lower body muscles, including the quads, hamstrings, and glutes. It involves squatting down with a barbell on the back of the shoulders and tapping the ground with one foot before standing back up.",
           "category": "strength",
           "video": {
@@ -1573,7 +1573,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "bulgarian_split_squat",
+          "name": "bulgarian split squat",
           "description": "The Bulgarian split squat is a unilateral exercise that targets the quadriceps, hamstrings, and glutes. It requires no equipment and can be done anywhere.",
           "category": "strength",
           "video": {
@@ -1585,7 +1585,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "curtsy_lunge",
+          "name": "curtsy lunge",
           "description": "The curtsy lunge is a lower body exercise that targets the quads, hamstrings, and glutes. It is a unilateral exercise that can be done with just your body weight or dumbbells.",
           "category": "strength",
           "video": {
@@ -1597,7 +1597,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "heels_up_squat",
+          "name": "heels up squat",
           "description": "The heels up squat is a variation of the traditional squat that places more emphasis on the quads. By raising your heels off the ground, you shift the weight forward and engage the quads more.",
           "category": "strength",
           "video": {
@@ -1609,7 +1609,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "lateral_lunge",
+          "name": "lateral lunge",
           "description": "The lateral lunge is a lower body exercise that targets the quads, hamstrings, and glutes. It is a unilateral exercise that can be done with just your body weight or dumbbells.",
           "category": "strength",
           "video": {
@@ -1621,7 +1621,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_goblet_split_squat",
+          "name": "dumbbell goblet split squat",
           "description": "The dumbbell goblet split squat is a unilateral leg exercise that targets the quads, glutes, and hamstrings. It is a variation of the traditional dumbbell split squat, but with the addition of holding the dumbbell in front of your chest like a goblet.",
           "category": "strength",
           "video": {
@@ -1633,7 +1633,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_lateral_lunge_reach",
+          "name": "dumbbell lateral lunge reach",
           "description": "The dumbbell lateral lunge reach is a lower body exercise that primarily targets the quads, glutes, and hamstrings. It also engages the core and improves balance and stability. To perform the exercise, stand with your feet shoulder-width apart and hold a dumbbell in each hand. Step your left foot out to the side and lunge to the left while reaching the dumbbells down towards your left foot. Keep your chest up and your back straight. Return to the starting position and repeat on the other side.",
           "category": "strength",
           "video": {
@@ -1645,7 +1645,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_front_rack_squat",
+          "name": "dumbbell front rack squat",
           "description": "The dumbbell front rack squat is a lower body exercise that primarily targets the quads, glutes, and hamstrings. It also engages the core and improves upper body strength and stability. To perform the exercise, hold a dumbbell in each hand and bring them up to shoulder height, resting them on the front of your shoulders. Stand with your feet shoulder-width apart and squat down, keeping your weight in your heels and your chest up. Return to the starting position and repeat.",
           "category": "strength",
           "video": {
@@ -1657,7 +1657,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_offset_squat",
+          "name": "dumbbell offset squat",
           "description": "The dumbbell offset squat is a lower body exercise that primarily targets the quads, glutes, and hamstrings. It also engages the core and improves balance and stability. To perform the exercise, hold a dumbbell in one hand and rest it on your shoulder. Stand with your feet shoulder-width apart and squat down, keeping your weight in your heels and your chest up. Return to the starting position and repeat on the other side.",
           "category": "strength",
           "video": {
@@ -1669,7 +1669,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_thruster",
+          "name": "dumbbell thruster",
           "description": "The dumbbell thruster is a full-body exercise that targets the legs, shoulders, and core. It involves holding a dumbbell in each hand, performing a squat, and then pushing the dumbbells overhead while straightening the legs. This exercise is great for improving overall strength and power.",
           "category": "strength",
           "video": {
@@ -1681,7 +1681,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "plate_squat",
+          "name": "plate squat",
           "description": "The plate squat is a lower body exercise that targets the quadriceps, hamstrings, and glutes. It involves holding a weight plate in front of your chest while performing a squat. This exercise is great for building lower body strength and improving squat form.",
           "category": "strength",
           "video": {
@@ -1693,7 +1693,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "plate_curtsy_lunge",
+          "name": "plate curtsy lunge",
           "description": "The plate curtsy lunge is a lower body exercise that targets the quadriceps, hamstrings, glutes, and inner thighs. It involves holding a weight plate at chest height and stepping back and across your body into a lunge position. This exercise is great for building lower body strength and improving balance.",
           "category": "strength",
           "video": {
@@ -1705,7 +1705,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "plate_overhead_squat",
+          "name": "plate overhead squat",
           "description": "The plate overhead squat is a strength exercise that targets the lower body. It involves holding a weighted plate above the head while performing a squat. This exercise can help improve lower body strength, stability, and mobility.",
           "category": "strength",
           "video": {
@@ -1716,9 +1716,8 @@
           "difficulty": "intermediate",
           "muscle_group": "lower body"
         },
-
         {
-          "name": "plate_overhead_walking_lunge",
+          "name": "plate overhead walking lunge",
           "description": "The plate overhead walking lunge is a strength exercise that targets the lower body. It involves holding a weighted plate above the head while performing walking lunges. This exercise can help improve lower body strength, stability, and balance.",
           "category": "strength",
           "video": {
@@ -1729,9 +1728,8 @@
           "difficulty": "intermediate",
           "muscle_group": "lower body"
         },
-
         {
-          "name": "plate_thruster",
+          "name": "plate thruster",
           "description": "The plate thruster is a strength exercise that targets the lower body and shoulders. It involves holding a weighted plate at shoulder height and performing a squat followed by an overhead press. This exercise can help improve lower body and shoulder strength, as well as overall conditioning.",
           "category": "strength",
           "video": {
@@ -1742,9 +1740,8 @@
           "difficulty": "intermediate",
           "muscle_group": "lower body"
         },
-
         {
-          "name": "trx_curtsy_lunge",
+          "name": "trx curtsy lunge",
           "description": "The TRX curtsy lunge is a strength exercise that targets the lower body and core. It involves stepping back into a curtsy lunge while holding onto TRX straps for stability. This exercise can help improve lower body strength, stability, and balance.",
           "category": "strength",
           "video": {
@@ -1758,7 +1755,7 @@
       ],
       "advanced": [
         {
-          "name": "barbell_squat",
+          "name": "barbell squat",
           "description": "The barbell squat is a compound exercise that targets the quadriceps, hamstrings, glutes, and lower back. It involves placing a barbell on the shoulders and squatting down until the thighs are parallel to the ground, then standing back up.",
           "category": "strength",
           "video": {
@@ -1770,7 +1767,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "cable_split_squat",
+          "name": "cable split squat",
           "description": "The cable split squat is a unilateral exercise that targets the quadriceps, hamstrings, and glutes. It involves stepping forward into a lunge position and then lowering the back knee towards the ground while keeping the front knee over the ankle, then pushing back up to the starting position.",
           "category": "strength",
           "video": {
@@ -1782,7 +1779,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "cable_standing_leg_extension",
+          "name": "cable standing leg extension",
           "description": "The cable standing leg extension is an isolation exercise that targets the quadriceps. It involves attaching a cable to a low pulley, standing facing away from the machine, and lifting the leg forward while keeping the knee straight.",
           "category": "strength",
           "video": {
@@ -1794,7 +1791,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "band_spanish_squat",
+          "name": "band spanish squat",
           "description": "The band spanish squat is a variation of the squat that targets the quadriceps, hamstrings, and glutes. It involves placing a resistance band around the thighs, stepping the feet shoulder-width apart, and squatting down while pushing the knees outwards against the band.",
           "category": "strength",
           "video": {
@@ -1806,7 +1803,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_goblet_bulgarian_split_squat",
+          "name": "dumbbell goblet bulgarian split squat",
           "description": "A Bulgarian split squat variation that involves holding a dumbbell vertically in front of your chest, while performing the exercise.",
           "category": "strength",
           "video": {
@@ -1818,7 +1815,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_bulgarian_split_squat",
+          "name": "barbell bulgarian split squat",
           "description": "A Bulgarian split squat variation that involves holding a barbell on your shoulders, while performing the exercise.",
           "category": "strength",
           "video": {
@@ -1830,7 +1827,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_front_squat_olympic",
+          "name": "barbell front squat olympic",
           "description": "A front squat variation that involves holding a barbell in the front rack position, with a clean grip.",
           "category": "strength",
           "video": {
@@ -1842,7 +1839,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_front_squat_bodybuilding",
+          "name": "barbell front squat bodybuilding",
           "description": "A front squat variation that involves holding a barbell in the front rack position, with a bodybuilding grip.",
           "category": "strength",
           "video": {
@@ -1854,7 +1851,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_low_bar_squat",
+          "name": "barbell low bar squat",
           "description": "A low bar squat variation that involves placing the barbell lower on your back, and leaning forward more than in a high bar squat.",
           "category": "strength",
           "video": {
@@ -1866,7 +1863,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_bulgarian_split_squat",
+          "name": "dumbbell bulgarian split squat",
           "description": "The dumbbell Bulgarian split squat is a unilateral lower body exercise that targets the quads, glutes, and hamstrings. To perform this exercise, you will need a pair of dumbbells and a bench or sturdy elevated surface.",
           "category": "strength",
           "video": {
@@ -1878,7 +1875,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_forward_lunge",
+          "name": "barbell forward lunge",
           "description": "The barbell forward lunge is a compound lower body exercise that targets the quads, glutes, and hamstrings. To perform this exercise, you will need a barbell and a squat rack.",
           "category": "strength",
           "video": {
@@ -1890,7 +1887,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_front_rack_step_up",
+          "name": "barbell front rack step up",
           "description": "The barbell front rack step-up is a unilateral lower body exercise that targets the quads, glutes, and hamstrings. To perform this exercise, you will need a barbell and a sturdy elevated surface.",
           "category": "strength",
           "video": {
@@ -1902,7 +1899,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_bulgarian_split_squat",
+          "name": "dumbbell bulgarian split squat",
           "description": "The dumbbell Bulgarian split squat is a single-leg strength exercise that targets the quads, glutes, and hamstrings. It involves stepping forward with one foot onto an elevated surface (such as a bench or step) and lowering the back knee towards the ground, while holding a dumbbell in each hand.",
           "category": "strength",
           "video": {
@@ -1914,7 +1911,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_forward_lunge",
+          "name": "barbell forward lunge",
           "description": "The barbell forward lunge is a lower body strength exercise that targets the quads, glutes, and hamstrings. It involves taking a step forward with one foot and lowering the back knee towards the ground, while holding a barbell across the shoulders.",
           "category": "strength",
           "video": {
@@ -1926,7 +1923,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_front_rack_step_up",
+          "name": "barbell front rack step up",
           "description": "The barbell front rack step-up is a single-leg strength exercise that targets the quads, glutes, and hamstrings. It involves stepping up onto an elevated surface (such as a bench or step) with one foot while holding a barbell across the front of the shoulders.",
           "category": "strength",
           "video": {
@@ -1938,7 +1935,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_heels_up_back_squat",
+          "name": "barbell heels up back squat",
           "description": "The barbell heels-up back squat is a variation of the traditional barbell back squat that requires the lifter to raise their heels off the ground. This variation shifts more of the load onto the quads and can be helpful for lifters with limited ankle mobility.",
           "category": "strength",
           "video": {
@@ -1950,7 +1947,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_reverse_deadlift",
+          "name": "barbell reverse deadlift",
           "description": "The barbell reverse deadlift is an advanced lower body exercise that primarily targets the quadriceps, glutes, and hamstrings. This exercise involves standing on a raised platform and performing a deadlift movement in reverse, pulling the barbell up towards the hips.",
           "category": "strength",
           "video": {
@@ -1962,7 +1959,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "bodyweight_reverse_step_up",
+          "name": "bodyweight reverse step up",
           "description": "The bodyweight reverse step up is an advanced lower body exercise that primarily targets the quadriceps, glutes, and hamstrings. This exercise involves stepping up onto a raised platform in reverse, with one leg at a time, while keeping the core engaged and maintaining balance.",
           "category": "strength",
           "video": {
@@ -1974,7 +1971,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_zercher_squat",
+          "name": "barbell zercher squat",
           "description": "The barbell zercher squat is an advanced lower body exercise that primarily targets the quadriceps, glutes, and hamstrings. This exercise involves holding a barbell in the crook of the elbows and performing a squat movement while maintaining an upright posture and engaging the core.",
           "category": "strength",
           "video": {
@@ -1986,7 +1983,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_goblet_curtsy_lunge",
+          "name": "dumbbell goblet curtsy lunge",
           "description": "The dumbbell goblet curtsy lunge is an advanced lower body exercise that primarily targets the quadriceps, glutes, and hamstrings. This exercise involves holding a dumbbell at chest level and stepping one foot behind and across the other leg, while bending both knees to lower the body and engage the muscles of the lower body.",
           "category": "strength",
           "video": {
@@ -1998,7 +1995,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_goblet_lateral_lunge",
+          "name": "dumbbell goblet lateral lunge",
           "description": "The dumbbell goblet lateral lunge is a great exercise for developing strength and flexibility in the lower body. Start by holding a dumbbell in front of your chest with both hands, and step laterally to one side, bending your knee and lowering your body until your thigh is parallel to the ground. Then push back up to the starting position and repeat on the other side. This exercise targets the quads, glutes, and hamstrings.",
           "category": "strength",
           "video": {
@@ -2010,7 +2007,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_front_rack_pause_squat",
+          "name": "dumbbell front rack pause squat",
           "description": "The dumbbell front rack pause squat is a challenging exercise that targets the quads, glutes, and hamstrings. Hold a pair of dumbbells at shoulder height with your elbows up and palms facing each other. Lower your body into a squat, pausing at the bottom for a few seconds before pushing back up to the starting position. Make sure to keep your chest up and your knees in line with your toes throughout the movement.",
           "category": "strength",
           "video": {
@@ -2022,7 +2019,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_heels_up_narrow_goblet_squat",
+          "name": "dumbbell heels up narrow goblet squat",
           "description": "The dumbbell heels up narrow goblet squat is a variation of the goblet squat that places more emphasis on the quads. Hold a dumbbell with both hands at chest height, and lift your heels off the ground. Lower your body into a squat, keeping your feet close together and your knees in line with your toes. Push back up to the starting position and repeat for several reps.",
           "category": "strength",
           "video": {
@@ -2034,7 +2031,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "single_arm_overhead_squat",
+          "name": "single arm overhead squat",
           "description": "The single arm overhead squat is an advanced lower body exercise that primarily targets the quads, while also engaging the core and upper body. To perform this exercise, stand with your feet shoulder-width apart, holding a dumbbell in one hand above your head. Slowly lower your body down into a squat position while keeping the weight above your head, then return to the starting position. Repeat for desired number of repetitions before switching sides.",
           "category": "strength",
           "video": {
@@ -2046,7 +2043,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "plate_single_leg_deadlift",
+          "name": "plate single leg deadlift",
           "description": "The plate single leg deadlift is an advanced lower body exercise that primarily targets the quads and hamstrings, while also engaging the core and glutes. To perform this exercise, stand with one foot on a weight plate and the other foot planted firmly on the ground. Hold a weight plate in front of your body with both hands. Slowly lower your body down into a deadlift position while keeping the weight plate close to your body, then return to the starting position. Repeat for desired number of repetitions before switching sides.",
           "category": "strength",
           "video": {
@@ -2058,7 +2055,7 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "kettlebell_single_leg_deadlift",
+          "name": "kettlebell single leg deadlift",
           "description": "The kettlebell single leg deadlift is an advanced lower body exercise that primarily targets the hamstrings and glutes, while also engaging the core and quads. To perform this exercise, stand with one foot planted firmly on the ground and hold a kettlebell in the opposite hand. Slowly lower your body down into a deadlift position while keeping the kettlebell close to your body, then return to the starting position. Repeat for desired number of repetitions before switching sides.",
           "category": "strength",
           "video": {
@@ -2075,7 +2072,7 @@
   "flexibility": {
     "beginner": [
       {
-        "name": "biceps_stretch",
+        "name": "biceps stretch",
         "description": "The bicep stretch is a great way to improve flexibility, range of motion, arm strength, and reduce your risk of injury. Performing this stretch targets the biceps brachii (biceps)",
         "category": "flexibility",
         "video": {
@@ -2087,7 +2084,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "corpe_pose",
+        "name": "corpe pose",
         "description": "the Corpe Pose (Savasana) is a relaxation pose commonly practiced in yoga.",
         "category": "flexibility",
         "video": {
@@ -2099,7 +2096,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "downward_dog",
+        "name": "downward dog",
         "description": "Downward Dog, or Adho Mukha Svanasana in Sanskrit, is a yoga pose that strengthens and stretches the entire body.",
         "category": "flexibility",
         "video": {
@@ -2111,7 +2108,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "tree_pose",
+        "name": "tree pose",
         "description": "Tree Pose, or Vriksasana in Sanskrit, is a yoga pose that helps to improve balance and stability. ",
         "category": "flexibility",
         "video": {
@@ -2123,7 +2120,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "warrior_one",
+        "name": "warrior one",
         "description": "Warrior One Pose, or Virabhadrasana I in Sanskrit, is a yoga pose that strengthens and stretches the entire body, particularly the legs, hips, and core muscles.",
         "category": "flexibility",
         "video": {
@@ -2135,7 +2132,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "warrior_two",
+        "name": "warrior two",
         "description": "Warrior Two Pose, or Virabhadrasana II in Sanskrit, is a yoga pose that strengthens and stretches the legs, hips, and core muscles.",
         "category": "flexibility",
         "video": {
@@ -2147,7 +2144,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "supported_matsyasana_pose",
+        "name": "supported matsyasana pose",
         "description": "Supported Matsyasana Pose, also known as Supported Fish Pose, is a restorative yoga pose that opens up the chest and the front of the neck, and helps to relieve tension in the upper back and shoulders.",
         "category": "flexibility",
         "video": {
@@ -2159,7 +2156,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "quads_stretch",
+        "name": "quads stretch",
         "description": "The quadriceps are four muscles located in the anterior, or front, part of your thigh. This muscle group acts to extend the leg and strengthen the knee. This stretch can help if you have tight quads.",
         "category": "flexibility",
         "video": {
@@ -2171,7 +2168,7 @@
         "muscle_group": "lower body"
       },
       {
-        "name": "crescent_moon_pose",
+        "name": "crescent moon pose",
         "description": "Crescent Moon Pose, or Anjaneyasana in Sanskrit, is a yoga pose that stretches the hips, thighs, and groin, and improves balance and stability.",
         "category": "flexibility",
         "video": {
@@ -2183,7 +2180,7 @@
         "muscle_group": "lower body"
       },
       {
-        "name": "crescent_moon_pose_quad_stretch_with_block",
+        "name": "crescent moon pose quad stretch with block",
         "description": "Crescent Moon Pose, or Anjaneyasana in Sanskrit, is a yoga pose that stretches the hips, thighs, and groin, and improves balance and stability.",
         "category": "flexibility",
         "video": {
@@ -2195,7 +2192,7 @@
         "muscle_group": "lower body"
       },
       {
-        "name": "runners_lunge",
+        "name": "runners lunge",
         "description": "Runner's Lunge Pose, or Anjaneyasana in Sanskrit, is a yoga pose that stretches the hips, thighs, and groin, and improves flexibility and balance.",
         "category": "flexibility",
         "video": {
@@ -2207,7 +2204,7 @@
         "muscle_group": "lower body"
       },
       {
-        "name": "chair_pose",
+        "name": "chair pose",
         "description": "Chair Pose, or Utkatasana in Sanskrit, is a yoga pose that strengthens the legs and core muscles, and improves balance and stability.",
         "category": "flexibility",
         "video": {
@@ -2218,9 +2215,8 @@
         "difficulty": "beginner",
         "muscle_group": "lower body"
       },
-
       {
-        "name": "traps_stretch",
+        "name": "traps stretch",
         "description": "The trapezios muscle is part of your shoulder girdle. It's responsible for moving and rotating your shoulder blade, stabilizing your arm, and extending your neck.",
         "category": "flexibility",
         "video": {
@@ -2234,7 +2230,7 @@
     ],
     "intermediate": [
       {
-        "name": "bow_pose",
+        "name": "bow pose",
         "description": "Bow Pose, or Dhanurasana in Sanskrit, is a yoga pose that strengthens the back muscles, stretches the front of the body, and improves posture.",
         "category": "flexibility",
         "video": {
@@ -2246,7 +2242,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "crescent_moon_pose_quad_stretch",
+        "name": "crescent moon pose quad stretch",
         "description": "A combinination of the Crescent Moon Pose and Quad Stretch to create a sequence that targets both the hips and the quadriceps.",
         "category": "flexibility",
         "video": {
@@ -2258,7 +2254,7 @@
         "muscle_group": "lower body"
       },
       {
-        "name": "lord_of_the_dance",
+        "name": "lord of the dance",
         "description": "Lord of the Dance Pose, or Natarajasana in Sanskrit, is a yoga pose that improves balance and concentration, stretches the thighs and hips, and strengthens the legs and ankles.",
         "category": "flexibility",
         "video": {
@@ -2270,7 +2266,7 @@
         "muscle_group": "lower body"
       },
       {
-        "name": "monkey_pose_with_blocks",
+        "name": "monkey pose with blocks",
         "description": "Monkey Pose, or Hanumanasana in Sanskrit, is an advanced yoga pose that requires flexibility in the hamstrings, hips, and groin.",
         "category": "flexibility",
         "video": {
@@ -2282,7 +2278,7 @@
         "muscle_group": "lower body"
       },
       {
-        "name": "thread_the_needle_hip_over_knees",
+        "name": "thread the needle hip over knees",
         "description": "Thread the Needle Pose with Hip Over Knees, also known as Eye of the Needle Pose, is a yoga pose that stretches the hips, glutes, and lower back.",
         "category": "flexibility",
         "video": {
@@ -2294,7 +2290,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "gate_pose_rounding_spine_looking_up",
+        "name": "gate pose rounding spine looking up",
         "description": "Gate Pose with Rounding Spine and Looking Up is not a standard variation of the Gate Pose, also known as Parighasana in Sanskrit.",
         "category": "flexibility",
         "video": {
@@ -2306,7 +2302,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "warrior_three",
+        "name": "warrior three",
         "description": "Warrior Three Pose, or Virabhadrasana III in Sanskrit, is a yoga pose that strengthens the legs, hips, and core muscles, improves balance and stability, and stretches the hamstrings and calves.",
         "category": "flexibility",
         "video": {
@@ -2318,7 +2314,7 @@
         "muscle_group": "lower body"
       },
       {
-        "name": "restful_cow_face_pose_legs",
+        "name": "restful cow face pose legs",
         "description": "Restful Cow Face Pose with Legs, also known as Supta Gomukhasana in Sanskrit, is a restorative yoga pose that stretches the hips, thighs, and groin.",
         "category": "flexibility",
         "video": {
@@ -2330,7 +2326,7 @@
         "muscle_group": "lower body"
       },
       {
-        "name": "cobra_pose",
+        "name": "cobra pose",
         "description": "Cobra Pose, or Bhujangasana in Sanskrit, is a yoga pose that strengthens the muscles of the back, arms, and shoulders, and improves spinal flexibility.",
         "category": "flexibility",
         "video": {
@@ -2342,7 +2338,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "revolved_side_angle_pose_with_prayer_hands",
+        "name": "revolved side angle pose with prayer hands",
         "description": "Revolved Side Angle Pose with Prayer Hands, also known as Parivrtta Parsvakonasana in Sanskrit, is a yoga pose that strengthens the legs, hips, and core muscles, improves spinal flexibility, and stretches the chest and shoulders.",
         "category": "flexibility",
         "video": {
@@ -2354,7 +2350,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "gate_pose_variation_arm_extended_on_side",
+        "name": "gate pose variation arm extended on side",
         "description": "Gate Pose with Variation Arm Extended on Side, also known as Parighasana in Sanskrit, is a yoga pose that stretches the sides of the body, hips, and legs.",
         "category": "flexibility",
         "video": {
@@ -2366,7 +2362,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "wild_thing_pose",
+        "name": "wild thing pose",
         "description": "Wild Thing Pose, or Camatkarasana in Sanskrit, is a yoga pose that strengthens the arms, shoulders, chest, and back, improves spinal flexibility, and opens up the hips and chest.",
         "category": "flexibility",
         "video": {
@@ -2380,7 +2376,7 @@
     ],
     "advanced": [
       {
-        "name": "crow_pose",
+        "name": "crow pose",
         "description": "Crow Pose, or Bakasana in Sanskrit, is an arm balance yoga pose that strengthens the arms, wrists, and core muscles, and improves balance and concentration.",
         "category": "flexibility",
         "video": {
@@ -2392,7 +2388,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "monkey_pose",
+        "name": "monkey pose",
         "description": "Monkey Pose is not a traditional yoga pose, but there is a pose called Hanumanasana or Monkey Pose, which is also known as the Monkey God Pose or the Split Pose.",
         "category": "flexibility",
         "video": {
@@ -2416,7 +2412,7 @@
         "muscle_group": "upper body"
       },
       {
-        "name": "revolved_head_to_knee",
+        "name": "revolved head to knee",
         "description": "Revolved Head-to-Knee Pose, or Parivrtta Janu Sirsasana in Sanskrit, is a yoga pose that stretches the hamstrings, hips, and spine, and improves digestion.",
         "category": "flexibility",
         "video": {
@@ -2456,7 +2452,7 @@
         "difficulty": "beginner"
       },
       {
-        "name": "stationary_bike",
+        "name": "stationary bike",
         "description": "A stationary bike, also known as an exercise bike, is a piece of fitness equipment that simulates the motion of riding a bicycle while staying in place. It typically consists of a seat, pedals, and handlebars, and can be adjusted to simulate different levels of resistance and intensity. Stationary bikes are popular in gyms and fitness centers, and can also be used at home for cardiovascular exercise and lower body conditioning.",
         "category": "cardio",
         "video": {},
@@ -2482,7 +2478,7 @@
         "difficulty": "intermediate"
       },
       {
-        "name": "stair_climber",
+        "name": "stair climber",
         "description": "A stair climber, also known as a stair stepper or step machine, is a fitness machine that simulates climbing stairs. It typically consists of a set of pedals or steps that move up and down, creating a repetitive motion similar to climbing stairs. Stair climbers provide a low-impact cardiovascular workout that targets the muscles in the lower body, including the quadriceps, hamstrings, calves, and glutes.",
         "category": "cardio",
         "video": {},
