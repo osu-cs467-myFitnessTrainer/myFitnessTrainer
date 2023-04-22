@@ -1,6 +1,4 @@
 name: Deployment pipeline
-run: |
-   cd myFitnessTrainer
 
 on:
   push:
@@ -16,4 +14,5 @@ jobs:
         with:
           node-version: '16'
       - name: Install dependencies 
+        working-directory: ./myFitnessTrainer
         run: npm install  
