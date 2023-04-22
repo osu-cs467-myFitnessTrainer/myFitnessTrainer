@@ -100,7 +100,7 @@
         },
         {
           "name": "dumbbell_incline_hammer_curl",
-          "description": "",
+          "description": "Dumbbell incline hammer curl is a variation of the traditional hammer curl exercise that targets the biceps and forearms.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-incline-hammer-curl",
@@ -1092,7 +1092,7 @@
       "beginner": [
         {
           "name": "dumbbell_goblet_squat",
-          "description": "",
+          "description": "Dumbbell goblet squat is a compound exercise that targets the lower body, primarily the quadriceps, hamstrings, and glutes.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-squat",
@@ -1104,7 +1104,7 @@
         },
         {
           "name": "bulgarian_split_squat",
-          "description": "",
+          "description": "Bulgarian split squat is a unilateral exercise that primarily targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/quads/bulgarian-split-squat",
@@ -1116,7 +1116,7 @@
         },
         {
           "name": "kettlebell_step_up",
-          "description": "",
+          "description": "The kettlebell step-up is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/kettlebells/male/quads/kettlebell-step-up",
@@ -1128,7 +1128,7 @@
         },
         {
           "name": "kettlebell_goblet_squat",
-          "description": "",
+          "description": "The kettlebell goblet squat is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/kettlebells/male/quads/kettlebell-goblet-squat",
@@ -1140,7 +1140,7 @@
         },
         {
           "name": "kettlebell_heels_up_goblet_squat",
-          "description": "",
+          "description": "The kettlebell heels up goblet squat is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/kettlebells/male/quads/kettlebell-heels-up-goblet-squat",
@@ -1152,7 +1152,7 @@
         },
         {
           "name": "kettlebell_reverse_lunge",
-          "description": "",
+          "description": "The kettlebell reverse lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/kettlebells/male/quads/kettlebell-reverse-lunge",
@@ -1164,7 +1164,7 @@
         },
         {
           "name": "kettlebell_forward_lunge",
-          "description": "",
+          "description": "The kettlebell forward lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/kettlebells/male/quads/kettlebell-forward-lunge",
@@ -1176,7 +1176,7 @@
         },
         {
           "name": "kettlebell_lateral_lunge",
-          "description": "",
+          "description": "The kettlebell lateral lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/kettlebells/male/quads/kettlebell-lateral-lunge",
@@ -1188,7 +1188,7 @@
         },
         {
           "name": "side_lunges",
-          "description": "",
+          "description": "The kettlebell side lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/quads/side-lunges",
@@ -1200,7 +1200,7 @@
         },
         {
           "name": "forward_lunges",
-          "description": "",
+          "description": "The forward lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings. ",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/quads/forward-lunges",
@@ -1212,7 +1212,7 @@
         },
         {
           "name": "jump_squats",
-          "description": "",
+          "description": "Jump squats are a plyometric exercise that primarily targets the quadriceps, glutes, and calves.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/quads/jump-squats",
@@ -1224,7 +1224,7 @@
         },
         {
           "name": "bodyweight_squat",
-          "description": "",
+          "description": "Bodyweight squats are a plyometric exercise that primarily targets the quadriceps, glutes, and calves.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/quads/bodyweight-squat",
@@ -1236,7 +1236,7 @@
         },
         {
           "name": "cable_goblet_squat",
-          "description": "",
+          "description": "Cable goblet squats are a plyometric exercise that primarily targets the quadriceps, glutes, and calves.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/cables/male/quads/cable-goblet-squat",
@@ -1248,7 +1248,7 @@
         },
         {
           "name": "band_squat",
-          "description": "",
+          "description": "The band squat is a resistance exercise that targets the lower body, primarily the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/band/male/quads/band-squat",
@@ -1260,7 +1260,7 @@
         },
         {
           "name": "barbell_high_bar_squat",
-          "description": "",
+          "description": "The barbell high bar squat is a resistance exercise that targets the lower body, primarily the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-high-bar-squat",
@@ -1272,7 +1272,7 @@
         },
         {
           "name": "barbell_step_up",
-          "description": "",
+          "description": "The barbell step-up is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-step-up",
@@ -1284,7 +1284,7 @@
         },
         {
           "name": "assisted_bulgarian_split_squat",
-          "description": "",
+          "description": "The assisted Bulgarian split squat is a variation of the Bulgarian split squat exercise that uses a support to help maintain balance.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/quads/assisted-bulgarian-split-squat",
@@ -1296,7 +1296,7 @@
         },
         {
           "name": "forward_lunge",
-          "description": "",
+          "description": "The forward lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings performed with ones own body weight.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/quads/forward-lunge",
@@ -1308,7 +1308,7 @@
         },
         {
           "name": "bodyweight_reverse_lunge",
-          "description": "",
+          "description": "The bodywieght reverse lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings performed with ones own body weight.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/quads/bodyweight-reverse-lunge",
@@ -1320,7 +1320,7 @@
         },
         {
           "name": "split_squat",
-          "description": "",
+          "description": "The split squat is a unilateral lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/quads/split-squat",
@@ -1332,7 +1332,7 @@
         },
         {
           "name": "dumbbell_goblet_reverse_lunge",
-          "description": "",
+          "description": "The dumbbell goblet reverse lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-reverse-lunge",
@@ -1344,7 +1344,7 @@
         },
         {
           "name": "dumbbell_reverse_lunge",
-          "description": "",
+          "description": "The dumbbell reverse lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-reverse-lunge",
@@ -1356,7 +1356,7 @@
         },
         {
           "name": "dumbbell_split_squat",
-          "description": "",
+          "description": "The dumbbell split squat is a unilateral lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-split-squat",
@@ -1368,7 +1368,7 @@
         },
         {
           "name": "dumbbell_goblet_pulse_squat",
-          "description": "",
+          "description": "The dumbbell goblet pulse squat is a unilateral lower body exercise that targets the quadriceps, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-pulse-squat",
@@ -1380,7 +1380,7 @@
         },
         {
           "name": "dumbbell_heels_up_goblet_squat",
-          "description": "",
+          "description": "The dumbbell heels-up goblet squat is a lower body exercise that targets the quadriceps, glutes, and hamstrings, with added emphasis on the lower leg muscles.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-heels-up-goblet-squat",
@@ -1392,7 +1392,7 @@
         },
         {
           "name": "dumbbell_leg_extension",
-          "description": "",
+          "description": "The dumbbell leg extension is a beginner-level strength exercise that targets the quadriceps muscles of the lower body. This exercise involves extending the knees against resistance provided by a dumbbell held at the feet.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-leg-extension",
@@ -1404,7 +1404,7 @@
         },
         {
           "name": "dumbbell_sumo_squat",
-          "description": "",
+          "description": "The dumbbell sumo squat is a lower body strength exercise that targets the quads, glutes, hamstrings, and calves.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-sumo-squat",
@@ -1416,7 +1416,7 @@
         },
         {
           "name": "plate_lateral_lunge",
-          "description": "",
+          "description": "The plate lateral lunge is a lower body strength exercise that targets the quads, glutes, hamstrings, and inner thighs.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/quads/plate-lateral-lunge",
@@ -1428,7 +1428,7 @@
         },
         {
           "name": "plate_forward_lunge",
-          "description": "",
+          "description": "The plate forward lunge is a lower body strength exercise that targets the quads, glutes, hamstrings, and inner thighs. ",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/quads/plate-forward-lunge",
@@ -1440,7 +1440,7 @@
         },
         {
           "name": "plate_reverse_lunge",
-          "description": "",
+          "description": "The plate reverse lunge is a lower body strength exercise that targets the quads, glutes, hamstrings, and inner thighs. ",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/quads/plate-reverse-lunge",
@@ -1454,7 +1454,7 @@
       "intermediate": [
         {
           "name": "machine_leg_press",
-          "description": "",
+          "description": "The machine leg press is a strength exercise that targets the quads, glutes, hamstrings, and calves.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/machine/male/quads/machine-leg-press",
@@ -1466,7 +1466,7 @@
         },
         {
           "name": "machine_leg_extension",
-          "description": "",
+          "description": "The machine leg extension is a strength exercise that targets the quads.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/machine/male/quads/machine-leg-extension",
@@ -1478,7 +1478,7 @@
         },
         {
           "name": "barbell_curtsy_lunge",
-          "description": "",
+          "description": "The barbell curtsy lunge is a strength exercise that targets the quads, glutes, and hamstrings. It is performed by stepping one leg behind the other in a curtsy-like motion while holding a barbell on the back of the shoulders, and then returning to a standing position. It is commonly used in gym workouts for lower body strength training.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-curtsy-lunge",
@@ -1490,7 +1490,7 @@
         },
         {
           "name": "barbell_coan_deadlift",
-          "description": "",
+          "description": "The barbell Coan deadlift is a strength exercise that targets the lower back, glutes, and hamstrings. It is performed by lifting a barbell off the ground while maintaining a flat back and then returning it to the ground. It is named after powerlifter Ed Coan, who popularized the exercise as a means of improving his deadlift. It is commonly used in gym workouts for lower body strength training.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-coan-deadlift",
@@ -1502,7 +1502,7 @@
         },
         {
           "name": "barbell_pause_squat",
-          "description": "",
+          "description": "The barbell pause squat is a strength exercise that targets the quads, glutes, and hamstrings. It is performed by squatting down with a barbell on the back of the shoulders and pausing at the bottom of the movement for a specified amount of time before returning to a standing position. This exercise is commonly used to improve squat form and increase lower body strength.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-pause-squat",
@@ -1514,7 +1514,7 @@
         },
         {
           "name": "barbell_reverse_lunge",
-          "description": "",
+          "description": "The barbell reverse lunge is a strength exercise that targets the quads, glutes, and hamstrings. It is performed by stepping back with one leg and lowering the body until the knee of the back leg almost touches the ground while holding a barbell on the back of the shoulders. It is commonly used in gym workouts for lower body strength training.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-reverse-lunge",
@@ -1526,7 +1526,7 @@
         },
         {
           "name": "barbell_side_step_up",
-          "description": "",
+          "description": "A compound exercise that targets the lower body muscles, including the quads, hamstrings, and glutes. It involves stepping up onto a bench or box with one foot while holding a barbell on the back of the shoulders.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-side-step-up",
@@ -1538,7 +1538,7 @@
         },
         {
           "name": "barbell_split_squat",
-          "description": "",
+          "description": "A strength exercise that targets the quads, glutes, and hamstrings. It involves lunging forward with one leg while holding a barbell on the back of the shoulders.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-split-squat",
@@ -1550,7 +1550,7 @@
         },
         {
           "name": "barbell_step_up_balance",
-          "description": "",
+          "description": "A strength exercise that targets the lower body muscles, including the quads, hamstrings, and glutes. It involves stepping up onto a bench or box with one foot while holding a barbell on the back of the shoulders and maintaining balance.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-step-up-balance",
@@ -1562,7 +1562,7 @@
         },
         {
           "name": "barbell_tap_pause_squat",
-          "description": "",
+          "description": "A compound exercise that targets the lower body muscles, including the quads, hamstrings, and glutes. It involves squatting down with a barbell on the back of the shoulders and tapping the ground with one foot before standing back up.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-tap-pause-squat",
@@ -1574,7 +1574,7 @@
         },
         {
           "name": "bulgarian_split_squat",
-          "description": "",
+          "description": "The Bulgarian split squat is a unilateral exercise that targets the quadriceps, hamstrings, and glutes. It requires no equipment and can be done anywhere.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/quads/bulgarian-split-squat",
@@ -1586,7 +1586,7 @@
         },
         {
           "name": "curtsy_lunge",
-          "description": "",
+          "description": "The curtsy lunge is a lower body exercise that targets the quads, hamstrings, and glutes. It is a unilateral exercise that can be done with just your body weight or dumbbells.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/quads/curtsy-lunge",
@@ -1598,7 +1598,7 @@
         },
         {
           "name": "heels_up_squat",
-          "description": "",
+          "description": "The heels up squat is a variation of the traditional squat that places more emphasis on the quads. By raising your heels off the ground, you shift the weight forward and engage the quads more.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/quads/heels-up-squat",
@@ -1610,7 +1610,7 @@
         },
         {
           "name": "lateral_lunge",
-          "description": "",
+          "description": "The lateral lunge is a lower body exercise that targets the quads, hamstrings, and glutes. It is a unilateral exercise that can be done with just your body weight or dumbbells.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/quads/lateral-lunge",
@@ -1621,56 +1621,8 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "dumbbell_bulgarian_split_squat",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-bulgarian-split-squat",
-            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-bulgarian-split-squat"
-          },
-          "equipment": "dumbbells",
-          "difficulty": "intermediate",
-          "muscle_group": "lower body"
-        },
-        {
-          "name": "dumbbell_forward_lunge",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-forward-lunge",
-            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-forward-lunge"
-          },
-          "equipment": "dumbbells",
-          "difficulty": "intermediate",
-          "muscle_group": "lower body"
-        },
-        {
-          "name": "dumbbell_goblet_bulgarian_split_squat",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-bulgarian-split-squat",
-            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-goblet-bulgarian-split-squat"
-          },
-          "equipment": "dumbbells",
-          "difficulty": "intermediate",
-          "muscle_group": "lower body"
-        },
-        {
-          "name": "dumbbell_goblet_forward_lunge",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-forward-lunge",
-            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-goblet-forward-lunge"
-          },
-          "equipment": "dumbbells",
-          "difficulty": "intermediate",
-          "muscle_group": "lower body"
-        },
-        {
           "name": "dumbbell_goblet_split_squat",
-          "description": "",
+          "description": "The dumbbell goblet split squat is a unilateral leg exercise that targets the quads, glutes, and hamstrings. It is a variation of the traditional dumbbell split squat, but with the addition of holding the dumbbell in front of your chest like a goblet.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-split-squat",
@@ -1682,7 +1634,7 @@
         },
         {
           "name": "dumbbell_lateral_lunge_reach",
-          "description": "",
+          "description": "The dumbbell lateral lunge reach is a lower body exercise that primarily targets the quads, glutes, and hamstrings. It also engages the core and improves balance and stability. To perform the exercise, stand with your feet shoulder-width apart and hold a dumbbell in each hand. Step your left foot out to the side and lunge to the left while reaching the dumbbells down towards your left foot. Keep your chest up and your back straight. Return to the starting position and repeat on the other side.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-lateral-lunge-reach",
@@ -1694,7 +1646,7 @@
         },
         {
           "name": "dumbbell_front_rack_squat",
-          "description": "",
+          "description": "The dumbbell front rack squat is a lower body exercise that primarily targets the quads, glutes, and hamstrings. It also engages the core and improves upper body strength and stability. To perform the exercise, hold a dumbbell in each hand and bring them up to shoulder height, resting them on the front of your shoulders. Stand with your feet shoulder-width apart and squat down, keeping your weight in your heels and your chest up. Return to the starting position and repeat.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-front-rack-squat",
@@ -1706,7 +1658,7 @@
         },
         {
           "name": "dumbbell_offset_squat",
-          "description": "",
+          "description": "The dumbbell offset squat is a lower body exercise that primarily targets the quads, glutes, and hamstrings. It also engages the core and improves balance and stability. To perform the exercise, hold a dumbbell in one hand and rest it on your shoulder. Stand with your feet shoulder-width apart and squat down, keeping your weight in your heels and your chest up. Return to the starting position and repeat on the other side.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-offset-squat",
@@ -1718,7 +1670,7 @@
         },
         {
           "name": "dumbbell_thruster",
-          "description": "",
+          "description": "The dumbbell thruster is a full-body exercise that targets the legs, shoulders, and core. It involves holding a dumbbell in each hand, performing a squat, and then pushing the dumbbells overhead while straightening the legs. This exercise is great for improving overall strength and power.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-thruster",
@@ -1730,7 +1682,7 @@
         },
         {
           "name": "plate_squat",
-          "description": "",
+          "description": "The plate squat is a lower body exercise that targets the quadriceps, hamstrings, and glutes. It involves holding a weight plate in front of your chest while performing a squat. This exercise is great for building lower body strength and improving squat form.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/quads/plate-squat",
@@ -1742,7 +1694,7 @@
         },
         {
           "name": "plate_curtsy_lunge",
-          "description": "",
+          "description": "The plate curtsy lunge is a lower body exercise that targets the quadriceps, hamstrings, glutes, and inner thighs. It involves holding a weight plate at chest height and stepping back and across your body into a lunge position. This exercise is great for building lower body strength and improving balance.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/quads/plate-curtsy-lunge",
@@ -1753,20 +1705,8 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "plate_reverse_lunge_twist",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/plate/male/quads/plate-reverse-lunge-twist",
-            "female": "https://musclewiki.com/plate/female/quads/plate-reverse-lunge-twist"
-          },
-          "equipment": "plate",
-          "difficulty": "intermediate",
-          "muscle_group": "lower body"
-        },
-        {
           "name": "plate_overhead_squat",
-          "description": "",
+          "description": "The plate overhead squat is a strength exercise that targets the lower body. It involves holding a weighted plate above the head while performing a squat. This exercise can help improve lower body strength, stability, and mobility.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/quads/plate-overhead-squat",
@@ -1776,9 +1716,10 @@
           "difficulty": "intermediate",
           "muscle_group": "lower body"
         },
+
         {
           "name": "plate_overhead_walking_lunge",
-          "description": "",
+          "description": "The plate overhead walking lunge is a strength exercise that targets the lower body. It involves holding a weighted plate above the head while performing walking lunges. This exercise can help improve lower body strength, stability, and balance.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/quads/plate-overhead-walking-lunge",
@@ -1788,9 +1729,10 @@
           "difficulty": "intermediate",
           "muscle_group": "lower body"
         },
+
         {
           "name": "plate_thruster",
-          "description": "",
+          "description": "The plate thruster is a strength exercise that targets the lower body and shoulders. It involves holding a weighted plate at shoulder height and performing a squat followed by an overhead press. This exercise can help improve lower body and shoulder strength, as well as overall conditioning.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/quads/plate-thruster",
@@ -1800,9 +1742,10 @@
           "difficulty": "intermediate",
           "muscle_group": "lower body"
         },
+
         {
           "name": "trx_curtsy_lunge",
-          "description": "",
+          "description": "The TRX curtsy lunge is a strength exercise that targets the lower body and core. It involves stepping back into a curtsy lunge while holding onto TRX straps for stability. This exercise can help improve lower body strength, stability, and balance.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/trx/male/quads/trx-curtsy-lunge",
@@ -1816,7 +1759,7 @@
       "advanced": [
         {
           "name": "barbell_squat",
-          "description": "",
+          "description": "The barbell squat is a compound exercise that targets the quadriceps, hamstrings, glutes, and lower back. It involves placing a barbell on the shoulders and squatting down until the thighs are parallel to the ground, then standing back up.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-squat",
@@ -1828,7 +1771,7 @@
         },
         {
           "name": "cable_split_squat",
-          "description": "",
+          "description": "The cable split squat is a unilateral exercise that targets the quadriceps, hamstrings, and glutes. It involves stepping forward into a lunge position and then lowering the back knee towards the ground while keeping the front knee over the ankle, then pushing back up to the starting position.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/cables/male/quads/cable-split-squat",
@@ -1840,7 +1783,7 @@
         },
         {
           "name": "cable_standing_leg_extension",
-          "description": "",
+          "description": "The cable standing leg extension is an isolation exercise that targets the quadriceps. It involves attaching a cable to a low pulley, standing facing away from the machine, and lifting the leg forward while keeping the knee straight.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/cables/male/quads/cable-standing-leg-extension",
@@ -1852,7 +1795,7 @@
         },
         {
           "name": "band_spanish_squat",
-          "description": "",
+          "description": "The band spanish squat is a variation of the squat that targets the quadriceps, hamstrings, and glutes. It involves placing a resistance band around the thighs, stepping the feet shoulder-width apart, and squatting down while pushing the knees outwards against the band.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/band/male/quads/band-spanish-squat",
@@ -1863,20 +1806,8 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "band_leg_press",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/band/male/quads/band-leg-press",
-            "female": "https://musclewiki.com/band/female/quads/band-leg-press"
-          },
-          "equipment": "band",
-          "difficulty": "advanced",
-          "muscle_group": "lower body"
-        },
-        {
           "name": "dumbbell_goblet_bulgarian_split_squat",
-          "description": "",
+          "description": "A Bulgarian split squat variation that involves holding a dumbbell vertically in front of your chest, while performing the exercise.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-bulgarian-split-squat",
@@ -1888,7 +1819,7 @@
         },
         {
           "name": "barbell_bulgarian_split_squat",
-          "description": "",
+          "description": "A Bulgarian split squat variation that involves holding a barbell on your shoulders, while performing the exercise.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-bulgarian-split-squat",
@@ -1900,7 +1831,7 @@
         },
         {
           "name": "barbell_front_squat_olympic",
-          "description": "",
+          "description": "A front squat variation that involves holding a barbell in the front rack position, with a clean grip.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-front-squat-olympic",
@@ -1912,7 +1843,7 @@
         },
         {
           "name": "barbell_front_squat_bodybuilding",
-          "description": "",
+          "description": "A front squat variation that involves holding a barbell in the front rack position, with a bodybuilding grip.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-front-squat-bodybuilding",
@@ -1924,7 +1855,7 @@
         },
         {
           "name": "barbell_low_bar_squat",
-          "description": "",
+          "description": "A low bar squat variation that involves placing the barbell lower on your back, and leaning forward more than in a high bar squat.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-low-bar-squat",
@@ -1936,7 +1867,7 @@
         },
         {
           "name": "dumbbell_bulgarian_split_squat",
-          "description": "",
+          "description": "The dumbbell Bulgarian split squat is a unilateral lower body exercise that targets the quads, glutes, and hamstrings. To perform this exercise, you will need a pair of dumbbells and a bench or sturdy elevated surface.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-bulgarian-split-squat",
@@ -1948,7 +1879,7 @@
         },
         {
           "name": "barbell_forward_lunge",
-          "description": "",
+          "description": "The barbell forward lunge is a compound lower body exercise that targets the quads, glutes, and hamstrings. To perform this exercise, you will need a barbell and a squat rack.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-forward-lunge",
@@ -1960,7 +1891,43 @@
         },
         {
           "name": "barbell_front_rack_step_up",
-          "description": "",
+          "description": "The barbell front rack step-up is a unilateral lower body exercise that targets the quads, glutes, and hamstrings. To perform this exercise, you will need a barbell and a sturdy elevated surface.",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-front-rack-step-up",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-front-rack-step-up"
+          },
+          "equipment": "barbell",
+          "difficulty": "advanced",
+          "muscle_group": "lower body"
+        },
+        {
+          "name": "dumbbell_bulgarian_split_squat",
+          "description": "The dumbbell Bulgarian split squat is a single-leg strength exercise that targets the quads, glutes, and hamstrings. It involves stepping forward with one foot onto an elevated surface (such as a bench or step) and lowering the back knee towards the ground, while holding a dumbbell in each hand.",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-bulgarian-split-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-bulgarian-split-squat"
+          },
+          "equipment": "dumbbells",
+          "difficulty": "advanced",
+          "muscle_group": "lower body"
+        },
+        {
+          "name": "barbell_forward_lunge",
+          "description": "The barbell forward lunge is a lower body strength exercise that targets the quads, glutes, and hamstrings. It involves taking a step forward with one foot and lowering the back knee towards the ground, while holding a barbell across the shoulders.",
+          "category": "strength",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-forward-lunge",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-forward-lunge"
+          },
+          "equipment": "barbell",
+          "difficulty": "advanced",
+          "muscle_group": "lower body"
+        },
+        {
+          "name": "barbell_front_rack_step_up",
+          "description": "The barbell front rack step-up is a single-leg strength exercise that targets the quads, glutes, and hamstrings. It involves stepping up onto an elevated surface (such as a bench or step) with one foot while holding a barbell across the front of the shoulders.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-front-rack-step-up",
@@ -1972,7 +1939,7 @@
         },
         {
           "name": "barbell_heels_up_back_squat",
-          "description": "",
+          "description": "The barbell heels-up back squat is a variation of the traditional barbell back squat that requires the lifter to raise their heels off the ground. This variation shifts more of the load onto the quads and can be helpful for lifters with limited ankle mobility.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-heels-up-back-squat",
@@ -1983,44 +1950,8 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "barbell_heels_up_front_squat",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/barbell/male/quads/barbell-heels-up-front-squat",
-            "female": "https://musclewiki.com/barbell/female/quads/barbell-heels-up-front-squat"
-          },
-          "equipment": "barbell",
-          "difficulty": "advanced",
-          "muscle_group": "lower body"
-        },
-        {
-          "name": "barbell_lateral_lunge",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/barbell/male/quads/barbell-lateral-lunge",
-            "female": "https://musclewiki.com/barbell/female/quads/barbell-lateral-lunge"
-          },
-          "equipment": "barbell",
-          "difficulty": "advanced",
-          "muscle_group": "lower body"
-        },
-        {
-          "name": "barbell_pause_box_squat",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/barbell/male/quads/barbell-pause-box-squat",
-            "female": "https://musclewiki.com/barbell/female/quads/barbell-pause-box-squat"
-          },
-          "equipment": "barbell",
-          "difficulty": "advanced",
-          "muscle_group": "lower body"
-        },
-        {
           "name": "barbell_reverse_deadlift",
-          "description": "",
+          "description": "The barbell reverse deadlift is an advanced lower body exercise that primarily targets the quadriceps, glutes, and hamstrings. This exercise involves standing on a raised platform and performing a deadlift movement in reverse, pulling the barbell up towards the hips.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-reverse-deadlift",
@@ -2032,7 +1963,7 @@
         },
         {
           "name": "bodyweight_reverse_step_up",
-          "description": "",
+          "description": "The bodyweight reverse step up is an advanced lower body exercise that primarily targets the quadriceps, glutes, and hamstrings. This exercise involves stepping up onto a raised platform in reverse, with one leg at a time, while keeping the core engaged and maintaining balance.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/bodyweight/male/quads/bodyweight-reverse-step-up",
@@ -2044,7 +1975,7 @@
         },
         {
           "name": "barbell_zercher_squat",
-          "description": "",
+          "description": "The barbell zercher squat is an advanced lower body exercise that primarily targets the quadriceps, glutes, and hamstrings. This exercise involves holding a barbell in the crook of the elbows and performing a squat movement while maintaining an upright posture and engaging the core.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/barbell/male/quads/barbell-zercher-squat",
@@ -2056,7 +1987,7 @@
         },
         {
           "name": "dumbbell_goblet_curtsy_lunge",
-          "description": "",
+          "description": "The dumbbell goblet curtsy lunge is an advanced lower body exercise that primarily targets the quadriceps, glutes, and hamstrings. This exercise involves holding a dumbbell at chest level and stepping one foot behind and across the other leg, while bending both knees to lower the body and engage the muscles of the lower body.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-curtsy-lunge",
@@ -2068,7 +1999,7 @@
         },
         {
           "name": "dumbbell_goblet_lateral_lunge",
-          "description": "",
+          "description": "The dumbbell goblet lateral lunge is a great exercise for developing strength and flexibility in the lower body. Start by holding a dumbbell in front of your chest with both hands, and step laterally to one side, bending your knee and lowering your body until your thigh is parallel to the ground. Then push back up to the starting position and repeat on the other side. This exercise targets the quads, glutes, and hamstrings.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-lateral-lunge",
@@ -2080,7 +2011,7 @@
         },
         {
           "name": "dumbbell_front_rack_pause_squat",
-          "description": "",
+          "description": "The dumbbell front rack pause squat is a challenging exercise that targets the quads, glutes, and hamstrings. Hold a pair of dumbbells at shoulder height with your elbows up and palms facing each other. Lower your body into a squat, pausing at the bottom for a few seconds before pushing back up to the starting position. Make sure to keep your chest up and your knees in line with your toes throughout the movement.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-front-rack-pause-squat",
@@ -2092,7 +2023,7 @@
         },
         {
           "name": "dumbbell_heels_up_narrow_goblet_squat",
-          "description": "",
+          "description": "The dumbbell heels up narrow goblet squat is a variation of the goblet squat that places more emphasis on the quads. Hold a dumbbell with both hands at chest height, and lift your heels off the ground. Lower your body into a squat, keeping your feet close together and your knees in line with your toes. Push back up to the starting position and repeat for several reps.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-heels-up-narrow-goblet-squat",
@@ -2103,44 +2034,8 @@
           "muscle_group": "lower body"
         },
         {
-          "name": "plate_squat_reach",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/plate/male/quads/plate-squat-reach",
-            "female": "https://musclewiki.com/plate/female/quads/plate-squat-reach"
-          },
-          "equipment": "plate",
-          "difficulty": "advanced",
-          "muscle_group": "lower body"
-        },
-        {
-          "name": "plate_deficit_lunge",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/plate/male/quads/plate-deficit-lunge",
-            "female": "https://musclewiki.com/plate/female/quads/plate-deficit-lunge"
-          },
-          "equipment": "plate",
-          "difficulty": "advanced",
-          "muscle_group": "lower body"
-        },
-        {
-          "name": "dumbbell_overhead_squat",
-          "description": "",
-          "category": "strength",
-          "video": {
-            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-overhead-squat",
-            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-overhead-squat"
-          },
-          "equipment": "dumbbells",
-          "difficulty": "advanced",
-          "muscle_group": "lower body"
-        },
-        {
           "name": "single_arm_overhead_squat",
-          "description": "",
+          "description": "The single arm overhead squat is an advanced lower body exercise that primarily targets the quads, while also engaging the core and upper body. To perform this exercise, stand with your feet shoulder-width apart, holding a dumbbell in one hand above your head. Slowly lower your body down into a squat position while keeping the weight above your head, then return to the starting position. Repeat for desired number of repetitions before switching sides.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/dumbbells/male/quads/single-arm-overhead-squat",
@@ -2152,7 +2047,7 @@
         },
         {
           "name": "plate_single_leg_deadlift",
-          "description": "",
+          "description": "The plate single leg deadlift is an advanced lower body exercise that primarily targets the quads and hamstrings, while also engaging the core and glutes. To perform this exercise, stand with one foot on a weight plate and the other foot planted firmly on the ground. Hold a weight plate in front of your body with both hands. Slowly lower your body down into a deadlift position while keeping the weight plate close to your body, then return to the starting position. Repeat for desired number of repetitions before switching sides.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/plate/male/quads/plate-single-leg-deadlift",
@@ -2164,7 +2059,7 @@
         },
         {
           "name": "kettlebell_single_leg_deadlift",
-          "description": "",
+          "description": "The kettlebell single leg deadlift is an advanced lower body exercise that primarily targets the hamstrings and glutes, while also engaging the core and quads. To perform this exercise, stand with one foot planted firmly on the ground and hold a kettlebell in the opposite hand. Slowly lower your body down into a deadlift position while keeping the kettlebell close to your body, then return to the starting position. Repeat for desired number of repetitions before switching sides.",
           "category": "strength",
           "video": {
             "male": "https://musclewiki.com/kettlebells/male/hamstrings/kettlebell-single-leg-deadlift",
