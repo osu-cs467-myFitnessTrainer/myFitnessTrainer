@@ -10,6 +10,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// TO DO: Add these config ID's to a .env file (remove from this file)
 const firebaseConfig = {
     apiKey: "AIzaSyBj1gTTLeBEFxXOpvSVevhoW_68j3_lydU",
     authDomain: "myfitnesstrainer-94289.firebaseapp.com",
