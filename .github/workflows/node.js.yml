@@ -1,4 +1,6 @@
 name: Deployment pipeline
+run: |
+   cd myFitnessTrainer
 
 on:
   push:
