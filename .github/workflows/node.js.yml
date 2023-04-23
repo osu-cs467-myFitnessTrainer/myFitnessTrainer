@@ -15,4 +15,7 @@ jobs:
           node-version: '16'
       - name: Install dependencies 
         working-directory: ./myFitnessTrainer
-        run: npm install  
+        run: npm install
+      - name: Run lint
+        working-directory: ./myFitnessTrainer
+        run: npm run lint
