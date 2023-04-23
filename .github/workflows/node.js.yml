@@ -3,7 +3,7 @@ name: Deployment pipeline
 on:
   push:
     branches:
-      - main
+      - github-action
 
 jobs:
   simple_deployment_pipeline:
@@ -19,3 +19,6 @@ jobs:
       - name: Run lint
         working-directory: ./myFitnessTrainer
         run: npm run lint
+      - name: Run tests
+        working-directory: ./myFitnessTrainer
+        run: npm test
