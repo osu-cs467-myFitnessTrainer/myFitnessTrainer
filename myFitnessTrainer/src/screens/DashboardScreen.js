@@ -3,7 +3,7 @@ import React from 'react';
 import { auth } from '../../firebaseConfig';
 import SignOutButton from '../components/SignOutButton';
 
-const DashboardScreen = ({navigation}) => {
+const DashboardScreen = () => {
 
     // TO DO: SIGN OUT BUTTON TO BE MOVED TO SETTINGS...HERE FOR TESTING
     return (
