@@ -29,12 +29,14 @@ const SignInScreen = ({navigation}) => {
         })
         .catch(error => alert(error.message))
     };
+    
+    const signUpMessage = "Don't have an account?";
 
-  return (
+    return (
     <View
         style={styles.container}
     >
-      <View style={styles.inputContainer}>
+        <View style={styles.inputContainer}>
         <TextInput
             placeholder='Email'
             value={email}
@@ -49,24 +51,24 @@ const SignInScreen = ({navigation}) => {
             style={styles.input}
             secureTextEntry
         />
-      </View>
-      <View style={styles.buttonContainer}>
+        </View>
+        <View style={styles.buttonContainer}>
         <TouchableOpacity
             onPress={handleSignIn}
             style={styles.button}
         >
             <Text style={styles.buttonText}>Sign In</Text>
         </TouchableOpacity>
-        <Text style={styles.signUpMessage}>Don't have an account?</Text>
+        <Text style={styles.signUpMessage}>{signUpMessage}</Text>
         <TouchableOpacity
             onPress={navigateToSignUpScreen}
             style={[styles.button, styles.buttonOutline]}
         >
             <Text style={styles.buttonOutlineText}>Sign Up</Text>
         </TouchableOpacity>
-      </View>
+        </View>
     </View>
-  )
+    )
 }
 
 export default SignInScreen
