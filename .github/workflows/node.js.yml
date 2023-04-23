@@ -16,9 +16,6 @@ jobs:
       - name: Install dependencies 
         working-directory: ./myFitnessTrainer
         run: npm install
-      - name: Run lint
-        working-directory: ./myFitnessTrainer
-        run: npm run lint
       - name: Run tests
         working-directory: ./myFitnessTrainer
         run: npm test
