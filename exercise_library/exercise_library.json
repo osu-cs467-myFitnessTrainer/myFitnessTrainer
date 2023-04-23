@@ -1,0 +1,2708 @@
+{
+  "strength": {
+    "upper body": {
+      "beginner": [
+        {
+          "name": "barbell curl",
+          "description": "Barbell curls are a weightlifting exercise that primarily target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-curl",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-curl"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell curl",
+          "description": "dumbell curls are a weightlifting exercise that primarily target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-curl",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-curl"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell hammer curl",
+          "description": "Dumbbell hammer curls are a weightlifting exercise that target the biceps and brachioradialis muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-hammer-curl",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-hammer-curl"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "kettlebell goblet curl",
+          "description": "Kettlebell goblet curls are a variation of the traditional biceps curl that involves using a kettlebell.",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/biceps/kettlebell-goblet-curl",
+            "female": "https://musclewiki.com/kettlebells/female/biceps/kettlebell-goblet-curl"
+          },
+          "equipment": "kettlebells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "kettlebell single arm curl",
+          "description": "Kettlebell single-arm curls are a variation of the traditional biceps curl that involve using a kettlebell with one hand.",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/biceps/kettlebell-single-arm-curl",
+            "female": "https://musclewiki.com/kettlebells/female/biceps/kettlebell-single-arm-curl"
+          },
+          "equipment": "kettlebells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "cable bayesian curl",
+          "description": "Cable curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/cables/male/biceps/cable-bayesian-curl",
+            "female": "https://musclewiki.com/cables/female/biceps/cable-bayesian-curl"
+          },
+          "equipment": "cables",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "cable hammer curl",
+          "description": "Cable hammer curls are a weightlifting exercise that target the biceps and brachioradialis muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/cables/male/biceps/cable-hammer-curl",
+            "female": "https://musclewiki.com/cables/female/biceps/cable-hammer-curl"
+          },
+          "equipment": "cables",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "band bayesian curl",
+          "description": "Band curls are a resistance training exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/band/male/biceps/band-bayesian-curl",
+            "female": "https://musclewiki.com/band/female/biceps/band-bayesian-curl"
+          },
+          "equipment": "band",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell incline hammer curl",
+          "description": "Dumbbell incline hammer curl is a variation of the traditional hammer curl exercise that targets the biceps and forearms.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-incline-hammer-curl",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-incline-hammer-curl"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell incline reverse curl",
+          "description": "Dumbbell incline hammer curls are a weightlifting exercise that target the biceps and brachioradialis muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-incline-reverse-curl",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-incline-reverse-curl"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell single arm preacher curl",
+          "description": "Dumbbell single-arm preacher curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-single-arm-preacher-curl",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-single-arm-preacher-curl"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell single arm spider curl",
+          "description": "Dumbbell single-arm spider curls are a weightlifting exercise that target the biceps muscles in the upper arms. ",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-single-arm-spider-curl",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-single-arm-spider-curl"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell spider curl",
+          "description": "Dumbbell spider curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-spider-curl",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-spider-curl"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell twisting curl",
+          "description": "Dumbbell twisting curls are a weightlifting exercise that target the biceps muscles in the upper arms. ",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-twisting-curl",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-twisting-curl"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate bicep curl",
+          "description": "Plate bicep curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/biceps/plate-bicep-curl",
+            "female": "https://musclewiki.com/plate/female/biceps/plate-bicep-curl"
+          },
+          "equipment": "plate",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "band high curl",
+          "description": "Band high curls are a resistance training exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/band/male/biceps/band-high-curl",
+            "female": "https://musclewiki.com/band/female/biceps/band-high-curl"
+          },
+          "equipment": "band",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "band high hammer curl",
+          "description": "Band high hammer curls are a resistance training exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/band/male/biceps/band-high-hammer-curl",
+            "female": "https://musclewiki.com/band/female/biceps/band-high-hammer-curl"
+          },
+          "equipment": "band",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "band curl",
+          "description": "Band curls are a resistance training exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/band/male/biceps/band-curl",
+            "female": "https://musclewiki.com/band/female/biceps/band-curl"
+          },
+          "equipment": "band",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell concentration curl",
+          "description": "Dumbbell concentration curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-concentration-curl",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-concentration-curl"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "trx curl",
+          "description": "TRX curls are a bodyweight exercise that target the biceps muscles in the upper arms. ",
+          "video": {
+            "male": "https://musclewiki.com/trx/male/biceps/trx-curl",
+            "female": "https://musclewiki.com/trx/female/biceps/trx-curl"
+          },
+          "equipment": "trx",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "trx hammer curl",
+          "description": "TRX hammer curls are a bodyweight exercise that target the biceps muscles in the upper arms. ",
+          "video": {
+            "male": "https://musclewiki.com/trx/male/biceps/trx-hammer-curl",
+            "female": "https://musclewiki.com/trx/female/biceps/trx-hammer-curl"
+          },
+          "equipment": "trx",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "band kneeling single arm pulldown",
+          "description": "Band kneeling single-arm pulldowns are a resistance training exercise that target the biceps and back muscles.",
+          "video": {
+            "male": "https://musclewiki.com/band/male/biceps/band-kneeling-single-arm-pulldown",
+            "female": "https://musclewiki.com/band/female/biceps/band-kneeling-single-arm-pulldown"
+          },
+          "equipment": "band",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell pronated row",
+          "description": "Barbell pronated rows, also known as barbell rows, are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and lower back muscles.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-pronated-row",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-pronated-row"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell kneeling single arm row",
+          "description": "Dumbbell kneeling single-arm rows are a weightlifting exercise that target the back muscles, particularly the lats and rhomboids.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-kneeling-single-arm-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-kneeling-single-arm-row"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell laying incline row",
+          "description": "Dumbbell lying incline rows are a weightlifting exercise that target the back muscles, particularly the upper and middle back muscles.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-laying-incline-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-laying-incline-row"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell single arm row",
+          "description": "Dumbbell single-arm rows, also known as dumbbell rows, are a weightlifting exercise that target the back muscles, particularly the lats and rhomboids.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-single-arm-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-single-arm-row"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell single arm row knee",
+          "description": "Dumbbell single-arm rows with knee support, also known as kneeling single-arm rows, are a weightlifting exercise that target the back muscles, particularly the lats and rhomboids, while providing additional support to the lower back.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-single-arm-row-knee",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-single-arm-row-knee"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell supinated row",
+          "description": "Dumbbell supinated rows, also known as dumbbell reverse grip rows, are a weightlifting exercise that target the back muscles, particularly the upper back muscles and biceps.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-supinated-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-supinated-row"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "trx rotating row",
+          "description": "TRX rotating rows are a bodyweight exercise that target the back muscles, particularly the upper and middle back muscles.",
+          "video": {
+            "male": "https://musclewiki.com/trx/male/biceps/trx-rotating-row",
+            "female": "https://musclewiki.com/trx/female/biceps/trx-rotating-row"
+          },
+          "equipment": "trx",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell incline bench press",
+          "description": "Dumbbell incline bench press is a weightlifting exercise that targets the upper chest muscles, anterior deltoids, and triceps.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-incline-bench-press",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-incline-bench-press"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        }
+      ],
+      "intermediate": [
+        {
+          "name": "kettlebell concentration curl",
+          "description": "Kettlebell concentration curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/biceps/kettlebell-concentration-curl",
+            "female": "https://musclewiki.com/kettlebells/female/biceps/kettlebell-concentration-curl"
+          },
+          "equipment": "kettlebells",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "kettlebell preacher curl",
+          "description": "Kettlebell preacher curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/biceps/kettlebell-preacher-curl",
+            "female": "https://musclewiki.com/kettlebells/female/biceps/kettlebell-preacher-curl"
+          },
+          "equipment": "kettlebells",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "cable reverse curl",
+          "description": "Cable reverse curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/cables/male/biceps/cable-reverse-curl",
+            "female": "https://musclewiki.com/cables/female/biceps/cable-reverse-curl"
+          },
+          "equipment": "cables",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "band bayesian hammer curl",
+          "description": "Band hammer curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/band/male/biceps/band-bayesian-hammer-curl",
+            "female": "https://musclewiki.com/band/female/biceps/band-bayesian-hammer-curl"
+          },
+          "equipment": "band",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "band bayesian reverse curl",
+          "description": "Band reverse curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/band/male/biceps/band-bayesian-reverse-curl",
+            "female": "https://musclewiki.com/band/female/biceps/band-bayesian-reverse-curl"
+          },
+          "equipment": "band",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell reverse curl",
+          "description": "Dumbbell reverse curls are a weightlifting exercise that target the biceps muscles in the upper arms.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-reverse-curl",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-reverse-curl"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell incline zottman curl",
+          "description": "Dumbbell incline Zottman curls are a weightlifting exercise that target the biceps and forearms muscles. ",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-incline-zottman-curl",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-incline-zottman-curl"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate curl to overhead press",
+          "description": "Plate curl to overhead press is a compound weightlifting exercise that targets multiple muscle groups, including the biceps, shoulders, and triceps.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/biceps/plate-curl-to-overhead-press",
+            "female": "https://musclewiki.com/plate/female/biceps/plate-curl-to-overhead-press"
+          },
+          "equipment": "plate",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate squat hold curl",
+          "description": "Plate squat hold curl is a compound weightlifting exercise that targets the lower body, biceps, and core muscles.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/biceps/plate-squat-hold-curl",
+            "female": "https://musclewiki.com/plate/female/biceps/plate-squat-hold-curl"
+          },
+          "equipment": "plate",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "band high reverse curl",
+          "description": "Band high reverse curls are a resistance band exercise that target the forearm muscles, particularly the brachioradialis.",
+          "video": {
+            "male": "https://musclewiki.com/band/male/biceps/band-high-reverse-curl",
+            "female": "https://musclewiki.com/band/female/biceps/band-high-reverse-curl"
+          },
+          "equipment": "band",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "band reverse curl",
+          "description": "Band reverse curls are a resistance band exercise that target the forearm muscles, particularly the brachioradialis.",
+          "video": {
+            "male": "https://musclewiki.com/band/male/biceps/band-reverse-curl",
+            "female": "https://musclewiki.com/band/female/biceps/band-reverse-curl"
+          },
+          "equipment": "band",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "trx reverse curl",
+          "description": "TRX reverse curls are a resistance band exercise that target the forearm muscles, particularly the brachioradialis. ",
+          "video": {
+            "male": "https://musclewiki.com/trx/male/biceps/trx-reverse-curl",
+            "female": "https://musclewiki.com/trx/female/biceps/trx-reverse-curl"
+          },
+          "equipment": "trx",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell landmine row",
+          "description": "Barbell landmine rows are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and rear delts.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-landmine-row",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-landmine-row"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "chin ups",
+          "description": "Chin-ups are a bodyweight exercise that target the upper back muscles, particularly the lats and biceps.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/biceps/chin-ups",
+            "female": "https://musclewiki.com/bodyweight/female/biceps/chin-ups"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell meadows row",
+          "description": "Barbell Meadows rows are a weightlifting exercise that target the upper back muscles, particularly the lats, rhomboids, and rear delts.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-meadows-row",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-meadows-row"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell pendlay row",
+          "description": "Dumbbell Pendlay rows are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and rear delts.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-pendlay-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-pendlay-row"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate pinch grip row",
+          "description": "Plate pinch grip rows are a weightlifting exercise that target the back muscles, particularly the lats and rhomboids, as well as the forearm muscles.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/biceps/plate-pinch-grip-row",
+            "female": "https://musclewiki.com/plate/female/biceps/plate-pinch-grip-row"
+          },
+          "equipment": "plate",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "lawnmower row",
+          "description": "Lawnmower rows are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and rear delts.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/lawnmower-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/lawnmower-row"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell knee lawnmower row",
+          "description": "Dumbbell knee lawnmower rows are a weightlifting exercise that target the back muscles, particularly the lats, rhomboids, and rear delts.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-knee-lawnmower-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-knee-lawnmower-row"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell bench press",
+          "description": "Barbell bench press is a weightlifting exercise that targets the chest, triceps, and shoulders.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/chest/barbell-bench-press",
+            "female": "https://musclewiki.com/barbell/female/chest/barbell-bench-press"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dips",
+          "description": "Dips are a bodyweight exercise that target the chest, triceps, and shoulders.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/chest/dips",
+            "female": "https://musclewiki.com/bodyweight/female/chest/dips"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell incline bench press",
+          "description": "Barbell incline bench press is a weightlifting exercise that targets the upper portion of the chest, as well as the shoulders and triceps.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/chest/barbell-incline-bench-press",
+            "female": "https://musclewiki.com/barbell/female/chest/barbell-incline-bench-press"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "kettlebell walkover pushup",
+          "description": "Kettlebell walkover pushups are a challenging variation of the traditional pushup exercise that target the chest, triceps, and shoulders, as well as the core muscles.",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/chest/kettlebell-walkover-pushup",
+            "female": "https://musclewiki.com/kettlebells/female/chest/kettlebell-walkover-pushup"
+          },
+          "equipment": "kettlebells",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell hooklying bench press",
+          "description": "The barbell hook-lying bench press is a variation of the bench press that targets the chest, triceps, and shoulders, and also engages the core and glute muscles.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/chest/barbell-hooklying-bench-press",
+            "female": "https://musclewiki.com/barbell/female/chest/barbell-hooklying-bench-press"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell spoto press",
+          "description": "The barbell spoto press is a variation of the bench press that targets the chest, triceps, and shoulders, and helps improve overall bench press form and technique.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/chest/barbell-spoto-press",
+            "female": "https://musclewiki.com/barbell/female/chest/barbell-spoto-press"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell decline alternating single arm press",
+          "description": "Dumbbell decline alternating single-arm press is a weightlifting exercise that targets the chest, shoulders, and triceps.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-decline-alternating-single-arm-press",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-decline-alternating-single-arm-press"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell decline single arm bench press",
+          "description": "The dumbbell decline single-arm bench press is a weightlifting exercise that primarily targets the chest muscles, with additional engagement of the shoulders and triceps.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-decline-single-arm-bench-press",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-decline-single-arm-bench-press"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell decline squeeze press",
+          "description": "The dumbbell decline squeeze press is a variation of the dumbbell bench press that targets the chest muscles, with additional engagement of the triceps and shoulders.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-decline-squeeze-press",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-decline-squeeze-press"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell single arm press",
+          "description": "The dumbbell single-arm press is a weightlifting exercise that primarily targets the shoulder muscles, with additional engagement of the triceps and upper back muscles.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-single-arm-press",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-single-arm-press"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "burpee",
+          "description": "A burpee is a full-body exercise that combines multiple movements such as a squat, push-up, and jump.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/chest/burpee",
+            "female": "https://musclewiki.com/bodyweight/female/chest/burpee"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "upper body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        }
+      ],
+      "advanced": [
+        {
+          "name": "cable twisting curl",
+          "description": "The cable twisting curl is a biceps exercise that also engages the forearms and core muscles.",
+          "video": {
+            "male": "https://musclewiki.com/cables/male/biceps/cable-twisting-curl",
+            "female": "https://musclewiki.com/cables/female/biceps/cable-twisting-curl"
+          },
+          "equipment": "cables",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell reverse curl",
+          "description": "The barbell reverse curl is a variation of the traditional barbell curl that primarily targets the forearm muscles, with additional engagement of the biceps.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-reverse-curl",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-reverse-curl"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate curl to overhead press to tricep extension",
+          "description": "The plate curl to overhead press to tricep extension is a compound exercise that targets the biceps, shoulders, and triceps.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/biceps/plate-curl-to-overhead-press-to-tricep-extension",
+            "female": "https://musclewiki.com/plate/female/biceps/plate-curl-to-overhead-press-to-tricep-extension"
+          },
+          "equipment": "plate",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell long landmine row",
+          "description": "The barbell long landmine row is an upper back exercise that targets the lats, rhomboids, and rear deltoids.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-long-landmine-row",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-long-landmine-row"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell pronated pendlay row",
+          "description": "The barbell pronated Pendlay row is a compound exercise that primarily targets the upper back muscles, including the lats, rhomboids, and rear deltoids.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-pronated-pendlay-row",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-pronated-pendlay-row"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell supinated pendlay row",
+          "description": "The barbell supinated Pendlay row is a compound exercise that primarily targets the upper back muscles, including the lats, rhomboids, and rear deltoids.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-supinated-pendlay-row",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-supinated-pendlay-row"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell supinated row",
+          "description": "The barbell supinated row is a compound exercise that primarily targets the upper back muscles, including the lats, rhomboids, and rear deltoids.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/biceps/barbell-supinated-row",
+            "female": "https://musclewiki.com/barbell/female/biceps/barbell-supinated-row"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell alternating pendlay row",
+          "description": "The dumbbell alternating Pendlay row is a compound exercise that primarily targets the upper back muscles, including the lats, rhomboids, and rear deltoids.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/biceps/dumbbell-alternating-pendlay-row",
+            "female": "https://musclewiki.com/dumbbells/female/biceps/dumbbell-alternating-pendlay-row"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell floor press",
+          "description": "The barbell floor press is a variation of the traditional bench press that is performed lying on the floor. It primarily targets the chest, triceps, and shoulders.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/chest/barbell-floor-press",
+            "female": "https://musclewiki.com/barbell/female/chest/barbell-floor-press"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell larsen bench press",
+          "description": "The barbell Larsen press is a variation of the traditional bench press that targets the upper portion of the chest muscles.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/chest/barbell-larsen-bench-press",
+            "female": "https://musclewiki.com/barbell/female/chest/barbell-larsen-bench-press"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell decline guillotine bench press",
+          "description": "The dumbbell decline guillotine bench press is a variation of the traditional bench press that targets the upper portion of the chest muscles",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-decline-guillotine-bench-press",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-decline-guillotine-bench-press"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell guillotine bench press",
+          "description": "The dumbbell guillotine bench press is a variation of the traditional bench press that targets the upper portion of the chest muscles",
+          "video": {
+            "male": "/dumbbells/male/chest/dumbbell-guillotine-bench-press",
+            "female": ""
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell guillotine incline bench press",
+          "description": "The dumbbell guillotine incline bench press is a variation of the traditional bench press that targets the upper portion of the chest muscles",
+          "video": {
+            "male": "/dumbbells/male/chest/dumbbell-guillotine-incline-bench-press",
+            "female": ""
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell internally rotated chest fly",
+          "description": "The dumbbell internally rotated chest fly targets the pectoral muscles, primarily the lower and middle portions.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-internally-rotated-chest-fly",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-internally-rotated-chest-fly"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell internally rotated incline chest fly",
+          "description": "The dumbbell internally rotated incline chest fly targets the pectoral muscles, primarily the lower and middle portions.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/chest/dumbbell-internally-rotated-incline-chest-fly",
+            "female": "https://musclewiki.com/dumbbells/female/chest/dumbbell-internally-rotated-incline-chest-fly"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate deficit pushup",
+          "description": "A plate deficit pushup is a variation of the standard pushup exercise that involves elevating the hands on weight plates, making the exercise more challenging by increasing the range of motion and the activation of the chest and triceps muscles.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/chest/plate-deficit-pushup",
+            "female": "https://musclewiki.com/plate/female/chest/plate-deficit-pushup"
+          },
+          "equipment": "plate",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate overhead shrug",
+          "description": "The plate overhead shrug is a shoulder exercise that primarily targets the upper trapezius muscle, along with other muscles of the shoulders and upper back.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/traps/plate-overhead-shrug",
+            "female": "https://musclewiki.com/plate/female/traps/plate-overhead-shrug"
+          },
+          "equipment": "plate",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "cable upright row",
+          "description": "Cable upright row is an exercise that targets the shoulders, specifically the upper trapezius muscles.",
+          "video": {
+            "male": "https://musclewiki.com/cables/male/traps/cable-upright-row",
+            "female": "https://musclewiki.com/cables/female/traps/cable-upright-row"
+          },
+          "equipment": "cables",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "band horizontal shrug",
+          "description": "A band horizontal shrug is an exercise that targets the muscles in the upper back, primarily the trapezius and rhomboid muscles.",
+          "video": {
+            "male": "https://musclewiki.com/band/male/traps/band-horizontal-shrug",
+            "female": "https://musclewiki.com/band/female/traps/band-horizontal-shrug"
+          },
+          "equipment": "band",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell upright row",
+          "description": "Barbell upright rows are a weightlifting exercise that targets the shoulders, upper back, and traps.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/traps/barbell-upright-row",
+            "female": "https://musclewiki.com/barbell/female/traps/barbell-upright-row"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell z press",
+          "description": "The barbell Z-press is an exercise that targets the shoulders and upper back.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/traps/barbell-z-press",
+            "female": "https://musclewiki.com/barbell/female/traps/barbell-z-press"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dips narrow elbows",
+          "description": "Narrow elbow dips are similar to regular dips, except that the elbows are kept close to the body during the movement.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/triceps/dips-narrow-elbows",
+            "female": "https://musclewiki.com/bodyweight/female/triceps/dips-narrow-elbows"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "kettlebell skull crusher",
+          "description": "The kettlebell skull crusher is a triceps exercise that involves lying on a bench or the floor while holding a kettlebell with both hands.",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/triceps/kettlebell-skull-crusher",
+            "female": "https://musclewiki.com/kettlebells/female/triceps/kettlebell-skull-crusher"
+          },
+          "equipment": "kettlebells",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "kettlebell decline skull crusher",
+          "description": "The kettlebell decline skull crusher is a triceps exercise that involves lying on a bench or the floor while holding a kettlebell with both hands",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/triceps/kettlebell-decline-skull-crusher",
+            "female": "https://musclewiki.com/kettlebells/female/triceps/kettlebell-decline-skull-crusher"
+          },
+          "equipment": "kettlebells",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "cable cross pushdown",
+          "description": "Cable cross pushdown is an exercise that primarily targets the triceps muscles.",
+          "video": {
+            "male": "https://musclewiki.com/cables/male/triceps/cable-cross-pushdown",
+            "female": "https://musclewiki.com/cables/female/triceps/cable-cross-pushdown"
+          },
+          "equipment": "cables",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "band overhead tricep extension",
+          "description": "Band overhead tricep extension is a resistance band exercise that targets the triceps muscles.",
+          "video": {
+            "male": "https://musclewiki.com/band/male/triceps/band-overhead-tricep-extension",
+            "female": "https://musclewiki.com/band/female/triceps/band-overhead-tricep-extension"
+          },
+          "equipment": "band",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "band skullcrusher",
+          "description": "A band skullcrusher is an exercise that targets the triceps using a resistance band.",
+          "video": {
+            "male": "https://musclewiki.com/band/male/triceps/band-skullcrusher",
+            "female": "https://musclewiki.com/band/female/triceps/band-skullcrusher"
+          },
+          "equipment": "band",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell overhead tricep extension",
+          "description": "Barbell overhead tricep extension, also known as barbell skull crushers or lying triceps extensions, is a weightlifting exercise that targets the triceps muscles.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/triceps/barbell-overhead-tricep-extension",
+            "female": "https://musclewiki.com/barbell/female/triceps/barbell-overhead-tricep-extension"
+          },
+          "equipment": "barbell",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell rolling tricep extension",
+          "description": "Dumbbell rolling tricep extension is an exercise that targets the triceps muscles.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/triceps/dumbbell-rolling-tricep-extension",
+            "female": "https://musclewiki.com/dumbbells/female/triceps/dumbbell-rolling-tricep-extension"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate curl to overhead press to tricep extension",
+          "description": "The plate curl to overhead press to tricep extension is an exercise that targets the upper portion of the chest muscles and the triceps muscles.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/biceps/plate-curl-to-overhead-press-to-tricep-extension",
+            "female": "https://musclewiki.com/plate/female/biceps/plate-curl-to-overhead-press-to-tricep-extension"
+          },
+          "equipment": "plate",
+          "muscle_group": "upper body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        }
+      ]
+    },
+    "lower body": {
+      "beginner": [
+        {
+          "name": "dumbbell goblet squat",
+          "description": "Dumbbell goblet squat is a compound exercise that targets the lower body, primarily the quadriceps, hamstrings, and glutes.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-goblet-squat"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "bulgarian split squat",
+          "description": "Bulgarian split squat is a unilateral exercise that primarily targets the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/quads/bulgarian-split-squat",
+            "female": "https://musclewiki.com/bodyweight/female/quads/bulgarian-split-squat"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "kettlebell step up",
+          "description": "The kettlebell step-up is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/quads/kettlebell-step-up",
+            "female": "https://musclewiki.com/kettlebells/female/quads/kettlebell-step-up"
+          },
+          "equipment": "kettlebells",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "kettlebell goblet squat",
+          "description": "The kettlebell goblet squat is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/quads/kettlebell-goblet-squat",
+            "female": "https://musclewiki.com/kettlebells/female/quads/kettlebell-goblet-squat"
+          },
+          "equipment": "kettlebells",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "kettlebell heels up goblet squat",
+          "description": "The kettlebell heels up goblet squat is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/quads/kettlebell-heels-up-goblet-squat",
+            "female": "https://musclewiki.com/kettlebells/female/quads/kettlebell-heels-up-goblet-squat"
+          },
+          "equipment": "kettlebells",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "kettlebell reverse lunge",
+          "description": "The kettlebell reverse lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/quads/kettlebell-reverse-lunge",
+            "female": "https://musclewiki.com/kettlebells/female/quads/kettlebell-reverse-lunge"
+          },
+          "equipment": "kettlebells",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "kettlebell forward lunge",
+          "description": "The kettlebell forward lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/quads/kettlebell-forward-lunge",
+            "female": "https://musclewiki.com/kettlebells/female/quads/kettlebell-forward-lunge"
+          },
+          "equipment": "kettlebells",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "kettlebell lateral lunge",
+          "description": "The kettlebell lateral lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/quads/kettlebell-lateral-lunge",
+            "female": "https://musclewiki.com/kettlebells/female/quads/kettlebell-lateral-lunge"
+          },
+          "equipment": "kettlebells",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "side lunges",
+          "description": "The kettlebell side lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/quads/side-lunges",
+            "female": "https://musclewiki.com/bodyweight/female/quads/side-lunges"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "forward lunges",
+          "description": "The forward lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings. ",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/quads/forward-lunges",
+            "female": "https://musclewiki.com/bodyweight/female/quads/forward-lunges"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "jump squats",
+          "description": "Jump squats are a plyometric exercise that primarily targets the quadriceps, glutes, and calves.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/quads/jump-squats",
+            "female": "https://musclewiki.com/bodyweight/female/quads/jump-squats"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "bodyweight squat",
+          "description": "Bodyweight squats are a plyometric exercise that primarily targets the quadriceps, glutes, and calves.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/quads/bodyweight-squat",
+            "female": "https://musclewiki.com/bodyweight/female/quads/bodyweight-squat"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "cable goblet squat",
+          "description": "Cable goblet squats are a plyometric exercise that primarily targets the quadriceps, glutes, and calves.",
+          "video": {
+            "male": "https://musclewiki.com/cables/male/quads/cable-goblet-squat",
+            "female": "https://musclewiki.com/cables/female/quads/cable-goblet-squat"
+          },
+          "equipment": "cables",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "band squat",
+          "description": "The band squat is a resistance exercise that targets the lower body, primarily the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/band/male/quads/band-squat",
+            "female": "https://musclewiki.com/band/female/quads/band-squat"
+          },
+          "equipment": "band",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell high bar squat",
+          "description": "The barbell high bar squat is a resistance exercise that targets the lower body, primarily the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-high-bar-squat",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-high-bar-squat"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell step up",
+          "description": "The barbell step-up is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-step-up",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-step-up"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "assisted bulgarian split squat",
+          "description": "The assisted Bulgarian split squat is a variation of the Bulgarian split squat exercise that uses a support to help maintain balance.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/quads/assisted-bulgarian-split-squat",
+            "female": "https://musclewiki.com/bodyweight/female/quads/assisted-bulgarian-split-squat"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "forward lunge",
+          "description": "The forward lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings performed with ones own body weight.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/quads/forward-lunge",
+            "female": "https://musclewiki.com/bodyweight/female/quads/forward-lunge"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "bodyweight reverse lunge",
+          "description": "The bodywieght reverse lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings performed with ones own body weight.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/quads/bodyweight-reverse-lunge",
+            "female": "https://musclewiki.com/bodyweight/female/quads/bodyweight-reverse-lunge"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "split squat",
+          "description": "The split squat is a unilateral lower body exercise that targets the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/quads/split-squat",
+            "female": "https://musclewiki.com/bodyweight/female/quads/split-squat"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell goblet reverse lunge",
+          "description": "The dumbbell goblet reverse lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-reverse-lunge",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-goblet-reverse-lunge"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell reverse lunge",
+          "description": "The dumbbell reverse lunge is a lower body exercise that targets the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-reverse-lunge",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-reverse-lunge"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell split squat",
+          "description": "The dumbbell split squat is a unilateral lower body exercise that targets the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-split-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-split-squat"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell goblet pulse squat",
+          "description": "The dumbbell goblet pulse squat is a unilateral lower body exercise that targets the quadriceps, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-pulse-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-goblet-pulse-squat"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell heels up goblet squat",
+          "description": "The dumbbell heels-up goblet squat is a lower body exercise that targets the quadriceps, glutes, and hamstrings, with added emphasis on the lower leg muscles.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-heels-up-goblet-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-heels-up-goblet-squat"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell leg extension",
+          "description": "The dumbbell leg extension is a beginner-level strength exercise that targets the quadriceps muscles of the lower body. This exercise involves extending the knees against resistance provided by a dumbbell held at the feet.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-leg-extension",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-leg-extension"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell sumo squat",
+          "description": "The dumbbell sumo squat is a lower body strength exercise that targets the quads, glutes, hamstrings, and calves.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-sumo-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-sumo-squat"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate lateral lunge",
+          "description": "The plate lateral lunge is a lower body strength exercise that targets the quads, glutes, hamstrings, and inner thighs.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/quads/plate-lateral-lunge",
+            "female": "https://musclewiki.com/plate/female/quads/plate-lateral-lunge"
+          },
+          "equipment": "plate",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate forward lunge",
+          "description": "The plate forward lunge is a lower body strength exercise that targets the quads, glutes, hamstrings, and inner thighs. ",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/quads/plate-forward-lunge",
+            "female": "https://musclewiki.com/plate/female/quads/plate-forward-lunge"
+          },
+          "equipment": "plate",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate reverse lunge",
+          "description": "The plate reverse lunge is a lower body strength exercise that targets the quads, glutes, hamstrings, and inner thighs. ",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/quads/plate-reverse-lunge",
+            "female": "https://musclewiki.com/plate/female/quads/plate-reverse-lunge"
+          },
+          "equipment": "plate",
+          "muscle_group": "lower body",
+          "fitness_level": "beginner",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        }
+      ],
+      "intermediate": [
+        {
+          "name": "machine leg press",
+          "description": "The machine leg press is a strength exercise that targets the quads, glutes, hamstrings, and calves.",
+          "video": {
+            "male": "https://musclewiki.com/machine/male/quads/machine-leg-press",
+            "female": "https://musclewiki.com/machine/female/quads/machine-leg-press"
+          },
+          "equipment": "machine",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "machine leg extension",
+          "description": "The machine leg extension is a strength exercise that targets the quads.",
+          "video": {
+            "male": "https://musclewiki.com/machine/male/quads/machine-leg-extension",
+            "female": "https://musclewiki.com/machine/female/quads/machine-leg-extension"
+          },
+          "equipment": "machine",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell curtsy lunge",
+          "description": "The barbell curtsy lunge is a strength exercise that targets the quads, glutes, and hamstrings. It is performed by stepping one leg behind the other in a curtsy-like motion while holding a barbell on the back of the shoulders, and then returning to a standing position. It is commonly used in gym workouts for lower body strength training.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-curtsy-lunge",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-curtsy-lunge"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell coan deadlift",
+          "description": "The barbell Coan deadlift is a strength exercise that targets the lower back, glutes, and hamstrings. It is performed by lifting a barbell off the ground while maintaining a flat back and then returning it to the ground. It is named after powerlifter Ed Coan, who popularized the exercise as a means of improving his deadlift. It is commonly used in gym workouts for lower body strength training.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-coan-deadlift",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-coan-deadlift"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell pause squat",
+          "description": "The barbell pause squat is a strength exercise that targets the quads, glutes, and hamstrings. It is performed by squatting down with a barbell on the back of the shoulders and pausing at the bottom of the movement for a specified amount of time before returning to a standing position. This exercise is commonly used to improve squat form and increase lower body strength.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-pause-squat",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-pause-squat"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell reverse lunge",
+          "description": "The barbell reverse lunge is a strength exercise that targets the quads, glutes, and hamstrings. It is performed by stepping back with one leg and lowering the body until the knee of the back leg almost touches the ground while holding a barbell on the back of the shoulders. It is commonly used in gym workouts for lower body strength training.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-reverse-lunge",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-reverse-lunge"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell side step up",
+          "description": "A compound exercise that targets the lower body muscles, including the quads, hamstrings, and glutes. It involves stepping up onto a bench or box with one foot while holding a barbell on the back of the shoulders.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-side-step-up",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-side-step-up"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell split squat",
+          "description": "A strength exercise that targets the quads, glutes, and hamstrings. It involves lunging forward with one leg while holding a barbell on the back of the shoulders.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-split-squat",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-split-squat"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell step up balance",
+          "description": "A strength exercise that targets the lower body muscles, including the quads, hamstrings, and glutes. It involves stepping up onto a bench or box with one foot while holding a barbell on the back of the shoulders and maintaining balance.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-step-up-balance",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-step-up-balance"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell tap pause squat",
+          "description": "A compound exercise that targets the lower body muscles, including the quads, hamstrings, and glutes. It involves squatting down with a barbell on the back of the shoulders and tapping the ground with one foot before standing back up.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-tap-pause-squat",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-tap-pause-squat"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "bulgarian split squat",
+          "description": "The Bulgarian split squat is a unilateral exercise that targets the quadriceps, hamstrings, and glutes. It requires no equipment and can be done anywhere.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/quads/bulgarian-split-squat",
+            "female": "https://musclewiki.com/bodyweight/female/quads/bulgarian-split-squat"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "curtsy lunge",
+          "description": "The curtsy lunge is a lower body exercise that targets the quads, hamstrings, and glutes. It is a unilateral exercise that can be done with just your body weight or dumbbells.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/quads/curtsy-lunge",
+            "female": "https://musclewiki.com/bodyweight/female/quads/curtsy-lunge"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "heels up squat",
+          "description": "The heels up squat is a variation of the traditional squat that places more emphasis on the quads. By raising your heels off the ground, you shift the weight forward and engage the quads more.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/quads/heels-up-squat",
+            "female": "https://musclewiki.com/bodyweight/female/quads/heels-up-squat"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "lateral lunge",
+          "description": "The lateral lunge is a lower body exercise that targets the quads, hamstrings, and glutes. It is a unilateral exercise that can be done with just your body weight or dumbbells.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/quads/lateral-lunge",
+            "female": "https://musclewiki.com/bodyweight/female/quads/lateral-lunge"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell goblet split squat",
+          "description": "The dumbbell goblet split squat is a unilateral leg exercise that targets the quads, glutes, and hamstrings. It is a variation of the traditional dumbbell split squat, but with the addition of holding the dumbbell in front of your chest like a goblet.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-split-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-goblet-split-squat"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell lateral lunge reach",
+          "description": "The dumbbell lateral lunge reach is a lower body exercise that primarily targets the quads, glutes, and hamstrings. It also engages the core and improves balance and stability. To perform the exercise, stand with your feet shoulder-width apart and hold a dumbbell in each hand. Step your left foot out to the side and lunge to the left while reaching the dumbbells down towards your left foot. Keep your chest up and your back straight. Return to the starting position and repeat on the other side.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-lateral-lunge-reach",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-lateral-lunge-reach"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell front rack squat",
+          "description": "The dumbbell front rack squat is a lower body exercise that primarily targets the quads, glutes, and hamstrings. It also engages the core and improves upper body strength and stability. To perform the exercise, hold a dumbbell in each hand and bring them up to shoulder height, resting them on the front of your shoulders. Stand with your feet shoulder-width apart and squat down, keeping your weight in your heels and your chest up. Return to the starting position and repeat.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-front-rack-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-front-rack-squat"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell offset squat",
+          "description": "The dumbbell offset squat is a lower body exercise that primarily targets the quads, glutes, and hamstrings. It also engages the core and improves balance and stability. To perform the exercise, hold a dumbbell in one hand and rest it on your shoulder. Stand with your feet shoulder-width apart and squat down, keeping your weight in your heels and your chest up. Return to the starting position and repeat on the other side.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-offset-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-offset-squat"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell thruster",
+          "description": "The dumbbell thruster is a full-body exercise that targets the legs, shoulders, and core. It involves holding a dumbbell in each hand, performing a squat, and then pushing the dumbbells overhead while straightening the legs. This exercise is great for improving overall strength and power.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-thruster",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-thruster"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate squat",
+          "description": "The plate squat is a lower body exercise that targets the quadriceps, hamstrings, and glutes. It involves holding a weight plate in front of your chest while performing a squat. This exercise is great for building lower body strength and improving squat form.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/quads/plate-squat",
+            "female": "https://musclewiki.com/plate/female/quads/plate-squat"
+          },
+          "equipment": "plate",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate curtsy lunge",
+          "description": "The plate curtsy lunge is a lower body exercise that targets the quadriceps, hamstrings, glutes, and inner thighs. It involves holding a weight plate at chest height and stepping back and across your body into a lunge position. This exercise is great for building lower body strength and improving balance.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/quads/plate-curtsy-lunge",
+            "female": "https://musclewiki.com/plate/female/quads/plate-curtsy-lunge"
+          },
+          "equipment": "plate",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate overhead squat",
+          "description": "The plate overhead squat is a strength exercise that targets the lower body. It involves holding a weighted plate above the head while performing a squat. This exercise can help improve lower body strength, stability, and mobility.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/quads/plate-overhead-squat",
+            "female": "https://musclewiki.com/plate/female/quads/plate-overhead-squat"
+          },
+          "equipment": "plate",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate overhead walking lunge",
+          "description": "The plate overhead walking lunge is a strength exercise that targets the lower body. It involves holding a weighted plate above the head while performing walking lunges. This exercise can help improve lower body strength, stability, and balance.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/quads/plate-overhead-walking-lunge",
+            "female": "https://musclewiki.com/plate/female/quads/plate-overhead-walking-lunge"
+          },
+          "equipment": "plate",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate thruster",
+          "description": "The plate thruster is a strength exercise that targets the lower body and shoulders. It involves holding a weighted plate at shoulder height and performing a squat followed by an overhead press. This exercise can help improve lower body and shoulder strength, as well as overall conditioning.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/quads/plate-thruster",
+            "female": "https://musclewiki.com/plate/female/quads/plate-thruster"
+          },
+          "equipment": "plate",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "trx curtsy lunge",
+          "description": "The TRX curtsy lunge is a strength exercise that targets the lower body and core. It involves stepping back into a curtsy lunge while holding onto TRX straps for stability. This exercise can help improve lower body strength, stability, and balance.",
+          "video": {
+            "male": "https://musclewiki.com/trx/male/quads/trx-curtsy-lunge",
+            "female": "https://musclewiki.com/trx/female/quads/trx-curtsy-lunge"
+          },
+          "equipment": "trx",
+          "muscle_group": "lower body",
+          "fitness_level": "intermediate",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        }
+      ],
+      "advanced": [
+        {
+          "name": "barbell squat",
+          "description": "The barbell squat is a compound exercise that targets the quadriceps, hamstrings, glutes, and lower back. It involves placing a barbell on the shoulders and squatting down until the thighs are parallel to the ground, then standing back up.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-squat",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-squat"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "cable split squat",
+          "description": "The cable split squat is a unilateral exercise that targets the quadriceps, hamstrings, and glutes. It involves stepping forward into a lunge position and then lowering the back knee towards the ground while keeping the front knee over the ankle, then pushing back up to the starting position.",
+          "video": {
+            "male": "https://musclewiki.com/cables/male/quads/cable-split-squat",
+            "female": "https://musclewiki.com/cables/female/quads/cable-split-squat"
+          },
+          "equipment": "cables",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "cable standing leg extension",
+          "description": "The cable standing leg extension is an isolation exercise that targets the quadriceps. It involves attaching a cable to a low pulley, standing facing away from the machine, and lifting the leg forward while keeping the knee straight.",
+          "video": {
+            "male": "https://musclewiki.com/cables/male/quads/cable-standing-leg-extension",
+            "female": "https://musclewiki.com/cables/female/quads/cable-standing-leg-extension"
+          },
+          "equipment": "cables",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "band spanish squat",
+          "description": "The band spanish squat is a variation of the squat that targets the quadriceps, hamstrings, and glutes. It involves placing a resistance band around the thighs, stepping the feet shoulder-width apart, and squatting down while pushing the knees outwards against the band.",
+          "video": {
+            "male": "https://musclewiki.com/band/male/quads/band-spanish-squat",
+            "female": "https://musclewiki.com/band/female/quads/band-spanish-squat"
+          },
+          "equipment": "band",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell goblet bulgarian split squat",
+          "description": "A Bulgarian split squat variation that involves holding a dumbbell vertically in front of your chest, while performing the exercise.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-bulgarian-split-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-goblet-bulgarian-split-squat"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell bulgarian split squat",
+          "description": "A Bulgarian split squat variation that involves holding a barbell on your shoulders, while performing the exercise.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-bulgarian-split-squat",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-bulgarian-split-squat"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell front squat olympic",
+          "description": "A front squat variation that involves holding a barbell in the front rack position, with a clean grip.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-front-squat-olympic",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-front-squat-olympic"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell front squat bodybuilding",
+          "description": "A front squat variation that involves holding a barbell in the front rack position, with a bodybuilding grip.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-front-squat-bodybuilding",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-front-squat-bodybuilding"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell low bar squat",
+          "description": "A low bar squat variation that involves placing the barbell lower on your back, and leaning forward more than in a high bar squat.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-low-bar-squat",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-low-bar-squat"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell bulgarian split squat",
+          "description": "The dumbbell Bulgarian split squat is a unilateral lower body exercise that targets the quads, glutes, and hamstrings. To perform this exercise, you will need a pair of dumbbells and a bench or sturdy elevated surface.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-bulgarian-split-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-bulgarian-split-squat"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell forward lunge",
+          "description": "The barbell forward lunge is a compound lower body exercise that targets the quads, glutes, and hamstrings. To perform this exercise, you will need a barbell and a squat rack.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-forward-lunge",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-forward-lunge"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell front rack step up",
+          "description": "The barbell front rack step-up is a unilateral lower body exercise that targets the quads, glutes, and hamstrings. To perform this exercise, you will need a barbell and a sturdy elevated surface.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-front-rack-step-up",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-front-rack-step-up"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell bulgarian split squat",
+          "description": "The dumbbell Bulgarian split squat is a single-leg strength exercise that targets the quads, glutes, and hamstrings. It involves stepping forward with one foot onto an elevated surface (such as a bench or step) and lowering the back knee towards the ground, while holding a dumbbell in each hand.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-bulgarian-split-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-bulgarian-split-squat"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell forward lunge",
+          "description": "The barbell forward lunge is a lower body strength exercise that targets the quads, glutes, and hamstrings. It involves taking a step forward with one foot and lowering the back knee towards the ground, while holding a barbell across the shoulders.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-forward-lunge",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-forward-lunge"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell front rack step up",
+          "description": "The barbell front rack step-up is a single-leg strength exercise that targets the quads, glutes, and hamstrings. It involves stepping up onto an elevated surface (such as a bench or step) with one foot while holding a barbell across the front of the shoulders.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-front-rack-step-up",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-front-rack-step-up"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell heels up back squat",
+          "description": "The barbell heels-up back squat is a variation of the traditional barbell back squat that requires the lifter to raise their heels off the ground. This variation shifts more of the load onto the quads and can be helpful for lifters with limited ankle mobility.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-heels-up-back-squat",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-heels-up-back-squat"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell reverse deadlift",
+          "description": "The barbell reverse deadlift is an advanced lower body exercise that primarily targets the quadriceps, glutes, and hamstrings. This exercise involves standing on a raised platform and performing a deadlift movement in reverse, pulling the barbell up towards the hips.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-reverse-deadlift",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-reverse-deadlift"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "bodyweight reverse step up",
+          "description": "The bodyweight reverse step up is an advanced lower body exercise that primarily targets the quadriceps, glutes, and hamstrings. This exercise involves stepping up onto a raised platform in reverse, with one leg at a time, while keeping the core engaged and maintaining balance.",
+          "video": {
+            "male": "https://musclewiki.com/bodyweight/male/quads/bodyweight-reverse-step-up",
+            "female": "https://musclewiki.com/bodyweight/female/quads/bodyweight-reverse-step-up"
+          },
+          "equipment": "bodyweight",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "barbell zercher squat",
+          "description": "The barbell zercher squat is an advanced lower body exercise that primarily targets the quadriceps, glutes, and hamstrings. This exercise involves holding a barbell in the crook of the elbows and performing a squat movement while maintaining an upright posture and engaging the core.",
+          "video": {
+            "male": "https://musclewiki.com/barbell/male/quads/barbell-zercher-squat",
+            "female": "https://musclewiki.com/barbell/female/quads/barbell-zercher-squat"
+          },
+          "equipment": "barbell",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell goblet curtsy lunge",
+          "description": "The dumbbell goblet curtsy lunge is an advanced lower body exercise that primarily targets the quadriceps, glutes, and hamstrings. This exercise involves holding a dumbbell at chest level and stepping one foot behind and across the other leg, while bending both knees to lower the body and engage the muscles of the lower body.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-curtsy-lunge",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-goblet-curtsy-lunge"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell goblet lateral lunge",
+          "description": "The dumbbell goblet lateral lunge is a great exercise for developing strength and flexibility in the lower body. Start by holding a dumbbell in front of your chest with both hands, and step laterally to one side, bending your knee and lowering your body until your thigh is parallel to the ground. Then push back up to the starting position and repeat on the other side. This exercise targets the quads, glutes, and hamstrings.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-goblet-lateral-lunge",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-goblet-lateral-lunge"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell front rack pause squat",
+          "description": "The dumbbell front rack pause squat is a challenging exercise that targets the quads, glutes, and hamstrings. Hold a pair of dumbbells at shoulder height with your elbows up and palms facing each other. Lower your body into a squat, pausing at the bottom for a few seconds before pushing back up to the starting position. Make sure to keep your chest up and your knees in line with your toes throughout the movement.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-front-rack-pause-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-front-rack-pause-squat"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "dumbbell heels up narrow goblet squat",
+          "description": "The dumbbell heels up narrow goblet squat is a variation of the goblet squat that places more emphasis on the quads. Hold a dumbbell with both hands at chest height, and lift your heels off the ground. Lower your body into a squat, keeping your feet close together and your knees in line with your toes. Push back up to the starting position and repeat for several reps.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/dumbbell-heels-up-narrow-goblet-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/dumbbell-heels-up-narrow-goblet-squat"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "single arm overhead squat",
+          "description": "The single arm overhead squat is an advanced lower body exercise that primarily targets the quads, while also engaging the core and upper body. To perform this exercise, stand with your feet shoulder-width apart, holding a dumbbell in one hand above your head. Slowly lower your body down into a squat position while keeping the weight above your head, then return to the starting position. Repeat for desired number of repetitions before switching sides.",
+          "video": {
+            "male": "https://musclewiki.com/dumbbells/male/quads/single-arm-overhead-squat",
+            "female": "https://musclewiki.com/dumbbells/female/quads/single-arm-overhead-squat"
+          },
+          "equipment": "dumbbells",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "plate single leg deadlift",
+          "description": "The plate single leg deadlift is an advanced lower body exercise that primarily targets the quads and hamstrings, while also engaging the core and glutes. To perform this exercise, stand with one foot on a weight plate and the other foot planted firmly on the ground. Hold a weight plate in front of your body with both hands. Slowly lower your body down into a deadlift position while keeping the weight plate close to your body, then return to the starting position. Repeat for desired number of repetitions before switching sides.",
+          "video": {
+            "male": "https://musclewiki.com/plate/male/quads/plate-single-leg-deadlift",
+            "female": "https://musclewiki.com/plate/female/quads/plate-single-leg-deadlift"
+          },
+          "equipment": "plate",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        },
+        {
+          "name": "kettlebell single leg deadlift",
+          "description": "The kettlebell single leg deadlift is an advanced lower body exercise that primarily targets the hamstrings and glutes, while also engaging the core and quads. To perform this exercise, stand with one foot planted firmly on the ground and hold a kettlebell in the opposite hand. Slowly lower your body down into a deadlift position while keeping the kettlebell close to your body, then return to the starting position. Repeat for desired number of repetitions before switching sides.",
+          "video": {
+            "male": "https://musclewiki.com/kettlebells/male/hamstrings/kettlebell-single-leg-deadlift",
+            "female": "https://musclewiki.com/kettlebells/female/hamstrings/kettlebell-single-leg-deadlift"
+          },
+          "equipment": "kettlebells",
+          "muscle_group": "lower body",
+          "fitness_level": "advanced",
+          "fitness_goal": "strength",
+          "default_exercise_stat_id": ""
+        }
+      ]
+    }
+  },
+  "flexibility": {
+    "beginner": [
+      {
+        "name": "biceps stretch",
+        "description": "The bicep stretch is a great way to improve flexibility, range of motion, arm strength, and reduce your risk of injury. Performing this stretch targets the biceps brachii (biceps)",
+        "video": {
+          "male": "https://musclewiki.com/stretches/male/biceps/biceps-stretch-variation-one",
+          "female": "https://musclewiki.com/stretches/female/biceps/biceps-stretch-variation-one"
+        },
+        "equipment": "stretches",
+        "muscle_group": "upper body",
+        "fitness_level": "beginner",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "corpe pose",
+        "description": "the Corpe Pose (Savasana) is a relaxation pose commonly practiced in yoga.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/biceps/corpe-pose",
+          "female": "https://musclewiki.com/yoga/female/biceps/corpe-pose"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "beginner",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "downward dog",
+        "description": "Downward Dog, or Adho Mukha Svanasana in Sanskrit, is a yoga pose that strengthens and stretches the entire body.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/biceps/downward-dog",
+          "female": "https://musclewiki.com/yoga/female/biceps/downward-dog"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "beginner",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "tree pose",
+        "description": "Tree Pose, or Vriksasana in Sanskrit, is a yoga pose that helps to improve balance and stability. ",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/chest/tree-pose",
+          "female": "https://musclewiki.com/yoga/female/chest/tree-pose"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "beginner",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "warrior one",
+        "description": "Warrior One Pose, or Virabhadrasana I in Sanskrit, is a yoga pose that strengthens and stretches the entire body, particularly the legs, hips, and core muscles.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/chest/warrior-one",
+          "female": "https://musclewiki.com/yoga/female/chest/warrior-one"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "beginner",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "warrior two",
+        "description": "Warrior Two Pose, or Virabhadrasana II in Sanskrit, is a yoga pose that strengthens and stretches the legs, hips, and core muscles.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/chest/warrior-two",
+          "female": "https://musclewiki.com/yoga/female/chest/warrior-two"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "beginner",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "supported matsyasana pose",
+        "description": "Supported Matsyasana Pose, also known as Supported Fish Pose, is a restorative yoga pose that opens up the chest and the front of the neck, and helps to relieve tension in the upper back and shoulders.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/chest/supported-matsyasana-pose",
+          "female": "https://musclewiki.com/yoga/female/chest/supported-matsyasana-pose"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "beginner",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "quads stretch",
+        "description": "The quadriceps are four muscles located in the anterior, or front, part of your thigh. This muscle group acts to extend the leg and strengthen the knee. This stretch can help if you have tight quads.",
+        "video": {
+          "male": "https://musclewiki.com/stretches/male/quads/quads-stretch-variation-one",
+          "female": "https://musclewiki.com/stretches/female/quads/quads-stretch-variation-one"
+        },
+        "equipment": "stretches",
+        "muscle_group": "lower body",
+        "fitness_level": "beginner",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "crescent moon pose",
+        "description": "Crescent Moon Pose, or Anjaneyasana in Sanskrit, is a yoga pose that stretches the hips, thighs, and groin, and improves balance and stability.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/quads/crescent-moon-pose",
+          "female": "https://musclewiki.com/yoga/female/quads/crescent-moon-pose"
+        },
+        "equipment": "yoga",
+        "muscle_group": "lower body",
+        "fitness_level": "beginner",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "crescent moon pose quad stretch with block",
+        "description": "Crescent Moon Pose, or Anjaneyasana in Sanskrit, is a yoga pose that stretches the hips, thighs, and groin, and improves balance and stability.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/quads/crescent-moon-pose-quad-stretch-with-block",
+          "female": "https://musclewiki.com/yoga/female/quads/crescent-moon-pose-quad-stretch-with-block"
+        },
+        "equipment": "yoga",
+        "muscle_group": "lower body",
+        "fitness_level": "beginner",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "runners lunge",
+        "description": "Runner's Lunge Pose, or Anjaneyasana in Sanskrit, is a yoga pose that stretches the hips, thighs, and groin, and improves flexibility and balance.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/quads/runners-lunge",
+          "female": "https://musclewiki.com/yoga/female/quads/runners-lunge"
+        },
+        "equipment": "yoga",
+        "muscle_group": "lower body",
+        "fitness_level": "beginner",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "chair pose",
+        "description": "Chair Pose, or Utkatasana in Sanskrit, is a yoga pose that strengthens the legs and core muscles, and improves balance and stability.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/quads/chair-pose",
+          "female": "https://musclewiki.com/yoga/female/quads/chair-pose"
+        },
+        "equipment": "yoga",
+        "muscle_group": "lower body",
+        "fitness_level": "beginner",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "traps stretch",
+        "description": "The trapezios muscle is part of your shoulder girdle. It's responsible for moving and rotating your shoulder blade, stabilizing your arm, and extending your neck.",
+        "video": {
+          "male": "https://musclewiki.com/stretches/male/traps/traps-stretch-variation-one",
+          "female": "https://musclewiki.com/stretches/female/traps/traps-stretch-variation-one"
+        },
+        "equipment": "stretches",
+        "muscle_group": "upper body",
+        "fitness_level": "beginner",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      }
+    ],
+    "intermediate": [
+      {
+        "name": "bow pose",
+        "description": "Bow Pose, or Dhanurasana in Sanskrit, is a yoga pose that strengthens the back muscles, stretches the front of the body, and improves posture.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/chest/bow-pose",
+          "female": "https://musclewiki.com/yoga/female/chest/bow-pose"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "intermediate",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "crescent moon pose quad stretch",
+        "description": "A combinination of the Crescent Moon Pose and Quad Stretch to create a sequence that targets both the hips and the quadriceps.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/quads/crescent-moon-pose-quad-stretch",
+          "female": "https://musclewiki.com/yoga/female/quads/crescent-moon-pose-quad-stretch"
+        },
+        "equipment": "yoga",
+        "muscle_group": "lower body",
+        "fitness_level": "intermediate",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "lord of the dance",
+        "description": "Lord of the Dance Pose, or Natarajasana in Sanskrit, is a yoga pose that improves balance and concentration, stretches the thighs and hips, and strengthens the legs and ankles.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/quads/lord-of-the-dance",
+          "female": "https://musclewiki.com/yoga/female/quads/lord-of-the-dance"
+        },
+        "equipment": "yoga",
+        "muscle_group": "lower body",
+        "fitness_level": "intermediate",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "monkey pose with blocks",
+        "description": "Monkey Pose, or Hanumanasana in Sanskrit, is an advanced yoga pose that requires flexibility in the hamstrings, hips, and groin.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/quads/monkey-pose-with-blocks",
+          "female": "https://musclewiki.com/yoga/female/quads/monkey-pose-with-blocks"
+        },
+        "equipment": "yoga",
+        "muscle_group": "lower body",
+        "fitness_level": "intermediate",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "thread the needle hip over knees",
+        "description": "Thread the Needle Pose with Hip Over Knees, also known as Eye of the Needle Pose, is a yoga pose that stretches the hips, glutes, and lower back.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/traps/thread-the-needle-hip-over-knees",
+          "female": "https://musclewiki.com/yoga/female/traps/thread-the-needle-hip-over-knees"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "intermediate",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "gate pose rounding spine looking up",
+        "description": "Gate Pose with Rounding Spine and Looking Up is not a standard variation of the Gate Pose, also known as Parighasana in Sanskrit.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/lats/gate-pose-rounding-spine-looking-up",
+          "female": "https://musclewiki.com/yoga/female/lats/gate-pose-rounding-spine-looking-up"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "intermediate",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "warrior three",
+        "description": "Warrior Three Pose, or Virabhadrasana III in Sanskrit, is a yoga pose that strengthens the legs, hips, and core muscles, improves balance and stability, and stretches the hamstrings and calves.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/hamstrings/warrior-three",
+          "female": "https://musclewiki.com/yoga/female/hamstrings/warrior-three"
+        },
+        "equipment": "yoga",
+        "muscle_group": "lower body",
+        "fitness_level": "intermediate",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "restful cow face pose legs",
+        "description": "Restful Cow Face Pose with Legs, also known as Supta Gomukhasana in Sanskrit, is a restorative yoga pose that stretches the hips, thighs, and groin.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/glutes/restful-cow-face-pose-legs",
+          "female": "https://musclewiki.com/yoga/female/glutes/restful-cow-face-pose-legs"
+        },
+        "equipment": "yoga",
+        "muscle_group": "lower body",
+        "fitness_level": "intermediate",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "cobra pose",
+        "description": "Cobra Pose, or Bhujangasana in Sanskrit, is a yoga pose that strengthens the muscles of the back, arms, and shoulders, and improves spinal flexibility.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/abdominals/cobra-pose",
+          "female": "https://musclewiki.com/yoga/female/abdominals/cobra-pose"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "intermediate",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "revolved side angle pose with prayer hands",
+        "description": "Revolved Side Angle Pose with Prayer Hands, also known as Parivrtta Parsvakonasana in Sanskrit, is a yoga pose that strengthens the legs, hips, and core muscles, improves spinal flexibility, and stretches the chest and shoulders.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/traps_middle/revolved-side-angle-pose-with-prayer-hands",
+          "female": "https://musclewiki.com/yoga/female/traps_middle/revolved-side-angle-pose-with-prayer-hands"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "intermediate",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "gate pose variation arm extended on side",
+        "description": "Gate Pose with Variation Arm Extended on Side, also known as Parighasana in Sanskrit, is a yoga pose that stretches the sides of the body, hips, and legs.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/obliques/gate-pose-variation-arm-extended-on-side",
+          "female": "https://musclewiki.com/yoga/female/obliques/gate-pose-variation-arm-extended-on-side"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "intermediate",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "wild thing pose",
+        "description": "Wild Thing Pose, or Camatkarasana in Sanskrit, is a yoga pose that strengthens the arms, shoulders, chest, and back, improves spinal flexibility, and opens up the hips and chest.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/obliques/wild-thing-pose",
+          "female": "https://musclewiki.com/yoga/female/obliques/wild-thing-pose"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "intermediate",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      }
+    ],
+    "advanced": [
+      {
+        "name": "crow pose",
+        "description": "Crow Pose, or Bakasana in Sanskrit, is an arm balance yoga pose that strengthens the arms, wrists, and core muscles, and improves balance and concentration.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/biceps/crow-pose",
+          "female": "https://musclewiki.com/yoga/female/biceps/crow-pose"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "advanced",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "monkey pose",
+        "description": "Monkey Pose is not a traditional yoga pose, but there is a pose called Hanumanasana or Monkey Pose, which is also known as the Monkey God Pose or the Split Pose.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/quads/monkey-pose",
+          "female": "https://musclewiki.com/yoga/female/quads/monkey-pose"
+        },
+        "equipment": "yoga",
+        "muscle_group": "lower body",
+        "fitness_level": "advanced",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "headstand",
+        "description": "Headstand Pose, or Sirsasana in Sanskrit, is an advanced yoga pose that strengthens the arms, shoulders, and core muscles, improves blood flow to the brain, and boosts energy and focus.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/shoulders/headstand",
+          "female": "https://musclewiki.com/yoga/female/shoulders/headstand"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "advanced",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "revolved head to knee",
+        "description": "Revolved Head-to-Knee Pose, or Parivrtta Janu Sirsasana in Sanskrit, is a yoga pose that stretches the hamstrings, hips, and spine, and improves digestion.",
+        "video": {
+          "male": "https://musclewiki.com/yoga/male/obliques/revolved-head-to-knee",
+          "female": "https://musclewiki.com/yoga/female/obliques/revolved-head-to-knee"
+        },
+        "equipment": "yoga",
+        "muscle_group": "upper body",
+        "fitness_level": "advanced",
+        "fitness_goal": "flexibility",
+        "default_exercise_stat_id": ""
+      }
+    ]
+  },
+  "cardio": {
+    "beginner": [
+      {
+        "name": "jumping jacks",
+        "description": "Jumping Jacks is an exercise that involves jumping while simultaneously spreading the legs and raising the arms above the head. It is a full-body workout that improves cardiovascular endurance and works the muscles in the legs, arms, and core.",
+        "video": {},
+        "equipment": "none",
+        "fitness_level": "beginner",
+        "fitness_goal": "cardio",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "walk on treadmill",
+        "description": "A treadmill is a fitness machine that allows you to walk, jog, or run indoors while simulating the motion of walking or running outdoors. The machine typically has a conveyor belt that moves at varying speeds and inclines, allowing users to control the intensity and duration of their workouts. ",
+        "video": {},
+        "equipment": "treadmill",
+        "fitness_level": "beginner",
+        "fitness_goal": "cardio",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "elliptical",
+        "description": "An elliptical machine, also known as a cross trainer, is a piece of fitness equipment that simulates the motion of running, walking, or stair climbing while putting less stress on the joints. It typically consists of two pedals that move in an elliptical pattern, and can be adjusted to simulate different levels of resistance and intensity.",
+        "video": {},
+        "equipment": "elliptical",
+        "fitness_level": "beginner",
+        "fitness_goal": "cardio",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "stationary bike",
+        "description": "A stationary bike, also known as an exercise bike, is a piece of fitness equipment that simulates the motion of riding a bicycle while staying in place. It typically consists of a seat, pedals, and handlebars, and can be adjusted to simulate different levels of resistance and intensity. Stationary bikes are popular in gyms and fitness centers, and can also be used at home for cardiovascular exercise and lower body conditioning.",
+        "video": {},
+        "equipment": "stationary_bike",
+        "fitness_level": "beginner",
+        "fitness_goal": "cardio",
+        "default_exercise_stat_id": ""
+      }
+    ],
+    "intermediate": [
+      {
+        "name": "burpees",
+        "description": "Burpees are a high-intensity exercise that involves a combination of strength and cardio movements. They are popular in fitness classes and workouts because they can be performed almost anywhere and require no equipment.",
+        "video": {},
+        "equipment": "none",
+        "fitness_level": "intermediate",
+        "fitness_goal": "cardio",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "jog on treadmill",
+        "description": "A treadmill is a fitness machine that allows you to walk, jog, or run indoors while simulating the motion of walking or running outdoors. The machine typically has a conveyor belt that moves at varying speeds and inclines, allowing users to control the intensity and duration of their workouts.",
+        "video": {},
+        "equipment": "treadmill",
+        "fitness_level": "intermediate",
+        "fitness_goal": "cardio",
+        "default_exercise_stat_id": ""
+      },
+      {
+        "name": "stair climber",
+        "description": "A stair climber, also known as a stair stepper or step machine, is a fitness machine that simulates climbing stairs. It typically consists of a set of pedals or steps that move up and down, creating a repetitive motion similar to climbing stairs. Stair climbers provide a low-impact cardiovascular workout that targets the muscles in the lower body, including the quadriceps, hamstrings, calves, and glutes.",
+        "video": {},
+        "equipment": "stair_climber",
+        "fitness_level": "intermediate",
+        "fitness_goal": "cardio",
+        "default_exercise_stat_id": ""
+      }
+    ],
+    "advanced": [
+      {
+        "name": "High intensity interval training on treadmill",
+        "description": "A treadmill is a fitness machine that allows you to walk, jog, or run indoors while simulating the motion of walking or running outdoors. The machine typically has a conveyor belt that moves at varying speeds and inclines, allowing users to control the intensity and duration of their workouts.",
+        "video": {},
+        "equipment": "treadmill",
+        "fitness_level": "advanced",
+        "fitness_goal": "cardio",
+        "default_exercise_stat_id": ""
+      }
+    ]
+  }
+}
