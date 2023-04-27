@@ -6,12 +6,12 @@ const StartWorkoutButton = () => {
     const navigation = useNavigation();
 
     const startWorkout = () => {
-        navigation.navigate("Exercise 1");
+        navigation.navigate("Workout");
     };
 
     return (
         <TouchableOpacity style={styles.button} onPress={startWorkout}>
-            <Text style={styles.buttonText}>Start Today's Workout</Text>
+            <Text style={styles.buttonText}>Start Today&apos;s Workout</Text>
         </TouchableOpacity>
     );
 };

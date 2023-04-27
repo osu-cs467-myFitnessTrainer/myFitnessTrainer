@@ -2,7 +2,7 @@ import { StyleSheet, View } from "react-native";
 
 import EndWorkoutButton from "../components/EndWorkoutButton";
 
-const ExerciseCardScreen = () => {
+const WorkoutScreen = () => {
     return (
         <View style={styles.container}>
             <EndWorkoutButton />
@@ -18,4 +18,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default ExerciseCardScreen;
+export default WorkoutScreen;

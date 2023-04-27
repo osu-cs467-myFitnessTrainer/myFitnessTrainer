@@ -8,7 +8,7 @@ import SignUpScreen from "./src/screens/SignUpScreen";
 import SettingsScreen from "./src/screens/SettingsScreen";
 import CreateNewPlanScreen from "./src/screens/CreateNewPlanScreen";
 import WorkoutSummaryScreen from "./src/screens/WorkoutSummaryScreen";
-import ExerciseCardScreen from "./src/screens/ExerciseCardScreen";
+import WorkoutScreen from "./src/screens/WorkoutScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -57,8 +57,8 @@ export default function App() {
                     options={{ headerTitleAlign: "center" }}
                 />
                 <Stack.Screen
-                    name="Exercise 1"
-                    component={ExerciseCardScreen}
+                    name="Workout"
+                    component={WorkoutScreen}
                     options={{ headerTitleAlign: "center" }}
                 />
             </Stack.Navigator>
