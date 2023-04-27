@@ -3,8 +3,7 @@ import * as exercise_library from "../exercise_library/exercise_library.json" as
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 
-// import { db } from "../myFitnessTrainer/firebaseConfig.js";
-
+// TO DO: Add these config ID's to a .env file (remove from this file) 
 // firebase config
 const firebaseConfig = {
     apiKey: "AIzaSyBj1gTTLeBEFxXOpvSVevhoW_68j3_lydU",
@@ -101,7 +100,6 @@ async function addExerciseStatToDB(fitnessLevel, fitnessGoal, equipment) {
 }
 
 async function addExercise(exercise) {
-    // const statDocRef = "";
     const statDocRef = await addExerciseStatToDB(
         exercise["fitness_level"],
         exercise["fitness_goal"],
