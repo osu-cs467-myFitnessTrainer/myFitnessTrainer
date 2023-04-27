@@ -4,8 +4,9 @@ import { onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebaseConfig';
 
 const SignInScreen = ({navigation}) => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    // TO DO: FOR TESTING, Revert email and password back to empty strings 
+    const [email, setEmail] = useState('test@test.com');
+    const [password, setPassword] = useState('test123');
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, user => {
