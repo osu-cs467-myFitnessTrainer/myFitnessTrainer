@@ -1,6 +1,5 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Avatar from "./src/components/Avatar";
 import SettingsButton from "./src/components/SettingsButton";
 import DashboardScreen from "./src/screens/DashboardScreen";
 import SignInScreen from "./src/screens/SignInScreen";
@@ -18,20 +17,6 @@ export default function App() {
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen
-                    name="Avatar"
-                    component={AvatarScreen} 
-                    options={{ headerTitleAlign: "center" }}
-                />
-                <Stack.Screen
-                    name="Dashboard"
-                    component={DashboardScreen}
-                    options={{
-                        headerTitleAlign: "center",
-                        headerLeft: () => <Avatar />,
-                        headerRight: () => <SettingsButton />,
-                    }}
-                />
-                {/* <Stack.Screen
                     name="SignIn"
                     component={SignInScreen}
                     options={{
@@ -52,7 +37,13 @@ export default function App() {
                     component={DashboardScreen}
                     options={{
                         headerTitleAlign: "center",
-                        headerLeft: () => <Avatar />,
+                        // TODO: 
+                        // 0. reimport 'import Avatar from "./src/components/Avatar";'
+                        // 1. get user's avatar's storage location in Firebase
+                        // 2. getDownloadURL from avatar's storage location and use as imageSource
+                        // 3. determine pixelSize
+                        // 4. then, we can have something like the following:
+                        // headerLeft: () => <Avatar imgSource={imgSource} pixelSize={200} />
                         headerRight: () => <SettingsButton />,
                     }}
                 />
@@ -75,7 +66,12 @@ export default function App() {
                     name="Workout"
                     component={WorkoutScreen}
                     options={{ headerTitleAlign: "center" }}
-                /> */}
+                />
+                <Stack.Screen
+                    name="Avatar"
+                    component={AvatarScreen} 
+                    options={{ headerTitleAlign: "center" }}
+                />
             </Stack.Navigator>
         </NavigationContainer>
         
