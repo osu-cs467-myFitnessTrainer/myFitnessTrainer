@@ -17,6 +17,20 @@ export default function App() {
     return (
         <NavigationContainer>
             <Stack.Navigator>
+                <Stack.Screen
+                    name="Avatar"
+                    component={AvatarScreen} 
+                    options={{ headerTitleAlign: "center" }}
+                />
+                <Stack.Screen
+                    name="Dashboard"
+                    component={DashboardScreen}
+                    options={{
+                        headerTitleAlign: "center",
+                        headerLeft: () => <Avatar />,
+                        headerRight: () => <SettingsButton />,
+                    }}
+                />
                 {/* <Stack.Screen
                     name="SignIn"
                     component={SignInScreen}
@@ -62,11 +76,6 @@ export default function App() {
                     component={WorkoutScreen}
                     options={{ headerTitleAlign: "center" }}
                 /> */}
-                <Stack.Screen
-                    name="Avatar"
-                    component={AvatarScreen} 
-                    options={{ headerTitleAlign: "center" }}
-                />
             </Stack.Navigator>
         </NavigationContainer>
         
