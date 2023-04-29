@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { auth } from '../../firebaseConfig';
-import SignOutButton from '../components/SignOutButton';
 import StartWorkoutButton from "../components/StartWorkoutButton";
 
 
@@ -12,7 +11,7 @@ const DashboardScreen = () => {
             <Text>Email: {auth.currentUser?.email}</Text>
             <Text>This screen is the Dashboard! Woot!</Text>
             <StartWorkoutButton />
-            <SignOutButton />
+
         </View>
     );
 };
@@ -25,4 +24,4 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     }
-})
+});
