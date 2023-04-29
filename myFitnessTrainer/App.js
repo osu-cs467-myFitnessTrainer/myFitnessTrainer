@@ -17,7 +17,7 @@ export default function App() {
     return (
         <NavigationContainer>
             <Stack.Navigator>
-                <Stack.Screen
+                {/* <Stack.Screen
                     name="SignIn"
                     component={SignInScreen}
                     options={{
@@ -61,9 +61,14 @@ export default function App() {
                     name="Workout"
                     component={WorkoutScreen}
                     options={{ headerTitleAlign: "center" }}
+                /> */}
+                <Stack.Screen
+                    name="Avatar"
+                    component={AvatarScreen} 
+                    options={{ headerTitleAlign: "center" }}
                 />
             </Stack.Navigator>
         </NavigationContainer>
-        // <Stack.Screen name="Avatar" component={AvatarScreen} />
+        
     );
 }
