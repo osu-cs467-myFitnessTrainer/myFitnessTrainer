@@ -1,19 +1,25 @@
-// import { Image, Text, View } from 'react-native';
-// import React, { useState } from 'react';
-import { storage } from '../../firebaseConfig';
-import { getStorage, ref, uploadBytes, putFile } from 'firebase/storage';
-import uuid from "uuid";
-
-// import 'firebase/storage';
-// import firebase from 'firebase/app';
-
-import React, { useState, useEffect } from 'react';
+import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import React, { useState } from 'react';
 import { Button, Image, View, Platform } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
+import { storage } from '../../firebaseConfig';
 
-export default function ImagePickerExample() {
+
+const AvatarScreen = ({navigation}) =>  {
+  const [defaultImageURL, setDefaultImageURL] = useState(null)
+  const [avatarURL, setAvatarURL] = useState(null)
   const [image, setImage] = useState(null);
-  const [uploading, setUploading] = useState(false);
+
+  const defaultImageRef = ref(storage, 'default.png');
+  console.log("defaultImageRef")
+  console.log(defaultImageRef)
+  getDownloadURL(defaultImageRef)
+    .then((url) => {
+      setDefaultImageURL(url);
+    });
+
+    console.log("defaultImageURL")
+    console.log(defaultImageURL)
 
   const pickImage = async () => {
     // No permissions request is necessary for launching the image library
@@ -23,78 +29,62 @@ export default function ImagePickerExample() {
       aspect: [4, 3],
       quality: 0,
     });
-
-    console.log(result);
-
     if (!result.canceled) {
       setImage(result.assets[0].uri);
 
     }
   };
 
-
-
-
-  // // Function to handle image upload
-  // const uploadImage = async () => {
-  //   console.log("in uploadImage func")
-  //   console.log("image.uri")
-  //   console.log(image)
-
-  //   const response = await fetch(image.uri);
-  //   console.log("response")
-  //   console.log(response)
-
-  //   const blob = await res.blob();
-
-  //   const fileRef = ref(getStorage(), uuid.v4());
-  //   const uploadImageResult = await uploadBytes(fileRef, blob);
-  //   console.log("uploadImageResult")
-  //   console.log(uploadImageResult)
-
-  //   uploadBytes(defaultPicReference, blob).then(() => {
-  //     console.log("uploaded a blob or file!")
-  //   });
-  // };
-
   const uploadImage = async () => {
-    console.log("in uploadImage func")
-    // Why are we using XMLHttpRequest? See:
-    // https://github.com/expo/expo/issues/2402#issuecomment-443726662
-    const blob = await new Promise((resolve, reject) => {
-      const xhr = new XMLHttpRequest();
-      xhr.onload = function () {
-        resolve(xhr.response);
-      };
-      xhr.onerror = function (e) {
-        console.log(e);
-        reject(new TypeError("Network request failed"));
-      };
-      xhr.responseType = "blob";
-      xhr.open("GET", image, true);
-      xhr.send(null);
-    });
+    if (image){
+      // https://github.com/expo/examples/blob/master/with-firebase-storage-upload/App.js#L178-L205
+      const blob = await new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.onload = function () {
+          resolve(xhr.response);
+        };
+        xhr.onerror = function (e) {
+          console.log(e);
+          reject(new TypeError("Network request failed"));
+        };
+        xhr.responseType = "blob";
 
-    const fileRef = ref(getStorage(), uuid.v4());
-    const uploadImageResult = await uploadBytes(fileRef, blob);
-    console.log("uploadImageResult")
-    console.log(uploadImageResult)
+        console.log("image")
+        console.log(image)
+        // image ? image : image = starterImageURL;
 
+        xhr.open("GET", image, true);
+        xhr.send(null);
+      });
 
-    // We're done with the blob, close and release it
-    blob.close();
-
-    // return await getDownloadURL(fileRef);
+      const fileRef = ref(getStorage(), "avatar.png");
+      const uploadImageResult = await uploadBytes(fileRef, blob);
+      console.log("uploadImageResult")
+      console.log(uploadImageResult)
+      blob.close();
+      getDownloadURL(fileRef)
+      .then((url) => {
+        setAvatarURL(url);
+      });
+      console.log("avatarURL");
+      console.log(avatarURL);
+    } 
+    else {
+      setAvatarURL(defaultImageURL);
+      console.log("(default) avatarURL");
+      console.log(avatarURL);
+    }
+    navigation.navigate('SignUp')
   };
 
-
+  let imgSource;
+  image ? imgSource = image : imgSource = defaultImageURL;
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Button title="Pick an image from camera roll" onPress={pickImage} />
-      {image && <Image source={{ uri: image }} style={{ width: 200, height: 200 }} />}
-
+      <Image source={{uri: imgSource }} style={{ width: 200, height: 200, borderRadius: 200/2 }} />
+      <Button title="Change avatar" onPress={pickImage} />
       <Button
-        title="upload to firebase"
+        title="Save"
         onPress={uploadImage}
       />
 
@@ -138,4 +128,4 @@ export default function ImagePickerExample() {
 //   };
 
 
-// export default AvatarScreen;
+export default AvatarScreen;
