@@ -20,17 +20,12 @@ import { auth } from "../../firebaseConfig";
     - modifications: Array<String>
 */
 
-const GenerateNewPlanAlgoButton = ({
-    goal,
-    level,
-    duration,
-    modifications,
-}) => {
+const GenerateNewPlanAlgoButton = ({ goal, level, duration }) => {
     // Test props for debugging
     goal = goal ?? ["strength"];
     level = level ?? ["beginner"];
     duration = duration ?? 5;
-    modifications = modifications ?? ["legs"];
+    // modifications = modifications ?? ["legs"];
 
     const navigation = useNavigation();
 
@@ -83,18 +78,6 @@ const styles = StyleSheet.create({
 });
 
 // HELPER FUNCTIONS
-const logWorkoutPlan = (workoutPlan) => {
-    const workoutCount = {};
-    console.log(`workoutPlan length is ${workoutPlan.length}`);
-    workoutPlan.forEach((exercise) => {
-        if (exercise.name in workoutCount) {
-            console.log(`${exercise.name} is a duplicate exercise`);
-        } else {
-            workoutCount[exercise.name] = 1;
-        }
-    });
-    console.log(workoutCount);
-};
 
 /*
     performs query to db for exercises collection based on goal and level survey result and returns an array of exercises
@@ -113,13 +96,14 @@ const createPlan = (exercises, duration) => {
     const workoutPlan = [];
 
     for (let i = 0; i < exercises.length && i < duration; i++) {
-        randomIdx = Math.floor(Math.random() * exercises.length);
+        let randomIdx = Math.floor(Math.random() * exercises.length);
         workoutPlan.push(exercises[randomIdx]);
     }
     return workoutPlan;
 };
-// TODO: Need to add modifications functionality
-const filterQuery = (goal, level, modifications) => {
+
+// TODO: Need to add ability to filter with modifications
+const filterQuery = (goal, level) => {
     switch (level) {
         case "beginner":
             return and(
@@ -169,6 +153,7 @@ const postToWorkoutPlans = async (
     const postRef = await addDoc(collection(db, "workout_plans"), postObject);
     return postRef;
 };
+
 
 const getUserId = async (userEmail) => {
     let userId;
