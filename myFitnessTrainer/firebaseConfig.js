@@ -5,8 +5,9 @@ import { initializeApp } from 'firebase/app';
 // https://firebase.google.com/docs/web/setup#available-libraries
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+import { getStorage } from 'firebase/storage';
 // import {...} from "firebase/functions";
-// import {...} from "firebase/storage";
+// 
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -28,6 +29,8 @@ const app = initializeApp(firebaseConfig);
 // Initialize Firebase Auth/Firstore and get a reference to the service
 const auth = getAuth(app);
 const db = getFirestore(app);
+const storage = getStorage(app);
 
 
-export { auth, db };
+
+export { auth, db, storage };
