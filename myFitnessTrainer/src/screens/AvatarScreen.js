@@ -5,7 +5,7 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { storage } from '../../firebaseConfig';
 import Avatar from '../components/Avatar';
 
-const pickedImageFileName = "avatar.png";
+const pickedImageFileName = Date.now() + ".png";
 const defaultAvatarFileName = "default.png";
 
 const AvatarScreen = ({navigation}) =>  {
@@ -20,6 +20,12 @@ const AvatarScreen = ({navigation}) =>  {
     .then((url) => {
       setDefaultImageURL(url);
       setAvatarURL(url);
+      // If we don't pick a new image, the user's avatars/avatar storage location 
+      // will remain gs://myfitnesstrainer-94289.appspot.com/default.png. However, this value will 
+      // probably get altered in testing/developing the app, so we will reassign it just in case
+      let storageLocation = "gs://" + defaultImageRef._location.bucket + "/" + defaultAvatarFileName;
+      console.log("storageLocation=", storageLocation);
+      // TODO: implement functionality to update the User's avatars/avatar storageLocation 
     });
 
   const pickImage = async () => {
@@ -51,7 +57,7 @@ const AvatarScreen = ({navigation}) =>  {
         xhr.open("GET", image, true);
         xhr.send(null);
       });
-      // save image from device as "avatar.png"
+      // save image from device as pickedImageFileName
       const fileRef = ref(getStorage(), pickedImageFileName);
       await uploadBytes(fileRef, blob);
       blob.close();
@@ -68,7 +74,8 @@ const AvatarScreen = ({navigation}) =>  {
     let newStorageLocation = "gs://" + pickedImageRef._location.bucket + "/" + pickedImageFileName;
     // Ex: newStorageLocation = gs://myfitnesstrainer-94289.appspot.com/avatar.png
     console.log("newStorageLocation=", newStorageLocation);
-    // TODO: implement functionality to update the User's avatars/avatar storageLocation 
+    // TODO: implement functionality to update the User's avatar storageLocation. 
+    // TODO: potential revision to the users collection (add avatar_url attribute directly instead)
     } 
     else {
       // TODO: this section is mainly for debugging. Erase this else section when we implement 
@@ -76,10 +83,6 @@ const AvatarScreen = ({navigation}) =>  {
 
       console.log("no image was picked; using default. avatarURL=", avatarURL);
 
-      // TODO: in theory, if we don't pick a new image, the user's avatars/avatar storage location 
-      // will remain gs://myfitnesstrainer-94289.appspot.com/default.png. However, this value will 
-      // probably get altered in testing/developing the app, so we can perhaps look into setting it
-      // here, or when we define const defaultImageRef
     }
     navigation.navigate("Dashboard")
   };
@@ -88,6 +91,7 @@ const AvatarScreen = ({navigation}) =>  {
   image ? imgSource = image : imgSource = defaultImageURL;  // checks if (picked) image is null
   return (
     <View style={styles.view}>
+      <Text>Stick with the default avatar, or select your own!</Text>
       <Avatar 
         imgSource={imgSource} 
         pixelSize={200} 

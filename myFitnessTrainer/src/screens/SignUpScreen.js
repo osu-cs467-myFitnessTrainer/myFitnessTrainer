@@ -14,7 +14,6 @@ const SignUpScreen = ({navigation}) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, user => {
             if(user) {
-                // TO DO: TAKE USER TO AVATAR SCREEN ONCE CREATED
                 navigation.reset({
                     index: 0,
                     routes: [{name:'Avatar'}]
@@ -29,6 +28,7 @@ const SignUpScreen = ({navigation}) => {
         try {
             addDoc(collection(db, 'users'), 
             {
+                // TODO: potential revision to the users collection (add avatar_url attribute directly instead)
                 avatar_id: doc(db, 'avatars/avatar'),
                 email: email,
                 first_name: firstName,
