@@ -44,7 +44,6 @@ const SignUpScreen = ({navigation}) => {
     };
 
     const validateInput = () => {
-        // TO DO: Can enhance validation with an error message under each input field
         if (firstName === '' || lastName === '' || username === '' || email === '' || password === '') {
             Alert.alert('Missing Fields', 'All fields are required to create an account.');
             return false;
@@ -64,7 +63,8 @@ const SignUpScreen = ({navigation}) => {
             addUserToDatabase();
         })
         .catch(error => {
-            alert(error.message);
+            console.log(error.message, error.code);
+            displayErrorAlert(error);
         })
     };
 
@@ -108,6 +108,7 @@ const SignUpScreen = ({navigation}) => {
             secureTextEntry
             autoCapitalize='none'
         />
+        <Text style={styles.passwordRequirementsText}>at least 6 characters</Text>
       </View>
       <View style={styles.buttonContainer}>
         <TouchableOpacity
@@ -121,7 +122,23 @@ const SignUpScreen = ({navigation}) => {
   )
 }
 
-export default SignUpScreen
+export default SignUpScreen;
+
+const displayErrorAlert = (error) => {
+    switch (error.code) {
+        case "auth/invalid-email":
+            Alert.alert("Invalid Email", "Please enter a valid email.");
+            break
+        case "auth/missing-password":
+            Alert.alert("Password Required", "Please enter a password to sign up.");
+            break
+        case "auth/weak-password":
+            Alert.alert("Password Requirements", "Password should be at least 6 characters.");
+            break
+        default:
+            Alert.alert("Unsuccessful Sign Up", "Your sign up was unsuccessful, please try again.");
+    }
+};
 
 const styles = StyleSheet.create({
     container: {
@@ -172,4 +189,9 @@ const styles = StyleSheet.create({
         fontWeight: 800,
         fontSize: 16
     },
+    passwordRequirementsText: {
+        fontStyle: 'italic',
+        color: 'gray',
+        paddingLeft: 4
+    }
 });

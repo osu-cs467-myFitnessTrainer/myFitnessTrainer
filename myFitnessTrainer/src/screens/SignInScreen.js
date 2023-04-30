@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Alert, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import { onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebaseConfig';
@@ -27,7 +27,9 @@ const SignInScreen = ({navigation}) => {
             const user = userCredentials.user;
             console.log('Logged in with:', user.email);
         })
-        .catch(error => alert(error.message))
+        .catch(error => {
+            displayErrorAlert(error);
+        })
     };
     
     const signUpMessage = "Don't have an account?";
@@ -72,6 +74,25 @@ const SignInScreen = ({navigation}) => {
 }
 
 export default SignInScreen
+
+const displayErrorAlert = (error) => {
+    switch (error.code) {
+        case "auth/wrong-password":
+            Alert.alert("Incorrect Password", "The password you entered is incorrect.");
+            break
+        case "auth/user-not-found":
+            Alert.alert("User Not Found", "No user exists with that email.");
+            break
+        case "auth/invalid-email":
+            Alert.alert("Invalid Email", "Please enter a valid email.");
+            break
+        case "auth/missing-password":
+            Alert.alert("Password Required", "Please enter a password to sign in.");
+            break
+        default:
+            Alert.alert("Unsuccessful Sign In", "Your sign in was unsuccessful, please try again.");
+    }
+};
 
 const styles = StyleSheet.create({
     container: {
