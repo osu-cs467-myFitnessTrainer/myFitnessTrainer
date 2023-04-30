@@ -6,7 +6,6 @@ import * as exercise_library from "../exercise_library/exercise_library.json" as
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 
-// TO DO: Add these config ID's to a .env file (remove from this file) 
 // firebase config
 const firebaseConfig = {
     apiKey: process.env.FIREBASE_API_KEY,
