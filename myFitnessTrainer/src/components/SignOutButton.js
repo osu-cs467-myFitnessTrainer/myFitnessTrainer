@@ -30,7 +30,7 @@ export default SignOutButton
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: '#4682B4',
+        backgroundColor: '#8B0000',
         width: '75%',
         padding: 15,
         borderRadius: 10,
