@@ -1,6 +1,9 @@
 import { collection, getDocs, query, where, addDoc } from "firebase/firestore";
 import { db } from "./firebaseConfig";
 
+
+/*********** GENERAL DATABASE FUNCTIONS START ******************************/
+
 /**
  *
  * @param {String} collectionName
@@ -65,5 +68,7 @@ const getAllDocuments = async (collectionName) => {
     });
     return collectionDocuments;
 };
+
+/*********** GENERAL DATABASE FUNCTIONS END ******************************/
 
 export { getDocument, getDocumentId, postDocument, getAllDocuments };

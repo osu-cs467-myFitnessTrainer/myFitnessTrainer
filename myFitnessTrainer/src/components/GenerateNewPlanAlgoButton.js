@@ -15,8 +15,8 @@ import { getDocumentId, postDocument } from "../../databaseFunctions";
 */
 const GenerateNewPlanAlgoButton = ({ goal, level, duration }) => {
     // Test props for debugging
-    goal = goal ?? ["strength"];
-    level = level ?? ["beginner"];
+    goal = goal ?? "strength";
+    level = level ?? "beginner";
     duration = duration ?? 5;
     // modifications = modifications ?? ["legs"];
 
@@ -53,25 +53,18 @@ const GenerateNewPlanAlgoButton = ({ goal, level, duration }) => {
         switch (level) {
             case "beginner":
                 return and(
-                    where("fitness_goal", "array-contains-any", goal),
-                    where("fitness_level", "array-contains-any", ["beginner"])
+                    where("fitness_goal", "==", goal),
+                    where("fitness_level", "==", "beginner")
                 );
             case "intermediate":
                 return and(
-                    where("fitness_goal", "array-contains-any", goal),
-                    where("fitness_level", "array-contains-any", [
-                        "beginner",
-                        "intermediate",
-                    ])
+                    where("fitness_goal", "==", goal),
+                    where("fitness_level", "==", "intermediate")
                 );
             case "advanced":
                 return and(
-                    where("fitness_goal", "array-contains-any", goal),
-                    where("fitness_level", "array-contains-any", [
-                        "beginner",
-                        "intermediate",
-                        "advanced",
-                    ])
+                    where("fitness_goal", "==", goal),
+                    where("fitness_level", "==", "advanced")
                 );
             default:
                 break;
@@ -91,13 +84,15 @@ const GenerateNewPlanAlgoButton = ({ goal, level, duration }) => {
             auth.currentUser.email
         );
 
-        await postDocument("workout_plans", {
-            workoutPlan,
-            duration,
-            goal,
-            level,
-            userId,
-        });
+        const postObject = {
+            workout_plan: workoutPlan,
+            duration: duration,
+            fitness_goal: goal,
+            fitness_level: level,
+            user_id: userId,
+            start_date: Date.now(),
+        };
+        await postDocument("workout_plans", postObject);
 
         navigation.replace("Dashboard");
     };
