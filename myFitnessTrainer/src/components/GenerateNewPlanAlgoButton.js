@@ -22,6 +22,61 @@ const GenerateNewPlanAlgoButton = ({ goal, level, duration }) => {
 
     const navigation = useNavigation();
 
+    /*
+    performs query to db for exercises collection based on goal and level survey result and returns an array of exercises
+    */
+    const getExercises = async (goal, level) => {
+        const q = query(
+            collection(db, "exercises"),
+            filterExerciseQuery(goal, level)
+        );
+        const querySnapshot = await getDocs(q);
+        const exercises = [];
+        querySnapshot.forEach((doc) => {
+            exercises.push(doc.data());
+        });
+        return exercises;
+    };
+
+    const createPlan = (exercises, duration) => {
+        const workoutPlan = [];
+
+        for (let i = 0; i < exercises.length && i < duration; i++) {
+            let randomIdx = Math.floor(Math.random() * exercises.length);
+            workoutPlan.push(exercises[randomIdx]);
+        }
+        return workoutPlan;
+    };
+
+    // TODO: Need to add ability to filter with modifications
+    const filterExerciseQuery = (goal, level) => {
+        switch (level) {
+            case "beginner":
+                return and(
+                    where("fitness_goal", "array-contains-any", goal),
+                    where("fitness_level", "array-contains-any", ["beginner"])
+                );
+            case "intermediate":
+                return and(
+                    where("fitness_goal", "array-contains-any", goal),
+                    where("fitness_level", "array-contains-any", [
+                        "beginner",
+                        "intermediate",
+                    ])
+                );
+            case "advanced":
+                return and(
+                    where("fitness_goal", "array-contains-any", goal),
+                    where("fitness_level", "array-contains-any", [
+                        "beginner",
+                        "intermediate",
+                        "advanced",
+                    ])
+                );
+            default:
+                break;
+        }
+    };
     /* 
         1. query all exercises with criteria goal, level, and modifications
         2. create plan by selecting number of exercises == duration, random based from query 
@@ -75,55 +130,6 @@ const styles = StyleSheet.create({
     },
 });
 
-/*
-    performs query to db for exercises collection based on goal and level survey result and returns an array of exercises
-*/
-const getExercises = async (goal, level) => {
-    const q = query(collection(db, "exercises"), filterQuery(goal, level));
-    const querySnapshot = await getDocs(q);
-    const exercises = [];
-    querySnapshot.forEach((doc) => {
-        exercises.push(doc.data());
-    });
-    return exercises;
-};
 
-const createPlan = (exercises, duration) => {
-    const workoutPlan = [];
 
-    for (let i = 0; i < exercises.length && i < duration; i++) {
-        let randomIdx = Math.floor(Math.random() * exercises.length);
-        workoutPlan.push(exercises[randomIdx]);
-    }
-    return workoutPlan;
-};
 
-// TODO: Need to add ability to filter with modifications
-const filterQuery = (goal, level) => {
-    switch (level) {
-        case "beginner":
-            return and(
-                where("fitness_goal", "array-contains-any", goal),
-                where("fitness_level", "array-contains-any", ["beginner"])
-            );
-        case "intermediate":
-            return and(
-                where("fitness_goal", "array-contains-any", goal),
-                where("fitness_level", "array-contains-any", [
-                    "beginner",
-                    "intermediate",
-                ])
-            );
-        case "advanced":
-            return and(
-                where("fitness_goal", "array-contains-any", goal),
-                where("fitness_level", "array-contains-any", [
-                    "beginner",
-                    "intermediate",
-                    "advanced",
-                ])
-            );
-        default:
-            break;
-    }
-};
