@@ -1,7 +1,7 @@
-import { Button } from "react-native";
+import { Image } from "react-native";
 
-const Avatar = () => {
-    return <Button title="Avatar" />;
+const Avatar = ({imgSource, pixelSize}) => {
+    return <Image source={{uri: imgSource }} style={{ width: pixelSize, height: pixelSize, borderRadius: pixelSize/2 }} />;
 };
 
 export default Avatar;
