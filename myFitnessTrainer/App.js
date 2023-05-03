@@ -53,7 +53,7 @@ export default function App() {
                     options={{ headerTitleAlign: "center" }}
                 />
                 <Stack.Screen
-                    name="Create Fitness Plan"
+                    name="Create Workout Plan"
                     component={CreateNewPlanScreen}
                     options={{ headerTitleAlign: "center" }}
                 />
