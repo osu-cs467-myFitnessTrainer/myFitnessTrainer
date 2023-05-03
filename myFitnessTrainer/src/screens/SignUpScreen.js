@@ -28,8 +28,8 @@ const SignUpScreen = ({navigation}) => {
         try {
             addDoc(collection(db, 'users'), 
             {
-                // TODO: potential revision to the users collection (add avatar_url attribute directly instead)
-                avatar_id: doc(db, 'avatars/avatar'),
+                // TODO: update with storage location
+                avatar_storage_location: doc(db, 'avatars/defaultAvatar'),
                 email: email,
                 first_name: firstName,
                 last_name: lastName,

@@ -5,7 +5,6 @@ import StartWorkoutButton from "../components/StartWorkoutButton";
 
 
 const DashboardScreen = () => {
-    // TO DO: SIGN OUT BUTTON TO BE MOVED TO SETTINGS...HERE FOR TESTING
     return (
         <View style={styles.container}>
             <Text>Email: {auth.currentUser?.email}</Text>

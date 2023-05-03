@@ -1,4 +1,4 @@
-import { collection, getDocs, query, where, addDoc } from "firebase/firestore";
+import { collection, doc, getDocs, query, where, addDoc, updateDoc } from "firebase/firestore";
 import { db } from "./firebaseConfig";
 
 
@@ -54,6 +54,15 @@ const postDocument = async (collectionName, postObject) => {
     return await addDoc(collection(db, collectionName), postObject);
 };
 
+
+const updateFieldValueInDocument = async (collectionName, id, fieldName, newValue) => {
+    const docRef = doc(db, collectionName, id);
+    return await updateDoc(docRef, {
+        fieldName: newValue
+    });
+};
+
+
 /**
  *
  * @param {String} collectionName
@@ -71,4 +80,4 @@ const getAllDocuments = async (collectionName) => {
 
 /*********** GENERAL DATABASE FUNCTIONS END ******************************/
 
-export { getDocument, getDocumentId, postDocument, getAllDocuments };
+export { getDocument, getDocumentId, postDocument, getAllDocuments, updateDocument };
