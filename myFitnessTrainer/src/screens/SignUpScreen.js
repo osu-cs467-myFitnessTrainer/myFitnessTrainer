@@ -28,8 +28,6 @@ const SignUpScreen = ({navigation}) => {
         try {
             addDoc(collection(db, 'users'), 
             {
-                // TODO: update with storage location
-                avatar_storage_location: doc(db, 'avatars/defaultAvatar'),
                 email: email,
                 first_name: firstName,
                 last_name: lastName,

@@ -2,38 +2,31 @@ import React, { useState } from 'react';
 import { Button, View, StyleSheet, TouchableOpacity, Text } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-import { storage, auth, db } from '../../firebaseConfig';
+import { storage, auth } from '../../firebaseConfig';
 import { getDocumentId, updateFieldValueInDocument } from "../../databaseFunctions";
-import { doc, updateDoc } from "firebase/firestore";
 
-import Avatar from '../components/Avatar';
+import AvatarPreview from '../components/AvatarPreview';
 
 const pickedImageFileName = Date.now() + ".png";
 const defaultAvatarFileName = "default.png";
 
+
 const AvatarScreen = ({navigation}) =>  {
   const [defaultImageURL, setDefaultImageURL] = useState(null)
-  const [avatarStorageLocation, setAvatarStorageLocation] = useState(null)
+  const [avatarURL, setAvatarURL] = useState(null)
   const [image, setImage] = useState(null);
 
 
   // get the default.png from Firebase. We'll use its URL as the User's Avatar URL if
   // custom image is not picked from the user's device
   const defaultImageRef = ref(storage, defaultAvatarFileName);
+  console.log("defaultImageRef=", defaultImageRef);
   getDownloadURL(defaultImageRef)
     .then((url) => {
       setDefaultImageURL(url);
-      setAvatarStorageLocation(url);
-      // If we don't pick a new image, the user's avatars/avatar storage location 
-      // will remain gs://myfitnesstrainer-94289.appspot.com/default.png. However, this value will 
-      // probably get altered in testing/developing the app, so we will reassign it just in case
-      let storageLocation = "gs://" + defaultImageRef._location.bucket + "/" + defaultAvatarFileName;
-      console.log("storageLocation=", storageLocation);
-      // TODO: implement functionality to update the User's avatars/avatar storageLocation 
-
-
-
+      setAvatarURL(url);
     });
+
 
   const pickImage = async () => {
     let result = await ImagePicker.launchImageLibraryAsync({
@@ -48,6 +41,12 @@ const AvatarScreen = ({navigation}) =>  {
   };
 
   const saveAvatarSelection = async () => {
+
+    const userId = await getDocumentId(
+      "users",
+      "email",
+      auth.currentUser.email
+    );
 
     if (image){ // if user picked an image from their device
       // upload image to Firebase
@@ -75,27 +74,24 @@ const AvatarScreen = ({navigation}) =>  {
       getDownloadURL(pickedImageRef)
         .then((url) => {
           // set user's avatar URL as the URL of avatar.png
-          setAvatarStorageLocation(url);
+          setAvatarURL(url);
         });
-      console.log("image was picked; avatarStorageLocation=", avatarStorageLocation)
+      console.log("image was picked; avatarURL=", avatarURL)
     
-    let newStorageLocation = "gs://" + pickedImageRef._location.bucket + "/" + pickedImageFileName;
+    // let newStorageLocation = "gs://" + pickedImageRef._location.bucket + "/" + pickedImageFileName;
     // Ex: newStorageLocation = gs://myfitnesstrainer-94289.appspot.com/avatar.png
-    console.log("newStorageLocation=", newStorageLocation);
-
-    const userId = await getDocumentId(
-      "users",
-      "email",
-      auth.currentUser.email
-    );
-    await updateFieldValueInDocument("users", userId, "avatar_storage_location", newStorageLocation);
+    // console.log("newStorageLocation=", newStorageLocation);
+    await updateFieldValueInDocument("users", userId, "avatar_file_name", pickedImageFileName);
 
     } 
     else {
       // TODO: this section is mainly for debugging. Erase this else section when we implement 
       // functionality to update the User's avatar image URL attribute
 
-      console.log("no image was picked; using default. avatarStorageLocation=", avatarStorageLocation);
+      console.log("no image was picked; using default. avatarURL=", avatarURL);
+      // let storageLocation = "gs://" + defaultImageRef._location.bucket + "/" + defaultAvatarFileName;
+      // console.log("storageLocation=", storageLocation);
+      await updateFieldValueInDocument("users", userId, "avatar_file_name", defaultAvatarFileName);
 
     }
     navigation.navigate("Dashboard")
@@ -106,7 +102,7 @@ const AvatarScreen = ({navigation}) =>  {
   return (
     <View style={styles.view}>
       <Text>Stick with the default avatar, or select your own!</Text>
-      <Avatar 
+      <AvatarPreview 
         imgSource={imgSource} 
         pixelSize={200} 
       />
