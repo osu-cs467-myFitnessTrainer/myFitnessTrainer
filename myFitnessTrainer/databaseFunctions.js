@@ -14,7 +14,7 @@ import { db } from "./firebaseConfig";
 const getDocument = async (collectionName, searchKey, searchString) => {
     const q = query(
         collection(db, collectionName),
-        where(searchKey, "==", searchKey)
+        where(searchKey, "==", searchString)
     );
     const docSnapshot = await getDocs(q);
     if (docSnapshot.exists()) {

@@ -13,11 +13,17 @@ import { getDocumentId, postDocument } from "../../databaseFunctions";
     - duration: Int
     - modifications: Array<String>
 */
-const GenerateNewPlanAlgoButton = ({ goal, level, duration }) => {
+const GenerateNewPlanAlgoButton = ({
+    goal,
+    level,
+    duration,
+    exercisesPerDay,
+}) => {
     // Test props for debugging
     goal = goal ?? "strength";
     level = level ?? "beginner";
     duration = duration ?? 5;
+    exercisesPerDay = exercisesPerDay ?? 4;
     // modifications = modifications ?? ["legs"];
 
     const navigation = useNavigation();
@@ -38,14 +44,20 @@ const GenerateNewPlanAlgoButton = ({ goal, level, duration }) => {
         return exercises;
     };
 
-    const createPlan = (exercises, duration) => {
-        const workoutPlan = [];
+    const createPlan = (exercises, duration, exercisesPerDay) => {
+        const dailyExercises = {};
 
-        for (let i = 0; i < exercises.length && i < duration; i++) {
-            let randomIdx = Math.floor(Math.random() * exercises.length);
-            workoutPlan.push(exercises[randomIdx]);
+        for (let i = 0; i < duration; i++) {
+            // An array of exercise set for the with arr.length = exercisesPerDay
+            const dailyExerciseSet = [];
+            for (let j = 0; j < exercisesPerDay; j++) {
+                let randomIdx = Math.floor(Math.random() * exercises.length);
+                dailyExerciseSet.push(exercises[randomIdx]);
+            }
+            dailyExercises[i] = dailyExerciseSet;
         }
-        return workoutPlan;
+
+        return dailyExercises;
     };
 
     // TODO: Need to add ability to filter with modifications
@@ -73,11 +85,15 @@ const GenerateNewPlanAlgoButton = ({ goal, level, duration }) => {
     /* 
         1. query all exercises with criteria goal, level, and modifications
         2. create plan by selecting number of exercises == duration, random based from query 
-        3. add this plan to workoutplans collection
+        3. add this plan to dailyExercisess collection
     */
     const handleCreateNewPlanAlgo = async () => {
         const retrievedExercises = await getExercises(goal, level);
-        const workoutPlan = createPlan(retrievedExercises, duration);
+        const dailyExercises = createPlan(
+            retrievedExercises,
+            duration,
+            exercisesPerDay
+        );
         const userId = await getDocumentId(
             "users",
             "email",
@@ -85,12 +101,14 @@ const GenerateNewPlanAlgoButton = ({ goal, level, duration }) => {
         );
 
         const postObject = {
-            workout_plan: workoutPlan,
+            active: true,
+            daily_exercises: dailyExercises,
             duration: duration,
             fitness_goal: goal,
             fitness_level: level,
             user_id: userId,
             start_date: Date.now(),
+            days_completed: 0,
         };
         await postDocument("workout_plans", postObject);
 
