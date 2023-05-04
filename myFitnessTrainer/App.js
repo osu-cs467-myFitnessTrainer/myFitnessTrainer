@@ -43,7 +43,7 @@ export default function App() {
                         // 2. getDownloadURL from avatar's storage location and use as imageSource
                         // 3. determine pixelSize
                         // 4. then, we can have something like the following:
-                        // headerLeft: () => <Avatar imgSource={getAvatarURL()} pixelSize={200} />,
+                        // headerLeft: () => <Avatar imgSource={imgSource} pixelSize={200} />,
                         headerRight: () => <SettingsButton />,
                     }}
                 />
