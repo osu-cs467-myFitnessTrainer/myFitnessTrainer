@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text, Platform } from "react-native";
+import { StyleSheet, View, Text, Platform, ScrollView } from "react-native";
 import { Picker } from '@react-native-picker/picker';
 import NumericInput from 'react-native-numeric-input';
 import { useState } from "react";
@@ -87,34 +87,36 @@ const CreateNewPlanScreen = () => {
     );
 
     return (
-        <View style={styles.container}>
-            <Text style={styles.IntroText}>Customize your options to create a new workout plan</Text>
-            <View style={styles.centeredInputContainer}>
-                <View style={{flexDirection:"row"}}>
-                    <Text style={styles.optionHeaderText}>Workout Plan Duration </Text>
-                    <Text style={{paddingTop: 10}}>(in days)</Text>
+        <ScrollView>
+            <View style={styles.container}>
+                <Text style={styles.IntroText}>Customize your options to create a new workout plan</Text>
+                <View style={styles.centeredInputContainer}>
+                    <View style={{flexDirection:"row"}}>
+                        <Text style={styles.optionHeaderText}>Workout Plan Duration </Text>
+                        <Text style={{paddingTop: 10}}>(in days)</Text>
+                    </View>
+                    
+                    {durationInput}
+                    <Text style={styles.optionHeaderText}>Exercises Per Day</Text>
+                    {exercisesPerDayInput}
                 </View>
-                
-                {durationInput}
-                <Text style={styles.optionHeaderText}>Exercises Per Day</Text>
-                {exercisesPerDayInput}
+                <Text style={styles.optionHeaderText}>Fitness Goal</Text>
+                {fitnessGoalPicker}
+                <Text style={styles.optionHeaderText}>Fitness Level</Text>
+                {fitnessLevelPicker}
+                <Text style={styles.optionHeaderText}>Modifications</Text>
+                {modificationPicker}
+                <View style={styles.buttonContainer}>
+                    <GenerateNewPlanAlgoButton
+                        goal={fitnessGoal}
+                        level={fitnessLevel}
+                        duration={duration}
+                        exercisesPerDay={exercisesPerDay}
+                        modification={modification}
+                    />
+                </View>
             </View>
-            <Text style={styles.optionHeaderText}>Fitness Goal</Text>
-            {fitnessGoalPicker}
-            <Text style={styles.optionHeaderText}>Fitness Level</Text>
-            {fitnessLevelPicker}
-            <Text style={styles.optionHeaderText}>Modifications</Text>
-            {modificationPicker}
-            <View style={styles.buttonContainer}>
-                <GenerateNewPlanAlgoButton
-                    goal={fitnessGoal}
-                    level={fitnessLevel}
-                    duration={duration}
-                    exercisesPerDay={exercisesPerDay}
-                    modification={modification}
-                />
-            </View>
-        </View>
+        </ScrollView>
     );
 };
 
