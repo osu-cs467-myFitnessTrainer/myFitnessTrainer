@@ -2,7 +2,7 @@ import { Alert, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'reac
 import React, { useState, useEffect } from 'react';
 import { db, auth } from '../../firebaseConfig';
 import { onAuthStateChanged, createUserWithEmailAndPassword } from 'firebase/auth';
-import { addDoc, collection, doc } from 'firebase/firestore';
+import { addDoc, collection } from 'firebase/firestore';
 
 const SignUpScreen = ({navigation}) => {
     const [firstName, setFirstName] = useState('');
