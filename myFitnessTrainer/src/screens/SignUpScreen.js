@@ -28,6 +28,7 @@ const SignUpScreen = ({navigation}) => {
         try {
             addDoc(collection(db, 'users'), 
             {
+                avatar_file_name: 'default.png',
                 email: email,
                 first_name: firstName,
                 last_name: lastName,

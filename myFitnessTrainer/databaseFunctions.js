@@ -1,17 +1,8 @@
-import { collection, doc, getDoc, getDocs, query, where, addDoc, updateDoc } from "firebase/firestore";
+import { collection, getDocs, query, where, addDoc } from "firebase/firestore";
 import { db } from "./firebaseConfig";
 
 
 /*********** GENERAL DATABASE FUNCTIONS START ******************************/
-
-const getStringFieldValueInDocument = async (collectionName, documentId, fieldName) => {
-    const docRef = doc(db, collectionName, documentId);
-    console.log("docRef", docRef);
-    const docSnap = await getDoc(docRef);
-    console.log("docSnap.data().fieldName=", docSnap.data().fieldName);
-    return docSnap.data().fieldName;
-};
-
 
 /**
  *
@@ -20,7 +11,7 @@ const getStringFieldValueInDocument = async (collectionName, documentId, fieldNa
  * @param {String} seachString: searchString to match searchKey
  * @returns {Promise<String>} the requested document, in the specifed collection. undefined if the document doesn't exist
  */
-const getDocuments = async (collectionName, searchKey, searchString) => {
+const getDocument = async (collectionName, searchKey, searchString) => {
     const q = query(
         collection(db, collectionName),
         where(searchKey, "==", searchString)
@@ -63,15 +54,6 @@ const postDocument = async (collectionName, postObject) => {
     return await addDoc(collection(db, collectionName), postObject);
 };
 
-
-const updateFieldValueInDocument = async (collectionName, id, fieldName, newValue) => {
-    const docRef = doc(db, collectionName, id);
-    return await updateDoc(docRef, {
-        fieldName: newValue
-    });
-};
-
-
 /**
  *
  * @param {String} collectionName
@@ -89,4 +71,4 @@ const getAllDocuments = async (collectionName) => {
 
 /*********** GENERAL DATABASE FUNCTIONS END ******************************/
 
-export { getStringFieldValueInDocument, getDocuments, getDocumentId, postDocument, getAllDocuments, updateFieldValueInDocument };
+export { getDocument, getDocumentId, postDocument, getAllDocuments };
