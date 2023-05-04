@@ -6,12 +6,12 @@ const CreateNewPlanButton = () => {
     const navigation = useNavigation();
 
     const handleCreateNewPlan = () => {
-        navigation.replace("Create Fitness Plan");
+        navigation.navigate("Create Workout Plan");
     };
 
     return (
         <TouchableOpacity style={styles.button} onPress={handleCreateNewPlan}>
-            <Text style={styles.buttonText}>Create New Fitness Plan</Text>
+            <Text style={styles.buttonText}>Create New Workout Plan</Text>
         </TouchableOpacity>
     );
 };
