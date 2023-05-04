@@ -2,7 +2,7 @@ import { Alert, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'reac
 import React, { useState, useEffect } from 'react';
 import { db, auth } from '../../firebaseConfig';
 import { onAuthStateChanged, createUserWithEmailAndPassword } from 'firebase/auth';
-import { addDoc, collection, doc } from 'firebase/firestore';
+import { addDoc, collection } from 'firebase/firestore';
 
 const SignUpScreen = ({navigation}) => {
     const [firstName, setFirstName] = useState('');
@@ -28,8 +28,7 @@ const SignUpScreen = ({navigation}) => {
         try {
             addDoc(collection(db, 'users'), 
             {
-                // TODO: potential revision to the users collection (add avatar_url attribute directly instead)
-                avatar_id: doc(db, 'avatars/avatar'),
+                avatar_file_name: 'default.png',
                 email: email,
                 first_name: firstName,
                 last_name: lastName,

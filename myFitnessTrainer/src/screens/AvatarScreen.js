@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import { Button, View, StyleSheet, TouchableOpacity, Text } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-import { storage } from '../../firebaseConfig';
+import { doc, updateDoc } from 'firebase/firestore';
+import { storage, auth, db } from '../../firebaseConfig';
+import { getDocumentId } from "../../databaseFunctions";
+
 import Avatar from '../components/Avatar';
 
 const pickedImageFileName = Date.now() + ".png";
@@ -10,7 +13,6 @@ const defaultAvatarFileName = "default.png";
 
 const AvatarScreen = ({navigation}) =>  {
   const [defaultImageURL, setDefaultImageURL] = useState(null)
-  const [avatarURL, setAvatarURL] = useState(null)
   const [image, setImage] = useState(null);
 
   // get the default.png from Firebase. We'll use its URL as the User's Avatar URL if
@@ -19,13 +21,6 @@ const AvatarScreen = ({navigation}) =>  {
   getDownloadURL(defaultImageRef)
     .then((url) => {
       setDefaultImageURL(url);
-      setAvatarURL(url);
-      // If we don't pick a new image, the user's avatars/avatar storage location 
-      // will remain gs://myfitnesstrainer-94289.appspot.com/default.png. However, this value will 
-      // probably get altered in testing/developing the app, so we will reassign it just in case
-      let storageLocation = "gs://" + defaultImageRef._location.bucket + "/" + defaultAvatarFileName;
-      console.log("storageLocation=", storageLocation);
-      // TODO: implement functionality to update the User's avatars/avatar storageLocation 
     });
 
   const pickImage = async () => {
@@ -41,6 +36,13 @@ const AvatarScreen = ({navigation}) =>  {
   };
 
   const saveAvatarSelection = async () => {
+
+    const userId = await getDocumentId(
+      "users",
+      "email",
+      auth.currentUser.email
+    );
+
     if (image){ // if user picked an image from their device
       // upload image to Firebase
       // https://github.com/expo/examples/blob/master/with-firebase-storage-upload/App.js#L178-L205
@@ -62,28 +64,11 @@ const AvatarScreen = ({navigation}) =>  {
       await uploadBytes(fileRef, blob);
       blob.close();
 
-      // get URL of avatar.png
-      const pickedImageRef = ref(storage, pickedImageFileName);
-      getDownloadURL(pickedImageRef)
-        .then((url) => {
-          // set user's avatar URL as the URL of avatar.png
-          setAvatarURL(url);
-        });
-      console.log("image was picked; avatarURL=", avatarURL)
-    
-    let newStorageLocation = "gs://" + pickedImageRef._location.bucket + "/" + pickedImageFileName;
-    // Ex: newStorageLocation = gs://myfitnesstrainer-94289.appspot.com/avatar.png
-    console.log("newStorageLocation=", newStorageLocation);
-    // TODO: implement functionality to update the User's avatar storageLocation. 
-    // TODO: potential revision to the users collection (add avatar_url attribute directly instead)
+      const docRef = doc(db, "users", userId);
+      await updateDoc(docRef, {
+        avatar_file_name: pickedImageFileName
+      });
     } 
-    else {
-      // TODO: this section is mainly for debugging. Erase this else section when we implement 
-      // functionality to update the User's avatar image URL attribute
-
-      console.log("no image was picked; using default. avatarURL=", avatarURL);
-
-    }
     navigation.navigate("Dashboard")
   };
 
