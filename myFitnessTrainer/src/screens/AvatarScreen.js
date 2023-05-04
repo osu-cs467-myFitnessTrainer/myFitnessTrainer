@@ -11,12 +11,9 @@ import Avatar from '../components/Avatar';
 const pickedImageFileName = Date.now() + ".png";
 const defaultAvatarFileName = "default.png";
 
-
 const AvatarScreen = ({navigation}) =>  {
   const [defaultImageURL, setDefaultImageURL] = useState(null)
-  const [avatarURL, setAvatarURL] = useState(null)
   const [image, setImage] = useState(null);
-
 
   // get the default.png from Firebase. We'll use its URL as the User's Avatar URL if
   // custom image is not picked from the user's device
@@ -24,9 +21,7 @@ const AvatarScreen = ({navigation}) =>  {
   getDownloadURL(defaultImageRef)
     .then((url) => {
       setDefaultImageURL(url);
-      setAvatarURL(url);
     });
-
 
   const pickImage = async () => {
     let result = await ImagePicker.launchImageLibraryAsync({
@@ -68,14 +63,6 @@ const AvatarScreen = ({navigation}) =>  {
       const fileRef = ref(getStorage(), pickedImageFileName);
       await uploadBytes(fileRef, blob);
       blob.close();
-
-      // get URL of avatar.png
-      const pickedImageRef = ref(storage, pickedImageFileName);
-      getDownloadURL(pickedImageRef)
-        .then((url) => {
-          // set user's avatar URL as the URL of avatar.png
-          setAvatarURL(url);
-        });
 
       const docRef = doc(db, "users", userId);
       await updateDoc(docRef, {
