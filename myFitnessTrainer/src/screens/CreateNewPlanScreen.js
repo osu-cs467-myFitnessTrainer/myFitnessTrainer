@@ -123,7 +123,8 @@ const CreateNewPlanScreen = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        padding: 10
+        padding: 20,
+        paddingBottom: 40
     },
     IntroText: {
         fontSize: 15,
