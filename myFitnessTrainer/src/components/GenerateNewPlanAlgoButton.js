@@ -6,26 +6,14 @@ import { db } from "../../firebaseConfig";
 import { auth } from "../../firebaseConfig";
 import { getDocumentId, postDocument } from "../../databaseFunctions";
 
-/*
-    Pass in the following props as the below types:
-    - goal: Array<String>
-    - level: String
-    - duration: Int
-    - modifications: Array<String>
-*/
+
 const GenerateNewPlanAlgoButton = ({
     goal,
     level,
     duration,
     exercisesPerDay,
+    modification,
 }) => {
-    // Test props for debugging
-    goal = goal ?? "strength";
-    level = level ?? "beginner";
-    duration = duration ?? 5;
-    exercisesPerDay = exercisesPerDay ?? 4;
-    // modifications = modifications ?? ["legs"];
-
     const navigation = useNavigation();
 
     /*
@@ -34,7 +22,7 @@ const GenerateNewPlanAlgoButton = ({
     const getExercises = async (goal, level) => {
         const q = query(
             collection(db, "exercises"),
-            filterExerciseQuery(goal, level)
+            filterExerciseQuery(goal, level, modification)
         );
         const querySnapshot = await getDocs(q);
         const exercises = [];
@@ -60,27 +48,26 @@ const GenerateNewPlanAlgoButton = ({
         return dailyExercises;
     };
 
-    // TODO: Need to add ability to filter with modifications
-    const filterExerciseQuery = (goal, level) => {
-        switch (level) {
-            case "beginner":
-                return and(
-                    where("fitness_goal", "==", goal),
-                    where("fitness_level", "==", "beginner")
-                );
-            case "intermediate":
-                return and(
-                    where("fitness_goal", "==", goal),
-                    where("fitness_level", "==", "intermediate")
-                );
-            case "advanced":
-                return and(
-                    where("fitness_goal", "==", goal),
-                    where("fitness_level", "==", "advanced")
-                );
-            default:
-                break;
+    const filterExerciseQuery = (goal, level, modification) => {
+        // maps the modifcation passed to modification field on exercise document
+        const modificationKey = {
+            none: "",
+            "upper body only": "upper body",
+            "lower body only": "lower body",
+        };
+
+        if (modificationKey[modification] == null) {
+            return and(
+                where("fitness_goal", "==", goal),
+                where("fitness_level", "==", level)
+            );
         }
+
+        return and(
+            where("fitness_goal", "==", goal),
+            where("fitness_level", "==", level),
+            where("muscle_group", "==", modificationKey[modification])
+        );
     };
     /* 
         1. query all exercises with criteria goal, level, and modifications
@@ -112,7 +99,7 @@ const GenerateNewPlanAlgoButton = ({
         };
         await postDocument("workout_plans", postObject);
 
-        navigation.replace("Dashboard");
+        navigation.goBack("Dashboard");
     };
 
     return (
@@ -120,7 +107,7 @@ const GenerateNewPlanAlgoButton = ({
             style={styles.button}
             onPress={handleCreateNewPlanAlgo}
         >
-            <Text style={styles.buttonText}>Create Workout Plan</Text>
+            <Text style={styles.buttonText}>Generate Fitness Plan</Text>
         </TouchableOpacity>
     );
 };
