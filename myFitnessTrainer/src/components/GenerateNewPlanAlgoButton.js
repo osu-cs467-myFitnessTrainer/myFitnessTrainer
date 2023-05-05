@@ -107,7 +107,7 @@ const GenerateNewPlanAlgoButton = ({
             style={styles.button}
             onPress={handleCreateNewPlanAlgo}
         >
-            <Text style={styles.buttonText}>Generate Fitness Plan</Text>
+            <Text style={styles.buttonText}>Create Workout Plan</Text>
         </TouchableOpacity>
     );
 };
