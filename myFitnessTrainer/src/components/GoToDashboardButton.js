@@ -6,7 +6,10 @@ const GoToDashboardButton = () => {
     const navigation = useNavigation();
 
     const navigateHome = () => {
-        navigation.replace("Dashboard");
+        navigation.reset({
+            index: 0,
+            routes: [{name:'Dashboard'}]
+        });
     };
 
     return (
