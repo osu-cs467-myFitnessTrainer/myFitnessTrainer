@@ -1,11 +1,12 @@
-import { useState } from 'react';
-import { StyleSheet, View, Dimensions, Text } from "react-native";
+import { useEffect, useState } from 'react';
+import { StyleSheet, View, Dimensions, Text, Alert } from "react-native";
 import Carousel from 'react-native-reanimated-carousel';
 import Dots from 'react-native-dots-pagination';
 
 import EndWorkoutButton from "../components/EndWorkoutButton";
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import * as Progress from 'react-native-progress';
+import { useNavigation } from '@react-navigation/native';
 
 const width = Dimensions.get('window').width;
 
@@ -31,6 +32,28 @@ const WorkoutScreen = () => {
     const [exerciseIndex, setExerciseIndex] = useState(0);
     const [progress, setProgress] = useState(1/workoutLength);
     const height = Dimensions.get('window').height;
+    const navigation = useNavigation();
+
+    // Displays a warning before moving away from screen
+    useEffect(() => navigation.addListener('beforeRemove', (e) => {
+        // prevent default behavior of leaving screen
+        e.preventDefault();
+        // prompt user before leaving screen
+        Alert.alert(
+            "Leave Today's workout?",
+            "You have started a workout. If you exit before finishing, workout information will not be saved.",
+            [
+                { text: "Continue Workout", style: 'cancel', isPreferred: true, onPress: ()=> {}},
+                {
+                    text: 'Leave',
+                    style: 'destructive',
+                    // If user confirmed, then we dispatch the action we blocked earlier
+                    onPress: () => navigation.dispatch(e.data.action),
+                },
+            ]
+        );
+
+    }), [navigation]);
 
     // Determines if exercise is complete
     const displayViewWorkoutSummary = (index) => {
