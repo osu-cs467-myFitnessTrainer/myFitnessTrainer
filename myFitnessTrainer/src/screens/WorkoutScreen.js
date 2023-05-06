@@ -1,12 +1,10 @@
-import { useEffect, useState } from 'react';
-import { StyleSheet, View, Dimensions, Text, Alert } from "react-native";
+import { useState } from 'react';
+import { StyleSheet, View, Dimensions, Text } from "react-native";
 import Carousel from 'react-native-reanimated-carousel';
 import Dots from 'react-native-dots-pagination';
-
 import EndWorkoutButton from "../components/EndWorkoutButton";
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import * as Progress from 'react-native-progress';
-import { useNavigation } from '@react-navigation/native';
 
 const width = Dimensions.get('window').width;
 
@@ -27,43 +25,14 @@ const testExercise = {
 // FOR TESTING, USE THE DAILY EXERCISES
 const testExercisesDay0 = [testExercise,testExercise,testExercise,testExercise];
 
+// adds additional card at end
+const exerciseDeck = testExercisesDay0.concat([{name: "Finished Card"}]);
+
 const WorkoutScreen = () => {
     const workoutLength = testExercisesDay0.length;
     const [exerciseIndex, setExerciseIndex] = useState(0);
     const [progress, setProgress] = useState(1/workoutLength);
     const height = Dimensions.get('window').height;
-    const navigation = useNavigation();
-
-    // Displays a warning before moving away from screen
-    useEffect(() => navigation.addListener('beforeRemove', (e) => {
-        // prevent default behavior of leaving screen
-        e.preventDefault();
-        // prompt user before leaving screen
-        Alert.alert(
-            "Leave Today's workout?",
-            "You have started a workout. If you exit before finishing, workout information will not be saved.",
-            [
-                { text: "Continue Workout", style: 'cancel', isPreferred: true, onPress: ()=> {}},
-                {
-                    text: 'Leave',
-                    style: 'destructive',
-                    // If user confirmed, then we dispatch the action we blocked earlier
-                    onPress: () => navigation.dispatch(e.data.action),
-                },
-            ]
-        );
-
-    }), [navigation]);
-
-    // Determines if exercise is complete
-    const displayViewWorkoutSummary = (index) => {
-        if (index === workoutLength - 1) {
-            return (
-                <EndWorkoutButton />
-            )
-        }
-        return null;
-    }
 
     const progressFooter = (
         <View style={styles.bottomProgressContainer}>
@@ -76,25 +45,44 @@ const WorkoutScreen = () => {
                     color='#4682B4'
                 />
             </View>
-            <Text style={styles.progressText}>{exerciseIndex+1} of {workoutLength} exercises</Text>
+            <Text style={styles.progressText}>{exerciseIndex} of {workoutLength} exercises completed</Text>
         </View>
     );
 
     const renderCarouselItem = ({index}) => {
-        return (
-            <View
-                style={styles.cardViewContainer}
-            >
-                <Text style={styles.exerciseNameText}>EXERCISE: {testExercisesDay0[index].name.toUpperCase()}</Text>
-                <View style={styles.container}>
-                    {displayViewWorkoutSummary(index)}
-                </View>
-                <Dots 
-                    length={workoutLength}
-                    active={index}
-                />
+        const displayFinishCard = index === workoutLength;
+
+        const FinishedCardContents = (
+            <View style={styles.finishedCardContainer}>
+                <Text style={styles.congratsText}>CONGRATS!</Text> 
+                <Text style={styles.finishedWorkoutText}>You have completed today's exercises</Text>
+                <EndWorkoutButton />
+                <Text style={styles.viewWorkoutSummaryText}>Select 'Finish Workout' to view your workout summary.</Text>
             </View>
-    )};
+        );
+
+        const content = displayFinishCard ? FinishedCardContents :
+        (
+            // TO DO: BUILD OUT THIS VIEW! (based on prototype)
+            // probably separate out into own compnent which gets the needed exercise
+            <View>
+                <Text style={styles.exerciseNameText}>EXERCISE: {exerciseDeck[index].name.toUpperCase()}</Text>
+            </View>
+        );
+
+        return (
+            <View style={styles.cardViewContainer}>
+                {content}
+                <View style={styles.dots}>
+                    <Dots 
+                        length={workoutLength+1}
+                        active={index}
+                    />
+                </View>
+            </View>
+        )
+    }
+
 
     return (
         <View style={styles.container}>
@@ -105,12 +93,12 @@ const WorkoutScreen = () => {
                 height={height * 0.80}
                 autoPlay={false}
                 // FOR TESTING, REMOVE AND PUT EXERCISE
-                data={testExercisesDay0}
+                data={exerciseDeck}
                 scrollAnimationDuration={500}
                 onSnapToItem={(index) => {
                     console.log('current index', index), 
                     setExerciseIndex(index), 
-                    setProgress((1+index) / workoutLength)
+                    setProgress((index) / workoutLength)
                     }
                 }
                 renderItem={renderCarouselItem}
@@ -143,6 +131,10 @@ const styles = StyleSheet.create({
         shadowRadius: 2,  
         elevation: 5
     },
+    dots: {
+        flex: 1,
+        justifyContent: 'flex-end'
+    },
     progressBarContainer: {
         backgroundColor: "white",
         alignItems: 'center',
@@ -161,6 +153,12 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'flex-end'
     },
+    finishedCardContainer: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 20,
+    },
     progressText: {
         fontSize: 18,
         marginTop: 5
@@ -168,6 +166,20 @@ const styles = StyleSheet.create({
     exerciseNameText: {
         fontSize: 20,
         textAlign: 'center'
+    },
+    congratsText: {
+        fontSize: 45,
+        fontWeight: 'bold',
+    },
+    finishedWorkoutText: {
+        fontSize: 15,
+        textAlign: 'center'
+    },
+    viewWorkoutSummaryText: {
+        textAlign: 'center',
+        paddingTop: 10,
+        fontStyle: 'italic',
+        width: "75%"
     }
 });
 

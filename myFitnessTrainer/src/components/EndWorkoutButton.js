@@ -5,13 +5,13 @@ import { useNavigation } from "@react-navigation/native";
 const EndWorkoutButton = () => {
     const navigation = useNavigation();
 
-    const startWorkout = () => {
+    const endWorkout = () => {
         navigation.navigate("Workout Summary");
     };
 
     return (
-        <TouchableOpacity style={styles.button} onPress={startWorkout}>
-            <Text style={styles.buttonText}>View Workout Summary</Text>
+        <TouchableOpacity style={styles.button} onPress={endWorkout}>
+            <Text style={styles.buttonText}>Finish Workout</Text>
         </TouchableOpacity>
     );
 };
