@@ -11,7 +11,7 @@ const EndWorkoutButton = () => {
 
     return (
         <TouchableOpacity style={styles.button} onPress={startWorkout}>
-            <Text style={styles.buttonText}>End Today&apos;s Workout</Text>
+            <Text style={styles.buttonText}>View Workout Summary</Text>
         </TouchableOpacity>
     );
 };
