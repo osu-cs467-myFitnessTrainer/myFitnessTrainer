@@ -55,9 +55,9 @@ const WorkoutScreen = () => {
         const FinishedCardContents = (
             <View style={styles.finishedCardContainer}>
                 <Text style={styles.congratsText}>CONGRATS!</Text> 
-                <Text style={styles.finishedWorkoutText}>You have completed today's exercises</Text>
+                <Text style={styles.finishedWorkoutText}>You have completed today&apos;s exercises</Text>
                 <EndWorkoutButton />
-                <Text style={styles.viewWorkoutSummaryText}>Select 'Finish Workout' to view your workout summary.</Text>
+                <Text style={styles.viewWorkoutSummaryText}>Select &apos;Finish Workout&apos; to view your workout summary.</Text>
             </View>
         );
 
