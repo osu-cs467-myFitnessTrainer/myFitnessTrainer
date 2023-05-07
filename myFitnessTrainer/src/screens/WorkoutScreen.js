@@ -31,7 +31,7 @@ const exerciseDeck = testExercisesDay0.concat([{name: "Finished Card"}]);
 const WorkoutScreen = () => {
     const workoutLength = testExercisesDay0.length;
     const [exerciseIndex, setExerciseIndex] = useState(0);
-    const [progress, setProgress] = useState(1/workoutLength);
+    const [progress, setProgress] = useState(0/workoutLength);
     const height = Dimensions.get('window').height;
 
     const progressFooter = (

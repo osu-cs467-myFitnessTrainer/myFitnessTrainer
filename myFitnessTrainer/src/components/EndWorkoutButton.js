@@ -6,7 +6,10 @@ const EndWorkoutButton = () => {
     const navigation = useNavigation();
 
     const endWorkout = () => {
-        navigation.navigate("Workout Summary");
+        navigation.reset({
+            index: 0,
+            routes: [{name:"Workout Summary"}]
+        });
     };
 
     return (
