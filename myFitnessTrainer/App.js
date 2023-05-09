@@ -23,6 +23,7 @@ export default function App() {
                     options={{
                         title: "myFitnessTrainer",
                         headerTitleAlign: "center",
+                        headerBackVisible: false
                     }}
                 />
                 <Stack.Screen
