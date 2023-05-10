@@ -6,7 +6,10 @@ const ViewWorkoutPlanButton = () => {
     const navigation = useNavigation();
 
     const handleViewWorkoutPlanButton = () => {
-        navigation.navigate("View Workout Plan");
+        navigation.navigate("View Workout Plan", {
+            itemId: 86,
+            otherParam: 'anything you want here',
+          });
     };
 
     return (

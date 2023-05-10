@@ -1,11 +1,14 @@
 import React from "react";
 import { StyleSheet, View, Text, Platform,  } from "react-native";
 
-const ViewWorkoutPlanScreen = () => {
+const ViewWorkoutPlanScreen = ({route}) => {
+    const { itemId } = route.params;
+    const { otherParam } = route.params;
 
     return (
 
         <View style={styles.container}>
+            <Text>itemId: {JSON.stringify(itemId)}</Text>
             <Text style={styles.IntroText}>view workout plan</Text>
         </View>
 
