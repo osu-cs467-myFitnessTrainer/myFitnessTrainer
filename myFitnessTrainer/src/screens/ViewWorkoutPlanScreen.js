@@ -2,13 +2,19 @@ import React from "react";
 import { StyleSheet, View, Text, Platform,  } from "react-native";
 
 const ViewWorkoutPlanScreen = ({route}) => {
-    const { itemId } = route.params;
-    const { otherParam } = route.params;
+    const { duration, fitnessGoal, fitnessLevel, startDate, daysCompleted } = route.params;
+    const formattedStartDate = new Date(startDate).toDateString();
+
+
 
     return (
 
         <View style={styles.container}>
-            <Text>itemId: {JSON.stringify(itemId)}</Text>
+            <Text>Duration: {duration}</Text>
+            <Text>Fitness Goal: {fitnessGoal}</Text>
+            <Text>Fitness Level: {fitnessLevel}</Text>
+            <Text>Start Date: {formattedStartDate}</Text>
+            <Text>Days Completed: {daysCompleted}</Text>
             <Text style={styles.IntroText}>view workout plan</Text>
         </View>
 
