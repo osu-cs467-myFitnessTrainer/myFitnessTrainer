@@ -52,12 +52,8 @@ const ViewWorkoutPlanButton = () => {
                     }
                     workoutsPerDay[parseInt(day_num)+1] = exercises_for_the_day
                 }
-                console.log("workouts=", workoutsPerDay);
-
             }
         });
-
-
 
         navigation.navigate("View Workout Plan", {
             duration: duration,
