@@ -1,24 +1,57 @@
 import React from "react";
-import { StyleSheet, View, Text, Platform,  } from "react-native";
+import { StyleSheet, View, Text, Platform, ScrollView} from "react-native";
+import CreateNewPlanButton from "../components/CreateNewPlanButton";
 
 const ViewWorkoutPlanScreen = ({route}) => {
-    const { duration, fitnessGoal, fitnessLevel, startDate, daysCompleted } = route.params;
+    const { duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay } = route.params;
     const formattedStartDate = new Date(startDate).toDateString();
 
+    console.log("fitnessGoal=", fitnessGoal);
 
 
-    return (
+    let formattedExercisesPerDay = []
+    for (const dayNum in workoutsPerDay){
+        console.log("dayNum=", dayNum);
 
-        <View style={styles.container}>
-            <Text>Duration: {duration}</Text>
-            <Text>Fitness Goal: {fitnessGoal}</Text>
-            <Text>Fitness Level: {fitnessLevel}</Text>
-            <Text>Start Date: {formattedStartDate}</Text>
-            <Text>Days Completed: {daysCompleted}</Text>
-            <Text style={styles.IntroText}>view workout plan</Text>
-        </View>
 
-    );
+        formattedExercisesPerDay.push(<Text>Day {dayNum}{"\n"}</Text>);
+        for (const exerciseNum in workoutsPerDay[dayNum]){
+            console.log("workoutsPerDay[dayNum][exerciseNum]=", workoutsPerDay[dayNum][exerciseNum]);
+            formattedExercisesPerDay.push(<Text>{workoutsPerDay[dayNum][exerciseNum]}{"\n"}</Text>);
+        }
+        formattedExercisesPerDay.push(<Text>{"\n"}</Text>)
+    }
+
+
+
+    // if fitnessGoal is not empty, then there is an active plan
+    if (fitnessGoal !== ""){
+        return (
+            <ScrollView>
+                <View style={styles.container}>
+                    <Text>Duration: {duration} days</Text>
+                    <Text>Fitness Goal: {fitnessGoal}</Text>
+                    <Text>Fitness Level: {fitnessLevel}</Text>
+                    <Text>Start Date: {formattedStartDate}</Text>
+                    <Text>Days Completed: {daysCompleted}</Text>
+                    <Text>{"\n"}Exercises:</Text>
+                    <Text>{formattedExercisesPerDay}</Text>
+                </View>
+            </ScrollView>
+        );
+    } 
+    else {
+        return(
+            <ScrollView>
+            <View style={styles.container}>
+                <Text>No active workout plan; create one! {duration}</Text>
+                <CreateNewPlanButton/>
+            </View>
+            </ScrollView>
+        )
+
+    }
+
 };
 
 const styles = StyleSheet.create({

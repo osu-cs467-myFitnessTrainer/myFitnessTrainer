@@ -12,7 +12,7 @@ const SettingsScreen = () => {
             <SignOutButton />
         </View>
     );
-};
+}
 
 export default SettingsScreen;
 
