@@ -99,7 +99,11 @@ const GenerateNewPlanAlgoButton = ({
         };
         await postDocument("workout_plans", postObject);
 
-        navigation.goBack("Dashboard");
+        // reset reloads the Dashboard to check that user now has a workout plan
+        navigation.reset({
+            index: 0,
+            routes: [{name:'Dashboard'}]
+        });
     };
 
     return (
