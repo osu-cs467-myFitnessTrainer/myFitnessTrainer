@@ -1,23 +1,15 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
-import React, { useState } from "react";
+import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { db, auth } from "../../firebaseConfig";
 
-import { getDocumentId, getDocument  } from "../../databaseFunctions";
+import { getDocumentId  } from "../../databaseFunctions";
 import { collection, query, where, getDocs } from "firebase/firestore";
 
-const ViewWorkoutPlanButton = () => {
-    // const [duration, setDuration] = useState(null)
-    // const [fitnessGoal, setFitnessGoal] = useState(null);  
-    // const [fitnessLevel, setFitnessLevel] = useState(null);    
-    // const [startDate, setStartDate] = useState(null);   
-    // const [daysCompleted, setDaysCompleted] = useState(null);    
+const ViewWorkoutPlanButton = () => {  
     const navigation = useNavigation();
 
-
     const handleViewWorkoutPlanButton = async () => {
-
-
 
         const userId = await getDocumentId(
             "users",
@@ -29,33 +21,39 @@ const ViewWorkoutPlanButton = () => {
         let fitnessLevel = "";
         let startDate = "";
         let daysCompleted = "";
-
-
-
+        let dailyExercises = null;
+        let workoutsPerDay = null;
 
         // https://cloud.google.com/firestore/docs/query-data/queries
         const workoutPlanRef = collection(db, "workout_plans");
         const q = query(workoutPlanRef, where("user_id", "==", userId));
-        console.log("q=", q);
         const querySnapshot = await getDocs(q);
-        console.log("querySnapshot=", querySnapshot)
         querySnapshot.forEach((doc) => {
             // doc.data() is never undefined for query doc snapshots
-            console.log(doc.id, " => ", doc.data());
-            console.log("active = ", doc.data()["active"]);
 
             // TODO: currently, user can have more than one active plan. Ex: user_id == UsC5EJWesjtMogefkvX4
             // See TODO in GenerateNewPlanAlgoButton.js for more information
-            // For now, we'll just grab the first workout plan that is active
+            // For now, the variables will just get written with the latest active workout_plan that gets queried
             if (doc.data()["active"] == true){
-                console.log("duration=", doc.data()["duration"])
 
-                // setDuration(doc.data()["duration"]);
                 duration = doc.data()["duration"];
                 fitnessGoal = doc.data()["fitness_goal"];
                 fitnessLevel = doc.data()["fitness_level"];
                 startDate = doc.data()["start_date"];
                 daysCompleted = doc.data()["days_completed"];
+                dailyExercises = doc.data()["daily_exercises"];
+                // TODO: in GenerateNewPlanAlgoButton, add modification to the postObject? Then we can display the modification for the workout plan on the ViewWorkoutPlanScreen.
+
+                let workoutsPerDay = {}
+                for (const day_num in dailyExercises) {
+                    let exercises_for_the_day = []
+                    for (const exercise_num in dailyExercises[day_num]){
+                        exercises_for_the_day.push(dailyExercises[day_num][exercise_num]["name"]);
+                    }
+                    workoutsPerDay[parseInt(day_num)+1] = exercises_for_the_day
+                }
+                console.log("workouts=", workoutsPerDay);
+
             }
         });
 
@@ -67,6 +65,7 @@ const ViewWorkoutPlanButton = () => {
             fitnessLevel: fitnessLevel,
             startDate: startDate,
             daysCompleted: daysCompleted,
+            workoutsPerDay: workoutsPerDay
           });
     };
 
