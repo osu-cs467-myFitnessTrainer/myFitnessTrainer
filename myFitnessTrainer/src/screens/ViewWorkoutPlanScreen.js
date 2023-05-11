@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Text, Platform, ScrollView} from "react-native";
+import { StyleSheet, View, Text, ScrollView} from "react-native";
 import CreateNewPlanButton from "../components/CreateNewPlanButton";
 
 const ViewWorkoutPlanScreen = ({route}) => {
@@ -29,7 +29,8 @@ const ViewWorkoutPlanScreen = ({route}) => {
                 </View>
             </ScrollView>
         );
-    } 
+    }
+    // if fitnessGoal is empty, then there is no active plan (new user)
     else {
         return(
             <ScrollView>
@@ -39,9 +40,7 @@ const ViewWorkoutPlanScreen = ({route}) => {
             </View>
             </ScrollView>
         )
-
     }
-
 };
 
 const styles = StyleSheet.create({
