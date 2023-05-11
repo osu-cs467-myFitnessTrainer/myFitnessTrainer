@@ -24,6 +24,11 @@ const StartWorkoutButton = () => {
         // console.log(workOutPlan["daily_exercises"]["0"]);
         const daysCompleted = workOutPlan["days_completed"];
         const dailyExerciseSet = workOutPlan["daily_exercises"][daysCompleted];
+        dailyExerciseSet.forEach(
+            (exerciseSet) =>
+                delete exerciseSet.default_exercise_stat_id.firestore
+        );
+        // console.log(dailyExerciseSet);
         navigation.navigate("Workout", dailyExerciseSet);
     };
 

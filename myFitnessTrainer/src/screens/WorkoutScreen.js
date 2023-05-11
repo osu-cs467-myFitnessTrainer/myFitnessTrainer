@@ -13,6 +13,8 @@ import {
 import SubmitExerciseStatsButton from "../components/SubmitExerciseStatsButton";
 import { auth } from "../../firebaseConfig";
 
+
+
 const width = Dimensions.get("window").width;
 
 const WorkoutScreen = ({ route }) => {
@@ -22,8 +24,11 @@ const WorkoutScreen = ({ route }) => {
     // adds additional card at end
     const exerciseDeck = dailyExerciseSet.concat([{ name: "Finished Card" }]);
 
+    // currentExerciseStats represents the stats of the current exercise on the card
+    // currentWorkoutStats represents the the combined stats of every card in the daily workout
     const workoutLength = dailyExerciseSet.length;
     const [currentExerciseStats, setCurrentExerciseStats] = useState("");
+    const [currentWorkoutStats, setCurrentWorkoutStats] = useState([]);
     const [exerciseIndex, setExerciseIndex] = useState(0);
     const [progress, setProgress] = useState(0 / workoutLength);
     const height = Dimensions.get("window").height;
@@ -63,6 +68,14 @@ const WorkoutScreen = ({ route }) => {
         </View>
     );
 
+    const addToWorkoutStatsSummary = () => {
+        const arr1 = [currentExerciseStats];
+        const arr2 = currentWorkoutStats;
+        const combinedArr = arr2.concat(arr1);
+        setCurrentWorkoutStats(combinedArr);
+        // console.log(combinedArr);
+    };
+
     const submitStatsToDB = async () => {
         const exercise = dailyExerciseSet[exerciseIndex];
         const exerciseId = await getDocumentId(
@@ -88,6 +101,7 @@ const WorkoutScreen = ({ route }) => {
             workoutPlan_user_avatar_id: null,
             exercise_stats: currentExerciseStats,
         };
+        addToWorkoutStatsSummary();
         postDocument("exercise_history", postObject);
     };
 
@@ -130,11 +144,14 @@ const WorkoutScreen = ({ route }) => {
                 <Text style={styles.exerciseNameText}>DEFAULT STATS</Text>
                 {
                     // TODO: FOR TESTING EXERCISE STATS RETRIEVAL, CAN REMOVE AFTER UI IS IMPLEMENTED
-                    Object.keys(currentExerciseStats).map((key) => {
+                    Object.keys(currentExerciseStats).map((key, index) => {
                         const value = currentExerciseStats[key];
                         if (value !== null) {
                             return (
-                                <Text style={styles.exerciseNameText} key={key}>
+                                <Text
+                                    style={styles.exerciseNameText}
+                                    key={index}
+                                >
                                     {key}: {value}
                                 </Text>
                             );
