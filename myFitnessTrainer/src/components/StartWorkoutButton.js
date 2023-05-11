@@ -1,12 +1,30 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
+import { getDocument, getDocumentId } from "../../databaseFunctions";
+import { auth } from "../../firebaseConfig";
 
 const StartWorkoutButton = () => {
     const navigation = useNavigation();
 
-    const startWorkout = () => {
-        navigation.navigate("Workout");
+    const startWorkout = async () => {
+        // get user id
+        const userId = await getDocumentId(
+            "users",
+            "email",
+            auth.currentUser.email
+        );
+
+        // match userid to the correct workout plan
+        const workOutPlan = await getDocument(
+            "workout_plans",
+            "user_id",
+            userId
+        );
+        // console.log(workOutPlan["daily_exercises"]["0"]);
+        const daysCompleted = workOutPlan["days_completed"];
+        const dailyExerciseSet = workOutPlan["daily_exercises"][daysCompleted];
+        navigation.navigate("Workout", dailyExerciseSet);
     };
 
     return (

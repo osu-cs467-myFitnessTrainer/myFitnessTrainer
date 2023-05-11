@@ -17,11 +17,12 @@ const getDocument = async (collectionName, searchKey, searchString) => {
         where(searchKey, "==", searchString)
     );
     const docSnapshot = await getDocs(q);
-    if (docSnapshot.exists()) {
-        return docSnapshot.data();
-    } else {
-        console.log("No such document");
-    }
+    // console.log(docSnapshot);
+    let document;
+    docSnapshot.forEach((doc) => {
+        document = doc.data();
+    });
+    return document;
 };
 
 /**
@@ -57,17 +58,17 @@ const postDocument = async (collectionName, postObject) => {
 /**
  *
  * @param {String} collectionName
- * @returns {Array} Array of each document object in the specified collection
+ * @returns {Object} Array of each document object in the specified collection
  */
 const getAllDocuments = async (collectionName) => {
-    const collectionDocuments = [];
+    const collectionDocuments = {};
     const querySnapshot = await getDocs(collection(db, collectionName));
     querySnapshot.forEach((doc) => {
-        // console.log(doc.id, " => ", doc.data());
-        collectionDocuments.push(doc.data());
+        collectionDocuments[doc.id] = doc.data();
     });
     return collectionDocuments;
 };
+
 
 /*********** GENERAL DATABASE FUNCTIONS END ******************************/
 
