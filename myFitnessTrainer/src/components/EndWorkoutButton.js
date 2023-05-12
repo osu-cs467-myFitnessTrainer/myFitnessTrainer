@@ -3,12 +3,13 @@ import React from "react";
 import { useNavigation } from "@react-navigation/native";
 
 const EndWorkoutButton = () => {
+    // console.log(workoutStats);
     const navigation = useNavigation();
 
     const endWorkout = () => {
         navigation.reset({
             index: 0,
-            routes: [{name:"Workout Summary"}]
+            routes: [{ name: "Workout Summary" }],
         });
     };
 
