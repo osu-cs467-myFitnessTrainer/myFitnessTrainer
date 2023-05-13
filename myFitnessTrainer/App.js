@@ -60,6 +60,11 @@ export default function App() {
                     options={{ headerTitleAlign: "center" }}
                 />
                 <Stack.Screen
+                    name="Select An Avatar"
+                    component={AvatarScreen}
+                    options={{ headerTitleAlign: "center" }}
+                />
+                <Stack.Screen
                     name="Workout Summary"
                     component={WorkoutSummaryScreen}
                     options={{ headerTitleAlign: "center" }}
@@ -73,11 +78,11 @@ export default function App() {
                         headerLeft: () => <ExitWorkoutButton />
                     }}
                 />
-                <Stack.Screen
+                {/* <Stack.Screen
                     name="Avatar"
                     component={AvatarScreen} 
                     options={{ headerTitleAlign: "center" }}
-                />
+                /> */}
             </Stack.Navigator>
         </NavigationContainer>
         

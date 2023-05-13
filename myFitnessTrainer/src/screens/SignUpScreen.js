@@ -16,7 +16,7 @@ const SignUpScreen = ({navigation}) => {
             if(user) {
                 navigation.reset({
                     index: 0,
-                    routes: [{name:'Avatar'}]
+                    routes: [{name:'Select An Avatar', params: {fromSignUpScreen: true}}]
                 });
             }
         });

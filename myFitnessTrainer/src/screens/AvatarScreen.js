@@ -11,9 +11,19 @@ import Avatar from '../components/Avatar';
 const pickedImageFileName = Date.now() + ".png";
 const defaultAvatarFileName = "default.png";
 
-const AvatarScreen = ({navigation}) =>  {
+
+function DisplayedMessage({isFromSignUpScreen}){
+  if (isFromSignUpScreen){
+    return <Text>Stick with the default avatar, or select your own!</Text>
+  }
+}
+
+const AvatarScreen = ({navigation, route}) =>  {
   const [defaultImageURL, setDefaultImageURL] = useState(null)
   const [image, setImage] = useState(null);
+
+  console.log("route=", route)
+
 
   // get the default.png from Firebase. We'll use its URL as the User's Avatar URL if
   // custom image is not picked from the user's device
@@ -76,7 +86,7 @@ const AvatarScreen = ({navigation}) =>  {
   image ? imgSource = image : imgSource = defaultImageURL;  // checks if (picked) image is null
   return (
     <View style={styles.view}>
-      <Text>Stick with the default avatar, or select your own!</Text>
+      <DisplayedMessage isFromSignUpScreen={route.params.fromSignUpScreen} />
       <Avatar 
         imgSource={imgSource} 
         pixelSize={200} 
