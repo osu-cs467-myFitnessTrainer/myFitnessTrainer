@@ -82,7 +82,7 @@ const WorkoutScreen = ({ route }) => {
         );
 
         const postObject = {
-            completed: null,
+            completed: true,
             date: Date.now(),
             duration: null,
             exercise_id: exerciseId,
