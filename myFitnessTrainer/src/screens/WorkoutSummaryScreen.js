@@ -10,7 +10,7 @@ const WorkoutSummaryScreen = () => {
     useEffect(() => {
         getWorkoutStatsSessionFromDB().then((result) => {
             setWorkoutSessionStats(result);
-            console.log(workoutSessionStats);
+            // console.log(workoutSessionStats);
         });
     }, []);
 
@@ -26,8 +26,7 @@ const WorkoutSummaryScreen = () => {
         // filter by user AND
         // get the most recent workout session date of user exercise stats
         const allUserStats = Object.keys(allExerciseStats).filter(
-            (statId) =>
-                allExerciseStats[statId]["workoutPlan_user_Id"] === userId
+            (statId) => allExerciseStats[statId]["user_id"] === userId
         );
 
         const allUserStatsDates = allUserStats.map(

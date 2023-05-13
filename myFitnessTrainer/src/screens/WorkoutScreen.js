@@ -70,7 +70,7 @@ const WorkoutScreen = ({ route }) => {
     const submitStatsToDB = async () => {
         const exercise = dailyExerciseSet[exerciseIndex];
         const exerciseId = await getDocumentId(
-            "exercise_library",
+            "exercises",
             "name",
             exercise["name"]
         );
@@ -80,16 +80,13 @@ const WorkoutScreen = ({ route }) => {
             "email",
             auth.currentUser.email
         );
+
         const postObject = {
             completed: null,
             date: Date.now(),
             duration: null,
-            exercise_ID: exerciseId === undefined ? null : exerciseId,
-            exercises_fitness_goal: exercise["fitness_goal"],
-            exercises_level: exercise["fitness_level"],
-            workoutPlan_workout_modification: exercise["muscle_group"],
-            workoutPlan_user_Id: userId,
-            workoutPlan_user_avatar_id: null,
+            exercise_id: exerciseId,
+            user_id: userId,
             exercise_stats: currentExerciseStats,
         };
         postDocument("exercise_history", postObject);
