@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { StyleSheet, View, Dimensions, Text } from "react-native";
 import Carousel from "react-native-reanimated-carousel";
 import Dots from "react-native-dots-pagination";
@@ -12,8 +12,7 @@ import {
 } from "../../databaseFunctions";
 import SubmitExerciseStatsButton from "../components/SubmitExerciseStatsButton";
 import { auth } from "../../firebaseConfig";
-
-
+import SkipExerciseButton from "../components/skipExerciseButton";
 
 const width = Dimensions.get("window").width;
 
@@ -31,6 +30,8 @@ const WorkoutScreen = ({ route }) => {
     const [exerciseIndex, setExerciseIndex] = useState(0);
     const [progress, setProgress] = useState(0 / workoutLength);
     const height = Dimensions.get("window").height;
+
+    const cardIndexRef = useRef(null);
 
     // when exerciseIndex state changes, then we will fetch the new default exercise stats from DB
     // currentExerciseStats state will reflect the stats of the current exrercise shown on the card
@@ -67,7 +68,7 @@ const WorkoutScreen = ({ route }) => {
         </View>
     );
 
-    const submitStatsToDB = async () => {
+    const submitStatsToDB = async (index) => {
         const exercise = dailyExerciseSet[exerciseIndex];
         const exerciseId = await getDocumentId(
             "exercises",
@@ -90,8 +91,20 @@ const WorkoutScreen = ({ route }) => {
             exercise_stats: currentExerciseStats,
         };
         postDocument("exercise_history", postObject);
+        advanceToNextCard(index);
     };
 
+    const advanceToNextCard = (index) => {
+        cardIndexRef.current?.scrollTo({
+            count: 1,
+            animated: true,
+        });
+        setExerciseIndex(index + 1);
+        setProgress(index / workoutLength);
+    };
+    const skipExercise = (index) => {
+        advanceToNextCard(index);
+    };
     const renderCarouselItem = ({ index }) => {
         const displayFinishCard = index === workoutLength;
 
@@ -145,7 +158,10 @@ const WorkoutScreen = ({ route }) => {
                         }
                     })
                 }
-                <SubmitExerciseStatsButton handleOnSubmit={submitStatsToDB} />
+                <SkipExerciseButton handleOnSkip={() => skipExercise(index)} />
+                <SubmitExerciseStatsButton
+                    handleOnSubmit={() => submitStatsToDB(index)}
+                />
             </View>
         );
 
@@ -163,6 +179,7 @@ const WorkoutScreen = ({ route }) => {
         <View style={styles.container}>
             <GestureHandlerRootView>
                 <Carousel
+                    ref={cardIndexRef}
                     loop={false}
                     width={width * 0.9}
                     height={height * 0.8}
