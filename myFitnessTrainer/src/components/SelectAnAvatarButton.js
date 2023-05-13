@@ -14,7 +14,6 @@ const SelectAnAvatarButton = () => {
         "email",
         auth.currentUser.email
         );
-        console.log("userDocument=", userDocument);   
 
         navigation.navigate("Select An Avatar", {
             fromSignUpScreen: false,

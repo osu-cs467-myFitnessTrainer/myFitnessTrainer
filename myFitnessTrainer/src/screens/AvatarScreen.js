@@ -19,9 +19,6 @@ const AvatarScreen = ({navigation, route}) =>  {
   const [currentImageInDBURL, setCurrentImageInDBURL] = useState(null);
   const [image, setImage] = useState(null);
 
-  console.log("route.params.fromSignUpScreen=", route.params.fromSignUpScreen);
-  console.log("route.params.avatarFileName=", route.params.avatarFileName);
-
   // get URL of user's current avatar_file_name
   const currentAvatarImageInDBRef = ref(storage, route.params.avatarFileName);
   getDownloadURL(currentAvatarImageInDBRef)
@@ -42,7 +39,6 @@ const AvatarScreen = ({navigation, route}) =>  {
   };
 
   const saveAvatarSelection = async () => {
-    console.log("in saveAvatarSelection")
     const userId = await getDocumentId(
       "users",
       "email",
@@ -52,8 +48,6 @@ const AvatarScreen = ({navigation, route}) =>  {
     if (image){ // if user picked an image from their device
       // upload image to Firebase
       // https://github.com/expo/examples/blob/master/with-firebase-storage-upload/App.js#L178-L205
-
-      console.log("user picked an image from local device")
 
       const blob = await new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
@@ -73,7 +67,6 @@ const AvatarScreen = ({navigation, route}) =>  {
       await uploadBytes(fileRef, blob);
       blob.close();
 
-      console.log("userId=", userId);
       const docRef = doc(db, "users", userId);
       await updateDoc(docRef, {
         avatar_file_name: pickedImageFileName
