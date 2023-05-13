@@ -17,11 +17,12 @@ const getDocument = async (collectionName, searchKey, searchString) => {
         where(searchKey, "==", searchString)
     );
     const docSnapshot = await getDocs(q);
-    if (docSnapshot.exists()) {
-        return docSnapshot.data();
-    } else {
-        console.log("No such document");
-    }
+    // console.log(docSnapshot);
+    let document;
+    docSnapshot.forEach((doc) => {
+        document = doc.data();
+    });
+    return document;
 };
 
 /**

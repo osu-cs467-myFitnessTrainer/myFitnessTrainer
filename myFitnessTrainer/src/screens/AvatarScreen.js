@@ -4,7 +4,7 @@ import * as ImagePicker from 'expo-image-picker';
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { doc, updateDoc } from 'firebase/firestore';
 import { storage, auth, db } from '../../firebaseConfig';
-import { getDocumentId } from "../../databaseFunctions";
+import { getDocumentId, getDocument } from "../../databaseFunctions";
 
 import Avatar from '../components/Avatar';
 
@@ -19,10 +19,27 @@ function DisplayedMessage({isFromSignUpScreen}){
 }
 
 const AvatarScreen = ({navigation, route}) =>  {
-  const [defaultImageURL, setDefaultImageURL] = useState(null)
+  const [defaultImageURL, setDefaultImageURL] = useState(null);
   const [image, setImage] = useState(null);
 
-  console.log("route=", route)
+  // console.log("route=", route)
+  console.log("route.params.fromSignUpScreen=", route.params.fromSignUpScreen);
+  console.log("route.params.avatarFileName=", route.params.avatarFileName);
+
+  // const getUserAvatarFileName = async () => {
+  //   const userId = await getDocumentId(
+  //     "users",
+  //     "email",
+  //     auth.currentUser.email
+  //   );
+  //   const userDocument = await getDocument(
+  //     "users",
+  //     "user_id",
+  //     userId
+  //   );
+  //   console.log("userDocument=", userDocument);
+
+  // }
 
 
   // get the default.png from Firebase. We'll use its URL as the User's Avatar URL if
@@ -46,7 +63,6 @@ const AvatarScreen = ({navigation, route}) =>  {
   };
 
   const saveAvatarSelection = async () => {
-
     const userId = await getDocumentId(
       "users",
       "email",
@@ -75,6 +91,7 @@ const AvatarScreen = ({navigation, route}) =>  {
       blob.close();
 
       const docRef = doc(db, "users", userId);
+      console.log("pickedImageFileName=", pickedImageFileName);
       await updateDoc(docRef, {
         avatar_file_name: pickedImageFileName
       });
