@@ -5,12 +5,9 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { doc, updateDoc } from 'firebase/firestore';
 import { storage, auth, db } from '../../firebaseConfig';
 import { getDocumentId, getDocument } from "../../databaseFunctions";
-
 import Avatar from '../components/Avatar';
 
 const pickedImageFileName = Date.now() + ".png";
-const defaultAvatarFileName = "default.png";
-
 
 function DisplayedMessage({isFromSignUpScreen}){
   if (isFromSignUpScreen){
@@ -19,35 +16,17 @@ function DisplayedMessage({isFromSignUpScreen}){
 }
 
 const AvatarScreen = ({navigation, route}) =>  {
-  const [defaultImageURL, setDefaultImageURL] = useState(null);
+  const [currentImageInDBURL, setCurrentImageInDBURL] = useState(null);
   const [image, setImage] = useState(null);
 
-  // console.log("route=", route)
   console.log("route.params.fromSignUpScreen=", route.params.fromSignUpScreen);
   console.log("route.params.avatarFileName=", route.params.avatarFileName);
 
-  // const getUserAvatarFileName = async () => {
-  //   const userId = await getDocumentId(
-  //     "users",
-  //     "email",
-  //     auth.currentUser.email
-  //   );
-  //   const userDocument = await getDocument(
-  //     "users",
-  //     "user_id",
-  //     userId
-  //   );
-  //   console.log("userDocument=", userDocument);
-
-  // }
-
-
-  // get the default.png from Firebase. We'll use its URL as the User's Avatar URL if
-  // custom image is not picked from the user's device
-  const defaultImageRef = ref(storage, defaultAvatarFileName);
-  getDownloadURL(defaultImageRef)
+  // get URL of user's current avatar_file_name
+  const currentAvatarImageInDBRef = ref(storage, route.params.avatarFileName);
+  getDownloadURL(currentAvatarImageInDBRef)
     .then((url) => {
-      setDefaultImageURL(url);
+      setCurrentImageInDBURL(url);
     });
 
   const pickImage = async () => {
@@ -63,6 +42,7 @@ const AvatarScreen = ({navigation, route}) =>  {
   };
 
   const saveAvatarSelection = async () => {
+    console.log("in saveAvatarSelection")
     const userId = await getDocumentId(
       "users",
       "email",
@@ -72,6 +52,9 @@ const AvatarScreen = ({navigation, route}) =>  {
     if (image){ // if user picked an image from their device
       // upload image to Firebase
       // https://github.com/expo/examples/blob/master/with-firebase-storage-upload/App.js#L178-L205
+
+      console.log("user picked an image from local device")
+
       const blob = await new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
         xhr.onload = function () {
@@ -90,8 +73,8 @@ const AvatarScreen = ({navigation, route}) =>  {
       await uploadBytes(fileRef, blob);
       blob.close();
 
+      console.log("userId=", userId);
       const docRef = doc(db, "users", userId);
-      console.log("pickedImageFileName=", pickedImageFileName);
       await updateDoc(docRef, {
         avatar_file_name: pickedImageFileName
       });
@@ -100,7 +83,7 @@ const AvatarScreen = ({navigation, route}) =>  {
   };
 
   let imgSource;
-  image ? imgSource = image : imgSource = defaultImageURL;  // checks if (picked) image is null
+  image ? imgSource = image : imgSource = currentImageInDBURL;  // checks if (picked) image is null
   return (
     <View style={styles.view}>
       <DisplayedMessage isFromSignUpScreen={route.params.fromSignUpScreen} />
