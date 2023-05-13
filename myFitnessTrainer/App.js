@@ -10,6 +10,7 @@ import WorkoutSummaryScreen from "./src/screens/WorkoutSummaryScreen";
 import WorkoutScreen from "./src/screens/WorkoutScreen";
 import AvatarScreen from './src/screens/AvatarScreen';
 import ExitWorkoutButton from "./src/components/ExitWorkoutButton";
+import ViewPastWorkoutPlansScreen from "./src/screens/ViewPastWorkoutPlansScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -57,6 +58,11 @@ export default function App() {
                 <Stack.Screen
                     name="Create Workout Plan"
                     component={CreateNewPlanScreen}
+                    options={{ headerTitleAlign: "center" }}
+                />
+                <Stack.Screen
+                    name="View Past Workout Plans"
+                    component={ViewPastWorkoutPlansScreen}
                     options={{ headerTitleAlign: "center" }}
                 />
                 <Stack.Screen
