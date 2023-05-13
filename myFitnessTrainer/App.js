@@ -78,11 +78,6 @@ export default function App() {
                         headerLeft: () => <ExitWorkoutButton />
                     }}
                 />
-                {/* <Stack.Screen
-                    name="Avatar"
-                    component={AvatarScreen} 
-                    options={{ headerTitleAlign: "center" }}
-                /> */}
             </Stack.Navigator>
         </NavigationContainer>
         
