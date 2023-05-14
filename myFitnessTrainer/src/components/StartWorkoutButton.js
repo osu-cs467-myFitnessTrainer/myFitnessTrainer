@@ -1,35 +1,32 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
-import { getDocument, getDocumentId } from "../../databaseFunctions";
+import { getAllDocuments, getDocumentId } from "../../databaseFunctions";
 import { auth } from "../../firebaseConfig";
 
 const StartWorkoutButton = () => {
     const navigation = useNavigation();
 
     const startWorkout = async () => {
-        // get user id
         const userId = await getDocumentId(
             "users",
             "email",
             auth.currentUser.email
         );
 
-        // match userid to the correct workout plan
-        const workOutPlan = await getDocument(
-            "workout_plans",
-            "user_id",
-            userId
+        const allWorkoutPlans = await getAllDocuments("workout_plans");
+        const workoutPlanIds = Object.keys(allWorkoutPlans).filter(
+            (workoutPlan) => allWorkoutPlans[workoutPlan]["user_id"] === userId
         );
 
-        const workoutPlanId = await getDocumentId(
-            "workout_plans",
-            "user_id",
-            userId
+        const activeWorkoutPlanId = workoutPlanIds.filter(
+            (workoutPlanId) => allWorkoutPlans[workoutPlanId]["active"] === true
         );
 
-        const daysCompleted = workOutPlan["days_completed"];
-        const dailyExerciseSet = workOutPlan["daily_exercises"][daysCompleted];
+        const workoutPlan = allWorkoutPlans[activeWorkoutPlanId];
+
+        const daysCompleted = workoutPlan["days_completed"];
+        const dailyExerciseSet = workoutPlan["daily_exercises"][daysCompleted];
         dailyExerciseSet.forEach(
             (exerciseSet) =>
                 delete exerciseSet.default_exercise_stat_id.firestore
@@ -38,7 +35,7 @@ const StartWorkoutButton = () => {
         navigation.navigate("Workout", {
             dailyExerciseSet: dailyExerciseSet,
             daysCompleted: daysCompleted,
-            workoutPlanId: workoutPlanId,
+            workoutPlanId: activeWorkoutPlanId,
         });
     };
 
