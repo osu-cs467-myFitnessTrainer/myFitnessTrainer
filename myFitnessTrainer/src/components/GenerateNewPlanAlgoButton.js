@@ -87,6 +87,8 @@ const GenerateNewPlanAlgoButton = ({
             auth.currentUser.email
         );
 
+        // TODO: If a user already has an existing workout_plan (unfinished), set "active" as false
+        // TODO: If a user already has an existing workout_plan (finished; days_completed == duration), set "active" as false
         const postObject = {
             active: true,
             daily_exercises: dailyExercises,
