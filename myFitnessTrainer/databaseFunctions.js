@@ -1,6 +1,15 @@
-import { collection, getDocs, getDoc, doc, query, where, addDoc, and } from "firebase/firestore";
+import {
+    collection,
+    getDocs,
+    getDoc,
+    doc,
+    query,
+    where,
+    addDoc,
+    and,
+    updateDoc,
+} from "firebase/firestore";
 import { db } from "./firebaseConfig";
-
 
 /*********** GENERAL DATABASE FUNCTIONS START ******************************/
 
@@ -17,11 +26,12 @@ const getDocument = async (collectionName, searchKey, searchString) => {
         where(searchKey, "==", searchString)
     );
     const docSnapshot = await getDocs(q);
-    if (docSnapshot.exists()) {
-        return docSnapshot.data();
-    } else {
-        console.log("No such document");
-    }
+    // console.log(docSnapshot);
+    let document;
+    docSnapshot.forEach((doc) => {
+        document = doc.data();
+    });
+    return document;
 };
 
 /**
@@ -57,16 +67,26 @@ const postDocument = async (collectionName, postObject) => {
 /**
  *
  * @param {String} collectionName
- * @returns {Array} Array of each document object in the specified collection
+ * @returns {Object} Array of each document object in the specified collection
  */
 const getAllDocuments = async (collectionName) => {
-    const collectionDocuments = [];
+    const collectionDocuments = {};
     const querySnapshot = await getDocs(collection(db, collectionName));
     querySnapshot.forEach((doc) => {
-        // console.log(doc.id, " => ", doc.data());
-        collectionDocuments.push(doc.data());
+        collectionDocuments[doc.id] = doc.data();
     });
     return collectionDocuments;
+};
+
+/**
+ * @param {String} collectionName
+ * @param {String} documentId
+ * @param {Object} updateObject Object containing fields to be changed and their new values
+ */
+const updateDocument = async (collectionName, documentId, updateObject) => {
+    const documentRef = doc(db, collectionName, documentId);
+    const updatedDoc = await updateDoc(documentRef, updateObject);
+    console.log(updatedDoc);
 };
 
 /*********** GENERAL DATABASE FUNCTIONS END ******************************/
@@ -79,7 +99,7 @@ const getAllDocuments = async (collectionName) => {
  * @returns {Promise<String>} the string ID of the requested document, in the specifed collection. undefined if the document doesn't exist
  */
 const getUsernameWithUserId = async (userId) => {
-    const docRef = doc(db, 'users', userId);
+    const docRef = doc(db, "users", userId);
     const docSnap = await getDoc(docRef);
     const docData = docSnap.data();
 
@@ -99,9 +119,7 @@ const userhasWorkoutPlan = async (userId) => {
     let workoutPlan;
     const q = query(
         collection(db, "workout_plans"),
-        and(
-            where("user_id", "==", userId)
-        )
+        and(where("user_id", "==", userId))
     );
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
@@ -120,10 +138,7 @@ const userHasActiveWorkoutPlan = async (userId) => {
     let activeWorkoutPlan;
     const q = query(
         collection(db, "workout_plans"),
-        and(
-            where("user_id", "==", userId),
-            where("active", "==", true)
-        )
+        and(where("user_id", "==", userId), where("active", "==", true))
     );
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
@@ -135,12 +150,13 @@ const userHasActiveWorkoutPlan = async (userId) => {
 
 /*********** WORKOUT SPECIFIC DATABASE FUNCTIONS END ******************************/
 
-export { 
+export {
     getDocument,
     getDocumentId,
     postDocument,
-    getAllDocuments, 
+    getAllDocuments,
     getUsernameWithUserId,
     userhasWorkoutPlan,
-    userHasActiveWorkoutPlan
+    userHasActiveWorkoutPlan,
+    updateDocument,
 };

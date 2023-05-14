@@ -1,10 +1,68 @@
+import { useState, useEffect } from "react";
 import { StyleSheet, View, Text } from "react-native";
 import GoToDashboardButton from "../components/GoToDashboardButton";
+import { getAllDocuments, getDocumentId } from "../../databaseFunctions";
+import { auth } from "../../firebaseConfig";
 
 const WorkoutSummaryScreen = () => {
+    const [workoutSessionStats, setWorkoutSessionStats] = useState([]);
+
+    useEffect(() => {
+        getWorkoutStatsSessionFromDB().then((result) => {
+            setWorkoutSessionStats(result);
+        });
+    }, []);
+
+    const getWorkoutStatsSessionFromDB = async () => {
+        const userId = await getDocumentId(
+            "users",
+            "email",
+            auth.currentUser.email
+        );
+
+        const allExerciseStats = await getAllDocuments("exercise_history");
+
+        // filter by user AND
+        // get the most recent workout session date of user exercise stats
+        const allUserStats = Object.keys(allExerciseStats).filter(
+            (statId) => allExerciseStats[statId]["user_id"] === userId
+        );
+
+        const allUserStatsWorkoutDays = allUserStats.map(
+            (statId) => allExerciseStats[statId]["workout_day"]
+        );
+
+        let mostRecentWorkoutDay;
+
+        allUserStatsWorkoutDays.forEach((workoutDay) => {
+            if (mostRecentWorkoutDay === undefined) {
+                mostRecentWorkoutDay = workoutDay;
+            } else {
+                mostRecentWorkoutDay = Math.max(
+                    mostRecentWorkoutDay,
+                    workoutDay
+                );
+            }
+        });
+
+        const mostRecentWorkoutStatsIds = allUserStats.filter((statId) => {
+            return (
+                allExerciseStats[statId]["workout_day"] === mostRecentWorkoutDay
+            );
+        });
+
+        const mostRecentWorkoutStats = {};
+        mostRecentWorkoutStatsIds.forEach((statId) => {
+            mostRecentWorkoutStats[statId] = allExerciseStats[statId];
+        });
+
+        return mostRecentWorkoutStats;
+    };
+
+    getWorkoutStatsSessionFromDB();
     return (
         <View style={styles.container}>
-            <Text>Workout Summary</Text>
+            <Text>{JSON.stringify(workoutSessionStats)}</Text>
             <GoToDashboardButton />
         </View>
     );
