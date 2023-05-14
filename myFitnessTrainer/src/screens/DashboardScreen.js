@@ -59,6 +59,7 @@ const DashboardScreen = () => {
         <View style={styles.buttonContainer}>
             <Text style={styles.completedWorkoutPlanText}>You have completed your Workout Plan - Congrats!</Text>
             <CreateNewPlanButton />
+
         </View>
         );
 
