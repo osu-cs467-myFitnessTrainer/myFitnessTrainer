@@ -12,7 +12,7 @@ import {
 } from "../../databaseFunctions";
 import SubmitExerciseStatsButton from "../components/SubmitExerciseStatsButton";
 import { auth } from "../../firebaseConfig";
-import SkipExerciseButton from "../components/skipExerciseButton";
+import SkipExerciseButton from "../components/SkipExerciseButton";
 
 const width = Dimensions.get("window").width;
 
