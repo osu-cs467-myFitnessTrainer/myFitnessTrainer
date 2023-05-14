@@ -32,7 +32,6 @@ const DeleteWorkoutPlanScreen = ({route}) => {
         );
     };
 
-
     // console.log("route.params.hasActiveWorkoutPlan=", route.params.hasActiveWorkoutPlan);
     if (!route.params.hasActiveWorkoutPlan){
         return(

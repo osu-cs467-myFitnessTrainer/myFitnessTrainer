@@ -14,8 +14,7 @@ const ViewWorkoutPlanScreen = ({route}) => {
         formattedExercisesPerDay.push(<Text>{"\n"}</Text>)
     }
 
-    // if fitnessGoal is not empty, then there is an active plan
-    if (fitnessGoal !== ""){
+    if (!route.hasActiveWorkoutPlan){
         return (
             <ScrollView>
                 <View style={styles.container}>
@@ -30,17 +29,16 @@ const ViewWorkoutPlanScreen = ({route}) => {
             </ScrollView>
         );
     }
-    // if fitnessGoal is empty, then there is no active plan (new user)
-    else {
-        return(
-            <ScrollView>
-            <View style={styles.container}>
-                <Text>No active workout plan; create one! {duration}</Text>
-                <CreateNewPlanButton/>
-            </View>
-            </ScrollView>
-        )
-    }
+    // there is an active workout plan
+    return(
+        <ScrollView>
+        <View style={styles.container}>
+            <Text>No active workout plan; create one! {duration}</Text>
+            <CreateNewPlanButton/>
+        </View>
+        </ScrollView>
+    )
+    
 };
 
 const styles = StyleSheet.create({
