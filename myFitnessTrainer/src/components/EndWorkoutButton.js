@@ -1,12 +1,30 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
+import { getDocumentId, updateDocument } from "../../databaseFunctions";
+import { auth } from "../../firebaseConfig";
 
-const EndWorkoutButton = () => {
-    // console.log(workoutStats);
+const EndWorkoutButton = ({ daysCompleted }) => {
     const navigation = useNavigation();
 
-    const endWorkout = () => {
+    const endWorkout = async () => {
+        // update user workout_plan days_completed
+        const userId = await getDocumentId(
+            "users",
+            "email",
+            auth.currentUser.email
+        );
+
+        const workoutPlanId = await getDocumentId(
+            "workout_plans",
+            "user_id",
+            userId
+        );
+
+        updateDocument("workout_plans", workoutPlanId, {
+            days_completed: daysCompleted + 1,
+        });
+
         navigation.reset({
             index: 0,
             routes: [{ name: "Workout Summary" }],

@@ -18,7 +18,7 @@ const width = Dimensions.get("window").width;
 
 const WorkoutScreen = ({ route }) => {
     // route.params contains the daily exercise set. 'params' is defined when navigating to 'WorkoutScreen' page from the 'StartWorkoutButton'
-    const dailyExerciseSet = route.params;
+    const { dailyExerciseSet, daysCompleted } = route.params;
 
     // adds additional card at end
     const exerciseDeck = dailyExerciseSet.concat([{ name: "Finished Card" }]);
@@ -82,10 +82,11 @@ const WorkoutScreen = ({ route }) => {
             auth.currentUser.email
         );
 
+        const postObjectDate = new Date();
         const postObject = {
             completed: true,
-            date: Date.now(),
-            duration: null,
+            workout_day: daysCompleted,
+            date: postObjectDate.toLocaleDateString("en-us"),
             exercise_id: exerciseId,
             user_id: userId,
             exercise_stats: currentExerciseStats,
@@ -114,7 +115,7 @@ const WorkoutScreen = ({ route }) => {
                 <Text style={styles.finishedWorkoutText}>
                     You have completed today&apos;s exercises
                 </Text>
-                <EndWorkoutButton />
+                <EndWorkoutButton daysCompleted={daysCompleted} />
                 <Text style={styles.viewWorkoutSummaryText}>
                     Select &apos;Finish Workout&apos; to view your workout
                     summary.

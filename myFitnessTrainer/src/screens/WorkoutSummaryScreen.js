@@ -10,7 +10,6 @@ const WorkoutSummaryScreen = () => {
     useEffect(() => {
         getWorkoutStatsSessionFromDB().then((result) => {
             setWorkoutSessionStats(result);
-            // console.log(workoutSessionStats);
         });
     }, []);
 
@@ -29,27 +28,33 @@ const WorkoutSummaryScreen = () => {
             (statId) => allExerciseStats[statId]["user_id"] === userId
         );
 
-        const allUserStatsDates = allUserStats.map(
-            (statId) => allExerciseStats[statId]["date"]
+        const allUserStatsWorkoutDays = allUserStats.map(
+            (statId) => allExerciseStats[statId]["workout_day"]
         );
 
-        let mostRecentDate;
-        allUserStatsDates.forEach((statDate) => {
-            if (mostRecentDate === undefined) {
-                mostRecentDate = new Date(statDate);
+        let mostRecentWorkoutDay;
+
+        allUserStatsWorkoutDays.forEach((workoutDay) => {
+            if (mostRecentWorkoutDay === undefined) {
+                mostRecentWorkoutDay = workoutDay;
             } else {
-                mostRecentDate = Math.max(
-                    new Date(mostRecentDate),
-                    new Date(statDate)
+                mostRecentWorkoutDay = Math.max(
+                    mostRecentWorkoutDay,
+                    workoutDay
                 );
             }
         });
-        const mostRecentWorkoutStatsId = allUserStats.filter(
-            (statId) => allExerciseStats[statId]["date"] === mostRecentDate
-        );
 
-        const mostRecentWorkoutStats =
-            allExerciseStats[mostRecentWorkoutStatsId];
+        const mostRecentWorkoutStatsIds = allUserStats.filter((statId) => {
+            return (
+                allExerciseStats[statId]["workout_day"] === mostRecentWorkoutDay
+            );
+        });
+
+        const mostRecentWorkoutStats = {};
+        mostRecentWorkoutStatsIds.forEach((statId) => {
+            mostRecentWorkoutStats[statId] = allExerciseStats[statId];
+        });
 
         return mostRecentWorkoutStats;
     };
