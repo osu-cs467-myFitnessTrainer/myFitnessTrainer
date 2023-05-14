@@ -22,6 +22,12 @@ const StartWorkoutButton = () => {
             userId
         );
 
+        const workoutPlanId = await getDocumentId(
+            "workout_plans",
+            "user_id",
+            userId
+        );
+
         const daysCompleted = workOutPlan["days_completed"];
         const dailyExerciseSet = workOutPlan["daily_exercises"][daysCompleted];
         dailyExerciseSet.forEach(
@@ -32,6 +38,7 @@ const StartWorkoutButton = () => {
         navigation.navigate("Workout", {
             dailyExerciseSet: dailyExerciseSet,
             daysCompleted: daysCompleted,
+            workoutPlanId: workoutPlanId,
         });
     };
 

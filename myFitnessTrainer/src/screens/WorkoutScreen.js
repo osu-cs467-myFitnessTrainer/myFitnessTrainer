@@ -18,7 +18,7 @@ const width = Dimensions.get("window").width;
 
 const WorkoutScreen = ({ route }) => {
     // route.params contains the daily exercise set. 'params' is defined when navigating to 'WorkoutScreen' page from the 'StartWorkoutButton'
-    const { dailyExerciseSet, daysCompleted } = route.params;
+    const { dailyExerciseSet, daysCompleted, workoutPlanId } = route.params;
 
     // adds additional card at end
     const exerciseDeck = dailyExerciseSet.concat([{ name: "Finished Card" }]);
@@ -87,6 +87,7 @@ const WorkoutScreen = ({ route }) => {
             completed: true,
             workout_day: daysCompleted,
             date: postObjectDate.toLocaleDateString("en-us"),
+            workout_plan_id: workoutPlanId,
             exercise_id: exerciseId,
             user_id: userId,
             exercise_stats: currentExerciseStats,
