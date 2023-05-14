@@ -7,9 +7,9 @@ const ViewWorkoutPlanScreen = ({route}) => {
     const formattedStartDate = new Date(startDate).toDateString();
     let formattedExercisesPerDay = []
     for (const dayNum in workoutsPerDay){
-        formattedExercisesPerDay.push(<Text>Day {dayNum}{"\n"}</Text>);
+        formattedExercisesPerDay.push(<Text key={dayNum}>Day {dayNum}{"\n"}</Text>);
         for (const exerciseNum in workoutsPerDay[dayNum]){
-            formattedExercisesPerDay.push(<Text>{workoutsPerDay[dayNum][exerciseNum]}{"\n"}</Text>);
+            formattedExercisesPerDay.push(<Text key={dayNum.concat("-", exerciseNum)}>{workoutsPerDay[dayNum][exerciseNum]}{"\n"}</Text>);
         }
         formattedExercisesPerDay.push(<Text>{"\n"}</Text>)
     }
