@@ -21,7 +21,7 @@ const StartWorkoutButton = () => {
 
         const activeWorkoutPlanId = workoutPlanIds.filter(
             (workoutPlanId) => allWorkoutPlans[workoutPlanId]["active"] === true
-        );
+        )[0];
 
         const workoutPlan = allWorkoutPlans[activeWorkoutPlanId];
 
