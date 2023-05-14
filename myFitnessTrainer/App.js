@@ -10,6 +10,7 @@ import WorkoutSummaryScreen from "./src/screens/WorkoutSummaryScreen";
 import WorkoutScreen from "./src/screens/WorkoutScreen";
 import AvatarScreen from './src/screens/AvatarScreen';
 import ExitWorkoutButton from "./src/components/ExitWorkoutButton";
+import ViewWorkoutPlanScreen from "./src/screens/ViewWorkoutPlanScreen";
 import DeleteWorkoutPlanScreen from "./src/screens/DeleteWorkoutPlanScreen";
 
 const Stack = createNativeStackNavigator();
@@ -82,6 +83,11 @@ export default function App() {
                 <Stack.Screen
                     name="Avatar"
                     component={AvatarScreen} 
+                    options={{ headerTitleAlign: "center" }}
+                />
+                <Stack.Screen
+                    name="View Workout Plan"
+                    component={ViewWorkoutPlanScreen} 
                     options={{ headerTitleAlign: "center" }}
                 />
             </Stack.Navigator>
