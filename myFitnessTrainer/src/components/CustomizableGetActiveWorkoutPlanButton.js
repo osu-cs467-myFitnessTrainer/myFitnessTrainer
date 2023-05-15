@@ -7,7 +7,7 @@ import { collection, query, where, getDocs } from "firebase/firestore";
 
 const CustomizableGetActiveWorkoutPlanButton = (props) => {  
     const navigation = useNavigation();
-    const [workoutsPerDay, setWorkoutsPerDay] = useState({});
+    const [workoutsPerDay, setWorkoutsPerDay] = useState([]);
     const handleCustomizableGetActiveWorkoutPlanButton = async () => {
         console.log("in CustomizableGetActiveWorkoutPlanButton.js");
         console.log("props=", props);
@@ -50,7 +50,8 @@ const CustomizableGetActiveWorkoutPlanButton = (props) => {
                 for (const exercise_num in dailyExercises[day_num]){
                     exercises_for_the_day.push(dailyExercises[day_num][exercise_num]["name"]);
                 }
-                workoutsPerDay[parseInt(day_num)+1] = exercises_for_the_day
+                workoutsPerDay.push({"id":parseInt(day_num)+1, "data":exercises_for_the_day })
+                // workoutsPerDay[parseInt(day_num)+1] = exercises_for_the_day
             }
             setWorkoutsPerDay(workoutsPerDay);
         });
@@ -68,8 +69,8 @@ const CustomizableGetActiveWorkoutPlanButton = (props) => {
     };
 
     return (
-        <TouchableOpacity style={styles.button} onPress={handleCustomizableGetActiveWorkoutPlanButton}>
-            <Text style={styles.buttonText}>{props.buttonText}</Text>
+        <TouchableOpacity style={styles[props.buttonStyle]} onPress={handleCustomizableGetActiveWorkoutPlanButton}>
+            <Text style={styles[props.buttonTextStyle]}>{props.textInButton}</Text>
         </TouchableOpacity>
     );
 };
@@ -77,7 +78,7 @@ const CustomizableGetActiveWorkoutPlanButton = (props) => {
 export default CustomizableGetActiveWorkoutPlanButton;
 
 const styles = StyleSheet.create({
-    button: {
+    viewButton: {
         backgroundColor: "#4682B4",
         width: "75%",
         padding: 15,
@@ -85,9 +86,22 @@ const styles = StyleSheet.create({
         alignItems: "center",
         marginTop: 40,
     },
-    buttonText: {
+    viewButtonText: {
         color: "white",
         fontWeight: 800,
         fontSize: 16,
+    },
+    deleteButton: {
+        backgroundColor: '#8B0000',
+        width: '75%',
+        padding: 15,
+        borderRadius: 10,
+        alignItems: 'center',
+        marginTop: 40
+    },
+    deleteButtonText: {
+        color: 'white',
+        fontWeight: 800,
+        fontSize: 16
     },
 });

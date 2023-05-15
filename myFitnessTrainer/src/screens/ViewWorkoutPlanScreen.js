@@ -1,52 +1,59 @@
 import React from "react";
-import { StyleSheet, View, Text, ScrollView} from "react-native";
+import { SectionList, StyleSheet, View, Text} from "react-native";
 import CreateNewPlanButton from "../components/CreateNewPlanButton";
 
 const ViewWorkoutPlanScreen = ({route}) => {
-    const { duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay } = route.params;
+    console.log("route.params=", route.params)
+    const { hasActiveWorkoutPlan, workoutPlanId, duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay } = route.params;
     const formattedStartDate = new Date(startDate).toDateString();
-    let formattedExercisesPerDay = []
-    for (const dayNum in workoutsPerDay){
-        formattedExercisesPerDay.push(<Text key={dayNum}>Day {dayNum}{"\n"}</Text>);
-        for (const exerciseNum in workoutsPerDay[dayNum]){
-            formattedExercisesPerDay.push(<Text key={dayNum.concat("-", exerciseNum)}>{workoutsPerDay[dayNum][exerciseNum]}{"\n"}</Text>);
-        }
-        formattedExercisesPerDay.push(<Text>{"\n"}</Text>)
-    }
 
-    if (!route.hasActiveWorkoutPlan){
-        return (
-            <ScrollView>
-                <View style={styles.container}>
-                    <Text>Duration: {duration} days</Text>
-                    <Text>Fitness Goal: {fitnessGoal}</Text>
-                    <Text>Fitness Level: {fitnessLevel}</Text>
-                    <Text>Start Date: {formattedStartDate}</Text>
-                    <Text>Days Completed: {daysCompleted}</Text>
-                    <Text>{"\n"}Exercises:</Text>
-                    <Text>{formattedExercisesPerDay}</Text>
-                </View>
-            </ScrollView>
-        );
+    if (!hasActiveWorkoutPlan){
+        return(
+            <View style={styles.container}>
+                <Text>No active workout plan; create one! {duration}</Text>
+                <CreateNewPlanButton/>
+            </View>
+        )
     }
-    // there is an active workout plan
-    return(
-        <ScrollView>
+    return (
         <View style={styles.container}>
-            <Text>No active workout plan; create one! {duration}</Text>
-            <CreateNewPlanButton/>
+            <Text>Duration: {duration} days</Text>
+            <Text>Fitness Goal: {fitnessGoal}</Text>
+            <Text>Fitness Level: {fitnessLevel}</Text>
+            <Text>Start Date: {formattedStartDate}</Text>
+            <Text>Days Completed: {daysCompleted}</Text>
+            <Text>{"\n"}Exercises:</Text>
+            <SectionList
+                sections={workoutsPerDay}
+                renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
+                renderSectionHeader={({section}) => (
+                    <Text style={styles.sectionHeader}>Day {section.id}</Text>
+                )}
+                keyExtractor={(item, index) => `basicListEntry-${index}-${item}`}
+            />
         </View>
-        </ScrollView>
-    )
+    );
+}
     
-};
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 20,
         paddingBottom: 40
-    }
+    },
+    sectionHeader: {
+        paddingTop: 2,
+        paddingLeft: 10,
+        paddingRight: 10,
+        paddingBottom: 2,
+        fontWeight: 'bold',
+        backgroundColor: 'rgba(247,247,247,1.0)',
+      },
+      item: {
+        padding: 10,
+        height: 44,
+      },
 });
 
 export default ViewWorkoutPlanScreen;

@@ -76,27 +76,26 @@ import CustomizableGetActiveWorkoutPlanButton from "./CustomizableGetActiveWorko
 const ViewWorkoutPlanButton = () => {  
     return (
         <View>
-          {/* <ImageDetail title="Forest" imageSource={require('../../assets/forest.jpg')} score='9'/> */}
-          <CustomizableGetActiveWorkoutPlanButton routeTo="View Workout Plan" buttonText="View Workout Plan"/>
+          <CustomizableGetActiveWorkoutPlanButton routeTo="View Workout Plan" textInButton="View Workout Plan" buttonStyle="viewButton" buttonTextStyle="viewButtonText" />
         </View>
-      );
-    };
+    );
+};
   
 
 export default ViewWorkoutPlanButton;
 
-const styles = StyleSheet.create({
-    button: {
-        backgroundColor: "#4682B4",
-        width: "75%",
-        padding: 15,
-        borderRadius: 10,
-        alignItems: "center",
-        marginTop: 40,
-    },
-    buttonText: {
-        color: "white",
-        fontWeight: 800,
-        fontSize: 16,
-    },
-});
+// const styles = StyleSheet.create({
+//     button: {
+//         backgroundColor: "#4682B4",
+//         width: "75%",
+//         padding: 15,
+//         borderRadius: 10,
+//         alignItems: "center",
+//         marginTop: 40,
+//     },
+//     buttonText: {
+//         color: "white",
+//         fontWeight: 800,
+//         fontSize: 16,
+//     },
+// });
