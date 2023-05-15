@@ -2,8 +2,7 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { auth } from "../../firebaseConfig"
-import { getDocumentId, getD, getDocument
- } from "../../databaseFunctions";
+import { getDocument } from "../../databaseFunctions";
 
 const SelectAnAvatarButton = () => {
     const navigation = useNavigation();
@@ -16,7 +15,7 @@ const SelectAnAvatarButton = () => {
         );
 
         navigation.navigate("Select An Avatar", {
-            fromSignUpScreen: false,
+            fromSignUpScreen: false,    // This button will be in the Settings Screen.
             avatarFileName: userDocument.avatar_file_name
           });
     };

@@ -4,7 +4,7 @@ import * as ImagePicker from 'expo-image-picker';
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { doc, updateDoc } from 'firebase/firestore';
 import { storage, auth, db } from '../../firebaseConfig';
-import { getDocumentId, getDocument } from "../../databaseFunctions";
+import { getDocumentId } from "../../databaseFunctions";
 import Avatar from '../components/Avatar';
 
 const pickedImageFileName = Date.now() + ".png";
@@ -21,6 +21,7 @@ const AvatarScreen = ({navigation, route}) =>  {
 
   // get URL of user's current avatar_file_name
   const currentAvatarImageInDBRef = ref(storage, route.params.avatarFileName);
+  console.log("route.params.avatarFileName=", route.params.avatarFileName);
   getDownloadURL(currentAvatarImageInDBRef)
     .then((url) => {
       setCurrentImageInDBURL(url);
