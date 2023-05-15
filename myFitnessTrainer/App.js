@@ -80,11 +80,6 @@ export default function App() {
                     }}
                 />
                 <Stack.Screen
-                    name="Avatar"
-                    component={AvatarScreen}
-                    options={{ headerTitleAlign: "center" }}
-                />
-                <Stack.Screen
                     name="View Workout Plan"
                     component={ViewWorkoutPlanScreen} 
                     options={{ headerTitleAlign: "center" }}
