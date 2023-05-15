@@ -4,9 +4,13 @@ import CreateNewPlanButton from "../components/CreateNewPlanButton";
 import { useNavigation } from "@react-navigation/native";
 import { db } from "../../firebaseConfig";
 import { doc, deleteDoc } from "firebase/firestore";
+import DisplayActiveWorkoutPlan from "../components/DisplayActiveWorkoutPlan";
+import DisplayNoActiveWorkoutPlan from "../components/DisplayNoActiveWorkoutPlan";
 
 
 const DeleteWorkoutPlanScreen = ({route}) => {
+    const { hasActiveWorkoutPlan, workoutPlanId, duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay } = route.params;
+
     const navigation = useNavigation();
 
     const deleteWorkoutPlanInDBAndGoToDashboard = async () => {
@@ -32,29 +36,31 @@ const DeleteWorkoutPlanScreen = ({route}) => {
         );
     };
 
-    // console.log("route.params.hasActiveWorkoutPlan=", route.params.hasActiveWorkoutPlan);
-    if (!route.params.hasActiveWorkoutPlan){
-        return(
-            <ScrollView>
-            <View style={styles.container}>
-                <Text>You currently have no active workout plans.</Text>
-                <CreateNewPlanButton/>
-            </View>
-            </ScrollView>
-        )   
-    } 
 
+    if (!hasActiveWorkoutPlan){
+        return <DisplayNoActiveWorkoutPlan />;
+    } 
     return (
-        <ScrollView>
-            <View style={styles.container}>
-                <Text>TODO: stuff about the current active plan here</Text>
-                <TouchableOpacity style={styles.button} onPress={handleConfirmDeleteWorkoutPlan}>
-                    <Text style={styles.buttonText}>Delete Workout Plan</Text>
-                </TouchableOpacity>
-            </View>
-        </ScrollView>
-    );
-    }
+        <View style={styles.container}>
+            <TouchableOpacity style={styles.button} onPress={handleConfirmDeleteWorkoutPlan}>
+                <Text style={styles.buttonText}>Delete Workout Plan</Text>
+            </TouchableOpacity>
+            <DisplayActiveWorkoutPlan duration={duration} fitnessGoal={fitnessGoal} startDate={startDate} daysCompleted={daysCompleted} workoutsPerDay={workoutsPerDay} />
+        </View>
+    )
+        
+
+    // return (
+    //     <View style={styles.container}>
+    //         {/* <TouchableOpacity style={styles.button} onPress={handleConfirmDeleteWorkoutPlan}>
+    //             <Text style={styles.buttonText}>Delete Workout Plan</Text>
+    //         </TouchableOpacity> */}
+    //         <DisplayActiveWorkoutPlan duration={duration} fitnessGoal={fitnessGoal} startDate={startDate} daysCompleted={daysCompleted} workoutsPerDay={workoutsPerDay} />;
+    //     </View>
+
+    // );
+}
+    
 
 const styles = StyleSheet.create({
     container: {
