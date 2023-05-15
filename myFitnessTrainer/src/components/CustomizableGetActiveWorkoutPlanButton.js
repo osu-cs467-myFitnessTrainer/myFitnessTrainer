@@ -9,8 +9,6 @@ const CustomizableGetActiveWorkoutPlanButton = (props) => {
     const navigation = useNavigation();
     const [workoutsPerDay, setWorkoutsPerDay] = useState([]);
     const handleCustomizableGetActiveWorkoutPlanButton = async () => {
-        console.log("in CustomizableGetActiveWorkoutPlanButton.js");
-        console.log("props=", props);
         const userId = await getDocumentId(
             "users",
             "email",

@@ -1,23 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyleSheet, View, Text, ScrollView, TouchableOpacity, Alert} from "react-native";
 import CreateNewPlanButton from "../components/CreateNewPlanButton";
 import { useNavigation } from "@react-navigation/native";
 import { db } from "../../firebaseConfig";
-import { doc, deleteDoc } from "firebase/firestore";
+import { doc, deleteDoc, collection, query, where, getDocs  } from "firebase/firestore";
 import DisplayActiveWorkoutPlan from "../components/DisplayActiveWorkoutPlan";
 import DisplayNoActiveWorkoutPlan from "../components/DisplayNoActiveWorkoutPlan";
 
 
 const DeleteWorkoutPlanScreen = ({route}) => {
-    const { hasActiveWorkoutPlan, workoutPlanId, duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay } = route.params;
+    const [exerciseHistoriesWithWorkoutPlanId, setExerciseHistoriesWithWorkoutPlanId] = useState([]);
+    const { userId, hasActiveWorkoutPlan, workoutPlanId, duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay } = route.params;
+
+
 
     const navigation = useNavigation();
 
     const deleteWorkoutPlanInDBAndGoToDashboard = async () => {
-        workoutPlanId = route.params.workoutPlanId;
-        // console.log("workoutPlanId to delete=", workoutPlanId);
+        console.log("workoutPlanId=", workoutPlanId);
+        const exerciseHistoryRef = collection(db, "exercise_history");
+        const q = query(exerciseHistoryRef, where("workout_plan_id", "==", workoutPlanId));
+        const querySnapshot = await getDocs(q);
+        querySnapshot.forEach((doc) => {
+            console.log(doc.id, " => ", doc.data());
+            // deleteDoc(doc(db, "workout_plans", workoutPlanId));
+            exerciseHistoriesWithWorkoutPlanId.push(doc.id)
+            setExerciseHistoriesWithWorkoutPlanId(exerciseHistoriesWithWorkoutPlanId);
+        });
+        
+        console.log("exerciseHistoriesWithWorkoutPlanId=", exerciseHistoriesWithWorkoutPlanId);
+        // delete the active workout plan
+        for (const exerciseHistoryId of exerciseHistoriesWithWorkoutPlanId) {
+            // ...use `element`...
+            await deleteDoc(doc(db, "exercise_history", exerciseHistoryId));
+        }
         await deleteDoc(doc(db, "workout_plans", workoutPlanId));
-        // TODO: delete exercise_history where workoutPlanId is referenced
+        
         navigation.navigate("Dashboard");
     }
 
@@ -45,7 +63,8 @@ const DeleteWorkoutPlanScreen = ({route}) => {
             <TouchableOpacity style={styles.button} onPress={handleConfirmDeleteWorkoutPlan}>
                 <Text style={styles.buttonText}>Delete Workout Plan</Text>
             </TouchableOpacity>
-            <DisplayActiveWorkoutPlan duration={duration} fitnessGoal={fitnessGoal} startDate={startDate} daysCompleted={daysCompleted} workoutsPerDay={workoutsPerDay} />
+            <DisplayActiveWorkoutPlan duration={duration} fitnessLevel={fitnessLevel} fitnessGoal={fitnessGoal} startDate={startDate} daysCompleted={daysCompleted} workoutsPerDay={workoutsPerDay} />
+
         </View>
     )
         
@@ -66,7 +85,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 20,
-        paddingBottom: 40
+        paddingBottom: 40,
+        gap: 20
     },
     button: {
         backgroundColor: '#8B0000',
@@ -74,7 +94,6 @@ const styles = StyleSheet.create({
         padding: 15,
         borderRadius: 10,
         alignItems: 'center',
-        marginTop: 40
     },
     buttonText: {
         color: 'white',
