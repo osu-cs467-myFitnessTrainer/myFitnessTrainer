@@ -1,6 +1,5 @@
 import React from "react";
-import { SectionList, StyleSheet, View, Text} from "react-native";
-import CreateNewPlanButton from "../components/CreateNewPlanButton";
+import { StyleSheet, View } from "react-native";
 import DisplayActiveWorkoutPlan from "../components/DisplayActiveWorkoutPlan";
 import DisplayNoActiveWorkoutPlan from "../components/DisplayNoActiveWorkoutPlan";
 
