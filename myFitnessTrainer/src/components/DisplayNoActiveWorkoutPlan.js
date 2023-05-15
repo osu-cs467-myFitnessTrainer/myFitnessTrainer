@@ -31,5 +31,4 @@ const DisplayNoActiveWorkoutPlan = () => {
       },
 });
 
-
 export default DisplayNoActiveWorkoutPlan;

@@ -49,7 +49,6 @@ const CustomizableGetActiveWorkoutPlanButton = (props) => {
                     exercises_for_the_day.push(dailyExercises[day_num][exercise_num]["name"]);
                 }
                 workoutsPerDay.push({"id":parseInt(day_num)+1, "data":exercises_for_the_day })
-                // workoutsPerDay[parseInt(day_num)+1] = exercises_for_the_day
             }
             setWorkoutsPerDay(workoutsPerDay);
         });
