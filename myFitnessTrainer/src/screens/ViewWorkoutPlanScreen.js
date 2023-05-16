@@ -1,54 +1,30 @@
 import React from "react";
-import { StyleSheet, View, Text, ScrollView} from "react-native";
-import CreateNewPlanButton from "../components/CreateNewPlanButton";
+import { StyleSheet, View } from "react-native";
+import DisplayActiveWorkoutPlan from "../components/DisplayActiveWorkoutPlan";
+import DisplayNoActiveWorkoutPlan from "../components/DisplayNoActiveWorkoutPlan";
 
 const ViewWorkoutPlanScreen = ({route}) => {
-    const { duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay } = route.params;
-    const formattedStartDate = new Date(startDate).toDateString();
-    let formattedExercisesPerDay = []
-    for (const dayNum in workoutsPerDay){
-        formattedExercisesPerDay.push(<Text key={dayNum}>Day {dayNum}{"\n"}</Text>);
-        for (const exerciseNum in workoutsPerDay[dayNum]){
-            formattedExercisesPerDay.push(<Text key={dayNum.concat("-", exerciseNum)}>{workoutsPerDay[dayNum][exerciseNum]}{"\n"}</Text>);
-        }
-        formattedExercisesPerDay.push(<Text>{"\n"}</Text>)
-    }
+    const { hasActiveWorkoutPlan, duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay } = route.params;
+    console.log("hasActiveWorkoutPlan=", hasActiveWorkoutPlan)
 
-    // if fitnessGoal is not empty, then there is an active plan
-    if (fitnessGoal !== ""){
-        return (
-            <ScrollView>
-                <View style={styles.container}>
-                    <Text>Duration: {duration} days</Text>
-                    <Text>Fitness Goal: {fitnessGoal}</Text>
-                    <Text>Fitness Level: {fitnessLevel}</Text>
-                    <Text>Start Date: {formattedStartDate}</Text>
-                    <Text>Days Completed: {daysCompleted}</Text>
-                    <Text>{"\n"}Exercises:</Text>
-                    <Text>{formattedExercisesPerDay}</Text>
-                </View>
-            </ScrollView>
-        );
+    if (!hasActiveWorkoutPlan){
+        return <DisplayNoActiveWorkoutPlan />;
+
     }
-    // if fitnessGoal is empty, then there is no active plan (new user)
-    else {
-        return(
-            <ScrollView>
-            <View style={styles.container}>
-                <Text>No active workout plan; create one! {duration}</Text>
-                <CreateNewPlanButton/>
-            </View>
-            </ScrollView>
-        )
-    }
-};
+    return (
+        <View style={styles.container}>
+            <DisplayActiveWorkoutPlan duration={duration} fitnessLevel={fitnessLevel} fitnessGoal={fitnessGoal} startDate={startDate} daysCompleted={daysCompleted} workoutsPerDay={workoutsPerDay} />
+        </View>
+    )
+}
+    
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 20,
         paddingBottom: 40
-    }
+    },
 });
 
 export default ViewWorkoutPlanScreen;
