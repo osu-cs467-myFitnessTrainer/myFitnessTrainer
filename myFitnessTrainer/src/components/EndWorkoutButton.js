@@ -27,15 +27,15 @@ const EndWorkoutButton = ({ daysCompleted }) => {
 
         const workoutPlanId = workoutPlan["id"];
 
+        updateDocument("workout_plans", workoutPlanId, {
+            days_completed: daysCompleted + 1,
+        });
+
         // check if days_completed === duration, then the fitness plan is complete
         if (workoutPlan["days_completed"] === workoutPlan["duration"]) {
             console.log("congrats, workout plan completed");
             updateDocument("workout_plans", workoutPlanId, {
                 active: false,
-            });
-        } else {
-            updateDocument("workout_plans", workoutPlanId, {
-                days_completed: daysCompleted + 1,
             });
         }
 
