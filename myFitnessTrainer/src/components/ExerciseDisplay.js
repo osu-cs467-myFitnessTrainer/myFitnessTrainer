@@ -10,7 +10,8 @@ const ExerciseDisplay = (
         exercise,
         index,
         handleOnSkip,
-        handleOnSubmit
+        handleOnSubmit,
+        setCurrentExerciseStats
     }
 ) => {
 
@@ -20,6 +21,8 @@ const ExerciseDisplay = (
     // finished - show the inputs for user and submit button
     // submitted - submitted to the db
     const [currentStage, setCurrentStage] = useState("start");
+
+    // exercise stats
 
     const recommendedExerciseStats = (
         <View style={styles.innerContainers}>

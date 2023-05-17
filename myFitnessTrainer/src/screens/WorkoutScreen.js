@@ -144,6 +144,7 @@ const WorkoutScreen = ({ route }) => {
                 index={index}
                 handleOnSkip={() => skipExercise(index)}
                 handleOnSubmit={() => submitStatsToDB(index)}
+                setCurrentExerciseStats={setCurrentExerciseStats}
             />
         );
 
