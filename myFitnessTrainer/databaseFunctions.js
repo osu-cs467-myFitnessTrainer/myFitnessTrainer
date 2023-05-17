@@ -30,6 +30,7 @@ const getDocument = async (collectionName, searchKey, searchString) => {
     let document;
     docSnapshot.forEach((doc) => {
         document = doc.data();
+        document["id"] = doc.id;
     });
     return document;
 };

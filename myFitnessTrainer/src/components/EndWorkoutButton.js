@@ -1,7 +1,11 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
-import { getDocumentId, updateDocument } from "../../databaseFunctions";
+import {
+    getDocument,
+    getDocumentId,
+    updateDocument,
+} from "../../databaseFunctions";
 import { auth } from "../../firebaseConfig";
 
 const EndWorkoutButton = ({ daysCompleted }) => {
@@ -15,15 +19,22 @@ const EndWorkoutButton = ({ daysCompleted }) => {
             auth.currentUser.email
         );
 
-        const workoutPlanId = await getDocumentId(
+        const workoutPlan = await getDocument(
             "workout_plans",
             "user_id",
             userId
         );
 
-        updateDocument("workout_plans", workoutPlanId, {
-            days_completed: daysCompleted + 1,
-        });
+        const workoutPlanId = workoutPlan["id"];
+
+        // check if days_completed === duration, then the fitness plan is complete
+        if (workoutPlan["days_completed"] === workoutPlan["duration"]) {
+            console.log("congrats, workout plan completed");
+        } else {
+            updateDocument("workout_plans", workoutPlanId, {
+                days_completed: daysCompleted + 1,
+            });
+        }
 
         navigation.reset({
             index: 0,
