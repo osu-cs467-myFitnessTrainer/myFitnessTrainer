@@ -1,16 +1,23 @@
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 import React, { useEffect, useState } from 'react';
-import { auth } from '../../firebaseConfig';
+import { auth, db, storage } from '../../firebaseConfig';
 import StartWorkoutButton from "../components/StartWorkoutButton";
 import CreateNewPlanButton from '../components/CreateNewPlanButton';
 import { getDocumentId, getUsernameWithUserId, userHasActiveWorkoutPlan, userhasWorkoutPlan } from '../../databaseFunctions';
 import { ScrollView } from 'react-native-gesture-handler';
+import Avatar from '../components/Avatar';
+import {doc, getDoc} from "firebase/firestore";
+import { ref, getDownloadURL } from 'firebase/storage';
+
+const avatarPixelSize = 100;
 
 const DashboardScreen = () => {
     const [userIsNew, setUserIsNew] = useState(true);
     const [hasactiveWorkoutPlan, setHasActiveWorkoutPlan] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const [username, setUsername] = useState('user');
+    const [userId, setUserId] = useState('');
+    const [avatarURL, setAvatarURL] = useState(null);
 
     // We'll fetch each time user enters Dashboard Screen
     useEffect(() => {
@@ -22,6 +29,7 @@ const DashboardScreen = () => {
                 // only display username to a new user
                 const userName = await getUsernameWithUserId(userId);
                 setUsername(userName);
+                setUserId(userId);
             } else {
                 // only check if they have active plan if we know they are not new
                 const hasActivePlan = await userHasActiveWorkoutPlan(userId);
@@ -30,6 +38,24 @@ const DashboardScreen = () => {
             setIsLoading(false);
         }
         fetchWorkoutPlan().catch(error => console.log(error));
+    }, []);
+
+    useEffect(() => {
+        const fetchAvatarURL = async () => {
+            const userId = await getDocumentId("users", "email", auth.currentUser.email);
+            const docRef = doc(db, "users", userId);
+            const docSnap = await getDoc(docRef);
+            if (docSnap.exists()) {
+                // from avatar_file_name, get a URL
+                const currentAvatarImageInDBRef = ref(storage, docSnap.data()["avatar_file_name"]);
+                getDownloadURL(currentAvatarImageInDBRef)
+                .then((url) => {
+                    setAvatarURL(url)
+
+                });
+            }
+        }
+        fetchAvatarURL().catch(error => console.log(error));
     }, []);
 
     if (isLoading) {
@@ -42,6 +68,7 @@ const DashboardScreen = () => {
     else if (userIsNew) {
         return (
             <View style={styles.newUserContainer}>
+                <Avatar imgSource={avatarURL} pixelSize={avatarPixelSize} />
                 <Text style={styles.welcomeMessage}>Welcome to myFitnessTrainer, {username}!</Text>
                 <Text style={styles.createNewWorkoutText}>Create a new Workout Plan to get started</Text>
                 <CreateNewPlanButton />
@@ -51,12 +78,14 @@ const DashboardScreen = () => {
     else {
         const button = hasactiveWorkoutPlan ? (
             <View style={styles.buttonContainer}>
+                <Avatar imgSource={avatarURL} pixelSize={avatarPixelSize} />
                 <StartWorkoutButton />
                 <Text style={styles.createNewPlanInSettingsText}>You can create a new workout plan in Settings</Text>
             </View>
         ): 
         (
         <View style={styles.buttonContainer}>
+            <Avatar imgSource={avatarURL} pixelSize={avatarPixelSize} />
             <Text style={styles.completedWorkoutPlanText}>You have completed your Workout Plan - Congrats!</Text>
             <CreateNewPlanButton />
 
