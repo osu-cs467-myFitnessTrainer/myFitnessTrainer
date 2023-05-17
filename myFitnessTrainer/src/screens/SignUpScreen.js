@@ -4,6 +4,8 @@ import { db, auth } from '../../firebaseConfig';
 import { onAuthStateChanged, createUserWithEmailAndPassword } from 'firebase/auth';
 import { addDoc, collection } from 'firebase/firestore';
 
+const avatarFileName = "default.png"
+
 const SignUpScreen = ({navigation}) => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -16,7 +18,15 @@ const SignUpScreen = ({navigation}) => {
             if(user) {
                 navigation.reset({
                     index: 0,
-                    routes: [{name:'Avatar'}]
+                    routes: [
+                        {
+                            name:'Select An Avatar', 
+                            params: {
+                                fromSignUpScreen: true,
+                                avatarFileName: avatarFileName
+                            }
+                        }
+                    ]
                 });
             }
         });
