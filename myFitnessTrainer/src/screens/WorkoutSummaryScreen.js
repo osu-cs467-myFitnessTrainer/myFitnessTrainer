@@ -59,7 +59,6 @@ const WorkoutSummaryScreen = () => {
                 allExerciseStats[statId]["workout_day"] === mostRecentWorkoutDay
             );
         });
-        // console.log(mostRecentWorkoutStatsIds);
 
         const mostRecentWorkoutStats = {};
         mostRecentWorkoutStatsIds.forEach((statId) => {
@@ -69,7 +68,6 @@ const WorkoutSummaryScreen = () => {
         return mostRecentWorkoutStats;
     };
 
-    // getWorkoutStatsSessionFromDB();
     return (
         <View style={styles.container}>
             <Text>{JSON.stringify(workoutSessionStats)}</Text>
