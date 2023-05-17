@@ -1,15 +1,15 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import React from "react";
 
-const SubmitExerciseStatsButton = ({ handleOnSubmit }) => {
+const StartExerciseButton = ({ handleOnStart }) => {
     return (
-        <TouchableOpacity style={styles.button} onPress={handleOnSubmit}>
-            <Text style={styles.buttonText}>Submit</Text>
+        <TouchableOpacity style={styles.button} onPress={handleOnStart}>
+            <Text style={styles.buttonText}>Start</Text>
         </TouchableOpacity>
     );
 };
 
-export default SubmitExerciseStatsButton;
+export default StartExerciseButton;
 
 const styles = StyleSheet.create({
     button: {

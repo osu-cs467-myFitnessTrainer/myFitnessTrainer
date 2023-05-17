@@ -14,11 +14,12 @@ export default SkipExerciseButton;
 const styles = StyleSheet.create({
     button: {
         backgroundColor: "#4682B4",
-        width: "75%",
+        width: "25%",
+        height: 50,
         padding: 15,
         borderRadius: 10,
         alignItems: "center",
-        marginTop: 40,
+        margin: 20
     },
     buttonText: {
         color: "white",
