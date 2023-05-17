@@ -86,8 +86,7 @@ const getAllDocuments = async (collectionName) => {
  */
 const updateDocument = async (collectionName, documentId, updateObject) => {
     const documentRef = doc(db, collectionName, documentId);
-    const updatedDoc = await updateDoc(documentRef, updateObject);
-    console.log(updatedDoc);
+    await updateDoc(documentRef, updateObject);
 };
 
 /*********** GENERAL DATABASE FUNCTIONS END ******************************/
