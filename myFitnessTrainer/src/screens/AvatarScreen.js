@@ -5,22 +5,26 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { doc, updateDoc } from 'firebase/firestore';
 import { storage, auth, db } from '../../firebaseConfig';
 import { getDocumentId } from "../../databaseFunctions";
-
 import Avatar from '../components/Avatar';
 
 const pickedImageFileName = Date.now() + ".png";
-const defaultAvatarFileName = "default.png";
 
-const AvatarScreen = ({navigation}) =>  {
-  const [defaultImageURL, setDefaultImageURL] = useState(null)
+function DisplayedMessage({isFromSignUpScreen}){
+  if (isFromSignUpScreen){
+    return <Text>Stick with the default avatar, or select your own!</Text>
+  }
+}
+
+const AvatarScreen = ({navigation, route}) =>  {
+  const [currentImageInDBURL, setCurrentImageInDBURL] = useState(null);
   const [image, setImage] = useState(null);
 
-  // get the default.png from Firebase. We'll use its URL as the User's Avatar URL if
-  // custom image is not picked from the user's device
-  const defaultImageRef = ref(storage, defaultAvatarFileName);
-  getDownloadURL(defaultImageRef)
+  // get URL of user's current avatar_file_name
+  const currentAvatarImageInDBRef = ref(storage, route.params.avatarFileName);
+  console.log("route.params.avatarFileName=", route.params.avatarFileName);
+  getDownloadURL(currentAvatarImageInDBRef)
     .then((url) => {
-      setDefaultImageURL(url);
+      setCurrentImageInDBURL(url);
     });
 
   const pickImage = async () => {
@@ -36,7 +40,6 @@ const AvatarScreen = ({navigation}) =>  {
   };
 
   const saveAvatarSelection = async () => {
-
     const userId = await getDocumentId(
       "users",
       "email",
@@ -46,6 +49,7 @@ const AvatarScreen = ({navigation}) =>  {
     if (image){ // if user picked an image from their device
       // upload image to Firebase
       // https://github.com/expo/examples/blob/master/with-firebase-storage-upload/App.js#L178-L205
+
       const blob = await new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest();
         xhr.onload = function () {
@@ -73,10 +77,10 @@ const AvatarScreen = ({navigation}) =>  {
   };
 
   let imgSource;
-  image ? imgSource = image : imgSource = defaultImageURL;  // checks if (picked) image is null
+  image ? imgSource = image : imgSource = currentImageInDBURL;  // checks if (picked) image is null
   return (
     <View style={styles.view}>
-      <Text>Stick with the default avatar, or select your own!</Text>
+      <DisplayedMessage isFromSignUpScreen={route.params.fromSignUpScreen} />
       <Avatar 
         imgSource={imgSource} 
         pixelSize={200} 
