@@ -148,6 +148,21 @@ const userHasActiveWorkoutPlan = async (userId) => {
     return !!activeWorkoutPlan;
 };
 
+const getUserActivePlan = async (userId) => {
+    let activeWorkoutPlan;
+    const q = query(
+        collection(db, "workout_plans"),
+        and(where("user_id", "==", userId), where("active", "==", true))
+    );
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach((doc) => {
+        activeWorkoutPlan = doc.data();
+        activeWorkoutPlan["id"] = doc.id;
+    });
+
+    return activeWorkoutPlan;
+};
+
 /*********** WORKOUT SPECIFIC DATABASE FUNCTIONS END ******************************/
 
 export {
@@ -159,4 +174,5 @@ export {
     userhasWorkoutPlan,
     userHasActiveWorkoutPlan,
     updateDocument,
+    getUserActivePlan,
 };
