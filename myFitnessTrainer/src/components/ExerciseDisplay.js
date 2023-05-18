@@ -4,6 +4,7 @@ import SkipExerciseButton from "../components/SkipExerciseButton";
 import SubmitExerciseStatsButton from "../components/SubmitExerciseStatsButton";
 import StartExerciseButton from "../components/StartExerciseButton";
 import StopExerciseButton from "../components/StopExerciseButton";
+import Stopwatch from '../components/StopWatch';
 
 const ExerciseDisplay = (
     {
@@ -14,7 +15,6 @@ const ExerciseDisplay = (
         setCurrentExerciseStats
     }
 ) => {
-
     // used for logic on what to display to users:
     // start - show the start and skip buttons
     // progressing - show the timer and pause/stop buttons
@@ -22,7 +22,30 @@ const ExerciseDisplay = (
     // submitted - submitted to the db
     const [currentStage, setCurrentStage] = useState("start");
 
+    // TO DO: RECORD AND SEND STATS TO DB
     // exercise stats
+    const [displayRecordExercise, setDisplayRecordExercise] = useState(false);
+    const [timeInSeconds, setTimeInSeconds] = useState(0);
+    const [reps, setReps] = useState(null);
+    const [sets, setSets] = useState(null);
+    const [incline, setIncline] = useState(null);
+    const [resistence, setResistence] = useState(null);
+    const [speed, setSpeed] = useState(null);
+    const [weight, setWeight] = useState(null);
+
+    const handleSubmit = () => {
+        setCurrentExerciseStats({
+            incline: incline,
+            reps: reps,
+            resistence: resistence,
+            sets: sets,
+            speed: speed,
+            time_in_sec: timeInSeconds,
+            weight: weight
+        });
+        handleOnSubmit();
+        setCurrentStage("submitted");
+    }
 
     const recommendedExerciseStats = (
         <View style={styles.innerContainers}>
@@ -94,16 +117,28 @@ const ExerciseDisplay = (
         );
     }
     if (currentStage === "progressing") {
-        // TO DO: add timer
         return (
             <View style={styles.exerciseDisplayContainer}>
                 {exerciseName}
                 {exerciseDescription}
                 {videoLinks}
                 {recommendedExerciseStats}
-                <View style={styles.buttonsContainer}>
-                    <StopExerciseButton handleOnStop={()=> {setCurrentStage("finished")}}/>
-                </View>
+                <Stopwatch 
+                    setTimeInSeconds={setTimeInSeconds} 
+                    setDisplayRecordExercise={setDisplayRecordExercise}
+                />
+                {
+                    !displayRecordExercise ? 
+                    (
+                        <Text style={styles.stopTimerHintText}>Record your exercise time to meet your goals!</Text>
+                    ) :
+                    (
+                        <View style={styles.buttonsContainer}>
+                            <StopExerciseButton handleOnStop={()=> {setCurrentStage("finished")}}/>
+                        </View>
+                    )
+                }
+                
             </View>
         );
     }
@@ -116,7 +151,7 @@ const ExerciseDisplay = (
                 {exerciseName}
                 {exerciseDescription}
                 <View style={styles.buttonsContainer}>
-                    <SubmitExerciseStatsButton handleOnSubmit={()=> {handleOnSubmit(), setCurrentStage("submitted")}} />
+                    <SubmitExerciseStatsButton handleOnSubmit={handleSubmit} />
                 </View>
             </View>
         );
@@ -178,5 +213,9 @@ const styles = StyleSheet.create({
         fontStyle: 'italic',
         textAlign: 'center',
         marginTop: 15
+    },
+    stopTimerHintText: {
+        textAlign: 'center',
+        fontStyle: 'italic'
     }
 });

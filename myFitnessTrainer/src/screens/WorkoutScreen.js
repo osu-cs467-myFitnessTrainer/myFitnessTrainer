@@ -30,7 +30,7 @@ const WorkoutScreen = ({ route }) => {
         resistence: null,
         sets: null,
         speed: null,
-        time_in_sec: 300,
+        time_in_sec: null,
         weight: null
     });
     const [exerciseIndex, setExerciseIndex] = useState(0);
