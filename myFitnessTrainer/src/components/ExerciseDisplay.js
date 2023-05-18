@@ -1,4 +1,4 @@
-import { Linking, StyleSheet, Text, View } from 'react-native';
+import { Linking, StyleSheet, Text, TextInput, View } from 'react-native';
 import React, { useState } from 'react';
 import SkipExerciseButton from "../components/SkipExerciseButton";
 import SubmitExerciseStatsButton from "../components/SubmitExerciseStatsButton";
@@ -12,7 +12,6 @@ const ExerciseDisplay = (
         index,
         handleOnSkip,
         handleOnSubmit,
-        setCurrentExerciseStats
     }
 ) => {
     // used for logic on what to display to users:
@@ -22,7 +21,6 @@ const ExerciseDisplay = (
     // submitted - submitted to the db
     const [currentStage, setCurrentStage] = useState("start");
 
-    // TO DO: RECORD AND SEND STATS TO DB
     // exercise stats
     const [displayRecordExercise, setDisplayRecordExercise] = useState(false);
     const [timeInSeconds, setTimeInSeconds] = useState(0);
@@ -34,7 +32,7 @@ const ExerciseDisplay = (
     const [weight, setWeight] = useState(null);
 
     const handleSubmit = () => {
-        setCurrentExerciseStats({
+        const exerciseStats = {
             incline: incline,
             reps: reps,
             resistence: resistence,
@@ -42,27 +40,123 @@ const ExerciseDisplay = (
             speed: speed,
             time_in_sec: timeInSeconds,
             weight: weight
-        });
-        handleOnSubmit();
+        };
+        handleOnSubmit(exerciseStats);
         setCurrentStage("submitted");
+    }
+
+    const addMetric = (key) => {
+        if (key === "weight") {
+            return "(lbs)";
+        }
+        if (key === "speed") {
+            return "(mph)";
+        }
+        if (key === "incline") {
+            return "(%)";
+        }
+        return "";
     }
 
     const recommendedExerciseStats = (
         <View style={styles.innerContainers}>
             <Text>Recommended Exercise Goals to Reach</Text>
+            <View style={styles.exerciseGoalTextContainer}>
             {
-                    Object.entries(exercise.default_exercise_stat).map(([key, value]) => {
-                        if (value !== null) {
-                            return (
-                                <Text
-                                    key={key.concat("-", index)}
-                                >
-                                    {key}: {value}
-                                </Text>
-                            )
-                        }
-                    })
-                }
+                Object.entries(exercise.default_exercise_stat).map(([key, value]) => {
+                    if (value !== null) {
+                        return (
+                            <Text
+                                key={key.concat("-", index)}
+                                style={styles.exerciseGoalText}
+                            >
+                                {key}: {value} {addMetric(key)}
+                            </Text>
+                        )
+                    }
+                })
+            }
+            </View>
+        </View>
+    );
+
+    const updateKeyStateWithText = (key, text) => {
+        switch (key) {
+            case "time_in_sec":
+                setTimeInSeconds(parseInt(text));
+                break;
+            case "reps":
+                setReps(parseInt(text));
+                break;
+            case "sets":
+                setSets(parseInt(text));
+                break;
+            case "incline":
+                setIncline(parseFloat(text));
+                break;
+            case "resistence":
+                setResistence(parseFloat(text));
+                break;
+            case "speed":
+                setSpeed(parseFloat(text));
+                break;
+            case "weight":
+                setWeight(parseInt(text));
+                break;
+            default:
+                console.log("Could not find matching key for db");
+        }
+    }
+
+    const getInputValue = (key) => {
+        switch (key) {
+            case "time_in_sec":
+                return timeInSeconds;
+            case "reps":
+                return reps;
+            case "sets":
+                return sets;
+            case "incline":
+                return incline;
+            case "resistence":
+                return resistence;
+            case "speed":
+                return speed;
+            case "weight":
+                return weight;
+            default:
+                console.log("Could not find matching key for db");
+        }
+    }
+    // we check to see if there's a value in the default stats 
+    // to determine whether to provide input
+    const inputForm = (
+        <View style={styles.innerContainers}>
+            <Text style={styles.recordExerciseStatsText}>Record Your Exercise Stats</Text>
+            <View style={styles.formContainer}>
+            {
+                Object.entries(exercise.default_exercise_stat).map(([key, value]) => {
+                    if (value !== null) {
+                        return (
+                            <TextInput
+                                key={key.concat("-", index)}
+                                placeholder={key.concat(" ", addMetric(key))}
+                                value={getInputValue(key)?.toString()}
+                                onChangeText={text => updateKeyStateWithText(key, text)}
+                                style={styles.input}
+                                autoCapitalize='none'
+                            />
+                        )
+                    }
+                })
+            }
+            <Text>Total Duration:</Text>
+            {
+                timeInSeconds/ 60 >= 1 ? 
+                (<Text>{timeInSeconds/60 >= 1} mins & {timeInSeconds % 60} secs</Text>) :
+                (<Text>{timeInSeconds % 60} secs</Text>)
+            }
+            </View>
         </View>
     );
 
@@ -150,6 +244,7 @@ const ExerciseDisplay = (
             <View style={styles.exerciseDisplayContainer}>
                 {exerciseName}
                 {exerciseDescription}
+                {inputForm}
                 <View style={styles.buttonsContainer}>
                     <SubmitExerciseStatsButton handleOnSubmit={handleSubmit} />
                 </View>
@@ -217,5 +312,26 @@ const styles = StyleSheet.create({
     stopTimerHintText: {
         textAlign: 'center',
         fontStyle: 'italic'
+    },
+    exerciseGoalTextContainer: {
+        flexDirection: "row",
+    },
+    exerciseGoalText: {
+        paddingRight: 10
+    },
+    input: {
+        backgroundColor: "white",
+        margin: 5,
+        borderRadius: 5,
+        width: "50%",
+        fontSize: 20,
+    },
+    recordExerciseStatsText: {
+        textAlign: 'center',
+        fontWeight: 'bold',
+        fontSize: 20
+    },
+    formContainer: {
+        alignItems: 'center'
     }
 });

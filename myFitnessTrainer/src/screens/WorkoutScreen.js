@@ -24,15 +24,6 @@ const WorkoutScreen = ({ route }) => {
 
     const [isLoading, setIsLoading] = useState(true);
     const workoutLength = dailyExerciseSet.length;
-    const [currentExerciseStats, setCurrentExerciseStats] = useState({
-        incline: null,
-        reps: null,
-        resistence: null,
-        sets: null,
-        speed: null,
-        time_in_sec: null,
-        weight: null
-    });
     const [exerciseIndex, setExerciseIndex] = useState(0);
     const [progress, setProgress] = useState(0 / workoutLength);
     const height = Dimensions.get("window").height;
@@ -72,7 +63,7 @@ const WorkoutScreen = ({ route }) => {
         </View>
     );
 
-    const submitStatsToDB = async (index) => {
+    const submitStatsToDB = async (index, exerciseStats) => {
         const exercise = dailyExerciseSet[exerciseIndex];
         const exerciseId = await getDocumentId(
             "exercises",
@@ -94,7 +85,7 @@ const WorkoutScreen = ({ route }) => {
             workout_plan_id: workoutPlanId,
             exercise_id: exerciseId,
             user_id: userId,
-            exercise_stats: currentExerciseStats,
+            exercise_stats: exerciseStats,
         };
         postDocument("exercise_history", postObject);
         advanceToNextCard(index);
@@ -143,8 +134,7 @@ const WorkoutScreen = ({ route }) => {
                 exercise={exerciseDeck[index]}
                 index={index}
                 handleOnSkip={() => skipExercise(index)}
-                handleOnSubmit={() => submitStatsToDB(index)}
-                setCurrentExerciseStats={setCurrentExerciseStats}
+                handleOnSubmit={(exerciseStats) => submitStatsToDB(index, exerciseStats)}
             />
         );
 
