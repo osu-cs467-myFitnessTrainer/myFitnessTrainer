@@ -239,7 +239,6 @@ const ExerciseDisplay = (
     
     if (currentStage === "finished") {
         // they are at the finished stage, show inputs for their exercise stat
-        // TO DO: Show input fields for user to add
         return (
             <View style={styles.exerciseDisplayContainer}>
                 {exerciseName}
