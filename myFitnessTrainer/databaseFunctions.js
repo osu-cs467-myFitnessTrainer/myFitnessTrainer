@@ -30,6 +30,7 @@ const getDocument = async (collectionName, searchKey, searchString) => {
     let document;
     docSnapshot.forEach((doc) => {
         document = doc.data();
+        document["id"] = doc.id;
     });
     return document;
 };
@@ -85,8 +86,7 @@ const getAllDocuments = async (collectionName) => {
  */
 const updateDocument = async (collectionName, documentId, updateObject) => {
     const documentRef = doc(db, collectionName, documentId);
-    const updatedDoc = await updateDoc(documentRef, updateObject);
-    console.log(updatedDoc);
+    await updateDoc(documentRef, updateObject);
 };
 
 /*********** GENERAL DATABASE FUNCTIONS END ******************************/
@@ -148,6 +148,22 @@ const userHasActiveWorkoutPlan = async (userId) => {
     return !!activeWorkoutPlan;
 };
 
+const getUserActivePlan = async (userId) => {
+    let activeWorkoutPlan;
+    const q = query(
+        collection(db, "workout_plans"),
+        and(where("user_id", "==", userId), where("active", "==", true))
+    );
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach((doc) => {
+        // console.log(doc.data());
+        activeWorkoutPlan = doc.data();
+        activeWorkoutPlan["id"] = doc.id;
+    });
+
+    return activeWorkoutPlan;
+};
+
 /*********** WORKOUT SPECIFIC DATABASE FUNCTIONS END ******************************/
 
 export {
@@ -159,4 +175,5 @@ export {
     userhasWorkoutPlan,
     userHasActiveWorkoutPlan,
     updateDocument,
+    getUserActivePlan,
 };

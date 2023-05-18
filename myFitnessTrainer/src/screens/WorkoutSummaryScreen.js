@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
 import { StyleSheet, View, Text } from "react-native";
 import GoToDashboardButton from "../components/GoToDashboardButton";
-import { getAllDocuments, getDocumentId } from "../../databaseFunctions";
-import { auth } from "../../firebaseConfig";
+import { getAllDocuments } from "../../databaseFunctions";
 
-const WorkoutSummaryScreen = () => {
+const WorkoutSummaryScreen = ({ route }) => {
     const [workoutSessionStats, setWorkoutSessionStats] = useState([]);
+
+    // reference to workout plan id that may or may not have finished its duration
+    const activeWorkoutPlanId = route.params.workoutPlanId;
+    const userId = route.params.userId;
 
     useEffect(() => {
         getWorkoutStatsSessionFromDB().then((result) => {
@@ -14,18 +17,14 @@ const WorkoutSummaryScreen = () => {
     }, []);
 
     const getWorkoutStatsSessionFromDB = async () => {
-        const userId = await getDocumentId(
-            "users",
-            "email",
-            auth.currentUser.email
-        );
-
         const allExerciseStats = await getAllDocuments("exercise_history");
 
-        // filter by user AND
-        // get the most recent workout session date of user exercise stats
+        // get the most recent workout session date of user active exercise stats
         const allUserStats = Object.keys(allExerciseStats).filter(
-            (statId) => allExerciseStats[statId]["user_id"] === userId
+            (statId) =>
+                allExerciseStats[statId]["user_id"] === userId &&
+                allExerciseStats[statId]["workout_plan_id"] ===
+                    activeWorkoutPlanId
         );
 
         const allUserStatsWorkoutDays = allUserStats.map(
@@ -59,7 +58,6 @@ const WorkoutSummaryScreen = () => {
         return mostRecentWorkoutStats;
     };
 
-    getWorkoutStatsSessionFromDB();
     return (
         <View style={styles.container}>
             <Text>{JSON.stringify(workoutSessionStats)}</Text>
