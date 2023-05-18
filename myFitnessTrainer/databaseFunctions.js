@@ -156,6 +156,7 @@ const getUserActivePlan = async (userId) => {
     );
     const querySnapshot = await getDocs(q);
     querySnapshot.forEach((doc) => {
+        // console.log(doc.data());
         activeWorkoutPlan = doc.data();
         activeWorkoutPlan["id"] = doc.id;
     });

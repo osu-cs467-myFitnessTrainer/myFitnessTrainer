@@ -2,8 +2,8 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import {
-    getDocument,
     getDocumentId,
+    getUserActivePlan,
     updateDocument,
 } from "../../databaseFunctions";
 import { auth } from "../../firebaseConfig";
@@ -19,23 +19,18 @@ const EndWorkoutButton = ({ daysCompleted }) => {
             auth.currentUser.email
         );
 
-        const workoutPlan = await getDocument(
-            "workout_plans",
-            "user_id",
-            userId
-        );
-
+        const workoutPlan = await getUserActivePlan(userId);
         const workoutPlanId = workoutPlan["id"];
+        workoutPlan["days_completed"] += 1;
 
         await updateDocument("workout_plans", workoutPlanId, {
             days_completed: daysCompleted + 1,
         });
 
-        workoutPlan["days_completed"] += 1;
-
         // check if days_completed === duration, then the fitness plan is complete
-
-        if (workoutPlan["days_completed"] === workoutPlan["duration"]) {
+        const isWorkoutPlanFinished =
+            workoutPlan["days_completed"] === workoutPlan["duration"];
+        if (isWorkoutPlanFinished) {
             console.log("congrats, workout plan completed");
             await updateDocument("workout_plans", workoutPlanId, {
                 active: false,
@@ -44,7 +39,12 @@ const EndWorkoutButton = ({ daysCompleted }) => {
 
         navigation.reset({
             index: 0,
-            routes: [{ name: "Workout Summary" }],
+            routes: [
+                {
+                    name: "Workout Summary",
+                    params: { workoutPlanId: workoutPlanId, userId: userId },
+                },
+            ],
         });
     };
 

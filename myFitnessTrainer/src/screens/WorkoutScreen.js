@@ -87,7 +87,7 @@ const WorkoutScreen = ({ route }) => {
             completed: true,
             workout_day: daysCompleted,
             date: postObjectDate.toLocaleDateString("en-us"),
-            workout_plan_id: workoutPlanId[0],
+            workout_plan_id: workoutPlanId,
             exercise_id: exerciseId,
             user_id: userId,
             exercise_stats: currentExerciseStats,
