@@ -16,7 +16,6 @@ const DashboardScreen = () => {
     const [hasactiveWorkoutPlan, setHasActiveWorkoutPlan] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const [username, setUsername] = useState('user');
-    const [userId, setUserId] = useState('');
     const [avatarURL, setAvatarURL] = useState(null);
 
     // We'll fetch each time user enters Dashboard Screen
@@ -29,7 +28,6 @@ const DashboardScreen = () => {
                 // only display username to a new user
                 const userName = await getUsernameWithUserId(userId);
                 setUsername(userName);
-                setUserId(userId);
             } else {
                 // only check if they have active plan if we know they are not new
                 const hasActivePlan = await userHasActiveWorkoutPlan(userId);
