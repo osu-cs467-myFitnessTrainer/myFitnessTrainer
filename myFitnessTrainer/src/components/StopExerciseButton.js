@@ -1,25 +1,25 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import React from "react";
 
-const SubmitExerciseStatsButton = ({ handleOnSubmit }) => {
+const StopExerciseButton = ({ handleOnStop }) => {
     return (
-        <TouchableOpacity style={styles.button} onPress={handleOnSubmit}>
-            <Text style={styles.buttonText}>Submit</Text>
+        <TouchableOpacity style={styles.button} onPress={handleOnStop}>
+            <Text style={styles.buttonText}>Record Exercise</Text>
         </TouchableOpacity>
     );
 };
 
-export default SubmitExerciseStatsButton;
+export default StopExerciseButton;
 
 const styles = StyleSheet.create({
     button: {
-        backgroundColor: "green",
-        width: "25%",
+        backgroundColor: "#8B0000",
+        width: "80%",
         height: 50,
         padding: 15,
         borderRadius: 10,
         alignItems: "center",
-        margin: 20
+        margin: 10
     },
     buttonText: {
         color: "white",

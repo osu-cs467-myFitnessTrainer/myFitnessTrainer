@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { StyleSheet, View, Dimensions, Text } from "react-native";
+import { StyleSheet, View, Dimensions, Text, ActivityIndicator } from "react-native";
 import Carousel from "react-native-reanimated-carousel";
 import Dots from "react-native-dots-pagination";
 import EndWorkoutButton from "../components/EndWorkoutButton";
@@ -10,9 +10,8 @@ import {
     postDocument,
     getDocumentId,
 } from "../../databaseFunctions";
-import SubmitExerciseStatsButton from "../components/SubmitExerciseStatsButton";
 import { auth } from "../../firebaseConfig";
-import SkipExerciseButton from "../components/SkipExerciseButton";
+import ExerciseDisplay from "../components/ExerciseDisplay";
 
 const width = Dimensions.get("window").width;
 
@@ -23,33 +22,29 @@ const WorkoutScreen = ({ route }) => {
     // adds additional card at end
     const exerciseDeck = dailyExerciseSet.concat([{ name: "Finished Card" }]);
 
-    // currentExerciseStats represents the stats of the current exercise on the card
-    // currentWorkoutStats represents the the combined stats of every card in the daily workout
+    const [isLoading, setIsLoading] = useState(true);
     const workoutLength = dailyExerciseSet.length;
-    const [currentExerciseStats, setCurrentExerciseStats] = useState("");
     const [exerciseIndex, setExerciseIndex] = useState(0);
     const [progress, setProgress] = useState(0 / workoutLength);
     const height = Dimensions.get("window").height;
 
     const cardIndexRef = useRef(null);
 
-    // when exerciseIndex state changes, then we will fetch the new default exercise stats from DB
-    // currentExerciseStats state will reflect the stats of the current exrercise shown on the card
+    // when enter a workout, retrieve exercise_stats for the exercises
     useEffect(() => {
-        // the last card is not a valid exercise
-        if (exerciseIndex < workoutLength - 1) {
-            getAllDocuments("exercise_stats").then((retrievedDocuments) => {
-                const exerciseStatRef =
-                    dailyExerciseSet[exerciseIndex]["default_exercise_stat_id"];
+        getAllDocuments("exercise_stats").then((retrievedDocuments) => {
+            for (let index = 0; index < workoutLength; index++) {
+                const exerciseStatRef = dailyExerciseSet[index]["default_exercise_stat_id"];
                 const targetStatId = exerciseStatRef["path"].split("/")[1];
-
                 const filteredStats = Object.keys(retrievedDocuments).filter(
-                    (statId) => statId === targetStatId
+                (statId) => statId === targetStatId
                 );
-                setCurrentExerciseStats(retrievedDocuments[filteredStats]);
-            });
-        }
-    }, [exerciseIndex]);
+                // add default_exercise_stat to the deck
+                exerciseDeck[index]["default_exercise_stat"] = retrievedDocuments[filteredStats];
+            }
+            setIsLoading(false);
+        });
+    }, []);
 
     const progressFooter = (
         <View style={styles.bottomProgressContainer}>
@@ -68,7 +63,7 @@ const WorkoutScreen = ({ route }) => {
         </View>
     );
 
-    const submitStatsToDB = async (index) => {
+    const submitStatsToDB = async (index, exerciseStats) => {
         const exercise = dailyExerciseSet[exerciseIndex];
         const exerciseId = await getDocumentId(
             "exercises",
@@ -90,7 +85,7 @@ const WorkoutScreen = ({ route }) => {
             workout_plan_id: workoutPlanId,
             exercise_id: exerciseId,
             user_id: userId,
-            exercise_stats: currentExerciseStats,
+            exercise_stats: exerciseStats,
         };
         postDocument("exercise_history", postObject);
         advanceToNextCard(index);
@@ -108,6 +103,14 @@ const WorkoutScreen = ({ route }) => {
         advanceToNextCard(index);
     };
     const renderCarouselItem = ({ index }) => {
+
+        if (isLoading) {
+            return (
+                <View style={styles.container}>
+                    <ActivityIndicator size='large' color="#4682B4"/>
+                </View>
+            )
+        }
         const displayFinishCard = index === workoutLength;
 
         const FinishedCardContents = (
@@ -127,44 +130,12 @@ const WorkoutScreen = ({ route }) => {
         const content = displayFinishCard ? (
             FinishedCardContents
         ) : (
-            // TO DO: BUILD OUT THIS VIEW! (based on prototype)
-            // probably separate out into own compnent which gets the needed exercise
-            <View>
-                <Text style={styles.exerciseNameText}>
-                    EXERCISE: {exerciseDeck[index].name.toUpperCase()}
-                </Text>
-                <Text style={styles.exerciseNameText}>
-                    DESCRIPTION: {exerciseDeck[index].description}
-                </Text>
-                <Text style={styles.exerciseNameText}>
-                    LEARN MORE: {exerciseDeck[index].video["female"]}
-                </Text>
-                <Text style={styles.exerciseNameText}>
-                    LEARN MORE: {exerciseDeck[index].video["male"]}
-                </Text>
-
-                <Text style={styles.exerciseNameText}>DEFAULT STATS</Text>
-                {
-                    // TODO: FOR TESTING EXERCISE STATS RETRIEVAL, CAN REMOVE AFTER UI IS IMPLEMENTED
-                    Object.keys(currentExerciseStats).map((key, index) => {
-                        const value = currentExerciseStats[key];
-                        if (value !== null) {
-                            return (
-                                <Text
-                                    style={styles.exerciseNameText}
-                                    key={index}
-                                >
-                                    {key}: {value}
-                                </Text>
-                            );
-                        }
-                    })
-                }
-                <SkipExerciseButton handleOnSkip={() => skipExercise(index)} />
-                <SubmitExerciseStatsButton
-                    handleOnSubmit={() => submitStatsToDB(index)}
-                />
-            </View>
+            <ExerciseDisplay
+                exercise={exerciseDeck[index]}
+                index={index}
+                handleOnSkip={() => skipExercise(index)}
+                handleOnSubmit={(exerciseStats) => submitStatsToDB(index, exerciseStats)}
+            />
         );
 
         return (
