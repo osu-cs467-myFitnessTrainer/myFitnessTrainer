@@ -11,8 +11,8 @@ const DisplayActiveWorkoutPlan = ({ duration, fitnessGoal, fitnessLevel, startDa
             <Text>Fitness Goal: {fitnessGoal}</Text>
             <Text>Fitness Level: {fitnessLevel}</Text>
             <Text>Modification: {modification}</Text>
-            <Text>Duration: {duration} days</Text>
             <Text>Start Date: {formattedStartDate}</Text>
+            <Text>Duration: {duration} days</Text>
             <Text>Days Completed: {daysCompleted}</Text>
             <Text>{"\n"}Exercises:</Text>
             <SectionList
