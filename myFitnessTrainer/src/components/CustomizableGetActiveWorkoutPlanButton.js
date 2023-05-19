@@ -22,6 +22,7 @@ const CustomizableGetActiveWorkoutPlanButton = (props) => {
         let fitnessGoal = "";
         let fitnessLevel = "";
         let startDate = "";
+        let modification = ""
 
         // https://cloud.google.com/firestore/docs/query-data/queries
         const workoutPlanRef = collection(db, "workout_plans");
@@ -41,7 +42,7 @@ const CustomizableGetActiveWorkoutPlanButton = (props) => {
             startDate = doc.data()["start_date"];
             daysCompleted = doc.data()["days_completed"];
             dailyExercises = doc.data()["daily_exercises"];
-            // TODO: in GenerateNewPlanAlgoButton, add modification to the postObject? Then we can display the modification for the workout plan on the ViewWorkoutPlanScreen.
+            modification = doc.data()["modification"];
 
             for (const day_num in dailyExercises) {
                 let exercises_for_the_day = []
@@ -61,7 +62,8 @@ const CustomizableGetActiveWorkoutPlanButton = (props) => {
             fitnessLevel: fitnessLevel,
             startDate: startDate,
             daysCompleted: daysCompleted,
-            workoutsPerDay: workoutsPerDay
+            workoutsPerDay: workoutsPerDay,
+            modification: modification,
           });
     };
 

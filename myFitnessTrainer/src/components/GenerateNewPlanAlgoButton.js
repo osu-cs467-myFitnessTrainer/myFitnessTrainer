@@ -89,6 +89,9 @@ const GenerateNewPlanAlgoButton = ({
 
         // TODO: If a user already has an existing workout_plan (unfinished), set "active" as false
         // TODO: If a user already has an existing workout_plan (finished; days_completed == duration), set "active" as false
+        let modification_value;
+        modification == null ? modification_value = "none" : modification_value = modification;
+        console.log("modification_value=", modification_value);
         const postObject = {
             active: true,
             daily_exercises: dailyExercises,
@@ -98,6 +101,7 @@ const GenerateNewPlanAlgoButton = ({
             user_id: userId,
             start_date: Date.now(),
             days_completed: 0,
+            modification: modification_value
         };
         await postDocument("workout_plans", postObject);
 
