@@ -4,9 +4,7 @@ import CustomizableGetActiveWorkoutPlanButton from "./CustomizableGetActiveWorko
 
 const DeleteWorkoutPlanButton = () => {
     return (
-        <View>
-          <CustomizableGetActiveWorkoutPlanButton routeTo="Delete Workout Plan" textInButton="Delete Workout Plan" buttonStyle="deleteButton" buttonTextStyle="deleteButtonText" />
-        </View>
+      <CustomizableGetActiveWorkoutPlanButton routeTo="Delete Workout Plan" textInButton="Delete Workout Plan" buttonStyle="deleteButton" buttonTextStyle="deleteButtonText" />
     );
 };
 
