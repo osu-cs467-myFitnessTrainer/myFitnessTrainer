@@ -3,8 +3,6 @@ import { SectionList, StyleSheet, View, Text} from "react-native";
 
 const DisplayActiveWorkoutPlan = ({ duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay, modification }) => {
     const formattedStartDate = new Date(startDate).toDateString();
-    console.log("in displayactive; fitnessGoal=", {fitnessGoal})
-    console.log("in displayactive; modification=", {modification})
 
     return (
         <View style>
