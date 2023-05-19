@@ -1,5 +1,6 @@
 import { StyleSheet, Button } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 const SettingsButton = () => {
     const navigation = useNavigation();
@@ -9,11 +10,7 @@ const SettingsButton = () => {
     };
 
     return (
-        <Button
-            style={styles.button}
-            title="Settings"
-            onPress={handleNaviagateToSettings}
-        ></Button>
+        <Ionicons name="settings-outline" size={32} onPress={handleNaviagateToSettings} aria-label="Settings"/>
     );
 };
 
