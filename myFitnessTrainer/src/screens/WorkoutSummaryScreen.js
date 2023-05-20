@@ -6,6 +6,7 @@ import ExerciseSummaryCard from "../components/ExerciseSummaryCard";
 
 const WorkoutSummaryScreen = ({ route }) => {
     const [workoutSessionStats, setWorkoutSessionStats] = useState([]);
+    const [totalTimeElapsed, setTotalTimeElapsed] = useState(0);
 
     // reference to workout plan id that may or may not have finished its duration
     const activeWorkoutPlanId = route.params.workoutPlanId;
@@ -14,8 +15,19 @@ const WorkoutSummaryScreen = ({ route }) => {
     useEffect(() => {
         getWorkoutStatsSessionFromDB().then((result) => {
             setWorkoutSessionStats(result);
+            setTotalTimeElapsed(calulateTotalTimeElapsed(result));
         });
     }, []);
+
+    const calulateTotalTimeElapsed = (workoutSessionStats) => {
+        console.log(workoutSessionStats);
+        let totalTime = 0;
+        Object.keys(workoutSessionStats).forEach((statId) => {
+            totalTime +=
+                workoutSessionStats[statId]["exercise_stats"]["time_in_sec"];
+        });
+        return totalTime;
+    };
 
     const getWorkoutStatsSessionFromDB = async () => {
         const allExerciseStats = await getAllDocuments("exercise_history");
@@ -60,7 +72,6 @@ const WorkoutSummaryScreen = ({ route }) => {
             mostRecentWorkoutStats[statId]["exercise_name"] =
                 retrievedExercise["name"];
         }
-
         return mostRecentWorkoutStats;
     };
 
@@ -69,7 +80,9 @@ const WorkoutSummaryScreen = ({ route }) => {
             <Text style={styles.congratsText}>
                 Congrats!! You finished your workout!
             </Text>
-            <Text style={styles.congratsText}>Exercises Completed</Text>
+            <Text style={styles.exercisesCompletedText}>
+                Exercises Completed
+            </Text>
             {
                 /* <Text>{JSON.stringify(workoutSessionStats)}</Text> */
 
@@ -87,6 +100,7 @@ const WorkoutSummaryScreen = ({ route }) => {
                     );
                 })
             }
+            <Text>Total Time Elapsed: {totalTimeElapsed} seconds</Text>
             <GoToDashboardButton />
         </View>
     );
@@ -94,6 +108,11 @@ const WorkoutSummaryScreen = ({ route }) => {
 
 const styles = StyleSheet.create({
     congratsText: {
+        fontSize: 20,
+        fontWeight: "bold",
+    },
+    exercisesCompletedText: {
+        marginTop: 80,
         fontSize: 20,
         fontWeight: "bold",
     },

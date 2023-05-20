@@ -11,9 +11,6 @@ const ExerciseSummaryCard = ({ exerciseName, exerciseStats }) => {
         if (key === "incline") {
             return "(%)";
         }
-        if (key === "time_in_sec") {
-            return "s";
-        }
         return "";
     };
 
@@ -29,8 +26,10 @@ const ExerciseSummaryCard = ({ exerciseName, exerciseStats }) => {
         };
         let displayStatsText = "";
         Object.keys(exerciseStats).forEach((statLabel) => {
-            console.log(exerciseStats[statLabel]);
-            if (exerciseStats[statLabel] !== null) {
+            if (
+                exerciseStats[statLabel] !== null &&
+                statLabel !== "time_in_sec"
+            ) {
                 displayStatsText = displayStatsText.concat(
                     `${displayStatsLabelKey[statLabel]}: ${
                         exerciseStats[statLabel]
@@ -39,14 +38,14 @@ const ExerciseSummaryCard = ({ exerciseName, exerciseStats }) => {
             }
             return displayStatsText;
         });
-        console.log(displayStatsText);
         return displayStatsText;
     };
 
     const recommendedExerciseStats = (
         <View style={styles.innerContainers}>
-            <Text style={styles.exerciseNameText}>{exerciseName}</Text>
-            <Text>{displayStats(exerciseStats)}</Text>
+            <Text style={styles.exerciseNameText}>
+                {exerciseName} {displayStats(exerciseStats)}
+            </Text>
         </View>
     );
 
@@ -90,40 +89,10 @@ const styles = StyleSheet.create({
         paddingTop: 5,
         fontWeight: "bold",
     },
-    linkingText: {
-        color: "blue",
-        textDecorationLine: "underline",
-        marginBottom: 5,
-    },
-    submittedText: {
-        fontSize: 25,
-        fontStyle: "italic",
-        textAlign: "center",
-        marginTop: 15,
-    },
-    stopTimerHintText: {
-        textAlign: "center",
-        fontStyle: "italic",
-    },
     exerciseGoalTextContainer: {
         flexDirection: "row",
     },
     exerciseGoalText: {
         paddingRight: 10,
-    },
-    input: {
-        backgroundColor: "white",
-        margin: 5,
-        borderRadius: 5,
-        width: "50%",
-        fontSize: 20,
-    },
-    recordExerciseStatsText: {
-        textAlign: "center",
-        fontWeight: "bold",
-        fontSize: 20,
-    },
-    formContainer: {
-        alignItems: "center",
     },
 });
