@@ -8,7 +8,7 @@ import DisplayNoActiveWorkoutPlan from "../components/DisplayNoActiveWorkoutPlan
 
 const DeleteWorkoutPlanScreen = ({route}) => {
     const [exerciseHistoriesWithWorkoutPlanId, setExerciseHistoriesWithWorkoutPlanId] = useState([]);
-    const { hasActiveWorkoutPlan, workoutPlanId, duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay } = route.params;
+    const { hasActiveWorkoutPlan, workoutPlanId, duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay, modification } = route.params;
     const navigation = useNavigation();
 
     const deleteWorkoutPlanInDBAndGoToDashboard = async () => {
@@ -54,7 +54,7 @@ const DeleteWorkoutPlanScreen = ({route}) => {
             <TouchableOpacity style={styles.button} onPress={handleConfirmDeleteWorkoutPlan}>
                 <Text style={styles.buttonText}>Delete Workout Plan</Text>
             </TouchableOpacity>
-            <DisplayActiveWorkoutPlan duration={duration} fitnessLevel={fitnessLevel} fitnessGoal={fitnessGoal} startDate={startDate} daysCompleted={daysCompleted} workoutsPerDay={workoutsPerDay} />
+            <DisplayActiveWorkoutPlan duration={duration} fitnessLevel={fitnessLevel} fitnessGoal={fitnessGoal} startDate={startDate} daysCompleted={daysCompleted} workoutsPerDay={workoutsPerDay} modification={modification}/>
 
         </View>
     )
