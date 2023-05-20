@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { StyleSheet, View, Text } from "react-native";
 import GoToDashboardButton from "../components/GoToDashboardButton";
-import { getAllDocuments } from "../../databaseFunctions";
+import { getAllDocuments, getExercise } from "../../databaseFunctions";
+import ExerciseSummaryCard from "../components/ExerciseSummaryCard";
 
 const WorkoutSummaryScreen = ({ route }) => {
     const [workoutSessionStats, setWorkoutSessionStats] = useState([]);
@@ -51,22 +52,51 @@ const WorkoutSummaryScreen = ({ route }) => {
         });
 
         const mostRecentWorkoutStats = {};
-        mostRecentWorkoutStatsIds.forEach((statId) => {
+        for (let i = 0; i < mostRecentWorkoutStatsIds.length; i++) {
+            const statId = mostRecentWorkoutStatsIds[i];
             mostRecentWorkoutStats[statId] = allExerciseStats[statId];
-        });
+            const exerciseId = mostRecentWorkoutStats[statId]["exercise_id"];
+            const retrievedExercise = await getExercise(exerciseId);
+            mostRecentWorkoutStats[statId]["exercise_name"] =
+                retrievedExercise["name"];
+        }
 
         return mostRecentWorkoutStats;
     };
 
     return (
         <View style={styles.container}>
-            <Text>{JSON.stringify(workoutSessionStats)}</Text>
+            <Text style={styles.congratsText}>
+                Congrats!! You finished your workout!
+            </Text>
+            <Text style={styles.congratsText}>Exercises Completed</Text>
+            {
+                /* <Text>{JSON.stringify(workoutSessionStats)}</Text> */
+
+                Object.keys(workoutSessionStats).map((statId) => {
+                    return (
+                        <ExerciseSummaryCard
+                            exerciseName={
+                                workoutSessionStats[statId]["exercise_name"]
+                            }
+                            exerciseStats={
+                                workoutSessionStats[statId]["exercise_stats"]
+                            }
+                            key={statId}
+                        />
+                    );
+                })
+            }
             <GoToDashboardButton />
         </View>
     );
 };
 
 const styles = StyleSheet.create({
+    congratsText: {
+        fontSize: 20,
+        fontWeight: "bold",
+    },
     container: {
         flex: 1,
         justifyContent: "center",

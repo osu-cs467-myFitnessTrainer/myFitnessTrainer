@@ -112,6 +112,19 @@ const getUsernameWithUserId = async (userId) => {
 
 /**
  *
+ * @param {String} exerciseId
+ * @returns {Promise<String>} the string ID of the requested document, in the specifed collection. undefined if the document doesn't exist
+ */
+const getExercise = async (exerciseId) => {
+    const docRef = doc(db, "exercises", exerciseId);
+    const docSnap = await getDoc(docRef);
+    const docData = docSnap.data();
+
+    return docData;
+};
+
+/**
+ *
  * @param {String} userId
  * @returns {Promise<Boolean>} returns a boolean of whether user has made a workout plan
  */
@@ -176,4 +189,5 @@ export {
     userHasActiveWorkoutPlan,
     updateDocument,
     getUserActivePlan,
+    getExercise,
 };
