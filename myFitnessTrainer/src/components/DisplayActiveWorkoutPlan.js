@@ -1,15 +1,16 @@
 import React from "react";
 import { SectionList, StyleSheet, View, Text} from "react-native";
 
-const DisplayActiveWorkoutPlan = ({ duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay }) => {
+const DisplayActiveWorkoutPlan = ({ duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay, modification }) => {
     const formattedStartDate = new Date(startDate).toDateString();
 
     return (
         <View style>
-            <Text>Duration: {duration} days</Text>
             <Text>Fitness Goal: {fitnessGoal}</Text>
             <Text>Fitness Level: {fitnessLevel}</Text>
+            <Text>Modification: {modification}</Text>
             <Text>Start Date: {formattedStartDate}</Text>
+            <Text>Duration: {duration} days</Text>
             <Text>Days Completed: {daysCompleted}</Text>
             <Text>{"\n"}Exercises:</Text>
             <SectionList

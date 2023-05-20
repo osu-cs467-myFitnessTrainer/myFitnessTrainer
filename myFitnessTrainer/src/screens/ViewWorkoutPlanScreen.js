@@ -4,8 +4,7 @@ import DisplayActiveWorkoutPlan from "../components/DisplayActiveWorkoutPlan";
 import DisplayNoActiveWorkoutPlan from "../components/DisplayNoActiveWorkoutPlan";
 
 const ViewWorkoutPlanScreen = ({route}) => {
-    const { hasActiveWorkoutPlan, duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay } = route.params;
-    console.log("hasActiveWorkoutPlan=", hasActiveWorkoutPlan)
+    const { hasActiveWorkoutPlan, duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay, modification } = route.params;
 
     if (!hasActiveWorkoutPlan){
         return <DisplayNoActiveWorkoutPlan />;
@@ -13,7 +12,7 @@ const ViewWorkoutPlanScreen = ({route}) => {
     }
     return (
         <View style={styles.container}>
-            <DisplayActiveWorkoutPlan duration={duration} fitnessLevel={fitnessLevel} fitnessGoal={fitnessGoal} startDate={startDate} daysCompleted={daysCompleted} workoutsPerDay={workoutsPerDay} />
+            <DisplayActiveWorkoutPlan duration={duration} fitnessLevel={fitnessLevel} fitnessGoal={fitnessGoal} startDate={startDate} daysCompleted={daysCompleted} workoutsPerDay={workoutsPerDay} modification={modification}/>
         </View>
     )
 }

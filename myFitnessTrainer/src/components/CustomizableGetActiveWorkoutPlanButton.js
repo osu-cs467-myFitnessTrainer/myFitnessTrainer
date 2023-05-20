@@ -1,19 +1,14 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
-import { db, auth } from "../../firebaseConfig";
-import { getDocumentId  } from "../../databaseFunctions";
-import { collection, query, where, getDocs } from "firebase/firestore";
+import { auth } from "../../firebaseConfig";
+import { getDocumentId, getUserActivePlan  } from "../../databaseFunctions";
 
 const CustomizableGetActiveWorkoutPlanButton = (props) => {  
     const navigation = useNavigation();
     const [workoutsPerDay, setWorkoutsPerDay] = useState([]);
     const handleCustomizableGetActiveWorkoutPlanButton = async () => {
-        const userId = await getDocumentId(
-            "users",
-            "email",
-            auth.currentUser.email
-        );
+
         let hasActiveWorkoutPlan = false;
         let workoutPlanId = null;
         let dailyExercises = null;
@@ -22,27 +17,26 @@ const CustomizableGetActiveWorkoutPlanButton = (props) => {
         let fitnessGoal = "";
         let fitnessLevel = "";
         let startDate = "";
+        let modification = ""
 
-        // https://cloud.google.com/firestore/docs/query-data/queries
-        const workoutPlanRef = collection(db, "workout_plans");
-        const q = query(workoutPlanRef, where("user_id", "==", userId), where("active", "==", true));
-        const querySnapshot = await getDocs(q);
-        querySnapshot.forEach((doc) => {
-            // doc.data() is never undefined for query doc snapshots
+        const userId = await getDocumentId(
+            "users",
+            "email",
+            auth.currentUser.email
+        );
+        let activeWorkoutPlan = await getUserActivePlan(userId)
 
-            // TODO: currently, user can have more than one active plan. Ex: user_id == UsC5EJWesjtMogefkvX4
-            // See TODO in GenerateNewPlanAlgoButton.js for more information
-            // For now, the variables will just get written with the latest active workout_plan that gets queried
+        if (activeWorkoutPlan !== undefined){
             hasActiveWorkoutPlan = true;
-            workoutPlanId = doc.id;
-            duration = doc.data()["duration"];
-            fitnessGoal = doc.data()["fitness_goal"];
-            fitnessLevel = doc.data()["fitness_level"];
-            startDate = doc.data()["start_date"];
-            daysCompleted = doc.data()["days_completed"];
-            dailyExercises = doc.data()["daily_exercises"];
-            // TODO: in GenerateNewPlanAlgoButton, add modification to the postObject? Then we can display the modification for the workout plan on the ViewWorkoutPlanScreen.
-
+            workoutPlanId = activeWorkoutPlan["id"];
+            duration = activeWorkoutPlan["duration"];
+            fitnessGoal = activeWorkoutPlan["fitness_goal"];
+            fitnessLevel = activeWorkoutPlan["fitness_level"];
+            startDate = activeWorkoutPlan["start_date"];
+            daysCompleted = activeWorkoutPlan["days_completed"];
+            dailyExercises = activeWorkoutPlan["daily_exercises"];  
+            modification = activeWorkoutPlan["modification"];        
+            
             for (const day_num in dailyExercises) {
                 let exercises_for_the_day = []
                 for (const exercise_num in dailyExercises[day_num]){
@@ -51,7 +45,7 @@ const CustomizableGetActiveWorkoutPlanButton = (props) => {
                 workoutsPerDay.push({"id":parseInt(day_num)+1, "data":exercises_for_the_day })
             }
             setWorkoutsPerDay(workoutsPerDay);
-        });
+        }
 
         navigation.navigate(props.routeTo, {
             hasActiveWorkoutPlan: hasActiveWorkoutPlan,
@@ -61,7 +55,8 @@ const CustomizableGetActiveWorkoutPlanButton = (props) => {
             fitnessLevel: fitnessLevel,
             startDate: startDate,
             daysCompleted: daysCompleted,
-            workoutsPerDay: workoutsPerDay
+            workoutsPerDay: workoutsPerDay,
+            modification: modification
           });
     };
 
