@@ -1,36 +1,48 @@
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
-import React, { useEffect, useState } from 'react';
+
+import React, { useEffect, useState, forceUpdate } from 'react';
 import { auth } from '../../firebaseConfig';
 import StartWorkoutButton from "../components/StartWorkoutButton";
 import CreateNewPlanButton from '../components/CreateNewPlanButton';
-import { getDocumentId, getUsernameWithUserId, userHasActiveWorkoutPlan, userhasWorkoutPlan } from '../../databaseFunctions';
+import { getDocumentId, getUsernameWithUserId, userHasActiveWorkoutPlan, userhasWorkoutPlan, getUserActivePlan } from '../../databaseFunctions';
 import { ScrollView } from 'react-native-gesture-handler';
+import { ProgressBar } from 'react-native-paper';
+import { useIsFocused } from '@react-navigation/native';
 
 const DashboardScreen = () => {
+    const isFocused = useIsFocused();
+    console.log("isFocused=", isFocused)
     const [userIsNew, setUserIsNew] = useState(true);
     const [hasactiveWorkoutPlan, setHasActiveWorkoutPlan] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const [username, setUsername] = useState('user');
+    const [userActiveWorkoutPlan, setUserActiveWorkoutPlan] = useState(null);
 
     // We'll fetch each time user enters Dashboard Screen
     useEffect(() => {
-        const fetchWorkoutPlan = async () => {
-            const userId = await getDocumentId("users", "email", auth.currentUser.email);
-            const userHasCreatedPlan = await userhasWorkoutPlan(userId);
-            setUserIsNew(!userHasCreatedPlan);
-            if (!userHasCreatedPlan) {
-                // only display username to a new user
-                const userName = await getUsernameWithUserId(userId);
-                setUsername(userName);
-            } else {
-                // only check if they have active plan if we know they are not new
-                const hasActivePlan = await userHasActiveWorkoutPlan(userId);
-                setHasActiveWorkoutPlan(hasActivePlan);
-            }        
-            setIsLoading(false);
+        if (isFocused){
+            console.log("in useEffect")
+            const fetchWorkoutPlan = async () => {
+                const userId = await getDocumentId("users", "email", auth.currentUser.email);
+                const userHasCreatedPlan = await userhasWorkoutPlan(userId);
+                setUserIsNew(!userHasCreatedPlan);
+                if (!userHasCreatedPlan) {
+                    // only display username to a new user
+                    const userName = await getUsernameWithUserId(userId);
+                    setUsername(userName);
+                } else {
+                    // only check and get active plan if we know they are not new
+                    const userActivePlan = await getUserActivePlan(userId);
+                    if (userActivePlan !== undefined){
+                        setHasActiveWorkoutPlan(true);
+                        setUserActiveWorkoutPlan(userActivePlan);
+                    }
+                }        
+                setIsLoading(false);
+            }
+            fetchWorkoutPlan().catch(error => console.log(error));
         }
-        fetchWorkoutPlan().catch(error => console.log(error));
-    }, []);
+    }, [isFocused]);
 
     if (isLoading) {
         return (
@@ -52,9 +64,16 @@ const DashboardScreen = () => {
         const button = hasactiveWorkoutPlan ? (
             <View style={styles.buttonContainer}>
                 <StartWorkoutButton />
-                <Text style={styles.createNewPlanInSettingsText}>You can create a new workout plan in Settings</Text>
+                {/* <Text style={styles.createNewPlanInSettingsText}>You can create a new workout plan in Settings{"\n"}</Text> */}
+                <Text>Goal: Improve {userActiveWorkoutPlan["fitness_goal"]}</Text>
+                
+                <Text>Your workout plan is {(100 * userActiveWorkoutPlan["days_completed"]) / userActiveWorkoutPlan["duration"]}% completed!</Text>
+                <View style={styles.progressBar}>
+                    <ProgressBar progress={userActiveWorkoutPlan["days_completed"] / userActiveWorkoutPlan["duration"]} color={styles.progressBarColor} />
+                </View>
             </View>
-        ): 
+        ):
+        // if they don't have an active workout plan 
         (
         <View style={styles.buttonContainer}>
             <Text style={styles.completedWorkoutPlanText}>You have completed your Workout Plan - Congrats!</Text>
@@ -66,15 +85,6 @@ const DashboardScreen = () => {
         // TO DO: IMPLEMENT METRICS FROM USER EXERCISE HISTORY
         const metricsContent = (
             <View>
-                <View style={styles.metricsContainer}>
-                    <Text style={styles.metricsPlaceholderText}>Metrics Placeholder</Text>
-                </View>
-                <View style={styles.metricsContainer}>
-                    <Text style={styles.metricsPlaceholderText}>Metrics Placeholder</Text>
-                </View>
-                <View style={styles.metricsContainer}>
-                    <Text style={styles.metricsPlaceholderText}>Metrics Placeholder</Text>
-                </View>
                 <View style={styles.metricsContainer}>
                     <Text style={styles.metricsPlaceholderText}>Metrics Placeholder</Text>
                 </View>
@@ -139,5 +149,10 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 18,
         fontStyle: 'italic'
-    }
+    },
+    progressBar: {
+        height: 1,
+        width:"90%",
+    },
+    progressBarColor: "blue",
 });
