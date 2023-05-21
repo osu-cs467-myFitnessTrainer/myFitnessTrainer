@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { StyleSheet, View, Text } from "react-native";
-import { ScrollView, FlatList } from "react-native-gesture-handler";
+import { ScrollView } from "react-native-gesture-handler";
 import GoToDashboardButton from "../components/GoToDashboardButton";
 import { getAllDocuments, getExercise } from "../../databaseFunctions";
 import ExerciseSummaryCard from "../components/ExerciseSummaryCard";
