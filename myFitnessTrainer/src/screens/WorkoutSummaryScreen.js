@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { StyleSheet, View, Text } from "react-native";
+import { ScrollView, FlatList } from "react-native-gesture-handler";
 import GoToDashboardButton from "../components/GoToDashboardButton";
 import { getAllDocuments, getExercise } from "../../databaseFunctions";
 import ExerciseSummaryCard from "../components/ExerciseSummaryCard";
@@ -20,7 +21,6 @@ const WorkoutSummaryScreen = ({ route }) => {
     }, []);
 
     const calulateTotalTimeElapsed = (workoutSessionStats) => {
-        console.log(workoutSessionStats);
         let totalTime = 0;
         Object.keys(workoutSessionStats).forEach((statId) => {
             totalTime +=
@@ -77,42 +77,50 @@ const WorkoutSummaryScreen = ({ route }) => {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.congratsText}>
-                Congrats!! You finished your workout!
-            </Text>
             <Text style={styles.exercisesCompletedText}>
                 Exercises Completed
             </Text>
-            {
-                /* <Text>{JSON.stringify(workoutSessionStats)}</Text> */
+            <Text style={styles.timeElapsedText}>
+                Total Time Elapsed: {totalTimeElapsed} seconds
+            </Text>
+            <View style={styles.summaryCardContainer}>
+                <ScrollView>
+                    {
+                        /* <Text>{JSON.stringify(workoutSessionStats)}</Text> */
 
-                Object.keys(workoutSessionStats).map((statId) => {
-                    return (
-                        <ExerciseSummaryCard
-                            exerciseName={
-                                workoutSessionStats[statId]["exercise_name"]
-                            }
-                            exerciseStats={
-                                workoutSessionStats[statId]["exercise_stats"]
-                            }
-                            key={statId}
-                        />
-                    );
-                })
-            }
-            <Text>Total Time Elapsed: {totalTimeElapsed} seconds</Text>
-            <GoToDashboardButton />
+                        Object.keys(workoutSessionStats).map((statId) => {
+                            return (
+                                <ExerciseSummaryCard
+                                    exerciseName={
+                                        workoutSessionStats[statId][
+                                            "exercise_name"
+                                        ]
+                                    }
+                                    exerciseStats={
+                                        workoutSessionStats[statId][
+                                            "exercise_stats"
+                                        ]
+                                    }
+                                    key={statId}
+                                />
+                            );
+                        })
+                    }
+                </ScrollView>
+            </View>
+            <GoToDashboardButton style={styles.buttonContainer} />
         </View>
     );
 };
 
 const styles = StyleSheet.create({
-    congratsText: {
-        fontSize: 20,
-        fontWeight: "bold",
+    timeElapsedText: {
+        fontSize: 15,
+        marginBottom: 10,
     },
     exercisesCompletedText: {
-        marginTop: 80,
+        marginTop: 30,
+        marginBottom: 10,
         fontSize: 20,
         fontWeight: "bold",
     },
@@ -120,6 +128,14 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
+    },
+    summaryCardContainer: {
+        height: 400,
+        alignItems: "center",
+        width: "80%",
+    },
+    buttonContainer: {
+        marginBottom: 15,
     },
 });
 

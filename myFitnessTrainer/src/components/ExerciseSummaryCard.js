@@ -33,19 +33,20 @@ const ExerciseSummaryCard = ({ exerciseName, exerciseStats }) => {
                 displayStatsText = displayStatsText.concat(
                     `${displayStatsLabelKey[statLabel]}: ${
                         exerciseStats[statLabel]
-                    }${addMetric(statLabel)} `
+                    }${addMetric(statLabel)} \n`
                 );
             }
+
             return displayStatsText;
         });
-        return displayStatsText;
+        // removes last newline for formatting summary card display
+        return displayStatsText.slice(0, -1);
     };
 
     const recommendedExerciseStats = (
         <View style={styles.innerContainers}>
-            <Text style={styles.exerciseNameText}>
-                {exerciseName} {displayStats(exerciseStats)}
-            </Text>
+            <Text style={styles.exerciseNameText}>{exerciseName}</Text>
+            <Text>{displayStats(exerciseStats)}</Text>
         </View>
     );
 
