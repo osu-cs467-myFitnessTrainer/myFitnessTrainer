@@ -27,16 +27,6 @@ const EndWorkoutButton = ({ daysCompleted }) => {
             days_completed: daysCompleted + 1,
         });
 
-        // check if days_completed === duration, then the fitness plan is complete
-        const isWorkoutPlanFinished =
-            workoutPlan["days_completed"] === workoutPlan["duration"];
-        if (isWorkoutPlanFinished) {
-            console.log("congrats, workout plan completed");
-            await updateDocument("workout_plans", workoutPlanId, {
-                active: false,
-            });
-        }
-
         navigation.reset({
             index: 0,
             routes: [

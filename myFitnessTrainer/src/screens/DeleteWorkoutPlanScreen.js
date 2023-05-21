@@ -11,7 +11,7 @@ const DeleteWorkoutPlanScreen = ({route}) => {
     const { hasActiveWorkoutPlan, workoutPlanId, duration, fitnessGoal, fitnessLevel, startDate, daysCompleted, workoutsPerDay, modification } = route.params;
     const navigation = useNavigation();
 
-    const deleteWorkoutPlanInDBAndGoToDashboard = async () => {
+    const deleteWorkoutPlanInDBAndGoToConfirmationScreen = async () => {
         const exerciseHistoryRef = collection(db, "exercise_history");
         const q = query(exerciseHistoryRef, where("workout_plan_id", "==", workoutPlanId));
         const querySnapshot = await getDocs(q);
@@ -27,7 +27,7 @@ const DeleteWorkoutPlanScreen = ({route}) => {
         // delete the active workout_plan
         await deleteDoc(doc(db, "workout_plans", workoutPlanId));
         
-        navigation.navigate("Dashboard");
+        navigation.navigate("Delete Workout Plan Confirmation");
     }
 
     const handleConfirmDeleteWorkoutPlan = () => {
@@ -39,7 +39,7 @@ const DeleteWorkoutPlanScreen = ({route}) => {
                 {
                     text: 'Delete',
                     style: 'destructive',
-                    onPress: deleteWorkoutPlanInDBAndGoToDashboard,
+                    onPress: deleteWorkoutPlanInDBAndGoToConfirmationScreen,
                 },
             ]
         );

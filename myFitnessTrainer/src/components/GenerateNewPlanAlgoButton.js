@@ -4,7 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 import { collection, getDocs, query, where, and } from "firebase/firestore";
 import { db } from "../../firebaseConfig";
 import { auth } from "../../firebaseConfig";
-import { getDocumentId, postDocument } from "../../databaseFunctions";
+import { getDocumentId, postDocument, getUserActivePlan, updateDocument } from "../../databaseFunctions";
 
 
 const GenerateNewPlanAlgoButton = ({
@@ -75,23 +75,30 @@ const GenerateNewPlanAlgoButton = ({
         3. add this plan to dailyExercisess collection
     */
     const handleCreateNewPlanAlgo = async () => {
-        const retrievedExercises = await getExercises(goal, level);
-        const dailyExercises = createPlan(
-            retrievedExercises,
-            duration,
-            exercisesPerDay
-        );
         const userId = await getDocumentId(
             "users",
             "email",
             auth.currentUser.email
         );
 
-        // TODO: If a user already has an existing workout_plan (unfinished), set "active" as false
-        // TODO: If a user already has an existing workout_plan (finished; days_completed == duration), set "active" as false
+        // check if user has an existing active plan; if so, set "active" to false
+        const userActivePlan = await getUserActivePlan(userId);
+        if (userActivePlan !== undefined){
+            console.log("in GenerateNewPlanAlgo; found active workout plan. We'll delete it.")
+            await updateDocument("workout_plans", userActivePlan["id"], {
+                active: false,
+            });
+        }
+
+        const retrievedExercises = await getExercises(goal, level);
+        const dailyExercises = createPlan(
+            retrievedExercises,
+            duration,
+            exercisesPerDay
+        );
+
         let modification_value;
         modification == null ? modification_value = "none" : modification_value = modification;
-        console.log("modification_value=", modification_value);
         const postObject = {
             active: true,
             daily_exercises: dailyExercises,
