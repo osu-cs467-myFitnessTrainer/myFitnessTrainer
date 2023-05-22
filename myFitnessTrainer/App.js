@@ -12,6 +12,7 @@ import AvatarScreen from "./src/screens/AvatarScreen";
 import ExitWorkoutButton from "./src/components/ExitWorkoutButton";
 import ViewWorkoutPlanScreen from "./src/screens/ViewWorkoutPlanScreen";
 import DeleteWorkoutPlanScreen from "./src/screens/DeleteWorkoutPlanScreen";
+import DeleteWorkoutPlanConfirmationScreen from "./src/screens/DeleteWorkoutPlanConfirmationScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -41,13 +42,6 @@ export default function App() {
                     component={DashboardScreen}
                     options={{
                         headerTitleAlign: "center",
-                        // TODO:
-                        // 0. reimport 'import Avatar from "./src/components/Avatar";'
-                        // 1. get user's avatar's storage location in Firebase
-                        // 2. getDownloadURL from avatar's storage location and use as imageSource
-                        // 3. determine pixelSize
-                        // 4. then, we can have something like the following:
-                        // headerLeft: () => <Avatar imgSource={imgSource} pixelSize={200} />,
                         headerRight: () => <SettingsButton />,
                     }}
                 />
@@ -89,6 +83,15 @@ export default function App() {
                     name="View Workout Plan"
                     component={ViewWorkoutPlanScreen} 
                     options={{ headerTitleAlign: "center" }}
+                />
+                <Stack.Screen
+                    name="Delete Workout Plan Confirmation"
+                    component={DeleteWorkoutPlanConfirmationScreen} 
+                    options={{ 
+                        headerLeft: ()=> "",
+                        headerTitle: "",
+                        headerTitleAlign: "center" 
+                    }}
                 />
             </Stack.Navigator>
         </NavigationContainer>
