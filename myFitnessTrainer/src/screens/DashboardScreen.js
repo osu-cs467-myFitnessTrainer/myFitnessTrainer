@@ -65,7 +65,7 @@ const DashboardScreen = () => {
                             and(where("workout_plan_id", "==", userActivePlan["id"]), where("workout_day", "==", day))
                         );
                         const querySnapshot = await getDocs(q);
-                        elapsedTimePerDay = 0
+                        let elapsedTimePerDay = 0
                         querySnapshot.forEach((doc) => {
                             elapsedTimePerDay += doc.data()["exercise_stats"]["time_in_sec"]
                         });
