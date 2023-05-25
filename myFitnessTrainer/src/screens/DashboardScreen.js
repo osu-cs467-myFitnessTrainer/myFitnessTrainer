@@ -6,9 +6,17 @@ import CreateNewPlanButton from '../components/CreateNewPlanButton';
 import { getDocumentId, getUsernameWithUserId, userhasWorkoutPlan, getUserActivePlan } from '../../databaseFunctions';
 import { ScrollView } from 'react-native-gesture-handler';
 import Avatar from '../components/Avatar';
-import {doc, getDoc} from "firebase/firestore";
 import { ref, getDownloadURL } from 'firebase/storage';
 import WorkoutPlanProgress from '../components/WorkoutPlanProgress';
+import {
+    collection,
+    getDocs,
+    getDoc,
+    doc,
+    query,
+    where,
+    and,
+} from "firebase/firestore";
 
 const avatarPixelSize = 100;
 
@@ -18,6 +26,7 @@ const DashboardScreen = () => {
     const [username, setUsername] = useState('user');
     const [userActiveWorkoutPlan, setUserActiveWorkoutPlan] = useState(null);
     const [avatarURL, setAvatarURL] = useState(null);
+    const [timeElapsedData, setTimeElapsedData] = useState([]);
 
     // We'll fetch each time user enters Dashboard Screen
     useEffect(() => {
@@ -46,6 +55,26 @@ const DashboardScreen = () => {
                 const userActivePlan = await getUserActivePlan(userId);
                 if (userActivePlan !== undefined){
                     setUserActiveWorkoutPlan(userActivePlan);
+                
+                    // get data for Time Elapsed Per Workout Day graph
+                    let days_to_time_in_sec = []
+                    for (let day = 0; day < userActivePlan["days_completed"]; day++){
+                        let day_to_time_in_sec = {}
+                        const q = query(
+                            collection(db, "exercise_history"),
+                            and(where("workout_plan_id", "==", userActivePlan["id"]), where("workout_day", "==", day))
+                        );
+                        const querySnapshot = await getDocs(q);
+                        elapsedTimePerDay = 0
+                        querySnapshot.forEach((doc) => {
+                            elapsedTimePerDay += doc.data()["exercise_stats"]["time_in_sec"]
+                        });
+                        day_to_time_in_sec["day"] = day+1
+                        day_to_time_in_sec["elapsedTimePerDay"] = elapsedTimePerDay
+                        days_to_time_in_sec.push(day_to_time_in_sec)
+                    }
+                    setTimeElapsedData(days_to_time_in_sec);
+
                 }
             }        
             setIsLoading(false);
@@ -78,7 +107,7 @@ const DashboardScreen = () => {
             button = (
                 <View style={styles.buttonContainer}>
                     <Text style={styles.completedWorkoutPlanText}>Congrats!</Text>
-                    <WorkoutPlanProgress fitness_goal={userActiveWorkoutPlan["fitness_goal"]} duration={userActiveWorkoutPlan["duration"]} days_completed={userActiveWorkoutPlan["days_completed"]}/>
+                    <WorkoutPlanProgress fitness_goal={userActiveWorkoutPlan["fitness_goal"]} duration={userActiveWorkoutPlan["duration"]} days_completed={userActiveWorkoutPlan["days_completed"]} timeElapsedData={timeElapsedData}/>
                     <CreateNewPlanButton />
                 </View>
             );
@@ -89,7 +118,7 @@ const DashboardScreen = () => {
             button = (
                 <View style={styles.buttonContainer}>
                     <StartWorkoutButton />
-                    <WorkoutPlanProgress fitness_goal={userActiveWorkoutPlan["fitness_goal"]} duration={userActiveWorkoutPlan["duration"]} days_completed={userActiveWorkoutPlan["days_completed"]}/>
+                    <WorkoutPlanProgress fitness_goal={userActiveWorkoutPlan["fitness_goal"]} duration={userActiveWorkoutPlan["duration"]} days_completed={userActiveWorkoutPlan["days_completed"]} timeElapsedData={timeElapsedData}/>
                 </View>
             )
         }
@@ -104,20 +133,10 @@ const DashboardScreen = () => {
             )
         }
 
-        // TO DO: IMPLEMENT METRICS FROM USER EXERCISE HISTORY
-        const metricsContent = (
-            <View>
-                <View style={styles.metricsContainer}>
-                    <Text style={styles.metricsPlaceholderText}>Metrics Placeholder</Text>
-                </View>
-            </View>
-        );
-
         return (
             <ScrollView contentContainerStyle={styles.container}>
                 <Avatar imgSource={avatarURL} pixelSize={avatarPixelSize} />
                 {button}
-                {metricsContent}
             </ScrollView>
         );
     }
@@ -131,16 +150,6 @@ const styles = StyleSheet.create({
     },
     buttonContainer: {
         alignItems: 'center'
-    },
-    metricsPlaceholderText: {
-        fontSize: 18
-    },
-    metricsContainer: {
-        marginTop: 25,
-        backgroundColor: "gray",
-        alignSelf: 'center',
-        width: "90%",
-        height: 200
     },
     welcomeMessage: {
         margin: 10,
