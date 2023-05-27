@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { auth, db, storage } from '../../firebaseConfig';
 import StartWorkoutButton from "../components/StartWorkoutButton";
 import CreateNewPlanButton from '../components/CreateNewPlanButton';
-import { getDocumentId, getUsernameWithUserId, userhasWorkoutPlan, getUserActivePlan, getDocument } from '../../databaseFunctions';
+import { getDocumentId, getUsernameWithUserId, userhasWorkoutPlan, getUserActivePlan } from '../../databaseFunctions';
 import { ScrollView } from 'react-native-gesture-handler';
 import Avatar from '../components/Avatar';
 import { ref, getDownloadURL } from 'firebase/storage';
@@ -28,7 +28,6 @@ const DashboardScreen = () => {
     const [avatarURL, setAvatarURL] = useState(null);
     const [timeElapsedData, setTimeElapsedData] = useState([]);
     const [exercisePRs, setExercisePRs] = useState({});
-    const [workoutsPerCompletedDay, setWorkoutsPerCompletedDay] = useState([]);
 
     // We'll fetch each time user enters Dashboard Screen
     useEffect(() => {
@@ -57,16 +56,6 @@ const DashboardScreen = () => {
                 const userActivePlan = await getUserActivePlan(userId);
                 if (userActivePlan !== undefined){
                     setUserActiveWorkoutPlan(userActivePlan);
-
-                    // get data for workoutsPerCompletedDay
-                    for (const day_num of Array(userActivePlan["days_completed"]).keys()) {
-                        let exercises_for_the_day = []
-                        for (const exercise_num in userActivePlan["daily_exercises"][day_num]){
-                            exercises_for_the_day.push(userActivePlan["daily_exercises"][day_num][exercise_num]["name"]);
-                        }
-                        workoutsPerCompletedDay.push({"id":parseInt(day_num)+1, "data":exercises_for_the_day })
-                    }
-                    setWorkoutsPerCompletedDay(workoutsPerCompletedDay);
                 
                     // get data for Time Elapsed Per Workout Day graph
                     let days_to_time_in_sec = []
@@ -176,7 +165,7 @@ const DashboardScreen = () => {
             button = (
                 <View style={styles.buttonContainer}>
                     <Text style={styles.completedWorkoutPlanText}>Congrats!</Text>
-                    <WorkoutPlanProgress fitness_goal={userActiveWorkoutPlan["fitness_goal"]} duration={userActiveWorkoutPlan["duration"]} days_completed={userActiveWorkoutPlan["days_completed"]} timeElapsedData={timeElapsedData} exercisePRs={exercisePRs} workoutsPerCompletedDay={workoutsPerCompletedDay}/>
+                    <WorkoutPlanProgress fitness_goal={userActiveWorkoutPlan["fitness_goal"]} duration={userActiveWorkoutPlan["duration"]} days_completed={userActiveWorkoutPlan["days_completed"]} timeElapsedData={timeElapsedData} exercisePRs={exercisePRs}/>
                     <CreateNewPlanButton />
                 </View>
             );
@@ -187,7 +176,7 @@ const DashboardScreen = () => {
             button = (
                 <View style={styles.buttonContainer}>
                     <StartWorkoutButton />
-                    <WorkoutPlanProgress fitness_goal={userActiveWorkoutPlan["fitness_goal"]} duration={userActiveWorkoutPlan["duration"]} days_completed={userActiveWorkoutPlan["days_completed"]} timeElapsedData={timeElapsedData} exercisePRs={exercisePRs} workoutsPerCompletedDay={workoutsPerCompletedDay}/>
+                    <WorkoutPlanProgress fitness_goal={userActiveWorkoutPlan["fitness_goal"]} duration={userActiveWorkoutPlan["duration"]} days_completed={userActiveWorkoutPlan["days_completed"]} timeElapsedData={timeElapsedData} exercisePRs={exercisePRs}/>
                 </View>
             )
         }

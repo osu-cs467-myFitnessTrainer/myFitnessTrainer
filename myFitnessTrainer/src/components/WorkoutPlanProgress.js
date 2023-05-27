@@ -4,7 +4,7 @@ import { ProgressBar } from 'react-native-paper';
 import TimeElapsedPerWorkoutDayChart from './TimeElapsedPerWorkoutDayChart';
 import DisplayExercisePRs from './DisplayExercisePRs';
 
-const WorkoutPlanProgress = ({fitness_goal, duration, days_completed, timeElapsedData, exercisePRs, workoutsPerCompletedDay}) => {
+const WorkoutPlanProgress = ({fitness_goal, duration, days_completed, timeElapsedData, exercisePRs}) => {
 
     return (
         <View >
