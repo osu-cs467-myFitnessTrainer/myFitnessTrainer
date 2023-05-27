@@ -28,6 +28,7 @@ const DashboardScreen = () => {
     const [avatarURL, setAvatarURL] = useState(null);
     const [timeElapsedData, setTimeElapsedData] = useState([]);
     const [exercisePRs, setExercisePRs] = useState({});
+    const [workoutsPerCompletedDay, setWorkoutsPerCompletedDay] = useState([]);
 
     // We'll fetch each time user enters Dashboard Screen
     useEffect(() => {
@@ -56,6 +57,16 @@ const DashboardScreen = () => {
                 const userActivePlan = await getUserActivePlan(userId);
                 if (userActivePlan !== undefined){
                     setUserActiveWorkoutPlan(userActivePlan);
+
+                    // get data for workoutsPerCompletedDay
+                    for (const day_num of Array(userActivePlan["days_completed"]).keys()) {
+                        let exercises_for_the_day = []
+                        for (const exercise_num in userActivePlan["daily_exercises"][day_num]){
+                            exercises_for_the_day.push(userActivePlan["daily_exercises"][day_num][exercise_num]["name"]);
+                        }
+                        workoutsPerCompletedDay.push({"id":parseInt(day_num)+1, "data":exercises_for_the_day })
+                    }
+                    setWorkoutsPerCompletedDay(workoutsPerCompletedDay);
                 
                     // get data for Time Elapsed Per Workout Day graph
                     let days_to_time_in_sec = []
@@ -76,51 +87,63 @@ const DashboardScreen = () => {
                     }
                     setTimeElapsedData(days_to_time_in_sec);
 
-                    // if userActivePlan is strength
-                    if (userActivePlan["fitness_goal"] == "strength"){
-                        const q = query(
-                            collection(db, "exercise_history"),
-                            and(where("workout_plan_id", "==", userActivePlan["id"]), where("completed", "==", true))
-                        );
-                        const querySnapshot = await getDocs(q);
-                        let local_exercise_PRs = {}
+                    // get data for exercise PRs
+                    const q = query(
+                        collection(db, "exercise_history"),
+                        and(where("workout_plan_id", "==", userActivePlan["id"]), where("completed", "==", true))
+                    );
+                    const querySnapshot = await getDocs(q);
+                    let local_exercise_PRs = {}
 
-                        let exerciseName = userActivePlan[""]
-
-                        querySnapshot.forEach((doc) => {
-                            // if doc.data()["exercise_id"] in local_exercise_PRs
-                            if (doc.data()["exercise_id"] in local_exercise_PRs){
-                                if (local_exercise_PRs[doc.data()["exercise_id"]]["weight"] < doc.data()["exercise_stats"]["weight"]){ 
+                    querySnapshot.forEach((doc) => {
+                        // if doc.data()["exercise_id"] in local_exercise_PRs
+                        if (doc.data()["exercise_id"] in local_exercise_PRs){
+                            if (userActivePlan["fitness_goal"] == "strength"){
+                                if (local_exercise_PRs[doc.data()["exercise_id"]]["weight"] < doc.data()["exercise_stats"]["weight"]){
                                     local_exercise_PRs[doc.data()["exercise_id"]]["reps"] = doc.data()["exercise_stats"]["reps"];
                                     local_exercise_PRs[doc.data()["exercise_id"]]["sets"] = doc.data()["exercise_stats"]["sets"];
                                     local_exercise_PRs[doc.data()["exercise_id"]]["weight"] = doc.data()["exercise_stats"]["weight"];
                                 }
-                            } 
-                            // else, doc.data()["exercise_id"] NOT in local_exercise_PRs add exercise_stats
-                            else {
-                                local_exercise_PRs[doc.data()["exercise_id"]] = {
-                                    "reps": doc.data()["exercise_stats"]["reps"],
-                                    "sets": doc.data()["exercise_stats"]["sets"],
-                                    "weight": doc.data()["exercise_stats"]["weight"],
-                                    "incline": null,
-                                    "resistance": null,
-                                    "speed": null,
+                            }
+                            else if ((userActivePlan["fitness_goal"] == "flexibility")){
+                                if (local_exercise_PRs[doc.data()["exercise_id"]]["reps"] < doc.data()["exercise_stats"]["reps"]){
+                                    local_exercise_PRs[doc.data()["exercise_id"]]["reps"] = doc.data()["exercise_stats"]["reps"];
                                 }
                             }
-                        });
-                        // replace exercise Id keys with exercise name keys
-                        for (const [exerciseId, exerciseStats] of Object.entries(local_exercise_PRs)) {
-                            const exerciseDocRef = doc(db, "exercises", exerciseId);
-                            const exerciseDocSnap = await getDoc(exerciseDocRef);
-                            local_exercise_PRs[exerciseDocSnap.data()["name"]] = local_exercise_PRs[exerciseId]
-                            delete local_exercise_PRs[exerciseId]
-                            
-                        }                        
-                        setExercisePRs(local_exercise_PRs);
-                    }
-
-
-
+                            else {  // userActivePlan["fitness_goal"] == "cardio"
+                                if (local_exercise_PRs[doc.data()["exercise_id"]]["speed"] !== null) {
+                                    if (local_exercise_PRs[doc.data()["exercise_id"]]["speed"] < doc.data()["exercise_stats"]["speed"]){
+                                        local_exercise_PRs[doc.data()["exercise_id"]]["speed"] = doc.data()["exercise_stats"]["speed"];
+                                    }                                    
+                                }
+                                else {
+                                    if (local_exercise_PRs[doc.data()["exercise_id"]]["time_in_sec"] < doc.data()["exercise_stats"]["time_in_sec"]){
+                                        local_exercise_PRs[doc.data()["exercise_id"]]["time_in_sec"] = doc.data()["exercise_stats"]["time_in_sec"];
+                                    }
+                                }
+                            }
+                        } 
+                        // else, doc.data()["exercise_id"] NOT in local_exercise_PRs add exercise_stats
+                        else {
+                            local_exercise_PRs[doc.data()["exercise_id"]] = {
+                                "reps": doc.data()["exercise_stats"]["reps"],
+                                "sets": doc.data()["exercise_stats"]["sets"],
+                                "weight": doc.data()["exercise_stats"]["weight"],
+                                "incline": doc.data()["exercise_stats"]["incline"],
+                                "resistance": doc.data()["exercise_stats"]["resistance"],
+                                "speed": doc.data()["exercise_stats"]["speed"],
+                                "time_in_sec": doc.data()["exercise_stats"]["time_in_sec"],
+                            }
+                        }
+                    });
+                    // replace exercise Id keys with exercise name keys
+                    for (const exerciseId in local_exercise_PRs) {
+                        const exerciseDocRef = doc(db, "exercises", exerciseId);
+                        const exerciseDocSnap = await getDoc(exerciseDocRef);
+                        local_exercise_PRs[exerciseDocSnap.data()["name"]] = local_exercise_PRs[exerciseId]
+                        delete local_exercise_PRs[exerciseId]
+                    }                        
+                    setExercisePRs(local_exercise_PRs);
                 }
             }        
             setIsLoading(false);
@@ -153,7 +176,7 @@ const DashboardScreen = () => {
             button = (
                 <View style={styles.buttonContainer}>
                     <Text style={styles.completedWorkoutPlanText}>Congrats!</Text>
-                    <WorkoutPlanProgress fitness_goal={userActiveWorkoutPlan["fitness_goal"]} duration={userActiveWorkoutPlan["duration"]} days_completed={userActiveWorkoutPlan["days_completed"]} timeElapsedData={timeElapsedData} exercisePRs={exercisePRs}/>
+                    <WorkoutPlanProgress fitness_goal={userActiveWorkoutPlan["fitness_goal"]} duration={userActiveWorkoutPlan["duration"]} days_completed={userActiveWorkoutPlan["days_completed"]} timeElapsedData={timeElapsedData} exercisePRs={exercisePRs} workoutsPerCompletedDay={workoutsPerCompletedDay}/>
                     <CreateNewPlanButton />
                 </View>
             );
@@ -164,7 +187,7 @@ const DashboardScreen = () => {
             button = (
                 <View style={styles.buttonContainer}>
                     <StartWorkoutButton />
-                    <WorkoutPlanProgress fitness_goal={userActiveWorkoutPlan["fitness_goal"]} duration={userActiveWorkoutPlan["duration"]} days_completed={userActiveWorkoutPlan["days_completed"]} timeElapsedData={timeElapsedData} exercisePRs={exercisePRs}/>
+                    <WorkoutPlanProgress fitness_goal={userActiveWorkoutPlan["fitness_goal"]} duration={userActiveWorkoutPlan["duration"]} days_completed={userActiveWorkoutPlan["days_completed"]} timeElapsedData={timeElapsedData} exercisePRs={exercisePRs} workoutsPerCompletedDay={workoutsPerCompletedDay}/>
                 </View>
             )
         }

@@ -4,13 +4,13 @@ import { ProgressBar } from 'react-native-paper';
 import TimeElapsedPerWorkoutDayChart from './TimeElapsedPerWorkoutDayChart';
 import DisplayExercisePRs from './DisplayExercisePRs';
 
-const WorkoutPlanProgress = ({fitness_goal, duration, days_completed, timeElapsedData, exercisePRs}) => {
+const WorkoutPlanProgress = ({fitness_goal, duration, days_completed, timeElapsedData, exercisePRs, workoutsPerCompletedDay}) => {
 
     return (
         <View >
             <Text style={styles.progressText}>Goal: Improve {fitness_goal}{"\n"}</Text>
             <Text style={styles.progressText}>You completed {days_completed} out of {duration} days.</Text>
-            <Text style={styles.progressText}>Your workout plan is {(100 * days_completed) / duration}% completed!</Text>
+            <Text style={styles.progressText}>Your workout plan is {Math.round((100 * days_completed) / duration)}% completed!</Text>
             <ProgressBar style={styles.progressBar} progress={days_completed / duration} color={styles.progressBarColor} />
             <TimeElapsedPerWorkoutDayChart duration={duration} timeElapsedData={timeElapsedData}/>
             <DisplayExercisePRs exercisePRs={exercisePRs} />

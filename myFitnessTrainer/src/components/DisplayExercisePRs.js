@@ -11,8 +11,10 @@ const DisplayExercisePRs = ({exercisePRs}) => {
     }
 
     let exercisePRsList = []
+    let i = 0;
     for (const [exerciseName, exerciseStats] of Object.entries(exercisePRs)) {
         let exercisePR = {
+            "id": i,
             "exerciseName": exerciseName,
             "exerciseStats": {
                 "reps": exerciseStats["reps"],
@@ -24,6 +26,7 @@ const DisplayExercisePRs = ({exercisePRs}) => {
             }
         }
         exercisePRsList.push(exercisePR);
+        i = i+1;
     }
 
     return(
@@ -31,8 +34,8 @@ const DisplayExercisePRs = ({exercisePRs}) => {
             <Text style={styles.titleText}>Personal Records</Text>
             {exercisePRsList.map((exercisePR) => {
                 return (
-                <View>
-                    <ExerciseSummaryCard key="{exerciseName}" exerciseName={exercisePR.exerciseName} exerciseStats={exercisePR.exerciseStats} />
+                <View key={exercisePR.id}>
+                    <ExerciseSummaryCard exerciseName={exercisePR.exerciseName} exerciseStats={exercisePR.exerciseStats} />
                 </View>
                 );
             })}

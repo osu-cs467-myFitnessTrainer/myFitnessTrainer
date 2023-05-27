@@ -27,7 +27,7 @@ const ExerciseDisplay = (
     const [reps, setReps] = useState(null);
     const [sets, setSets] = useState(null);
     const [incline, setIncline] = useState(null);
-    const [resistence, setResistence] = useState(null);
+    const [resistance, setResistance] = useState(null);
     const [speed, setSpeed] = useState(null);
     const [weight, setWeight] = useState(null);
 
@@ -35,7 +35,7 @@ const ExerciseDisplay = (
         const exerciseStats = {
             incline: incline,
             reps: reps,
-            resistence: resistence,
+            resistance: resistance,
             sets: sets,
             speed: speed,
             time_in_sec: timeInSeconds,
@@ -94,8 +94,8 @@ const ExerciseDisplay = (
             case "incline":
                 setIncline(parseFloat(text));
                 break;
-            case "resistence":
-                setResistence(parseFloat(text));
+            case "resistance":
+                setResistance(parseFloat(text));
                 break;
             case "speed":
                 setSpeed(parseFloat(text));
@@ -118,8 +118,8 @@ const ExerciseDisplay = (
                 return sets;
             case "incline":
                 return incline;
-            case "resistence":
-                return resistence;
+            case "resistance":
+                return resistance;
             case "speed":
                 return speed;
             case "weight":
