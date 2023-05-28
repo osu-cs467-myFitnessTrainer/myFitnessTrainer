@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { auth, db, storage } from '../../firebaseConfig';
 import StartWorkoutButton from "../components/StartWorkoutButton";
 import CreateNewPlanButton from '../components/CreateNewPlanButton';
+import ViewWorkoutPlanButton from '../components/ViewWorkoutPlanButton';
 import { getDocumentId, getUsernameWithUserId, userhasWorkoutPlan, getUserActivePlan } from '../../databaseFunctions';
 import { ScrollView } from 'react-native-gesture-handler';
 import Avatar from '../components/Avatar';
@@ -87,6 +88,7 @@ const DashboardScreen = () => {
                     querySnapshot.forEach((doc) => {
                         // if doc.data()["exercise_id"] in local_exercise_PRs
                         if (doc.data()["exercise_id"] in local_exercise_PRs){
+                            local_exercise_PRs[doc.data()["exercise_id"]]["count"] += 1;
                             if (userActivePlan["fitness_goal"] == "strength"){
                                 if (local_exercise_PRs[doc.data()["exercise_id"]]["weight"] < doc.data()["exercise_stats"]["weight"]){
                                     local_exercise_PRs[doc.data()["exercise_id"]]["reps"] = doc.data()["exercise_stats"]["reps"];
@@ -122,6 +124,7 @@ const DashboardScreen = () => {
                                 "resistance": doc.data()["exercise_stats"]["resistance"],
                                 "speed": doc.data()["exercise_stats"]["speed"],
                                 "time_in_sec": doc.data()["exercise_stats"]["time_in_sec"],
+                                "count": 1,
                             }
                         }
                     });
@@ -177,6 +180,7 @@ const DashboardScreen = () => {
                 <View style={styles.buttonContainer}>
                     <StartWorkoutButton />
                     <WorkoutPlanProgress fitness_goal={userActiveWorkoutPlan["fitness_goal"]} duration={userActiveWorkoutPlan["duration"]} days_completed={userActiveWorkoutPlan["days_completed"]} timeElapsedData={timeElapsedData} exercisePRs={exercisePRs}/>
+                    <ViewWorkoutPlanButton/>
                 </View>
             )
         }
