@@ -23,10 +23,15 @@ const ExerciseSummaryCard = ({ exerciseName, exerciseStats }) => {
             resistance: "resistance",
             speed: "speed",
             incline: "incline",
+            count: "count",
         };
         let displayStatsText = "";
+        if (exerciseStats["count"] !== undefined){  // when queried from WorkoutSummaryScreen.js, count will be undefined
+            displayStatsText = displayStatsText.concat(`number of times completed: ${exerciseStats["count"]}\n`);
+        }
         Object.keys(exerciseStats).forEach((statLabel) => {
             if (
+                statLabel !== "count" &&
                 exerciseStats[statLabel] !== null &&
                 statLabel !== "time_in_sec"
             ) {

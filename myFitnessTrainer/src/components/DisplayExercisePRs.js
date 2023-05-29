@@ -23,6 +23,7 @@ const DisplayExercisePRs = ({exercisePRs}) => {
                 "incline": exerciseStats["incline"],
                 "resistance": exerciseStats["resistance"],
                 "speed": exerciseStats["speed"],
+                "count": exerciseStats["count"],
             }
         }
         exercisePRsList.push(exercisePR);

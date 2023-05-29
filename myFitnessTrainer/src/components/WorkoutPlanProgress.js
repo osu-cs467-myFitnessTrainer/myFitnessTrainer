@@ -8,7 +8,7 @@ const WorkoutPlanProgress = ({fitness_goal, duration, days_completed, timeElapse
 
     return (
         <View >
-            <Text style={styles.progressText}>Goal: Improve {fitness_goal}{"\n"}</Text>
+            <Text style={styles.progressText}>{"\n"}Goal: Improve {fitness_goal}{"\n"}</Text>
             <Text style={styles.progressText}>You completed {days_completed} out of {duration} days.</Text>
             <Text style={styles.progressText}>Your workout plan is {Math.round((100 * days_completed) / duration)}% completed!</Text>
             <ProgressBar style={styles.progressBar} progress={days_completed / duration} color={styles.progressBarColor} />
