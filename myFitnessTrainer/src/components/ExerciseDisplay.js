@@ -1,4 +1,4 @@
-import { Linking, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Alert, Linking, StyleSheet, Text, TextInput, View } from 'react-native';
 import React, { useState } from 'react';
 import SkipExerciseButton from "../components/SkipExerciseButton";
 import SubmitExerciseStatsButton from "../components/SubmitExerciseStatsButton";
@@ -31,6 +31,20 @@ const ExerciseDisplay = (
     const [speed, setSpeed] = useState(null);
     const [weight, setWeight] = useState(null);
 
+    // validates stats entered - checks for null or empty strings
+    const validStats = (exerciseStats) => {
+        let isValid = true;
+        // only check for relevant stats based on default exercise stats
+        Object.entries(exercise.default_exercise_stat).map(([key, value]) => {
+            if (value !== null) {
+                if (exerciseStats[key] === null || exerciseStats[key] === "") {
+                    isValid = false;
+                }
+            }
+        })
+        return isValid;
+    }
+
     const handleSubmit = () => {
         const exerciseStats = {
             incline: incline,
@@ -41,6 +55,13 @@ const ExerciseDisplay = (
             time_in_sec: timeInSeconds,
             weight: weight
         };
+
+        // validates that no stat is empty
+        if (!validStats(exerciseStats)){
+            Alert.alert('Missing Stats', 'Record all exercise stats before submitting.')
+            return;
+        }
+
         handleOnSubmit(exerciseStats);
         setCurrentStage("submitted");
     }
@@ -55,12 +76,15 @@ const ExerciseDisplay = (
         if (key === "incline") {
             return "(%)";
         }
+        if (key === "time_in_sec") {
+            return "(secs)";
+        }
         return "";
     }
 
     const recommendedExerciseStats = (
         <View style={styles.innerContainers}>
-            <Text>Recommended Exercise Goals to Reach</Text>
+            <Text style={styles.titles}>Recommended Exercise Goals to Reach</Text>
             <View style={styles.exerciseGoalTextContainer}>
             {
                 Object.entries(exercise.default_exercise_stat).map(([key, value]) => {
@@ -70,7 +94,7 @@ const ExerciseDisplay = (
                                 key={key.concat("-", index)}
                                 style={styles.exerciseGoalText}
                             >
-                                {key}: {value} {addMetric(key)}
+                                {key === "time_in_sec" ? "time" : key}: {value} {addMetric(key)}
                             </Text>
                         )
                     }
@@ -81,27 +105,30 @@ const ExerciseDisplay = (
     );
 
     const updateKeyStateWithText = (key, text) => {
+        // If empty, set to empty string, else parse into integer
+        const parsedInt = text === "" ? "" : parseInt(text);
+
         switch (key) {
             case "time_in_sec":
-                setTimeInSeconds(parseInt(text));
+                setTimeInSeconds(parsedInt);
                 break;
             case "reps":
-                setReps(parseInt(text));
+                setReps(parsedInt);
                 break;
             case "sets":
-                setSets(parseInt(text));
+                setSets(parsedInt);
                 break;
             case "incline":
-                setIncline(parseFloat(text));
+                setIncline(parsedInt);
                 break;
             case "resistance":
-                setResistance(parseFloat(text));
+                setResistance(parsedInt);
                 break;
             case "speed":
-                setSpeed(parseFloat(text));
+                setSpeed(parsedInt);
                 break;
             case "weight":
-                setWeight(parseInt(text));
+                setWeight(parsedInt);
                 break;
             default:
                 console.log("Could not find matching key for db");
@@ -145,6 +172,7 @@ const ExerciseDisplay = (
                                 onChangeText={text => updateKeyStateWithText(key, text)}
                                 style={styles.input}
                                 autoCapitalize='none'
+                                inputMode='numeric'
                             />
                         )
                     }

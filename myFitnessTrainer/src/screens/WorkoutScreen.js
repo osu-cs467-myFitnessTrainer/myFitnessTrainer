@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { StyleSheet, View, Dimensions, Text, ActivityIndicator } from "react-native";
+import { StyleSheet, View, Dimensions, Text, ActivityIndicator, ScrollView } from "react-native";
 import Carousel from "react-native-reanimated-carousel";
 import Dots from "react-native-dots-pagination";
 import EndWorkoutButton from "../components/EndWorkoutButton";
@@ -130,18 +130,20 @@ const WorkoutScreen = ({ route }) => {
         const content = displayFinishCard ? (
             FinishedCardContents
         ) : (
-            <ExerciseDisplay
-                exercise={exerciseDeck[index]}
-                index={index}
-                handleOnSkip={() => skipExercise(index)}
-                handleOnSubmit={(exerciseStats) => submitStatsToDB(index, exerciseStats)}
-            />
+            <ScrollView>
+                <ExerciseDisplay
+                    exercise={exerciseDeck[index]}
+                    index={index}
+                    handleOnSkip={() => skipExercise(index)}
+                    handleOnSubmit={(exerciseStats) => submitStatsToDB(index, exerciseStats)}
+                />
+            </ScrollView>
         );
 
         return (
             <View style={styles.cardViewContainer}>
                 {content}
-                <View style={styles.dots}>
+                <View>
                     <Dots length={workoutLength + 1} active={index} />
                 </View>
             </View>
@@ -193,10 +195,6 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.8,
         shadowRadius: 2,
         elevation: 5,
-    },
-    dots: {
-        flex: 1,
-        justifyContent: "flex-end",
     },
     progressBarContainer: {
         backgroundColor: "white",
