@@ -22,7 +22,7 @@ const SelectAnAvatarButton = () => {
 
     return (
         <TouchableOpacity style={styles.button} onPress={handleSelectAnAvatar}>
-            <Text style={styles.buttonText}>Edit Avatar</Text>
+            <Text style={styles.buttonText}>Change Avatar</Text>
         </TouchableOpacity>
     );
 };
